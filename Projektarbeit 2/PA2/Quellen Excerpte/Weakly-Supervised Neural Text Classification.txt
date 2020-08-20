@@ -1,0 +1,1 @@
+CNN for text classification pretrained on unsupervised training objective

@@ -1,0 +1,26 @@
+Zielstellung:
+- Businesscase: Augmented reality Anleitung eines Workers (connected worker/hackathon)
+=>User Story: Klassifizieren eines Werkzeugobjects in einem Bild
+=>Ziel: Implementierung eines neuronalen Netzes zur klassifizierung von Werkzeugobjekten im Bild
+
+Eigentliche Motivation: 
+  Ich will Objekterkennung mit AI lernen und Oliver hat gesagt das Themengebiet passt zu connected worker
+
+Motivation für PA
+Seminararbeit
+  Maschinellese Lernen ist ein wachsendes Feld auch Movilizer will sich mit diesem Feld beschäftigen siehe Quellen darunter
+https://www.honeywellprocess.com/en-US/online_campaigns/connected-plant-skills_Insight/Pages/doc/immersive-competency.pdf
+  Augmented Reality Learning für Fieldworker, d.h. Worker bekommt virtuell eingeblendet was er zu tun hat z.B. welche schraube er wo festzuziehen hat
+Vasil Histrof: 
+  Movilizer hat Zusammenarbeit mit Masterstudenten => Bauen Solution für Amazon Web Cam 
+  => In Supermärkten sollen Supplier in Zukunft Regale einräumen 
+  => Camera checkt ob regale richtig eingeräumt (Produkt a.d. richtigen stelle und richtig ausgerichtet)
+Ohne Quelle (E-Mails/Experience Connected)
+  2018 Connected Worker was announced, machine learning is a shift that will be taken in near future
+Schlussfolgerung
+  Movilizer bewegt sich auf Solutions zu die machine learning verwenden
+  Anhand businesscase von connected-plant-skills-insight bzw Hackathon gewinn
+  sieht man Objekt erkennung ist nötig. 
+  Tools zur Objekterkennung können in solchen Connected Worker Projekten verwendet werden
+  Objekte im Umfeld eines Workers sind zum Beispiel Werkzeug => einzelnes Werkzeug bzw verschiedene Klassifizieren
+  

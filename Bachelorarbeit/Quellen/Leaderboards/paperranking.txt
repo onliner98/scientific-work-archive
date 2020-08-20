@@ -1,0 +1,17 @@
+Optimalfall: Eigene Modellkonstruktion also auch Kombi der Konzepte mit Hyperparamsuche
+Nicht möglich aufgrund von Zeit und Ressourcen limitation
+
+Idee Architekturen, die auf mehreren Leaderboards gut performen, performen auch für meine Task gut
+Da Image Classification ähnliche Aufgabe nur mit anderen Klassen
+Nutze Hyperparameter der best perfomende Backbone Architekturen der Leaderboards
+
+No Model has all Leaderboards => not comparable per average rank
+=> Modelwise comparison in each category of models, if a model is listed several times we only take the highest rank
+=> Model winning over another model on more leaderboards is ranked above the other
+
+Capsule: CapsNet
+Residual: ResNet and ResNext are even, but ResNet is proofen to perform good on more leaderboards therefore we select ResNet
+Inception: ResNext
+CNN: VGG
+SepConv: EfficientNet and AmoebaNet are even, but EfficientNet is proofen to perform good on more leaderboards therefore we select EfficientNet
+Dense: DenseNet 

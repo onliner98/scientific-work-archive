@@ -1,0 +1,6 @@
+Abstract:
+- Deep Bi Direktional RNN with Attention and LSTM for triaging(zuweisen=classifizieren) von Bugs anhand des Bugtitels und der description
+Proposed Approach
+- Detailed description of NN and preprocessing
+Weiterführende Kapitel
+- Ergebnisse bis zu 41% F1 Score wahrscheinlich viele Klassen

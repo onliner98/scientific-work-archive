@@ -1,0 +1,6 @@
+Classifcation of Breast Cancer Images
+
+Compared larg, medium and small architectures => small Dataset => medium performed best
+
+Used Architectures: CNN-(2bzw.4)layer-(dropout), AlexNet, VGG
+

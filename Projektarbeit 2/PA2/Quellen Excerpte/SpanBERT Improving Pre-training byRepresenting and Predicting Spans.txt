@@ -1,0 +1,3 @@
+- BERT mit neuer unsupervised training objective
+- instead of predicting randomly masked words this model predics a span of masked words
+- the next sentence prediction objectiv is discarded completly

@@ -1,0 +1,107 @@
+%
+%   Prof. Dr. Julian Reichwald
+%   auf Basis einer Vorlage von Prof. Dr. Jörg Baumgart
+%   DHBW Mannheim
+%
+%
+%	ACHTUNG: Für das Erstellen des Literaturverzeichnisses wird das modernere Paket biblatex
+%			 in Kombination mit biber verwendet -- nicht mehr das ältere BibTex!
+% 			 Bitte stellen Sie ggf. Ihre TeX-Umgebung
+% 			 entsprechend ein (z.B. TeXStudio: Einstellungen --> Erzeugen --> Standard Bibliographieprogramm: biber)
+%
+
+\documentclass[
+	12pt,
+	BCOR=5mm,
+	DIV=12,
+	headinclude=on,
+	footinclude=off,
+	parskip=half,
+	bibliography=totoc,
+	listof=entryprefix,
+	toc=listof,
+	pointlessnumbers,
+	plainfootsepline]{scrreprt}
+
+%	Konfigurationsdatei einziehen
+\input{config}
+
+\begin{document}
+
+%% BITTE GEBEN SIE HIER DEN TITEL UND DIE AUTORIN / DEN AUTOR DER ARBEIT AN!
+%% DIESE INFORMATIONEN _MÜSSEN_ GESETZT SEIN, UM TITELBLATT, ABSTRACT UND
+%% EIGENSTÄNDIGKEITSERKLÄRUNG AUTOMATISCH ANZUPASSEN!
+\TitelDerArbeit{Konzeptionelle Entwicklung eines Lokalisierungstools für Movelets}
+\AutorDerArbeit{Fabian Wolf}
+\Firma{Honeywell International Inc.}
+\Kurs{WWI17SEC}
+
+\input{00_Vortexte/00_titlepage}
+
+\pagenumbering{roman} % Römische Seitennummerierung
+\normalfont
+
+%--------------------------------
+% Start der Vortexte der Arbeit
+%--------------------------------
+
+%	Kurzfassung
+\input{00_Vortexte/10_abstract}
+
+%	Inhaltsverzeichnis
+\tableofcontents
+
+%	Abbildungsverzeichnis
+\listoffigures
+
+%	Listingsverzeichnis
+ \lstlistoflistings
+
+% 	Abkürzungsverzeichnis (siehe Datei acronyms.tex!)
+\input{00_Vortexte/20_acronyms}
+
+%--------------------------------
+% Start des Textteils der Arbeit
+%--------------------------------
+\clearpage
+\ihead{\chaptername~\thechapter} % Neue Header-Definition (inner header)
+\ohead{\headmark} % Neue Header-Definition (outer header)
+\pagenumbering{arabic}  % Arabische Seitenzahlen
+
+\input{00_Vortexte/30_intro}
+\input{00_Vortexte/40_begriffe}
+\input{00_Vortexte/50_relwork}
+
+%--------------------------------
+% Start der Haupttexte der Arbeit
+%--------------------------------
+
+\input{01_Haupttexte/00_anforderungen}
+\input{01_Haupttexte/10_extract}
+\input{01_Haupttexte/20_exchange}
+\input{01_Haupttexte/30_inject}
+\input{01_Haupttexte/40_zeitpunkt}
+\input{01_Haupttexte/50_versionierung}
+\input{01_Haupttexte/60_fazit}
+\input{01_Haupttexte/70_diskussion}
+
+%--------------------------------
+% Start des Nachtexte der Arbeit
+%--------------------------------
+%	Literaturverzeichnis
+\ihead{} % Neue Header-Definition
+\printbibliography[title=Literaturverzeichnis]
+\cleardoublepage
+
+% Der Anhang beginnt hier - jedes Kapitel wird alphabetisch aufgezählt. (Anhang A, B usw.)
+\appendix
+\ihead{\appendixname~\thechapter} % Neue Header-Definition
+
+% appendix.tex einziehen
+\input{02_Nachtexte/00_appendix}
+
+% Ehrenwörtliche Erklärung ewerkl.tex einziehen
+\input{02_Nachtexte/10_ewerkl.tex}
+
+
+\end{document}

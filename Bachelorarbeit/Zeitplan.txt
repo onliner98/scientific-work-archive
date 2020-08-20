@@ -1,0 +1,12 @@
+02.03. - 11.05
+März	(4 Wochen)
+- Vorlesungen 0.5 Woche => Grundlagen
+- Literatur Review 3 Wochen
+- Dataset 0.5 Woche
+April	(4 Wochen)
+- Implementieren 2 Wochen
+- Experimente 1 Woche => Finde etwas zum berechnen
+- Schreiben 1 Woche
+Mai	(2 Wochen)
+- Schreiben 1 Woche
+- Korrektur/Puffer 1 Woche

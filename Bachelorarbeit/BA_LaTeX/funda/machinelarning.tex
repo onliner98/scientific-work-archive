@@ -1,0 +1,22 @@
+Machine learning in general is the art of training an algorithm to generate new information from data. The goal of machine learning is not to model explicitly how to extract this information, but to let the computer itself learn the model. \autocite{Mohri.2012} Machine learning has three main approaches: \autocite{ElAmir.2020}
+\begin{itemize}
+	\item Supervised learning \autocite{ElAmir.2020}
+	\item Unsupervised learning \autocite{ElAmir.2020}
+	\item Semi-supervised learning \autocite{ElAmir.2020}
+\end{itemize}
+As stated in Section \ref{sec:scope}, this paper is focused exclusively on supervised learning.
+
+\subsection{Supervised Learning}
+Supervised learning is the art of training an algorithm to generate new information from data samples and associated target outputs. The target outputs can consist of numeric values or string labels. String labels can be classes or tags. The goal of supervised learning is to learn a model that can predict the correct outputs when posed with new samples. Supervised learning approaches two problems: \autocite{ElAmir.2020}
+\begin{itemize}
+	\item Classification \autocite{ElAmir.2020}
+	\item Regression \autocite{ElAmir.2020}
+\end{itemize}
+As stated in Section \ref{sec:scope}, this paper is focused exclusively on classification.
+
+\subsection{Classification}
+Classification is the problem of assigning the correct output classes to samples. For image classification, the samples are images. For \ac{CNN}s, an image is represented as a multidimensional array. \autocites{ElAmir.2020}{LeCun.2015b} The output is computed using the $softmax$ function. The $softmax$ function computes the probabilities of each target class over all  possible $c$~target classes. The predicted target class is the class with the highest probability. The $softmax$ function is defined by Equation \eqref{eq:softmax}.\autocite{ElAmir.2020}
+\begin{equation}
+	\label{eq:softmax}
+	softmax(x) = \frac{e^x}{\sum_{i=0}^{c} e^{x_i}}
+\end{equation}

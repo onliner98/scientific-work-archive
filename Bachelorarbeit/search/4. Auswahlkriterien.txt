@@ -1,0 +1,7 @@
+Auswahl:
+- image classification
+- neural network beliebiger art
+Ausschluss:
+- andere AI Task (Semantic Segmentation, Object Detection, Image Generation und deren Subtasks z.b. superresolution)
+- andere ML Methoden (PCA, Vectospace Models, SVM, TF-IDF, Decision Trees, etc)
+- es sollte nicht zu alt sein => finde ich ein neures Dokument mit (fast) der selben zielstellung und besseren ergebnissen wird das alte verworfen

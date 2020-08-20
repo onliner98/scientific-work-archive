@@ -1,0 +1,3 @@
+Document Image Classification (Example Class Letter)
+
+Used Architecture: CNN

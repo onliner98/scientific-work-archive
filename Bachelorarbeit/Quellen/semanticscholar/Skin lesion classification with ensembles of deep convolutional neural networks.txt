@@ -1,0 +1,1 @@
+skin lesion classification with CNN Ensemble => diff. CNNs classifie per majority vote

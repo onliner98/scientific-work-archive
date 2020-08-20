@@ -1,0 +1,17 @@
+Introduction
+- Word Embeddings ist 1st Layer transferlearning
+Universal Language Model Fine-tuning(ULMFit)
+- Language Modeling (LM) captures many facets of language: 
+  - long term dependencies (Linzen et al. 2016)
+  - hierachical relations (Radford et al 2017)
+  - sentiment (Radford et al)
+  and has a lot of data available
+- For Testing the state of the art Language Model AWD_LSTM (Merity et al. 2017a) is used but any could be used
+- ULMFit
+  - Generald domain LM Pretraining: Language Modeling for a big general domain corpus
+  - Target Task LM Finetuning: Language Modeling for the Target Tasks corpus
+     - discriminative fine tuning: Different Layres capture different types f info (Yosinski et al. 2014) => lower learning rate for lower layers (Ruder 2016)
+     - Slanted triangular learning rates: Learning rate LR first increases over a few periods than decreases over more periods (Smith 2017) => helps with performance
+  - Target Task Classifier Finetuning: Replacing the LM Classifier with a Target Task Classifier (1 dense layer + 1 softmax layer) and training on the target task
+    - Input hc for the new Classifier: hc = [ht, maxpool(H), meanpool(H)], where [] is a concatination, ht is the last hidden state of the LM and H are all Hiddenstates of the LM
+    - Gradually unfreezing: To prevent catastrophic forgetting at the beginning only the last LM layer and the classifier can be updated each epoch one more layer is updated

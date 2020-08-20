@@ -1,0 +1,5 @@
+Vergleicht
+- CNN+MaxPooling+MLP
+- LSTM+MaxPooling+MLP
+- BiLSTM+Attention+MLP
+für sentiment classification

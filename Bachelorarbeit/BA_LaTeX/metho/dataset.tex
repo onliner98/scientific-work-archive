@@ -1,0 +1,17 @@
+This paper seeks to determine the best-performing neural network for tool image classification. For this reason, optimally, this paper would construct a huge dataset with various images from different classes of tools.\autocites{Howard.2013}{cifar.2012}{imagenet.2019}  
+However, time and resources of this paper are limited. Labeling huge amounts of data, such as data mined from the web, requires resources. On that account, this paper exclusively uses labeled data to construct the dataset. Labeled data can be acquired from already existing datasets and from creating inherently labeled images.
+\par
+This paper creates inherently labeled images. Inherently labeled images are created by taking all images of one class before taking images of another class and storing them in different folders. The resulting folder structure is comprised by a root folder containing one folder for each image class. The classes were chosen based on the available tools. The resulting classes are listed below.
+\begin{itemize}
+	\item drill
+	\item hammer
+	\item pliers
+	\item saw
+	\item screwdriver
+	\item wrench
+\end{itemize}
+The dataset is constructed for a tool image classification task. Thus, the created images each consist of exactly one tool. In real world scenarios, tools are presented from various angles and with various backgrounds. Due to this, the created images are taken from arbitrarily chosen angles and with arbitrarily chosen backgrounds. 
+\par
+A local joinery provided tools and the location for the creation of the dataset free of charge. The dataset was created by placing a tool in an arbitrarily chosen position and taking a series of close-up images. During the series, the camera was moved around the tool to create arbitrary angles. For the next series, the tool, the background, and/or the position of the tool was changed. 
+The images were created by volunteers and the author of this paper: Nina Eichler, Sophia Fai{\ss}t, Manuel Krumbacher, and Fabian Wolf. 
+The resulting dataset is provided publicly available under the Creative Commons Attribution-ShareAlike 4.0 International License. The dataset is appended in the digital appendix, see Section \ref{sec:digiappend}. The dataset is described in Section \ref{sec:experiment}

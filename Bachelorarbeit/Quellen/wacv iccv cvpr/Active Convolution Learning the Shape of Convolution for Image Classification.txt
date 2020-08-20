@@ -1,0 +1,3 @@
+Idea of the paper: CNNs perform good => learn the shape of the convolution instead of having a fixed convolution
+
+Does not rly seem to have a significant impact

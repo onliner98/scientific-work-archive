@@ -1,0 +1,3 @@
+Different Image Classification Tasks using 1 Network for context 1 Network for object => merging both with FC
+
+Used Architecture: Based on VGG 16

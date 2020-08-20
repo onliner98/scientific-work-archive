@@ -1,0 +1,11 @@
+Neural Network Approaches
+- CNN and RNN are most common structures
+Experiment
+- Tested for petroleum data text classification
+  - rnn
+  - lstm
+  - bi lstm
+  - stacked lstms (= multi layer lstm)
+  - gru
+  - cnn
+=> all perform rather close to each other

@@ -1,0 +1,2 @@
+pre-trained/unpre-trained CNNs for Geweb Classification
+pre-trained performed better than not pre-trained

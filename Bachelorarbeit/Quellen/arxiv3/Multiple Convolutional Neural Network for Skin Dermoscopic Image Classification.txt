@@ -1,0 +1,4 @@
+Classification of skin image classification
+Novel training strategy Duplicate wrong classified images in the training set
+
+Used Architectures: AlexNet, VGG, GoogLeNet, ResNet

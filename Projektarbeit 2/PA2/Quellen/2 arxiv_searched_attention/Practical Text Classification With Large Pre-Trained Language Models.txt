@@ -1,0 +1,16 @@
+Introduction
+- Sentiment Classification for 2 bzw. 8 Classes
+- Using mLSTM and Transformer pretrained on 40GB Data (McAuley et al. 2015) then finteuned on the task => transferlearning
+- Pre Training unsupervised for next word prediction can  learn nuanced features e.g. word ordering and doublenegation
+Background:
+- Finetuning: pre training + transferlearning (Radford, Jozefowicz, andSutskever 2017; Radford et al. 2018)
+- Finetuning works best if the whole model not just the last layer is finetuned (Howard and Ruder 2018)
+- Glue Leaderboard (Wang  et  al.  2018),
+Methodology
+- If the transfer task has short bzw. long input sequenzes the pre training task should have short bzw. long ones aswell
+- they use subwords igs 32000 made with bytepair encoding
+- encoder decoder architektur: Encoder ist das was nach dem pretraining bleibt, decoder ist das was den jweiligen task classifiziert für classification z.b. ein softmaxlayer
+Conclusion
+- Pretraining+Finetuning is a general framework for text classification (not only the sentiment tested in the paper)
+- Transformers perform better than mLSTM
+- This is especially usefull for niche tasks with few labels

@@ -1,0 +1,89 @@
+\chapter{Appendix}
+	\section{Aivy}
+	\label{sec:aivy}
+	\textbf{Unsere Challenge:}
+	\begin{itemize}
+		\item Wir bekommen von verschiedenen Firmen Stellenangebote mit JOBTITLE und JOBDESCRIPTION (und weiteren Variablen). Dabei sind beide Variablen in der Regel unstrukturiert/unstandardisiert. Beispiele ist z.B. Aldi Nord: \url{https://www.aldi-nord.de/karriere/job-search.html?filters=&location=}
+		\item Wir müssen diese JOBTITLES nun standardisieren bzw. kategorisieren: \enquote{Köche (m/w)}, \enquote{Koch (w/m/divers)}, \enquote{Saisonkoch in Gastro}, \enquote{Eventkoch}, \enquote{Diätkoch / Haushälter} oder \enquote{Küchenchef} müssen alle als \enquote{Koch/Köchin} kategorisiert werden. Das war ein einfaches Beispiel: Schau dir gerne mal \enquote{Vertriebler/in} auf Stepstone an, als weiteres Beispiel: \url{https://www.stepstone.de/5/ergebnisliste.html?stf=freeText&ns=1&qs=%5B%7B%22id%22%3A%22225456%22%2C%22description%22%3A%22Vertriebler%2Fin%22%2C%22type%22%3A%22jd%22%7D%5D&companyID=0&cityID=0&sourceOfTheSearchField=resultlistpage%3Ageneral&searchOrigin=Resultlist_top-search&ke=Vertriebler%2Fin&ws=&ra=30}
+	\end{itemize}
+	\textbf{Aufgabenstellung:}
+	\begin{enumerate}
+		\item Konzept für einen KI-Prozess / Data-Pipelines: Vergleiche Prozess von lengoo.de, die arbeiten da sehr sauber.
+		\item Auswahl geeigneter Machine Learning Methoden für das Pre-Processing von Stellenangeboten (Natural Language Processing) und die anschließende Kategorisierung (supervised/unsupervised learning).
+		\item Diskussion verschiedener Frameworks und IT-Infrastrukturen für die Implementierung des KI-Prozess (wir arbeiten z.B. generell mit AWS, was viele Funktionen auch im ML mitbringt, aber auch recht teuer ist).
+		\item  Umsetzung und Deployment des KI-Prozess und Training der KI (Dafür können wir Zugriff auf die Stepstone API geben. Das Training/Testing kann z.B. mit Stellenangeboten von Aldi Nord und weiteren
+		\item Unternehmen erfolgen. Die „menschliche“ Korrektur können wir über Amazon MTurk o.ä. Services abbilden).
+		\item Ausblick auf potenzielle Verbesserungen des KI-Prozesses sowie der eingesetzten ML-Methoden geben.
+	\end{enumerate}
+
+	\section{Training Data XML}
+	\begin{lstlisting}[language=xml,breaklines=true,label=lst:xml, caption={Training Data XML}]
+<job id="6098301">
+	<standardJobtitle>Elektrofachkraft</standardJobtitle>
+	<vocationId>2630</vocationId>
+	<matchRank>13</matchRank>
+	<title><![CDATA[Elektrofachkraft (m/w/d) im Gebäudemanagement]]></title>
+	<totalClick><![CDATA[0]]></totalClick>
+	<description><![CDATA[<p>Als eines der größten Verkehrsunternehmen in Südhessen wollen wir den Menschen in Darmstadt und im Landkreis Darmstadt-Dieburg ihre Mobilität so einfach wie möglich machen. Daher engagieren wir uns für einen attraktiven und leistungsfähigen Nahverkehr in der Region. Zur Verstärkung unseres Teams im Gebäudemanagement suchen wir eine Elektrofachkraft*.</p>  <p><strong>Wir suchen eine</strong></p>  <p><strong>Elektrofachkraft (m/w/d) im Gebäudemanagement</strong></p><br /><ul>   <li>Beseitigung von elektronischen Störungen in der Gebäudetechnik</li>   <li>Installations-, Wartungs- und Instandhaltungsarbeiten an Elektroanlagen</li>   <li>Erstprüfungen nach DGUV-V3 von Elektrogeräten</li>   <li>Unterstützung im Bereich des Gebäudemanagements bei allen anfallenden Arbeiten an Betriebsgebäuden und Außenstellen</li>  </ul><br /><ul>   <li>Abgeschlossene technische Berufsausbildung als Elektroniker* (bevorzugt Elektrofachkraft für Gebäudetechnik)</li>   <li>Mehrjährige Berufserfahrung im elektrotechnischen Bereich</li>   <li>Weiterbildung zur befähigten Person zur Prüfung von Elektrogeräten</li>   <li>Pkw-Führerschein</li>  </ul><br /><ul>   <li>Kollegiales Arbeitsumfeld mit kurzen Entscheidungswegen</li>   <li>Festanstellung | Gleitzeit | Individuelle Weiterbildungsmöglichkeiten</li>   <li>60 % Zuschuss zum Jobticket | Fahrradleasing | Fitnessstudiorabatte</li>   <li>Betriebliche Altersversorgung | Zuschüsse für Zahnersatz und Brillen</li>   <li>Kostengünstiges Betriebsrestaurant</li>  </ul>]]></description>
+	<url><![CDATA[https://www.stepstone.de/stellenangebote----20191016095639160---6098301-inline.html?cid=test_test_test]]></url>
+	<Category id="10002000" type="FUNCTION"><![CDATA[Elektrotechnik, Elektronik]]></Category>
+	<date><![CDATA[16.10.2019]]></date>
+	<Category id="222" type="STATUTE"><![CDATA[Feste Anstellung]]></Category>
+	<Category id="90002" type="EXPERIENCE"><![CDATA[Mit Berufserfahrung]]></Category>
+	<Category id="80001" type="WORKTYPE"><![CDATA[Vollzeit]]></Category>
+	<location><![CDATA[Darmstadt]]></location>
+	<postalcode><![CDATA[64285]]></postalcode>
+	<jobAddress1><![CDATA[Klappacher Straße 172]]></jobAddress1>
+	<jobAddress2><![CDATA[]]></jobAddress2>
+	<jobAddress3><![CDATA[]]></jobAddress3>
+	<jobCity><![CDATA[Darmstadt]]></jobCity>
+	<companyName><![CDATA[HEAG mobilo GmbH]]></companyName>
+	<geokoordinaten>
+	<latitude><![CDATA[49.85222625732422]]></latitude>
+	<longitude><![CDATA[8.668535232543945]]></longitude>
+	</geokoordinaten>
+	<company_logo><![CDATA[http://www.stepstone.de/upload_DE/logo/H/logoHEAG_mobilo_GmbH_68344DE.gif]]></company_logo>
+	<region><![CDATA[D-PLZ 64]]></region>
+	<sector id="17000"><![CDATA[Transport & Logistik]]></sector>
+</job>
+	\end{lstlisting}
+	\newpage
+	\section{Term Table}
+	\input{term_table}
+	
+	\section{Selection Criteria}
+	\label{sec:selection_criteria}
+	\begin{itemize}
+		\item Selected:
+		\begin{itemize}
+			\item Classification of a corpus according to its content
+			\item realized with any neural model
+		\end{itemize}
+		\item Excluded
+		\begin{itemize}
+			\item ensembles of neural and non neural models
+			\item non neural models like Bayesian models, SVM, TF-IDF, etc.
+			\item papers not publicly available
+		\end{itemize}
+	\end{itemize}
+	
+	\section{Concept Matrix}
+	\input{concept_matrix}
+	
+	\section{Hyperparameters for Fine-Tuning}
+	Table \ref{tab:fine_tuning} lists the hyperparameters used to fine-tune XLNet on the RACE, SQUAD, MNLI and Yelp-5 task. Layer-wise decay refers to exponentially decaying the learning rates for each layer from highest to lowest. Given an initial learning rate $l$, a layer-wise decay rate $\alpha$ and $M$ layers, the learning rate of the layer $m$ is $l \alpha M - m$. \autocite{Yang.2019}
+	\begin{xltabular}{\textwidth}{lXXXX}\toprule
+		\caption{Hyperparameters for Fine-Tuning} \label{tab:fine_tuning}\\
+		\textbf{Hyperparameter} & \textbf{RACE} & \textbf{SQUAD} & \textbf{MNLI} & \textbf{Yelp-5} \\\midrule
+		Dropout & $0.1$ & $0.1$ & $0.1$ & $0.1$ \\\midrule
+		Attention dropout & $0.1$ & $0.1$ & $0.1$ & $0.1$ \\\midrule
+		Max sequence length & $512$ & $512$ & $128$ & $512$ \\\midrule
+		Batch size & $32$ & $48$ & $128$ & $128$ \\\midrule
+		Initial learning rate & $2 \times 10^{-5}$ & $3 \times 10^{-5}$ & $3 \times 10^{-5}$ & $3 \times 10^{-5}$ \\\midrule
+		Number of steps & $12K$ & $8K$ & $10K$ & $10K$ \\\midrule
+		Learning rate decay & linear & linear & linear & linear \\\midrule
+		Weight decay & 0 & 0 & 0 & 0 \\\midrule
+		Adam epsilon & $1 \times 10^{-6}$ & $1 \times 10^{-6}$ & $1 \times 10^{-6}$ & $1 \times 10^{-6}$ \\\midrule
+		Layer-wise decay rate & $1.0$ & $0.75$ & $1.0$ & $1.0$ \\\midrule
+		
+	\end{xltabular}

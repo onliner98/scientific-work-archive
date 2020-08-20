@@ -1,0 +1,4 @@
+MRI Image CLassification of tumors
+
+
+Used Architecture: Based on ResNet, InceptionResNet

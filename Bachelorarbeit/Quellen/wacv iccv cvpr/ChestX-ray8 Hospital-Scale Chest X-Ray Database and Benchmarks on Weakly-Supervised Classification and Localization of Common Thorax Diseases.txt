@@ -1,0 +1,3 @@
+Novel Dataset for Lung Deseases (First Classify than Localize (Multilabel possible))
+
+Used Models: AlexNet, GoogLeNet, VGGNet, ResNet

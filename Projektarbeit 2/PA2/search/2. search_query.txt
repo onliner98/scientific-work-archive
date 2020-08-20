@@ -1,0 +1,15 @@
+Query beginnt mit diesem Grundgerüst und wird je nach anzahl der suchergebnisse verfeinert bis eine in angemessener zeit sichtbare anzahl von Papern angezeigt wird
+
+(classification OR categorisation) AND 
+(text OR document OR paragraph OR sentence)
+
+classification text neural
+classification text rnn
+classification text cnn
+classification text transformer
+
+
+categorization text neural
+categorization text rnn
+categorization text cnn
+categorization text transformer

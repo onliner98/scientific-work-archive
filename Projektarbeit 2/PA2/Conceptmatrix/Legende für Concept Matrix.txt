@@ -1,0 +1,8 @@
+RNN,LSTM,GRU: Wenn nichts anderes da steht wird letzter hiddenstate immer in softmax/sigmoid gefeeded
+CNN: Wenn nichts anderes da steht geh ich von Wordlevel CNN 1DConv aus bei dem die letzte outputmatrix maxpooled wird und in softmax/sigmoid gefeeded
+SGM: Encoder encoded document decoder decoded last hidden state als sequenz von laben
+Att.: Self Attention
+Res.: Resudial Connections
+LWA: Label Wise Attention
+MLP: 1-n fully connected (dense) layer
+Hierachical: Bottom Netzwerk fasst WordVectors zu SentenceVectors zusammen. Top Netzwerk fast SentenceVectors zu DocumentVectors zusammen. Softmax classifiziert DocVec

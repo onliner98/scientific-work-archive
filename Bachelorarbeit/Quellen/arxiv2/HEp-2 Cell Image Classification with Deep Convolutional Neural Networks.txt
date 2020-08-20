@@ -1,0 +1,3 @@
+Cellen Classifizieren
+
+Used Architecture: CNN (maxpooling, fully connected and softmax on top)

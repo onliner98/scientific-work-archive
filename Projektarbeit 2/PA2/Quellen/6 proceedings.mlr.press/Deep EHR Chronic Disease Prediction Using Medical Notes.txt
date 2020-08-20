@@ -1,0 +1,4 @@
+Introduction
+- clinical text classification (Baumel et al. 2017)
+
+Use CNN and LSTM for prediction

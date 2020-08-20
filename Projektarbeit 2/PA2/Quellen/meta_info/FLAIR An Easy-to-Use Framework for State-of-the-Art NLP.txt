@@ -1,0 +1,2 @@
+Framework for Word EMbeddings
+- pip install flair

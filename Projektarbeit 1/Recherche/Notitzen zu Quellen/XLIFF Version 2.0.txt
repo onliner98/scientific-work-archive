@@ -1,0 +1,384 @@
+[1.1.2 Definitions]
+Agent: application handling XLIFF Documents(reads, writes, proecesses)
+Enrich(ing): associating module and extension based metadata and resources with the Extracted XLIFF payload
+Extract(ion): Encoding localizable content from a native content or User Interface format as XLIFF payload so that localizable parts of the content
+	      in the source language are available for Translation into the target language along with the necessary context information.
+Merg(e/ing): importing XLIFF payload back to the originating native format, based on the full knowledge of the Extraction mechanism,
+	     so that the localized content or User Interface strings replace the source language in the native format 
+Modif(y/ication): changing XLIFF elements that were previously created by other Writers
+Translat(e/ion): Expressing the meaning of the source text in the target language
+[1.1.3 Key concepts]
+Goal of XLIFF 2.0: Provide xml elements and attributes for:
+- Storing extracted content from a resource
+- Complete the content with translation
+- Merging translated content back into the original ressource
+Namespace XLIFF 2.0: urn:oasis:names:tc:xliff:document:2.0
+schema URN prefixes XLIFF 2.0: urn:oasis:names:tc:xliff:
+[4 The Core Specification]
+General Xlif Structure:
+1 		= one
++ 		= one or more
+? 		= zero or one
+* 		= zero or more
++---<element A>
+|		= element A is followed by element B not the otherway around
++---<element B>
+<element >
+  |		= element A MAY contain element B
+  +---<element B>
+<other>		= elements from other namespaces
+<xliff> 
+| 
++---<file> + 
+  |  
+  +---<skeleton> ?
+  | |  
+  | +---<other> *
+  |  
+  +---<other> *
+  |  
+  +---<notes> ?  
+  | |  
+  | +---<note> +
+  |
+  +---At least one of (<unit> OR <group>)
+      | |
+      | +---<unit>
+      |   |
+      |   +---<other> *
+      |   |
+      |   +---<notes> ?
+      |   | |
+      |   | +---<note> +
+      |   |
+      |   +---<originalData> ?
+      |   | |
+      |   | +---<data> +
+      |   |
+      |   +---At least one of (<segment> OR <ignorable>)
+      |       | |
+      |       | +---<segment>
+      |       |   |
+      |       |   +---<source> 1
+      |       |   |
+      |       |   +---<target> ?
+      |       |
+      |       +---<ignorable>
+      |           |
+      |           +---<source> 1
+      |           |
+      |           +---<target> ?
+      |     
+      +---<group>
+          |
+          +---<other> *
+          |
+          +---<notes> ?
+          | |
+          | +---<note> +
+          |
+          +---At least one of (<unit> OR <group>)
+[4.2.2.1 xliff]
+Root element for XLIFF documents. 
+Attributes: 
+- version, REQUIRED 
+- srcLang, REQUIRED 
+- trgLang, OPTIONAL 
+- xml:space, OPTIONAL 
+- attributes from other namespaces, OPTIONAL
+[4.2.2.2 file]
+Container for localization material extracted from an entire part of the content structure that cannot be described in the terms of documents
+Attributes: 
+- id, REQUIRED 
+- canResegment, OPTIONAL 
+- original, OPTIONAL 
+- translate, OPTIONAL 
+- srcDir, OPTIONAL 
+- trgDir, OPTIONAL 
+- xml:space, OPTIONAL 
+- attributes from other namespaces, OPTIONAL
+Constraints
+- <other> elements:
+  - ? <ctr:changeTrack> elements 
+  - ? <mda:metadata> elements 
+  - ? <res:resourceData> element 
+  - ? <slr:profiles> elements 
+  - ? <slr:data> elements 
+  - ? <val:validation> elements 
+- other attributes:
+  - fs:fs, OPTIONAL
+  - fs:subFs, OPTIONAL
+  - slr:storageRestriction, OPTIONAL
+  - slr:sizeRestriction, OPTIONAL
+  - slr:sizeInfo, OPTIONAL
+  - slr:sizeInfoRef, OPTIONAL
+[4.2.2.3 skeleton] Container for non-translatable material pertaining to the parent <file> element. 
+Attributes: 
+- href, REQUIRED only if <skeleton></skeleton> is empty but FORBIDDEN if it is not empty
+[4.2.2.4 group]
+Provides a way to organize units into a structured hierarchy. Useful for mirroring a source format's hierarchical structure.
+Attributes: 
+- id, REQUIRED 
+- name, OPTIONAL 
+- canResegment, OPTIONAL 
+- translate, OPTIONAL 
+- srcDir, OPTIONAL 
+- trgDir, OPTIONAL 
+- type, OPTIONAL 
+- xml:space, OPTIONAL 
+- attributes from other namespaces, OPTIONAL 
+Constraints
+- <other> elements:
+  - ? <ctr:changeTrack> elements 
+  - ? <mda:metadata> elements
+  - ? <slr:data> elements
+  - ? <val:validation> elements
+- other attributes:
+  - fs:fs, OPTIONAL
+  - fs:subFs, OPTIONAL
+  - slr:storageRestriction, OPTIONAL
+  - slr:sizeRestriction, OPTIONAL 
+  - slr:sizeInfo, OPTIONAL 
+  - slr:sizeInfoRef, OPTIONAL
+[4.2.2.5 unit]
+Static container for a dynamic structure of elements holding the extracted translatable source text, aligned with the Translated text. 
+Attributes: 
+- id, REQUIRED 
+- name, OPTIONAL 
+- canResegment, OPTIONAL 
+- translate, OPTIONAL 
+- srcDir, OPTIONAL 
+- trgDir, OPTIONAL 
+- xml:space, OPTIONAL 
+- type, OPTIONAL 
+- attributes from other namespaces, OPTIONAL
+Constraints
+- <other> elements:
+  - ? <ctr:changeTrack> elements 
+  - ? <mtc:matches> elements
+  - ? <gls:glossary> elements
+  - ? <mda:metadata> elements
+  - ? <res:resourceData> elements 
+  - ? <slr:data> elements
+  - ? <val:validation> elements
+- other attributes:
+  - fs:fs, OPTIONAL
+  - fs:subFs, OPTIONAL
+  - slr:storageRestriction, OPTIONAL
+  - slr:sizeRestriction, OPTIONAL 
+  - slr:sizeInfo, OPTIONAL 
+  - slr:sizeInfoRef, OPTIONAL
+[4.2.2.6 segment]
+container holding a Segment of the content (Segmentationrules are not specified by this e.g. A segment might be button ,paragraph, ,title, etc.)
+Attributes: 
+- id, OPTIONAL 
+- canResegment, OPTIONAL 
+- state, OPTIONAL 
+- subState, OPTIONAL 
+[4.2.2.7 ignorable]
+Part of the extracted content that is not included in a segment e.g. whitespaces between to segments
+Attributes: 
+- id, OPTIONAL
+[4.2.2.8 notes]
+Collection of comments
+[4.2.2.9 note]
+textual comments and annotations regarding <source>, <target>, <unit>, <group>, or <file> elements. 
+Attributes: 
+- id, OPTIONAL 
+- appliesTo, OPTIONAL
+- category, OPTIONAL 
+- priority, OPTIONAL 
+- attributes from other namespaces, OPTIONAL 
+Constraints
+- other attributes:
+  - fs:fs, OPTIONAL
+  - fs:subFs, OPTIONAL
+[4.2.2.10 originalData]
+Collection of original data
+[4.2.2.11 data ]
+Contains: 
+- Non-translatable text 
+- * <cp> inline elements
+Attributes: 
+- id, REQUIRED 
+- dir, OPTIONAL 
+- xml:space, OPTIONAL, the value is restricted to preserve on this element
+[4.2.2.12 source]
+Portion of text to be translated. 
+Contains
+- Text
+- Any inline element ins any order
+Attributes: 
+- xml:lang, OPTIONAL 
+- xml:space, OPTIONAL 
+[4.2.2.12 target]
+translation of the sibling <source> element.
+Contains
+- Text
+- Any inline element ins any order
+Attributes: 
+- xml:lang, OPTIONAL 
+- xml:space, OPTIONAL 
+- order, OPTIONAL
+Constraints
+explicit/inherited value of xml:lang MUST be equal to the value of the <xliff> element's trgLang
+[Inline Elements]
+- <cp> Represents a Unicode character that is invalid in XML
+  - Contains: nothing
+  -Attributes: hex, REQUIRED
+- <ph> Contains a reference to a <data> element in the <originalData> element
+  - Contains: nothing
+  -Attributes
+    - canCopy, OPTIONAL 
+    - canDelete, OPTIONAL
+    - canReorder, OPTIONAL 
+    - copyOf, OPTIONAL 
+    - disp, OPTIONAL 
+    - equiv, OPTIONAL 
+    - id, REQUIRED. 
+    - dataRef, OPTIONAL 
+    - subFlows, OPTIONAL
+    - subType, OPTIONAL 
+    - type, OPTIONAL 
+    - attributes from other namespaces, OPTIONAL
+  -Constraints
+    - other attributes:
+      - fs:fs, OPTIONAL 
+      - fs:subFs, OPTIONA
+      - slr:equivStorage, OPTIONAL
+      - slr:sizeInfo, OPTIONAL
+      - slr:sizeInfoRef, OPTIONAL
+- <pc> Contains 2 references to 2 <data> element in the <originalData> element, welche den content des <pc>content</pc>elements umspannen
+  - Contains: Text or other inline elements
+  - Attributes: 
+    - canCopy, OPTIONAL 
+    - canDelete, OPTIONAL 
+    - canOverlap, OPTIONAL 
+    - canReorder, OPTIONAL 
+    - copyOf, OPTIONAL 
+    - dispEnd, OPTIONAL 
+    - dispStart, OPTIONAL 
+    - equivEnd, OPTIONAL 
+    - equivStart, OPTIONAL 
+    - id, REQUIRED 
+    - dataRefEnd, OPTIONAL 
+    - dataRefStart, OPTIONAL 
+    - subFlowsEnd, OPTIONAL 
+    - subFlowsStart, OPTIONAL 
+    - subType, OPTIONAL 
+    - type, OPTIONAL 
+    - dir, OPTIONAL 
+    - attributes from other namespaces, OPTIONAL 
+  - Constraints 
+    - other attributes:
+      - fs:fs, OPTIONAL 
+      - fs:subFs, OPTIONAL 
+      - slr:storageRestriction, OPTIONAL 
+      - slr:sizeRestriction, OPTIONAL 
+      - slr:equivStorage, OPTIONAL 
+      - slr:sizeInfo, OPTIONAL 
+      - slr:sizeInfoRef, OPTIONAL
+- <sc> <ec> unterteilen <pc> in start und end also statt <pc>content<pc> nutzt man </sc>content</ec> Attribute and Constraints are the same
+  - Contains: nothing
+- <mrk> Umspannt content, welchem eine annotation zugeordnet wird(z.b. translate, comment)
+  - Contains: Text or other inline elements
+  - Attributes: 
+    - id, REQUIRED
+    - translate, OPTIONAL
+    - type, OPTIONAL
+    - ref, OPTIONAL
+    - value, OPTIONAL
+    - attributes from other namespaces, OPTIONAL
+  - Constraints 
+    - The [XML namespace] MUST NOT be used at this extension point.
+    - other attributes:
+      - fs:fs, OPTIONAL 
+      - fs:subFs, OPTIONAL 
+      - slr:storageRestriction, OPTIONAL 
+      - slr:sizeRestriction, OPTIONAL 
+- <sm> <em>. unterteilen <mrk> in start und end also statt <mrk>content<mrk> nutzt man </sm>content</em> Attribute and Constraints are the same
+  - Contains: nothing
+[4.3.1 XLIFF Attributes]
+- appliesTo:	Gibt an welches element von <note> betroffen ist
+- canCopy:	indicates whether or not the inline code can be copied
+- canDelete:	indicates whether or not the inline code can be deleted
+- canOverlap:	<pc canOverlap="no">nurPC,<sc canOverlap="yes"/>beides</pc>nurEC</ec>
+- canReorder:	indicates whether a given code can be moved before or after another inline code
+- canResegment:	indicates whether or not the source text in the scope of the given canResegment flag can be reorganized into a different structure of <segment> elements within the same parent <unit>.
+- category:	provides a way to categorize notes
+- copyOf:	holds the id of the base code of a copied code
+- dataRef:	holds the identifier of the <data> element that contains the original data for a given inline code
+- dataRefEnd:	holds the identifier of the <data> element that contains the original data for the end marker of a given inline code. 
+- dataRefStart:	holds the identifier of the <data> element that contains the original data for the start marker of a given inline code
+- dir:		indicates the directionality of content. 
+  - Values:	ltr (Left-To-Right), rtl (Right-To-Left), or auto (determined heuristically, based on the first strong directional character in scope[UAX #9]). 
+- disp:		holds an alternative user-friendly display representation of the original data of the inline code. e.g.   <data id="d1">{1}</data> ... <source>Welcome back <ph id="1" disp="[UserName]" dataRef="d1"/>!</source> 
+- dispEnd:	holds an alternative user-friendly display representation of the original data of the end marker of an inline code
+- dispStart:	holds an alternative user-friendly display representation of the original data of the start marker of an inline code
+- equiv:	
+- equivEnd:	
+- equivStart:	
+- hex:		
+- href:		
+- id:		
+- isolated:	
+- name:		original identifier of the resource corresponding to the Extracted <unit> or <group>. 
+  - e.g. 
+    - key of key-value-pair in a Java properties file
+    - ID of a string in a Windows string table
+    - index value of an entry in a database table, etc. 
+- order:	
+- original:	
+- priority:	
+- ref:		
+- srcDir:	
+- srcLang:	
+- startRef:	
+- state:	
+- subFlows:	
+- subFlowsEnd:	
+- subFlowsStart:
+- subState:	
+- subType:	
+- trgLang:	
+- translate:	
+- trgDir:	
+- type:		
+- value:	
+- version:	
+[4.7 Inline Content ]
+inline content defines how to encode the content Extracted from the original source
+- Textual content
+- Inline codes:		formatting codes, variable placeholders, etc. e.g.: the element <b> in HTML, or the placeholder {0} in a Java string.
+- Annotations:		Markers that delimit a span of the content and carry or point to information about the specified content. 
+[4.3.1.13 disp]
+E.G. for Placehodler:
+<unit id="1"> 
+  <originalData>  
+    <data id="d1">{1}</data> 
+  </originalData> 
+  <segment> 
+    <source>Welcome back <ph id="1" disp="[UserName]" dataRef="d1"/>!</source>
+  </segment> 
+</unit> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

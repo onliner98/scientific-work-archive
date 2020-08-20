@@ -1,0 +1,47 @@
+\chapter{Anforderungen an das Lokalisierungstool}
+\label{chp:anforderungen}
+Zum Zweck der Anforderungsanalyse ist zunächst das Ziel der Arbeit zu betrachten.
+\begin{quote}
+	Ziel dieser Arbeit ist die Konzeption einer Software, welche zu übersetzende und übersetzte Strings der Texte eines Movelets automatisiert verarbeitet.
+\end{quote}
+Zur automatisierten Verarbeitung von Strings müssen diese zunächst erfasst werden. Hierzu ist zu betrachten, in welchem Kontext Strings in Movelets vorkommen. Der Quelltext von Movelets ist String-basiert und wird in den Programmiersprachen \ac{MXML} und \ac{MEL} geschrieben. Für die automatisierte Verarbeitung sind ausschließlich die zu übersetzenden Strings des Quelltexts relevant. Zu übersetzende Strings werden auf der Benutzeroberfläche des Movelets angezeigt. Auf der Benutzeroberfläche angezeigte Strings werden als Benutzeroberflächenstrings bezeichnet. Benutzeroberflächenstrings sind in \ac{MXML} entweder Inhalt von Elementen oder Werte von Attributen.
+\autocite[Vgl.][]{Nitschkowski.2016}
+Eine weitere Form der Auslagerung von Benutzeroberflächenstrings sind die durch \ac{MXML} ausgezeichneten Stammdaten.
+\autocite[Vgl.][]{Nitschkowski.2016b}
+Die Programmiersprache \ac{MEL} zeichnet Benutzeroberflächenstrings in Form von Stringliteralen aus. Zwecks Auszeichnung wird entweder der Apostroph(U+0027):$'$ oder das Anführungszeichen(U+0022):$"$ verwendet. Im Kontext dieser Arbeit werden Apostroph und Anführungszeichen unter dem Begriff Anführungszeichen zusammengefasst.
+\autocite[Vgl.][]{Nitschkowski.2018}
+Seit 2018 ist es möglich \ac{MXML}- und \ac{MEL}-Quelltext mithilfe des Movilizer Gradle Plug"~ins zu erzeugen. Dieses Plug"~in ermöglicht die Verwendung von Ressource Dateien, welche Benutzeroberflächenstrings als Wert von Schlüssel-Wert-Paare beinhalten.
+\autocite[Vgl.][]{Mula.2018}
+Folglich muss das Lokalisierungstool folgende Strings erfassen:
+\begin{itemize}
+	\item \ac{MXML}-Elemente inklusive Stammdatenelement, siehe Beispiel \ref{lst:md}
+	\item \ac{MXML}-Attribute inklusive Stammdatenelement, siehe Beispiel \ref{lst:md}
+	\item \ac{MEL}-Stringliterale, siehe Beispiel \ref{lst:mel}
+	\item Werte in Movilizer Gradle Plug"~in Ressource Dateien, siehe Beispiel \ref{lst:rscfile}
+\end{itemize} 
+\begin{lstlisting}[caption={MXML-Elemente und -Attribut inklusive Stammdaten}, label={lst:md}]
+<masterdataPoolUpdate pool="customerData">
+	<update key="user_Cus1" group="USA">
+		<data>
+			<entry name="name">
+				<valstr>name_Cus1 Doe</valstr>
+			</entry>
+		</data>
+	</update>
+</masterdataPoolUpdate>
+\end{lstlisting}
+\begin{lstlisting}[caption={MEL-Stringliterale}, label={lst:mel}]
+<onScreenValueChangeEvent>
+	function(k, cK, v, d) {
+		setAnswerValueByClientKey(k, cK, "msg_Greet")
+	}
+</onScreenValueChangeEvent>
+\end{lstlisting}
+\begin{lstlisting}[caption={Werte in Movilizer Gradle Plug"~in Ressource Dateien}, label={lst:rscfile}]
+Key1: msg_Greet
+Key2:
+	nestedKey: msg_Bye
+\end{lstlisting}
+Ziel der automatisierten Verarbeitung von zu übersetzenden Strings ist es eine übersetztes Movelet zu erzeugen. Zu diesem Zweck werden zu übersetzende Strings extrahiert und übersetzt. Resultierend daraus müssen extrahierte Strings in einem Format gespeichert sein, welches ohne Kompatibilitätsprobleme an einen Übersetzer oder eine Übersetzungssoftware weitergeleitet werden kann. Die übersetzten Strings müssen anschließend im selben Format empfangen werden. Die extrahierten Strings werden im Quelltext durch die Übersetzten ausgetauscht. 
+\par
+Des Weiteren ist zu bedenken, dass Lokalisierung und Entwicklung des Movelets gegebenenfalls parallelisiert werden, um eine gleichzeitige Veröffentlichung mehrerer Lokalisierungen des Movelets zu ermöglichen. Aus diesem Grund muss das Lokalisierungstool Deltas erkennen, um redundantes Extrahieren zuvor bereits extrahierter Strings zu vermeiden. Zusätzlich ist es gegebenenfalls nötig, eine zuvor lokalisierte und verworfene Version wiederherzustellen. Daher ist die Versionsverwaltung im Kontext des Lokalisierungstools zu beachten.

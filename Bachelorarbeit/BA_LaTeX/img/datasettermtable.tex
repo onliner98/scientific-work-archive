@@ -1,0 +1,8 @@
+\begin{xltabular}{\textwidth}{lXXXXX}\toprule
+	\caption{Concept Matrix} \label{tab:datasettermtable}\\
+	\textbf{Term} & \textbf{General Term} & \textbf{Subsumable Term} & \textbf{Related Term} & \textbf{Synonym}  & \textbf{Related Term} \\\midrule \endhead
+	\csvreader[late after line=\\\midrule,late after last line=\\\bottomrule, /csv/separator=semicolon]
+	{img/datasettermtable.csv}
+	{}
+	{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi}
+\end{xltabular}

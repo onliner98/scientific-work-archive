@@ -1,0 +1,23 @@
+\chapter{Schnittstelle des Lokalisierungstools zu anderer Software}
+Wie in Kapitel \ref{chp:anforderungen} erarbeitet, müssen zur automatischen Verarbeitung von zu übersetzenden und übersetzten Strings die extrahierten Strings übersetzt werden. Übersetzer werden beim Übersetzen extrahierter Strings in der Regel von Übersetzungssoftware unterstützt. Des Weiteren werden Übersetzungen in \ac{TM} und/oder Terminologiedatenbanken gespeichert. 
+\autocite[Vgl.][S. 187]{OBrien.2010}
+Zu diesem Zweck werden die extrahierten Strings an andere Software gesendet. Die übersetzten Strings müssen von dem Lokalisierungstool empfangen werden. Deshalb ist ein kompatibles Austauschformat benötigt, in welches das Lokalisierungstool zu übersetzende Strings speichert, beziehungsweise aus welchem das Lokalisierungstool übersetzte Strings ausliest. Dieses Austauschformat bietet die Schnittstelle des Lokalisierungstools zu anderer Software.
+\par
+Die Standards, welche Austauschformate für Daten der Lokalisierung definieren, wurden in Kapitel \ref{chp:relwork} vorgestellt. Der in Kapitel \ref{chp:extract} für die Extraktion von Strings vorgesehene \ac{ITS} Standard unterstützt \ac{XLIFF}, welches von \textit{\ac{OASIS}} entwickelt wurde.
+\autocite[Vgl.][]{Filip.2013}
+Des Weiteren ist \ac{XLIFF} ein Meta-Lokalisierungsformat, welches aus anderen Formaten erzeugbar und in andere Formate umwandelbar ist.
+\autocite[Vgl.][S. 162]{Reineke.2005}
+Aus diesen Gründen wird \ac{XLIFF} als Schnittstelle des Lokalisierungstools verwendet.
+\ac{XLIFF} bietet zwei Elemente. Das eine Element passt zur Verarbeitung zu übersetzender Strings und das andere Element zur Verarbeitung übersetzter Strings. Das \mbox{\textit{source}} Element enthält zu übersetzenden Text.
+\autocite[Vgl.][S. 21]{Schnabel.2014}
+Infolgedessen werden die von dem Lokalisierungstool extrahierten zu übersetzenden Strings in diesem Element gespeichert.
+Das \mbox{\textit{target}} Element enthält die Übersetzung zu dem ihm zugehörigen \mbox{\textit{source}} Element. 
+\autocite[Vgl.][S. 21]{Schnabel.2014}
+Aus diesem Grund werden in diesem Element die übersetzten Strings gespeichert, mit welchen das Lokalisierungstool die zu übersetzenden Strings ersetzt.
+\par
+Die Lokalisierung eines Movelets muss gegebenenfalls in unterschiedlichen Sprachen erfolgen. Deshalb müssen für jede Übersetzung eigene \ac{XLIFF} Inhalte erzeugt werden. In der Konsequenz muss die Sprache der Übersetzungen vor dem Extrahieren und vor dem Ersetzen der Strings angegeben werden. Die Sprache der Übersetzungen der \ac{XLIFF} Inhalte kann in dem jeweiligen \mbox{\textit{trgLang}} Attribut gespeichert werden.
+\par
+Die \ac{XLIFF} Inhalte werden in \ac{XLIFF} Dateien gespeichert. Es ist möglich diese Inhalte in einer einzigen Datei zu speichern. In dem Falle, dass das Movelet eine große Anzahl zu übersetzender Strings beinhaltet, ist diese Datei sehr umfangreich. Zum Zweck der Extraktion zu übersetzender Strings und Ersetzung dieser müssen die jeweiligen Strings eingefügt, beziehungsweise gesucht werden. Zusätzliche Struktur ermöglicht den Einsatz von Sortier- und Suchalgorithmen mit einem geringeren Aufwand. 
+\autocite[Vgl.][S. 51]{Suresh.2018}
+\autocite[Vgl.][S. 1723]{Hoda.2015}
+Folglich wird das Verarbeiten der Inhalte effizienter. Aufgrund dessen ist es sinnvoll, die Ressourcen innerhalb einer Dateistruktur zu ordnen. Das Herausarbeiten der effizientesten Struktur ist nicht Teil dieser Arbeit und für die Implementierung des Lokalisierungstools offengelassen.

@@ -1,0 +1,3 @@
+Data Augmentation/Learning Objective for Image Classification => Max 2 Images from 2 Different Classes => Model should predict mix ration
+
+Used Modesl: 11-layer CNN, ResNet-29, DenseNet, ResNeXt-29[28] 

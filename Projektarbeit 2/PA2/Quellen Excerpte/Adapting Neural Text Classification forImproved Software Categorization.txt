@@ -1,0 +1,1 @@
+Hat Keras Code für ein Convolutional LSTM c-LSTM

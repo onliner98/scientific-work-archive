@@ -1,0 +1,1 @@
+Residual Network with attention mechanism => Network splits into two branhces (=path) 1 branch computes the weight => after each weighting process the branches are merged again

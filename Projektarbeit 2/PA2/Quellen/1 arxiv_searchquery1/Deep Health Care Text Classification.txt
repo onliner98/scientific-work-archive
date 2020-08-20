@@ -1,0 +1,10 @@
+Vektor Representation:
+- Tokenize all Words
+- Form Dictionary each word gets assigned a number, unknown get assigned 0
+- Represent a tweet as sequenz of numbers corresponding to the word in the dictionary
+=> Fixed sized Vektors => Truncate or 0 Padd
+- Embedding Layer Transformiert jeden Wert im Tweet Vector in einen WordEmbedding Vektor
+Experiment:
+- vanilla LSTM für 3 Klassen Problem
+Ergebniss:
+- funktioniert mit wenigen daten, aber nicht überragend

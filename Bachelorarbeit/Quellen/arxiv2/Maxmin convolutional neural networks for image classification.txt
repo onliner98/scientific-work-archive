@@ -1,0 +1,2 @@
+MaxMinCNN=CNN das activation und gegenteilige activation lernt => concatinated in einer featuremap Tested on MNIST
+

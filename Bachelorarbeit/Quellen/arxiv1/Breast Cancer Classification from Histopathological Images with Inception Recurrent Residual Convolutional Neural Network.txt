@@ -1,0 +1,5 @@
+Image classification of cancer
+
+Used Architecture: Inception Recurrent Residual CNN (IRRCNN)
+
+Recurrent Means the Convolution is recurrent[24]

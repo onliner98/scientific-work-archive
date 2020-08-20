@@ -1,0 +1,14 @@
+Introduction
+- featureselection improves performance [6-9]
+- sparsity problems for Bag of Words oder ähnliches is solved by distributed representations [10-11]
+- too deep networks perform worse [14-16]
+Related Work
+- feature selection types: embedding, filter, wrapper
+- some feature selection algos are listed
+- Deep Learning Models Automate the previously described process of feature engineering [16]
+- Some examples of hybrid appoaches (feature engineering+restrictedboltzmanmachines+deep learning) => irrelevant für mich
+Methodology
+- Aufbau des Classifiers: Featureselection -> Multi Channel CNN -> MaxPooling -> DenseLayer -> SoftmaxLayer
+Experimental Setup
+- vgl Classifier von oben mit selben ohne featureselection
+- BBC News Dataset hat 5 classes, 20 News Group hat 20 classes

@@ -1,0 +1,1 @@
+CNN for classification on CIFAR-10, MNIST

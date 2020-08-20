@@ -1,0 +1,8 @@
+Classification of Sketches 
+=> Special Learning Objective: instead of directly predicting the class give the network a real image of the class, a real image of another class and a sketch
+=> Architecture training: 3 CNNs (real img from class, sketch, real img other class) merged by CNN => Predict with 2 Loss
+=> Architecture predicting: Merged the training layers => CNN
+
+Compared Models: SketchNet, AlexNet[20], GoogLeNet[32], NIN [23], VGGNet [5]
+
+SkethNet wins for this tasks (but is specifically designed for this task)

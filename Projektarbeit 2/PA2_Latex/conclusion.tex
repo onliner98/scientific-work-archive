@@ -1,0 +1,29 @@
+\chapter{Conclusion}% Bewertete zusammenfassung mit Ausblick
+\label{ch:conclusion}
+\section{Summary}
+This paper provides insight on the state of the art on neural text classification models and proposes a model for the task of recruitment advertisement classification. The state of the art on neural text classification models is captured by the literature review conducted by this paper, requirements are derived from the task of recruitment advertisement classification, and the state of the art models are discussed in regard to the derived requirements. Based on that discussion, this paper proposes the pre-trained XLNet fine-tuned on the recruitment advertisement classification task for this task.
+\par
+In this paragraph the deficiencies of this paper are reflected. Due to time constraints, not all papers on neural text classification have been analyzed. Nevertheless, this paper has analyzed over 100 papers on text classification. On that account, it is very likely all frequently used models are captured. A huge amount of models results from the literature review. Therefore, in order to keep the overview, this paper focuses on the most used and best performing models. As discussed in Chapter \ref{ch:requirements}, some of the derived requirements are imprecise. On that account, if possible, this paper specifies these requirements further or explains why the requirements cannot be specified further. In general, any state of the art model for text classification satisfies the requirements. That is why no model can be excluded based on the requirements. However, mainly due to performance reasons and performance per cost advantages XLNet seems to be the best choice.
+
+
+
+\section{Future Work}% experimente to be done
+Future work can be conducted in regard to the model itself and in regard to the whole business scenario described by Aivy.
+\paragraph{Regarding the model,} due to time constraints, this paper does not implement and test the proposed model. This leads to future work and experiments aiming at testing and improving model performance. These can be grouped into two categories hyperparameter optimization and preprocessing.
+\par
+This paper proposes future work and experiments on the following hyperparameters.
+\begin{itemize}
+	\item As discussed in Chapter \ref{ch:model}, pre-training is too expensive. For this reason, the hyperparameters for pre-training are determined by the already pre-trained models.\footnote{For further details see \cite{Yang.2019}.} \cite{Yang.2019} published two pre-trained models with different hyperparameter configurations XLNet Base and XLNet Large. XLNet Large performs better on the leaderboards, but is computationally more expensive. Hence, this paper proposes to investigate whether the increase in performance justifies the increase in computational costs.
+	\item For fine-tuning \cite{Yang.2019} conducted several hyperparameter space searches. The resulting hyperparameters are listed in Table \ref{tab:fine_tuning}. Because of this, this paper proposes to test the hyperparameters proposed by \cite{Yang.2019} and only conduct further hyperparameter optimization if the results suggest so. For example, to test an increased learning rate decay or a decreased initial learning rate in the case of catastrophic forgetting.\autocite{Sun.2019}
+	\item \cite{Sun.2019} shows that further in-task or in-domain pre-training can increase performance. Therefore, this paper proposes to investigate the application of in-task and in-domain pre-training.
+\end{itemize}
+\par
+This paper proposes future work and experiments for the following preprocessing steps.
+\begin{itemize}
+	\item As discussed in Section \ref{sec:problem}, the provided dataset is not perfectly labeled. That is why this paper proposes to investigate the use of a match rank threshold. Furthermore, if the dataset remains too noisy even after applying a match rank threshold, this paper proposes to consider the use of human labeled data.
+	\item Recruitment advertisements are comprised of a job title and a job description. This forms the input of the classification task. The output of the classification task is a class which corresponds to a standardized job title. On that account, it seems reasonable that the job title is sufficient for the classification. This reduces the required sequence length significantly and might reduce the cost of human labeled data, since labeling a title seems much less work than labeling title and description. In consequence, this paper proposes to investigate the use of the job title without the job description as input.
+	\item In the course of the literature review some papers were found that show adversarial training and feature engineering to improve performance.
+	\autocites{CamachoCollados.2017}{Lenc.2017}{Amin.2018}{Asim.2019}{Lyubinets.2018}{Zhang.2015}{Miyato.2017}{Goodfellow.2015}
+	In consequence, this paper proposes to investigate these techniques for recruitment advertisement classification.
+\end{itemize}
+\paragraph{Regarding the business scenario,} this paper focuses on the process of recruitment advertisement classification. Thus, this paper proposes future work on the surrounding processes, the integration of the whole business scenario and the assessment of its economic efficiency. Regarding the economic efficiency the use of alternative infrastructure can be considered as well.

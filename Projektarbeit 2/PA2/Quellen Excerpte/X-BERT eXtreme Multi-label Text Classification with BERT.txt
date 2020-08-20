@@ -1,0 +1,8 @@
+Introduction
+- Extreme Multiclass (XMC) Labeling
+- Bert for XMC Problem
+- Bert Outperforms GPT and ElmO, all 3 take context of words into account
+Proposed Algorith X-Bert
+- Cluster the Labels semantically
+- Predict Textlabels by Mapping text to cluster and ranking the labels of the cluster to the text
+- Take the ones with highest rank

@@ -1,0 +1,7 @@
+Tested Textclassification with
+- CNN
+- CNN+LSTM
+Preprocessing can help:
+- making everything lowercase
+- lemmatizing
+- wordgrouping: e.g. United States als ein Token sehe und nicht als 2 => eigener Wordvektor (z.B. mit skipp gramm word2vec trainierbar)

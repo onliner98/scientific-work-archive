@@ -1,0 +1,91 @@
+This section lists and explains basic layers used by neural networks described in this paper.
+\subsection{Pooling}
+A pooling function replaces the output at a certain location with a
+summary statistic of the nearby outputs. \autocite{Goodfellow.2016} The following pooling functions are used by neural networks described in this paper.
+\begin{itemize}
+	\item Max Pooling
+	\item Average Pooling
+	\item Global Average Pooling
+\end{itemize}
+\subsubsection{Max Pooling}
+The most widely used pooling technique is max pooling. Max pooling takes a maximum from all pools of input channels of the layer's input.\autocite{Singh.2020} The pools can be seen as array slices. These array slices are determined by pooling size $p$ and stride $stride$. The pooling size determines the shape of the pool. The pool is shaped $p \times p$. Stride is the number of rows and columns by which the pool is shifted to determine the next pool. This shifting can be imagined as sliding the pool over the input channel. Given an input channel $X$ with size $w \times h$, max pooling $maxpooling$ is defined as described by Equation \eqref{eq:pooling}. \autocite{Michelucci.2019}
+\begin{equation}
+	\label{eq:pooling}
+	\begin{array}{l}
+	maxpooling = max(X[i:i+p, j:j+p]) |\\
+	i \in \{x|x_0=0, x \le w-p, x_{n+1} = x_n+stride\},\\
+	j \in \{x|x_0=0, x \le h-p, _{n+1} = x_n+stride\}
+	\end{array}
+\end{equation}
+For a better understanding, an example of max pooling is illustrated in Figure \ref{fig:pooling}. The figure displays an example of max pooling an input channel of shape $4 \times 4$, with a stride of 2, and a pooling size of 2. The different pools are highlighted in different colors. The result of a pool is highlighted in the color of that pool.
+\begin{figure}[H]
+	\centering
+	\input{img/pooling}
+	\caption{Max Pooling Illustration (own figure)}
+	\label{fig:pooling}
+\end{figure}
+\subsubsection{Average Pooling}
+Another pooling technique is average pooling. 
+%
+Average pooling is used by DenseNet-264\autocite{Huang.2017} which is described in this paper. 
+%
+Understanding this neural network requires understanding average pooling. Average pooling works exactly the same as max pooling except that it takes the average instead of the maximum. Given an input channel~$X$ with size $w \times h$, average pooling~$avgpooling$ is defined as described by Equation~\eqref{eq:avgpooling}. \autocite{Michelucci.2019}
+\begin{equation}
+	\label{eq:avgpooling}
+	\begin{array}{lcl}
+		avgpooling & = & average(X[i:i+p, j:j+p]) |\\
+		average(X) & = & \frac{\sum X}{|X|} 
+	\end{array}
+\end{equation}
+\subsubsection{Global Average Pooling}
+Another pooling technique is global average pooling. 
+%
+Global average pooling is used by ResNet-152\autocite{He.2016}, ResNeXt-101\autocite{Xie.2017}, DenseNet-264\autocite{Huang.2017}, and EfficientNet-B7\autocite{Tan.2019} which are described in this paper.
+%
+Understanding these neural networks requires understanding global average pooling. Global average pooling takes the average of each input channel. The input is an array of input channels. The output is an array containing the averages. Given an array of $d$ input channels $X$, global average pooling $globalavgpooling$ is defined as described by Equation \eqref{eq:globalavgpool}. \autocite{Lin.2013}
+\begin{equation}
+	\label{eq:globalavgpool}
+	\begin{array}{lcl}
+		globalavgpooling(X) & = & concat(globalavgpooling_0, \dots, globalavgpooling_{d-1})\\
+		globalavgpoolingg_i & = & average(X_i)\\
+		average(X) & = & \frac{\sum X}{|X|} 
+	\end{array}
+\end{equation}
+ 
+
+\subsection{Dense}
+A dense layer is a layer in which each neuron is connected to each input of the layer, see Figure \ref{fig:dense}. Given the weights of the neurons $W$, an input $X$, and an activation function $\varphi$, the dense layer $dense$ is described by Equation \eqref{eq:dense}. \autocite{Singh.2020}
+\begin{equation}
+	\label{eq:dense}
+	dense(X) = \varphi(X \cdot W)
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\input{img/dense}
+	\caption{Dense Layer (own figure)}
+	\label{fig:dense}
+\end{figure}
+
+
+\subsection{Batch Normalization}
+Batch normalization is a technique to speed up training. Training is sped up by smoothing the optimization landscape and stabilizing the gradients. \autocite{Santurkar.2018}
+Batch normali\-zation normalizes an input by subtracting the mean and dividing by the standard deviation. Mean and standard deviation are approximated batch-wise. Computation over a batch is more efficient, but mean and standard deviation vary dependent on the batch. Therefore, the true mean and standard deviation are approximated over multiple batches by learnable parameters. Given a batch of $m$ inputs $\mathcal{B} = \{x_1, x_2, \dots, x_m \}$, learnable parameters $\gamma, \beta$, and a noise $\epsilon$, batch normalization $batchnorm$ is defined by Equation \eqref{eq:batchnorm}. \autocite{Ioffe.2015} Noise ensures that division by $0$ does not occur.
+\begin{equation}
+	\label{eq:batchnorm}
+	\begin{array}{lcl}
+		batchnorm(x) & = & \gamma \hat{x} + \beta \\
+		\hat{x} & = & \frac{x-\mu}{\sqrt{\sigma^2+\epsilon}}\\
+		\mu & = & \frac{1}{m} \sum_{i=1}^{m} b_i | b_i \in \mathcal{B}\\
+		\sigma & = & \frac{1}{m} \sum_{i=1}^{m} (b_i-\mu)^2 | b_i \in \mathcal{B}\\
+	\end{array}
+\end{equation}
+
+\subsection{Dropout}
+Dropout is a regularization technique addressing the problem of overfitting. 
+Dropout randomly drops neurons during training. Dropping means removing the neuron temporarily, along with its connections. The probability of a neuron being dropped is called dropout rate $q$. Neurons are only dropped during training. After training, each neuron is retained and their weights are scaled down by the probability of a neuron being retained $p=1-q$.\autocite{Srivastava.2014}
+
+
+
+
+
+%\subsection{Flatten} brauchst du nicht? Weil def dens layer alle neurons zu allen connected ist da ist egal ob vector oder matrix oder 3d tensor

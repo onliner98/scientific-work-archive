@@ -1,0 +1,4 @@
+Model Compression using shifting
+Original ResNet performs slitly better but is larger
+
+Used Architecture: Based on ResNet

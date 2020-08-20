@@ -1,0 +1,82 @@
+Depthwise separable convolutional neural networks are \ac{CNN}s using depthwise separable convolution.
+Depthwise separable convolution factorizes a standard convolution into a depthwise convolution and a pointwise convolution. The factorization requires less parameters than the standard convolution. Therefore, it is more computationally effective. The depthwise convolution is a standard convolution which applies a single kernel per input channel. As a result, the output consists of one feature map per input channel. The pointwise convolution is a standard convolution of kernels size $1$. Given an input $X$ consisting of $d$ channels and a convolution $conv_{k \times k}$ of kernel size $k$, the depthwise separable convolution $sepconv_{k \times k}$ corresponding to $conv_{k \times k}$ is defined by Equation \eqref{eq:sepconv}. \autocites{Guo.2019}{Chollet.2017}
+Depthwise convolution is illustrated in Figure \ref{fig:depthconv}. Pointwise convolutions is illustrated in Figure \ref{fig:pointconv}
+\begin{equation}
+	\label{eq:sepconv}
+	\begin{array}{lcl}
+		sepconv(X) & = & pointwiseconv(depthwiseconv(X))\\
+		depthwiseconv(X) & = & concat(depthwiseconv_0, \dots, depthwiseconv_{d-1})\\
+		depthwiseconv_i & = & conv_{k \times k}(X_i)\\
+		pointwiseconv(X) & = & conv_{1 \times 1}(X)
+	\end{array}
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\input{img/depthconv}
+	\caption{Depthwise Convolution Illustration (own figure)}
+	\label{fig:depthconv}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\input{img/pointconv}
+	\caption{Pointwise Convolution Illustration (own figure)}
+	\label{fig:pointconv}
+\end{figure}
+\par
+The best-performing depthwise separable convolutional neural network found in the course of the literature is \cite{Tan.2019}'s EfficientNet-B7.
+EfficientNet-B7 is a scaled version of \cite{Tan.2019}'s EfficientNet-B0.
+\par %scaling
+Scaling a neural network refers to increasing its depth, width, and image size. Depth $d$ refers to the number of layers of a neural network. Width $w$ refers to the number of input channels of a layer. Image size $r$ refers to the resolution of the input image. Scaling a neural networks is used to increase its accuracy.\autocite{Tan.2019}
+%
+\blockquote[\cite{Tan.2019}]{Intuitively, for higher resolution images, we should increase network depth, such that the larger receptive fields can help capture similar features that include more pixels in bigger images. Correspondingly, we should also increase network width when resolution is higher, in order to capture more fine-grained patterns with more pixels in high resolution images.}
+%
+Thus, balancing depth, width, and image size is necessary.
+\cite{Tan.2019} propose a compound scaling method to balance scaling of depth, width, and image size. The compound scaling method uses a compound coefficient $\phi$ to scale $d$, $w$, and $r$ as defined by Equation \eqref{eq:compoundscale}. \cite{Tan.2019} find $\alpha= 1.2, \beta=1.1, \gamma= 1.15$.\autocite{Tan.2019}
+\begin{equation}
+	\label{eq:compoundscale}
+	\begin{array}{lcl}
+		d & = & \alpha^\phi\\
+		w & = & \beta^\phi\\
+		r & = & \gamma^\phi
+	\end{array}
+\end{equation}
+\par %baselin arch 
+EfficientNet-B0 is comprised of a stem, followed by mobile inverted bottleneck blocks, and a top.
+The input of EfficientNet-B0 is a $224$-by-$224$-pixel, \ac{RGB} image. The output of EfficientNet-B0 comprises the probabilities of the $c$ target classes. \autocite{Tan.2019}
+\par %stem
+The stem consists of a convolutional layer and batch normalization. The convolutional layer has $32$ kernels of size $3$, a padding halving the spatial dimensions, and the swish activation function. \autocite{Tan.2019}
+\par %top 
+The top consists of a convolutional layer, global average pooling, dropout, and a dense layer. The convolutional layer has $1{,}280$ kernels of size $1$, a padding preserving the spatial dimensions, and the swish activation function. Batch normalization is applied before the swish activation function. The dropout rate is $0.2$. The dense layer has $c$ neurons and uses the softmax activation function. \autocite{Tan.2019}
+\par %mbconv block
+A mobile inverted bottleneck block consists of an expansion phase, depthwise convolution, a squeeze-and-excitation phase, an output phase, and a shortcut connection. EfficientNet-B0 is comprised of $7$ types of mobile inverted bottleneck blocks. The types are defined by the following hyperparameters: \autocite{Tan.2019}
+\begin{itemize}
+	\item Kernel size of the depthwise convolution $k$
+	\item Number of stacked mobile inverted bottleneck blocks of a type  $repeats$
+	\item Number of input feature maps of the first mobile inverted bottleneck block of a type $K_{in}$, $K_{in}=K_{out}$ for any block except the first block of a type
+	\item Number of output feature maps of a mobile inverted bottleneck block $K_{out}$
+	\item Ratio by which $K_{in}$ is increased in the expansion phase $ratio_{expad}$
+	\item Stride of the depthwise convolution $stride_{depthconv}$
+	\item Ratio by which $K_{in}$ is squeezed in the squeeze-and-excitation phase $ratio_{squeeze}$
+\end{itemize}
+The expansion phase expands the number of input feature maps $K_{in}$ by $ratio_{expad}$ to $K =  K_{in} \cdot ratio_{expand}$. The expansion is implemented using a convolutional layer with $K$ kernels of size $1$. The convolutional layer uses a padding preserving the spatial dimensions, batch normalization, and the swish activation function. Batch normalization is applied before the swish activation function.
+The depthwise convolution has a kernel size of $k$, a stride of $stride_{depthconv}$, a padding preserving spatial dimensions, batch normalization, and the swish activation function.  Batch normalization is applied before the swish activation function.
+The squeeze-and-excitation phase consists of global average pooling and two convolutional layers. The first convolutional layer reduces the number of filters to $K_{in} \cdot ratio_{squeeze}$. The second convolutional layer expands (restores) the number of filters to $K$. Expansion and reduction are implemented by convolutions with kernel size of $1$.
+The output phase consists of a convolutional layer, batch normalization, and dropout. The convolutional layer has $K_{out}$ kernels of size $1$ and a padding to preserve spatial dimensions. The dropout rate increases with network depth. The dropout rate for the $n$th block is $0.2 \cdot \frac{n}{N}$ with $N$ being the total number of blocks. 
+The shortcut connection skips the mobile inverted bottleneck block. The shortcut connection uses identity mapping. The output of the identity mapping is added element-wise to the output of the skipped mobile inverted bottleneck block. 
+\par
+The whole configuration of EfficientNet-B0 is outlined in Table \ref{tab:efficientnet}. \autocite{Tan.2019}
+\begin{xltabular}{\textwidth}{lX}\toprule
+	\caption{EfficientNet-B0 Configuration} \label{tab:efficientnet}\\
+	\textbf{Layer/Block} & \textbf{Configuration}\\\midrule \endhead
+	Stem &\\\midrule
+	Mobile Inverted Bottleneck Block Type $1$ & $k=3, repeats=1, K_{in}=32, K_{out}=16, ratio_{expad}=1, stride_{depthconv}=1, ratio_{squeeze}=0.25$\\\midrule
+	Mobile Inverted Bottleneck Block Type $2$ & $k=3, repeats=2, K_{in}=16, K_{out}=24, ratio_{expad}=6, stride_{depthconv}=2, ratio_{squeeze}=0.25$\\\midrule
+	Mobile Inverted Bottleneck Block Type $3$ & $k=5, repeats=2, K_{in}=24, K_{out}=40, ratio_{expad}=6, stride_{depthconv}=2, ratio_{squeeze}=0.25$\\\midrule
+	Mobile Inverted Bottleneck Block Type $4$ & $k=3, repeats=3, K_{in}=40, K_{out}=80, ratio_{expad}=6, stride_{depthconv}=2, ratio_{squeeze}=0.25$\\\midrule
+	Mobile Inverted Bottleneck Block Type $5$ & $k=5, repeats=3, K_{in}=80, K_{out}=112, ratio_{expad}=6, stride_{depthconv}=1, ratio_{squeeze}=0.25$\\\midrule
+	Mobile Inverted Bottleneck Block Type $6$ & $k=5, repeats=4, K_{in}=112, K_{out}=192, ratio_{expad}=6, stride_{depthconv}=2, ratio_{squeeze}=0.25$\\\midrule
+	Mobile Inverted Bottleneck Block Type $7$ & $k=3, repeats=1, K_{in}=192, K_{out}=320, ratio_{expad}=6, stride_{depthconv}=1, ratio_{squeeze}=0.25$
+	\\\bottomrule
+\end{xltabular}
+\par % scaled arch
+EfficientNet-B7 is EfficientNet-B0 scaled by $\phi=7$. Depth is scaled by increasing $repeats$ by $\alpha^\phi$. Width is scaled by increasing the number of kernels for every layer in the whole network by $\beta^\phi$. Input size is scaled by increasing the resolution of the input image by $\gamma^\phi$.\footnote{Note that $repeats$, number of kernels, and resolution must be natural numbers. Hence, rounding might be necessary.} Furthermore, the dropout rate is increased to $0.5$.

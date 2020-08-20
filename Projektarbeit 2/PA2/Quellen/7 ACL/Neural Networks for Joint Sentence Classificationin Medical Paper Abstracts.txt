@@ -1,0 +1,1 @@
+Ensemble aus 2 BiLSTMs und Self Attention for Meical text classification

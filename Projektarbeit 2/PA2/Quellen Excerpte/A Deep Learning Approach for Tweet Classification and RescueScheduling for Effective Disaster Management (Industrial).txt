@@ -1,0 +1,13 @@
+Im Katastrophen Fall will dieses Paper aus tweets herauslesen was los ist (classification) 
+wie wichtig hilfe ist (priority calculation) und wo die hilfe gebraucht wird (location determination)
+Für mich ist nur der Classification teil relevant
+
+2 Related Work => 2.2 Tweets Classification
+- CNN for Classification + Pre Learned Word Embeddings (z.B. GloVe) [26]
+- This Paper Classifies into 6 classes
+
+3.1 Deep Neural Network
+- Used Classifiers consists of:
+  - Embedding: GloVe
+  - Followed by Bi directional LSTM with attention
+  - Followed by CNN

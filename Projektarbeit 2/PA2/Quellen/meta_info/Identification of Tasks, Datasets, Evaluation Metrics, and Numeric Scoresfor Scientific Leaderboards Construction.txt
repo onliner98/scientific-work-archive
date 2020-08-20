@@ -1,0 +1,4 @@
+Introduction
+- leaderboard: tabular comparison of results of comperable experiments
+  - ruder.io => leaderboard
+  - paperswithcode.com => state of the art

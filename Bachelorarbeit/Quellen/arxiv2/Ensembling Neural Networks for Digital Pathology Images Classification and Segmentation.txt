@@ -1,0 +1,4 @@
+Classification of Gewebe Images
+Tipps: Used XGBoost and 3-fold-cross-validation for hyperparam search
+
+Used Architecture: Based on ResNet/DenseNet

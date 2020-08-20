@@ -1,0 +1,1 @@
+CNN on SVHN, CIFAR... testing TELU(relu die im neg bereich auch steigung hat (non linear)) => weniger regularization nötig

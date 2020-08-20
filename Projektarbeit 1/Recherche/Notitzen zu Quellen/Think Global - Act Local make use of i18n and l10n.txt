@@ -1,0 +1,11 @@
+
+Actual localization process may include:
+    translation
+    Adapting graphs to target market needs
+    Modifying content to suit different tastes and consumer habits of the target market
+    Adapting design and layout to display translated text properly
+    Converting to local requirements (currencies, measurement units)
+    Adapting to proper local formats for dates, addresses, etc.
+    Respecting and applying local regulations and legal rules
+    Adapting cultural nuances
+    Images need to be localized too

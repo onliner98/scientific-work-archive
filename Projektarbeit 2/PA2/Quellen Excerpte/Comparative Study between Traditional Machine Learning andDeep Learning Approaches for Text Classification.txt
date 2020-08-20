@@ -1,0 +1,1 @@
+CNN for text classification perform better than mlp svm random forest naive baies

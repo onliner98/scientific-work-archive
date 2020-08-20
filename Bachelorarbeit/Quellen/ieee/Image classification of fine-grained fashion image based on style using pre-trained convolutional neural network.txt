@@ -1,0 +1,3 @@
+Fashion Image classification
+
+Used Architecture: GoogLeNet

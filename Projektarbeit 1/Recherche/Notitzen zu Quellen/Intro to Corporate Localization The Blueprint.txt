@@ -1,0 +1,7 @@
+Standard Processes:
+- Submission of content that is to be translated(manually or automatically)
+- Ensure compatibilaty of all used filetypes and software
+- Workflow: try to synchronise Translation, Proofreading and QA
+- Automise as much as possible
+- Operationalisiere: turn around times, costs, quality, progress to business goals etc
+- define standard terminologie

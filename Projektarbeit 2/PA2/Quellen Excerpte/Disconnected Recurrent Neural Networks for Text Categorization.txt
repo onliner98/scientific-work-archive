@@ -1,0 +1,12 @@
+Introduction
+- Comperative Study of RNN and CNN (Yin et al. 2017)
+Model
+- Disconnected RNN (DRNN)
+  - RNN wobei jeder hiddenstate ht nur vom input und den k-1 vorherigen inputs abhängt ht=RNN(ht, ht-1,...ht-k)
+Experiment
+- Modelle mit denen DRNN verglichen wurde:
+  - Fast Text (Joilin et al. 2017)
+  - D-LSTM (Yogatama et al. 2017)
+  - char/word-CNN (Zhang et al. 2015)
+  - VeryDeepCNN (Conneau et al. 2017)
+  - char-CRNN (Xia and Cho 2016)

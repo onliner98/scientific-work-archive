@@ -1,0 +1,5 @@
+CNN are most Dominant
+- NiN
+- Inception
+- ResNet
+- Residual+Inception

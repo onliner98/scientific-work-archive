@@ -1,0 +1,6 @@
+Introduction
+- Recent NNs use pre-trained embeddig (Mikolovet et al. 2013; Le and Mikolov 2014; Dieng et al. 2017)
+- SECTOR Segments a Text and Classifies the Segments
+SECTOR Model
+- Sentence Embedding (Hill et al. 2016; Arora et al. 2017)
+- Bi LSTM followed by denslayer followed by softmax layer der hiddenstate als inpu nimmt und class distribution als output hat

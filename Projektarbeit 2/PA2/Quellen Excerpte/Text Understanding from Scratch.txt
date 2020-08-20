@@ -1,0 +1,1 @@
+CNN für viele Tasks unter anderem Text Classification

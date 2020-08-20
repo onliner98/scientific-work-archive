@@ -1,0 +1,25 @@
+Es gitb kein standradframework das für alle software funzt => masterdata müssen flexibel bleiben => its markup macht sinn
+Iterative code fixing is necessary problems allways slip through
+
+Typical Problems: Info is inputted by the user, which might aswell be transformed, stored and displayed again this also needs to be taken care of.
+- Embedded Text & Images
+- Character set support
+- String concatination E.g. User gives his name on the login and you want to greet him. In DE it might be hallo <user> in other languages it migth be <user><greet>
+- Date/time format and timezones
+- sorting&searching
+- currency
+- transaction process
+- user locale handling
+- telephone formats
+- postal formats
+- region-specific functions
+- shipping conditions
+- numerical formats
+- page layout
+- reporting workflow
+- database enabling
+- multi-byte enabling (legacy system precessor of unicode)
+
+BIG PROBLEM FOR ME: ich baue einen string aus mehreren inputs, wie ensure ich dass es richtige reihenfolge der sprache ist
+- store alle code embedded strings in ressourcefiles, wenn einer von diesen concatiniert wird store in mit placholdern E.G.<greeting><person> 
+  und replace die placholder mit den userinputs anstatt diesezu concatinieren

@@ -1,0 +1,24 @@
+%\cube{x offset}{y offset}{width}{height}{depth}{color}{fillcolor}
+
+\begin{tikzpicture}[
+cell/.style={
+	rectangle, 
+	rounded corners=2mm, 
+	draw,
+	very thick,
+	align=center,
+},
+ArrowC1/.style={% Arrows with rounded corners
+	rounded corners=.25cm,
+	thick,
+},
+]
+\cube{0}{0}{3}{3}{3}{black}{gray}
+\cube{-4}{0}{3}{3}{1}{black}{gray}
+\cube{-8}{-2}{3}{1}{1}{black}{gray}
+
+\node (3d) at (-1.5,-4,0) {three-dimensional};
+\node (2d) at (-5.5,-4,0) {two-dimensional};
+\node (1d) at (-9.5,-4,0) {one-dimensional};
+
+\end{tikzpicture}

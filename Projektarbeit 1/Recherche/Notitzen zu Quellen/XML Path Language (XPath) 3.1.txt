@@ -1,0 +1,123 @@
+XPATH[https://www.w3.org/TR/1999/REC-xpath-19991116/]
+Pfad der auf nodes innerhalb eines XML Documents verweist
+- Absoluter pfad /childToRootNode/childToChildNode startet a.d. root node(Dokument-Knoten=Oberster Knoten mit genau 0 oder 1 Kind)
+  - e.g.: /Dokument-Knoten/A/B/D. wählt D aus
+- relativer pfad childToCurrentNode startet a.d. node a.d. der xpath verweis ist
+  - e.g.: . wählt D aus
+
+
+		   Dokument-Knoten
+			 |
+		 ________A________
+		|		  |
+ ____________B____________        L
+|       |         |       |
+C    ___(D)___    H    ___I___
+    |	      |	      |       |
+    E	      G	      J       K
+    |
+    F
+
+ADDRESIERTE KNOTEN									ACHSEN				DELIMITER IM XPATH		REFERENZIERTE KNOTEN IM OBIGEN BAUM AUSGEHEND DASS D AUSGEWÄHLT IST
+der Dokument-Knoten													/ am Anfang eines XPaths	Dokument-Knoten	
+											child::*							E, F, G
+der direkt übergeordnete Elternknoten							parent::*			..				B
+der Kontextknoten selbst (nützlich für zusätzliche Bedingungen)				self::*				.				D
+alle übergeordnete Knoten								ancestor::*							B, A, Dokument-Knoten
+alle übergeordnete Knoten inklusive des Kontextknotens					ancestor-or-self::*						D, B, A, Dokument-Knoten
+alle dem Ausgewählten Knoten (D)untergeordnete Knoten					descendant::*			.//				E,F,G
+alle Knoten des Dokuments außer dem Dokument-Knoten									//				A, B, C, D, E, F, G, H, I, J, K, L
+alle untergeordnete Knoten inklusive des Kontextknotens					descendant-or-self::*						D, E, F, G 
+im XML-Dokument nachfolgend (ohne untergeordnete Knoten des selektierten Knotens)	following::*							H, I, J, K, L
+wie following, aber zugleich vom selben parent stammend					following.sibling::*						H, I
+im XML-Dokument vorangehend (ohne übergeordnete Knoten)					preceding::*							C
+wie preceding, aber zugleich vom selben parent stammend					preceding-sibling::*						C
+Attributknoten														@
+Namensraumknoten, die aus dem Attribut xmlns stammen					namespace::*																		
+Alle Element regardless the name											*				E, F, G
+
+Achsen: <xpathCurrentNode>/<achse>::<xpath> selektiert alle nodes mit <xpath> entlang der <achse> zu der node von <xpathCurrentNode>									
+
+Testen von XPath QUeries auf ein xml document: https://www.freeformatter.com/xpath-tester.html
+
+Queries
+Nach einem Path in [] um elemente innerhalb des ausgewählten paths zu querien e.g. .[1] gibt E zurück
+- [<elementname>] gibt das erste element mit <elementname> zurück elementname can also be an xpath
+- [<index>] gibt das indexstsche element aus
+- [last()] gibt das element mit dem letzten index ausll
+- [<childelement><operator><literalValue>] gibt alle elemente mit dem path aus, welche ein childelement haben, deren content  < > = => <= dem literalValue ist.
+- [@<attribute><operator><literalValue>] bt alle elemente mit dem path aus, welche ein attribut haben, deren content  < > = => <= dem literalValue ist.
+
+Query Operators:
+- Konjunctions: and or not()
+- Comparing Operators: = != < <= > >=
+- Mathematical Operators: + - * div mod
+- Group Operator: ()
+- Set union operator: xpath1 | xpath2 returns the union of the sets of noddes
+
+Komplexere Selektione
+- Wie querien wir ein element, dessen child element ein child element hat mit unserem abfrage value
+  Document:
+  <root>
+    <element>
+      <child>
+        <childchild>HalloWelt</childchild>
+      </child>
+    </element>
+  </root>
+  XPath: /root/element/child/[childchild=HalloWelt]/..
+  Return:
+  <element>
+    <child>
+      <childchild>HalloWelt</childchild>
+    </child>
+  </element>
+- Wie selecte ich alle elemente mit einem Namen, deren Pfad ich nicht kenne
+  XPath: //<element>
+  returns every element with name <element> no matter where it is nested within the document
+- Wie selecte ich ein element, dessen parent element ich nicht kenne?
+  //..[<child><operator><literalValue>]/<child>
+  returns every child with content  < > = => <= dem literalValue
+
+[https://msdn.microsoft.com/en-us/library/ms256115(v=vs.110).aspx]
+NODESETFUNCTIONS: node-set is an xpath pointing to a node/set
+number count(node-set)			Returns the number of nodes in the node-set argument.
+node-set id(object)			Selects elements by their unique ID.
+number last()				Returns a number equal to context size of the expression evaluation context.
+string local-name(node-set?)		Returns the local part of the expanded name of the node in the node-set argument that is first in document order.
+string name(node-set?)			Returns a string containing a QName representing the expanded name of the node in the node-set argument that is first in document order.
+string namespace-uri(node-set?)		Returns the namespace Uniform Resource Identifier (URI) of the expanded name of the node in the node-set argument that is first in document order.
+number position()			Returns the position, or index number, of the node, relative to all the selected nodes in the node list. 
+STRINGFUNCTIONS:
+string concat(string, string, string*)	Returns the concatenation of the arguments.
+boolean contains(str1, str2)		Checks whether the first argument string contains the second argument string.
+string normalize-space(string)		Returns the argument string with the leading, trailing, and repeating white spaces stripped.
+boolean starts-with(string, string)	Returns true if the first argument string starts with the second argument string; otherwise returns false.
+string string(object?)			Converts an object to a string.
+number string-length(string)		Returns the number of characters in the string.
+number substring(string, string)	Returns the substring of the first argument starting at the position specified in the second argument and the length specified in the third argument.
+string substring-after(string, string)	Returns the substring of the first argument string that follows the first occurrence of the second argument string in the first argument string, or the empty string if the first argument string does not contain the second argument string.
+string substring-before(string, string)	Returns the substring of the first argument string that precedes the first occurrence of the second argument string in the first argument string, or the empty string if the first argument string does not contain the second argument string.
+string translate(string, string, string)Returns the first argument string with occurrences of characters in the second argument string replaced by the character at the corresponding position in the third argument string.
+BOOLEANFUNCTIONS
+boolean boolean(arg)			Converts the argument to a Boolean.
+boolean false()				Returns false.
+boolean lang(string)			Returns true if the xml:lang attribute of the context node is the same as a sublanguage of the language specified by the argument string.
+boolean not(boolean)			Returns true if the argument is false; otherwise false.
+boolean true()				Returns true
+NUMBERFUNCTIONS
+number ceiling(number)			Returns the smallest integer that is not less than the argument.
+number floor(number)			Returns the largest integer that is not greater than the argument.
+number number(object?)			Converts the argument to a number.
+number round(number)			Returns an integer closest in value to the argument.
+number sum(node-set)			Returns the sum of all nodes in the node-set. Each node is first converted to a number value before summing.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+cell sample image diagnosis in malig-nant or benign categorie
+
+Used Architecture: GoogLeNet

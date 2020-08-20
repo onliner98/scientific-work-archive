@@ -1,0 +1,8 @@
+Introduction:
+- comparing different Models for twitter text categorization
+Neural Network based Models
+- KimCNN (Kim 2014)
+- HybridCNN (Park anf Fung 2017)
+- biRNN with GRUs (Schuster and Paliwal 1997, Cho et al 2014)
+- biRNN with self Attention (Wang et al)
+- w/context meanst that not only the tweet itself is used as input but also the context of the tweet (e.g. a referenced tweet or a tweet replyed to)

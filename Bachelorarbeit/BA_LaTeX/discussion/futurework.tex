@@ -1,0 +1,12 @@
+This paper proposes future work in regard to the limitations of this paper. 
+% business case
+As stated in Section \ref{sec:motivation}, an augmented reality solution for field workers requires software perceiving the environment of field workers. Therefore, this paper proposes to investigate the implementation of a holistic solution including other computer vision tasks, a software framework, and a hardware framework.
+\par % semu/unsipervised, learning auxiliaries
+As discussed in Section \ref{sec:limitations}, semi-supervised learning, unsupervised learning, and learning auxiliaries, i.e., transfer learning, adversarial training, data augmentation, input normalization, weight decay, and multi-task learning, might improve performance. On that account, this paper proposes to investigate the effect of each of those techniques.
+\par % hyperparam/architect search, versions of sota nns, non neural models
+As discussed in Section \ref{sec:limitations}, regarding  neural architecture search, hyperparameter search, different versions of the state-of-the-art neural networks for image classification, and non-neural models to conduct the experiment might reveal even better-performing models for tool image classification than found in the results of this paper. Hence, this paper proposes to investigate these models.
+\par
+As discussed in Section \ref{sec:limitations}, the \ac{TIC Dataset} can be extended. To train machine learning algorithms, training data is required. \autocite{ElAmir.2020} As a result, extending the \ac{TIC Dataset} might help fostering future research in the field of computer vision.
+Thus, this paper proposes to extend the \ac{TIC Dataset} by creating more images as described in Section \ref{sec:datasetconstruction}, adding subsets containing tool images of already existing datasets, and adding additional annotations for object detection, image segmentation or other computer vision tasks.
+\par
+In the experiment conducted by this paper, EfficientNet-B7 did not learn to classify tool images. As discussed, the accuracy of EfficientNet-B7 reported in Chapter \ref{chp:result} does not reflect the performance of EfficientNet-B7 for tool image classification. As stated in Section \ref{sec:disceffnet}, this paper hypothesizes that the small batch size is the cause. Accordingly, this paper proposes to repeat the experiment on hardware capable of supporting a larger batch size for EfficientNet-B7. If this proves to be insufficient, this paper proposes to reduce regularization as well.

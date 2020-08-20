@@ -1,0 +1,3 @@
+Method
+- Input: Sentence Matrix comprised of word2vec embeddings
+- Model: CNN and ontop a feedforward network with residual connections

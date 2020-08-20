@@ -1,0 +1,13 @@
+Introduction:
+- Benchmark with 20 Models and 10 Datasets: https://github.com/wabyking/TextClassificationBenchmark
+Models:
+- Fastext(Joulin et al.,2016)
+- LSTM(Hochreiter and Schmidhuber,1997)
+- BiLSTM
+- StackLSTM: mulit Layer LSTM
+- Basic CNN (Kalchbrenner et al. 2014)
+- Mulitlayer CNN
+- CNN with Inception (Szegedy et al.,2015)
+- Capsules (Sabour et al.,2017)
+- RCNN (Lai et al.,2015).
+- CRNN (Zhou et al.,2015)

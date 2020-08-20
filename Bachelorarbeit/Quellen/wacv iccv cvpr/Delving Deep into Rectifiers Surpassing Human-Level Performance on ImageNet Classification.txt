@@ -1,0 +1,3 @@
+Uses Parametric ReLU (PReLU) in CNN
+
+Compared Models: VGG, GoogLeNet, their modle(CNN with PReLU)

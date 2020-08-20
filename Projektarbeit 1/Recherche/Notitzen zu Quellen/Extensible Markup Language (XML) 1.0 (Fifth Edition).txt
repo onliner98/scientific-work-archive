@@ -1,0 +1,348 @@
+=================================================Infos um den Text zu verstehen=======================================================================
+error: A violation of the rules of this specification;
+fatal error: Definition: An error which a conforming XML processor MUST detect and report to the application. A
+at user option: discribed behaviour MUST provide users a means to enable or disable the behavior described.] 
+validity constraint: A rule which applies to all valid XML documents. Violations are errors;
+well-formedness constraint: A rule which applies to all well-formed XML documents. Violations are fatal errors.
+match: Two strings or names being compared are identical.
+for compatibility: Marks a sentence describing a feature of XML included solely to ensure that XML remains compatible with SGML.] 
+for interoperability: Marks a sentence describing a non-binding recommendation included to increase the chances that XML documents can be processed by the existing installed base of older SGML processors
+
+[6 Notation] EBNF:
+symbol ::= expression	Symbols are written with an initial capital letter if they are the start symbol of a regular language, otherwise with an initial lowercase letter. Literal strings are quoted.
+[a-zA-Z], [#xN-#xN]	matches any Char with a value in the range(s) indicated (inclusive). N is a hexadecimal for a Unicodechar
+[abc], [#xN#xN#xN]	matches any Char with a value among the characters enumerated. Enumerations and ranges can be mixed in one set of brackets.
+[^a-z], [^#xN-#xN]	matches any Char with a value outside the range indicated.
+[^abc], [^#xN#xN#xN]	matches any Char with a value not among the characters given. Enumerations and ranges of forbidden values can be mixed in one set of brackets.
+"string"		matches a literal string matching that given inside the double quotes.
+'string'		matches a literal string matching that given inside the single quotes.
+A?			matches A or nothing; optional A.
+A B			matches A followed by B. This operator has higher precedence than alternation; thus A B | C D is identical to (A B) | (C D).
+A | B			matches A or B.
+A - B			matches any string that matches A but does not match B. A ohne B
+A+			matches one or more occurrences of A.
+A*			matches zero or more occurrences of A. 
+/* ... */		comment.
+[ wfc: ... ] 		well-formedness constraint; this identifies by name a constraint on well-formed documents associated with a production.
+[ vc: ... ] 		validity constraint; this identifies by name a constraint on valid documents associated with a production.
+
+============================================================Inhalt====================================================================================
+[1 Introduction]
+XML processor: software module used to read XML documents and provide access to their content and structure.
+Application: software using the data processed by the xml processor
+[2.1 Well-Formed XML Documents]
+[1]	document	::=	prolog element Misc*
+This means the document contains one or more elements. 
+There is exactly one element, called root. The root contains all other elements
+=> the elements, delimited by start- and end-tags, nest properly within each other.
+=> Each non-root element C (child) in the document, is part of the content of only one other element P (parent).
+[2.2 Characters]
+xml documents consist of text, a sequence of characters forming markup or characterdata
+[2]	Char		::= 	#x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]	/* any Unicode character, excluding the surrogate blocks, FFFE, and FFFF. */
+[2.3 Common Syntactic Constructs]
+White space S:
+[3]	S		::=	(#x20 | #x9 | #xD | #xA)+ /* + means items exists one or more times */
+Namespaces: are assigned with a : namspace:elementname
+Names:
+- beginning with any string which would match (('X'|'x') ('M'|'m') ('L'|'l')), are reserved for standardization in this or future versions of this specification.
+- The ASCII symbols and punctuation marks, along with a fairly large group of Unicode symbol characters, are excluded from names because they are more useful as delimiters in contexts where XML names are used outside XML documents
+- The Names and Nmtokens productions are used to define the validity of tokenized attribute values after normalization
+[4]   	NameStartChar	::=	":" | [A-Z] | "_" | [a-z] | [#xC0-#xD6] | [#xD8-#xF6] | [#xF8-#x2FF] | [#x370-#x37D] | [#x37F-#x1FFF] | [#x200C-#x200D] | [#x2070-#x218F] | [#x2C00-#x2FEF] | [#x3001-#xD7FF] | [#xF900-#xFDCF] | [#xFDF0-#xFFFD] | [#x10000-#xEFFFF]
+[4a]   	NameChar	::=	NameStartChar | "-" | "." | [0-9] | #xB7 | [#x0300-#x036F] | [#x203F-#x2040]
+[5]   	Name		::=   	NameStartChar (NameChar)*
+[6]   	Names		::=   	Name (#x20 Name)*
+[7]   	Nmtoken		::=   	(NameChar)+
+[8]   	Nmtokens	::=   	Nmtoken (#x20 Nmtoken)*
+Literals:
+- quoted string not containing the quotation mark used as a delimiter
+[9]   	EntityValue	::=   	'"' ([^%&"] | PEReference | Reference)* '"' | "'" ([^%&'] | PEReference | Reference)* "'"
+[10]   	AttValue	::=   	'"' ([^<&"] | Reference)* '"' | "'" ([^<&'] | Reference)* "'"
+[11]   	SystemLiteral	::=   	('"' [^"]* '"') | ("'" [^']* "'")
+[12]   	PubidLiteral	::=   	'"' PubidChar* '"' | "'" (PubidChar - "'")* "'"
+[13]   	PubidChar	::=   	#x20 | #xD | #xA | [a-zA-Z0-9] | [-'()+,./:=?;!*#@$_%]
+[2.4 Character Data and Markup]
+[Definition: All text that is not markup constitutes the character data of the document.] 
+&, < and > MUST NOT appear, except as markup delimiters, in comments, processing instruction, or a CDATA section. Elsewhere, they MUST be escaped with numeric character references or the strings &amp;, &lt; and &gt;
+In the content of elements, character data is any string of characters not including any delimiters. 
+In a CDATA section, character data is any string of characters not including the CDATA-section-close delimiter, " ]]> ".
+In attrubute values,  ' and " MUST be escaped with numeric character references or the strings &apos; and &quot;
+[14]	CharData	::=	[^<&]* - ([^<&]* ']]>' [^<&]*) /* < & ]]> dürfen nicht vorkommen*/
+[2.5 Comments]
+[15]   	Comment		::=	'<!--' ((Char - '-') | ('-' (Char - '-')))* '-->' /* alle chars ohne - oder - gefolgt von char ist erlaubt => <!-- hallo---> ist nicht valide <!---hallo--> schon*/
+[2.6 Processing Instructions] 	Processing instructions (PIs) allow documents to contain instructions for applications
+[16]   	PI		::=   	'<?' PITarget (S (Char* - (Char* '?>' Char*)))? '?>'
+[17]   	PITarget	::=   	Name - (('X' | 'x') ('M' | 'm') ('L' | 'l'))
+[2.7 CDATA Sections]  CDATA sections are used to escape blocks of text containing characters which would otherwise be recognized as markup
+[18]   	CDSect		::=	CDStart CData CDEnd
+[19]   	CDStart		::=   	'<![CDATA['
+[20]   	CData		::=   	(Char* - (Char* ']]>' Char*)) /*]]> darf in CData nicht vorkommen*/
+[21]   	CDEnd		::=   	']]>' /*only the CDEnd string is recognized as markup => CDATA sections cannot nest.*/
+[2.8 Prolog and Document Type Declaration] 
+Valid XML Document:
+- MUST have an associated document type declaration and complies with the constraints expressed in it. 
+- SHOULD have the document type declaration at the documents beginning and MUST have it before the first element
+Prolog:
+[22]   	prolog		::=   	XMLDecl? Misc* (doctypedecl Misc*)?
+[23]   	XMLDecl		::=   	'<?xml' VersionInfo EncodingDecl? SDDecl? S? '?>'
+[24]   	VersionInfo	::=   	S 'version' Eq ("'" VersionNum "'" | '"' VersionNum '"')
+[25]   	Eq		::=   	S? '=' S?
+[26]   	VersionNum	::=   	'1.' [0-9]+
+[27]   	Misc		::=   	Comment | PI | S
+Dokument type declaration: contains or points to markup declarations. Those together provide a grammar known as a document type definition (DTD). 
+[28]	doctypedecl	::=   	'<!DOCTYPE' S Name (S ExternalID)? S? ('[' intSubset ']' S?)? '>'		[VC: Root Element Type]
+														[WFC: External Subset]
+[28a]	DeclSep		::=   	PEReference | S 								[WFC: PE Between Declarations]
+[28b]	intSubset	::=   	(markupdecl | DeclSep)*
+- [VC: Root Element Type]: Name in doctypedecl MUST match the root element.
+- [VC: Proper Declaration/PE Nesting]: replacement text (text of external entities) MUST be properly nested with markup declarations
+- [WFC: PEs in Internal Subset]: In the internal DTD subset, references to external entities MUST NOT occur within markup declarations; they may occur where markup declarations can occur.
+- [WFC: External Subset]: The external subset, if any, MUST match the production for extSubset.
+- [WFC: PE Between Declarations]: The replacement text in a DeclSep MUST match the production extSubsetDecl.
+Markup declaration: is an element type declaration, an attribute-list declaration, an entity declaration, or a notation declaration.
+[29]	markupdecl	::=	elementdecl | AttlistDecl | EntityDecl | NotationDecl | PI | Comment		[VC: Proper Declaration/PE Nesting]
+External Subset: External DTD
+External markup declaration(defined in external entities)
+[30]	extSubset	::=	TextDecl? extSubsetDecl
+[31]	extSubsetDecl	::=	( markupdecl | conditionalSect | DeclSep)*
+[2.9 Standalone Document Declaration] standalone describes if the current XML document depends on an external markup declaration.
+[32]	SDDecl		::=	S 'standalone' Eq (("'" ('yes' | 'no') "'") | ('"' ('yes' | 'no') '"'))		[VC: Standalone Document Declaration]
+[2.10 White Space Handling] All Whitespaces except the ones in markup declarations are preserved by default. In order to manually force whitespace preservation or default use the followin in the root element:
+<!ATTLIST poem  xml:space (preserve) 'preserve'>
+[2.11 End-of-Line Handling] End line characters CARRIAGE RETURN (#xD) and LINE FEED (#xA). #xD and #xD #xA are replaced by #xA
+[2.12 Language Identification] A special attribute named xml:lang=="languageIdentifierAsDefinedBy[IETF BCP 47]" specifies the language in which the content of the element with the lang attribute is written
+[3 Logical Structure] Elements consist of by start-tags, type and end-tags, or an empty-element tag. Type is identified by name (generic identifier (GI)). Elements MAY have attributes specified
+[39]	element		::=	EmptyElemTag | STag content ETag 						[WFC: Element Type Match]
+														[VC: Element Valid]
+- [WFC: Element Type Match]: The Name in an element's end-tag MUST match the element type in the start-tag.
+- [VC: Element Valid]: Ein element ist valide wenn es eine markup declaration mit dem namen des elements gibt. If:
+  - the declaration matches EMPTY, than the element has no content
+  - the declaration matches children, than the element content consists of childelements(also matching the DTD and properly nested), whitspaces and PIs
+  - the declaration matches Mixed, than the content consists of childelements determined by this declaration, whitspaces, PIs and/or character data
+  - the declaration matches ANY, than the content consists of any childelement possible with the DTD, whitspaces, PIs and/or character data
+All regeln gelten, falls entity references vorhanden sind, nachdem die referencen durch den content, auf den sie verweisen ersetzt werden.
+[3.1 Start-Tags, End-Tags, and Empty-Element Tags]
+Type: is the Name of start- and end-tag; or empty-tag of the element
+attribute specifications: refers to the Name = "Attribute Value" pairs
+Start-tag: beginning of every non-empty XML element
+[40]	STag		::=	'<' Name (S Attribute)* S? '>'							[WFC: Unique Att Spec]
+[41]	Attribute	::=	Name Eq AttValue 								[VC: Attribute Value Type]
+														[WFC: No External Entity References]
+														[WFC: No < in Attribute Values]
+- [WFC: Unique Att Spec]: An attribute name MUST NOT appear more than once in the same start-tag or empty-element tag.
+- [VC: Attribute Value Type]: The attribute MUST have been declared; the value MUST be of the type declared for it
+- [WFC: No External Entity References]: Attribute values MUST NOT contain direct or indirect entity references to external entities
+- [WFC: No < in Attribute Values]: The replacement text of any entity referred to directly or indirectly in an attribute value MUST NOT contain a <
+End-tag: refers to the end of every element that begins with a start-tag.This element MUST be marked by an end-tag having the same name as the start-tag.
+[42]	ETag		::=	'</' Name S? '>'
+Content: text between start and endtag
+[43]	content		::=	CharData? ((element | Reference | CDSect | PI | Comment) CharData?)*
+Empty Element: Element without content
+[44]	EmptyElemTag	::=	'<' Name (S Attribute)* S? '/>'							[WFC: Unique Att Spec]
+[3.2 Element Type Declarations]
+Element declarations consisting of name, attribute-list declaration, element type declaration. It defines valid name, attributes and  content for an element
+[45]	elementdecl	::=	'<!ELEMENT' S Name S contentspec S? '>'						[VC: Unique Element Type Declaration]
+[46]	contentspec	::=	'EMPTY' | 'ANY' | Mixed | children
+- [VC: Unique Element Type Declaration]: an element type MUST NOT be declared more than once.
+[3.2.1 Element Content] element content: is the content of an element type, that MUST consist of only child elements
+[47]	children	::=	(choice | seq) ('?' | '*' | '+')?
+[48]	cp		::=	(Name | choice | seq) ('?' | '*' | '+')?
+[49]	choice		::=	'(' S? cp ( S? '|' S? cp )+ S? ')'						[VC: Proper Group/PE Nesting]
+[50]	seq		::=	'(' S? cp ( S? ',' S? cp )* S? ')'						[VC: Proper Group/PE Nesting]
+- [VC: Proper Group/PE Nesting]: If parameter entity references are used for replacement text, than the replacement text MUST contain '(' and ')', only one paratheses is not valid
+Name is the type of an element.
+Operators: '' '?' '+' '*' '(,)' '(|)'
+<!ELEMENT parent child>			child MUST appear exactly once
+<!ELEMENT parent child?>		child MUST appear zero or one time
+<!ELEMENT parent child*>		child MUST appear zero or more times
+<!ELEMENT parent child+>		child MUST appear one or more times
+<!ELEMENT parent (child1 | child2)	child1 or child2 MAY appear (only 1 element, if no * + ? etc is used)
+<!ELEMENT parent (child1, child2)	child1 and child2 MUST appear (exactly once, if no * + ? etc is used)
+[3.2.2 Mixed Content]
+Mixed content:
+- mixed content is the content of an element type, consisting of character data, optionally interspersed with child elements.
+- Types of the child elements may be constrained, but not their order or their number of occurrences
+[51]	Mixed		::=	'(' S? '#PCDATA' (S? '|' S? Name)* S? ')*' | '(' S? '#PCDATA' S? ')'		[VC: Proper Group/PE Nesting]
+														[VC: No Duplicate Types]
+[3.3 Attribute-List Declarations]: Attribute-list declarations specify the name, data type, and default value (if any) of each attribute associated with a given element type:] 
+[52]	AttlistDecl	::=	'<!ATTLIST' S Name AttDef* S? '>'
+[53]	AttDef		::=	S Name S AttType S DefaultDecl
+The Name in the AttlistDecl rule is the type of an element. 
+The Name in the AttDef rule is the name of the attribute.
+[3.3.1 Attribute Types]
+[54]	AttType		::=	StringType | TokenizedType | EnumeratedType
+[55]	StringType	::=	'CDATA'
+[56]	TokenizedType	::=	'ID'										[VC: ID]
+														[VC: One ID per Element Type]
+														[VC: ID Attribute Default]
+			| 'IDREF'										[VC: IDREF]
+			| 'IDREFS'										[VC: IDREF]
+			| 'ENTITY'										[VC: Entity Name]
+			| 'ENTITIES'										[VC: Entity Name]
+			| 'NMTOKEN'										[VC: Name Token]
+			| 'NMTOKENS'										[VC: Name Token]
+- [VC: ID]: ID values MUST match the Name production and uniquely identify the elements which bear them.
+- [VC: One ID per Element Type]: An element type MUST NOT have more than one ID attribute specified.+
+- [VC: ID Attribute Default]: An ID attribute MUST have a declared default of #IMPLIED or #REQUIRED.
+- [VC: IDREF]: IDREF(S) Values MUST match the Name(s) production. Each Name MUST match the value of an ID attribute on some element in the XML document.
+- [VC: Entity Name]: ENTITY(S) values MUST match the Name(s) production. Each Name MUST match the name of an unparsed entity((external) resource which content is not xml) declared in the DTD.
+- [VC: Name Token]: Values of type NMTOKEN(S) MUST match the Nmtoken(s) production
+Enumerated attributes: have a list of allowed values in their declaration they MUST take one of these values
+NOTATION attribute: identifies a notation(definition in 4.7), declared in the DTD
+[57]	EnumeratedType	::=	NotationType | Enumeration
+[58]	NotationType	::=	'NOTATION' S '(' S? Name (S? '|' S? Name)* S? ')' 				[VC: Notation Attributes]
+														[VC: One Notation Per Element Type]
+														[VC: No Notation on Empty Element]
+														[VC: No Duplicate Tokens]
+[59]	Enumeration	::=	'(' S? Nmtoken (S? '|' S? Nmtoken)* S? ')'					[VC: Enumeration]
+														[VC: No Duplicate Tokens]
+- [VC: Notation Attributes]: Notation Attribute Values MUST match one of the notation names included in the declaration; all notation names in the declaration MUST be declared.
+- [VC: One Notation Per Element Type]: An element type MUST NOT have more than one NOTATION attribute specified.
+- [VC: No Notation on Empty Element]: Empty Elements MUST NOT have a NOTATION.
+- [VC: No Duplicate Tokens]: notations and NmTokens MUST all be distinct for one element.
+- [VC: Enumeration]: Enumeration Values MUST match one of the Nmtoken tokens in the declaration
+[3.3.2 Attribute Defaults]
+An Attribute Value can be
+- #REQUIRED: the value MUST be provided
+- #IMPLIED: the value MAY be provided. No default value is set
+- #FIXED AttValue: the value MAY be provided, but MUST match the default value(AttValue). The default value is set
+- AttValue: the value MAY be provided. The default value is set
+[60]	DefaultDecl	::=	'#REQUIRED' | '#IMPLIED'
+				| (('#FIXED' S)? AttValue)							[VC: Required Attribute]
+														[VC: Attribute Default Value Syntactically Correct]
+														[WFC: No < in Attribute Values]
+														[VC: Fixed Attribute Default]
+														[WFC: No External Entity References]
+- [VC: Required Attribute]: If the attributes default declaration is #REQUIRED all elements of that type MUST be specified with a value for that attribute
+- [VC: Attribute Default Value Syntactically Correct]:  If an attribute default value is declared it MUST meet the syntactic constraints of the declared attribute type
+  - for type IDREF(S) or ENTITY(S) the default value MUST match the Name production;
+  - for type NMTOKEN(S) the default value MUST match the Nmtoken production
+  - for type enumerated the defaul value MUST match one of the in enumerated type specified enumerated values
+- [VC: Fixed Attribute Default]: If an attribute has a default value declared with the #FIXED keyword, instances of that attribute MUST match the default value.
+[3.3.3 Attribute-Value Normalization] Before attribute values are validated they have to be normalized
+Att Value Normalization Algorithm
+1.	All line breaks MUST have been normalized (2.11 End-of-Line Handling)
+2.	Begin with a normalized value consisting of the empty string.
+3.	For each character, entity reference, or character reference in the unnormalized attribute value, beginning with the first and continuing to the last, do the following:
+		For a character reference, append the referenced character to the normalized value.
+		For an entity reference, recursively apply step 3 of this algorithm to the replacement text of the entity.
+		For a white space character (#x20, #xD, #xA, #x9), append a space character (#x20) to the normalized value.
+		For another character, append the character to the normalized value.
+4. 	If the attribute type is not CDATA, then discard leading and trailing space (#x20) characters, and by replacing sequences of space (#x20) characters by a single space (#x20) character.
+[3.4 Conditional Sections] Conditional sections are portions of the DTD's external subset, included or excluded from the DTD based on the keyword which governs them
+[61]	conditionalSect	::=   	includeSect | ignoreSect
+[62] 	includeSect	::=   	'<![' S? 'INCLUDE' S? '[' extSubsetDecl ']]>' 					[VC: Proper Conditional Section/PE Nesting]
+[63]	ignoreSect	::=   	'<![' S? 'IGNORE' S? '[' ignoreSectContents* ']]>'				[VC: Proper Conditional Section/PE Nesting]
+[64] ignoreSectContents	::=   	Ignore ('<![' ignoreSectContents ']]>' Ignore)*
+[65]	Ignore		::=   	Char* - (Char* ('<![' | ']]>') Char*)
+- [VC: Proper Conditional Section/PE Nesting] If any of the "<![", "[", or "]]>" of a conditional section is contained in the replacement text for a parameter-entity reference, all of them MUST be contained in the same replacement text.
+INCLUDE: the contents of the conditional section MUST be processed as part of the DTD. 
+IGNORE: the contents of the conditional section MUST NOT be processed as part of the DTD
+IGNORE Outersection INCLUDE section within: Both sections are ignored (this does not work the other way around)
+[4 Physical Structures]
+Entities: Storage units for content. An XML document may consist of one or many storage units.
+Document entity: Starting ppoint for the XML Processor
+Replacement text: parsed content of an entity this text is considered an integral part of the document
+Unparsed entity: containing unparsed content and associated with a notation
+General entities: are entities for use within the document content. 
+Parameter entities: are parsed entities for use within the DTD.
+[4.1 Character and Entity References] character reference refers to a Unicodecharacter
+[66]	CharRef		::=	'&#' [0-9]+ ';' | '&#x' [0-9a-fA-F]+ ';'					[WFC: Legal Character]
+- [WFC: Legal Character]: Characters referred to using character references MUST match the production for Char.
+&#x: provide a hexadecimal representation of the character's code
+&# : provide a decimal representation of the character's code
+entity reference: refers to the content of a named entity
+  - general entities use & and ; as delimiters
+  - Parameter-entity references use % and ; as delimiters
+[67]	Reference	::=	EntityRef | CharRef
+[68]	EntityRef	::=	'&' Name ';'									[WFC: Entity Declared]
+														[VC: Entity Declared]
+														[WFC: Parsed Entity]
+														[WFC: No Recursion]
+[69]	PEReference	::=	'%' Name ';'									[VC: Entity Declared]
+														[WFC: No Recursion]
+														[WFC: In DTD]
+- [WFC: Entity Declared] If Standalone=yes, DTD has no external subset or no DTD is given. The Name given in the entity reference MUST match that in an entity declaration. The declaration MUST NOT occure in external subset of the DTD.
+  - The declaration of a general entity MUST precede any reference to it which appears in a default value in an attribute-list declaration.
+  - well-formed documents need not declare: amp, lt, gt, apos, quot. 
+- [VC: Entity Declared] In a document with an external subset or parameter entity references,the Name given in the entity reference MUST match that in an entity declaration.
+  - The declaration of a parameter entity MUST precede any reference to it. 
+  - The declaration of a general entity MUST precede any attribute-list declaration containing a default value with a direct or indirect reference to that general entity.
+- [WFC: Parsed Entity]: 
+  - Unparsed entities MUST NOT be reffered to by an entity reference. 
+  - Unparsed entities MAY be referred to in attribute values of type ENTITY or ENTITIES
+- [WFC: No Recursion]: A parsed entity MUST NOT contain a recursive reference to itself, either directly or indirectly.
+- [WFC: In DTD]: Parameter-entity references MUST NOT appear outside the DTD
+[4.2 Entity Declarations]
+[70]	EntityDecl	::=	GEDecl | PEDecl
+[71]	GEDecl		::=	'<!ENTITY' S Name S EntityDef S? '>'
+[72]	PEDecl		::=	'<!ENTITY' S '%' S Name S PEDef S? '>'
+[73]	EntityDef	::=	EntityValue | (ExternalID NDataDecl?)
+[74]	PEDef		::=	EntityValue | ExternalID
+- Name identifies the entity 
+- If the same entity is declared more than once, the first declaration encountered is binding
+[4.2.1 Internal Entities] Internal Entity: the entity definition is an EntityValue not an ExternalID(reference). It is allways a parsed entity
+[4.2.2 External Entities] External Entity: the entity definition is not an EtityValue(hence it is a reference)
+NDataDecl allways is a general unparsed entity
+[75]	ExternalID	::=	'SYSTEM' S SystemLiteral | 'PUBLIC' S PubidLiteral S SystemLiteral
+[76]	NDataDecl	::=	S 'NDATA' S Name 								[VC: Notation Declared]
+-  [VC: Notation Declared]: The Name MUST match the declared name of a notation.
+SystemLiteral: is the entity's system identifier. 
+- It is meant to be converted to a URI reference, in order to retriev the referenced content
+- In XML, a formal system identifier(FSI) is a fragmentless URI reference
+- if no base URI is specified, the base URI of a resource is always the URI of the actual resource returned
+PublicLiteral: is the entity's public identifier
+- An formal public identifier (FPI) is a legacy system, todays URIs are used instead
+[4.3 Parsed Entities]
+[4.3.1 The Text Declaration] 
+- External parsed entities SHOULD each begin with a text declaration.
+- The text declaration MUST be provided as literal
+- The text declaration MUST NOT appear at any position other than the beginning of an external parsed entity. 
+- The text declaration in an external parsed entity is not considered part of its replacement text.
+[77]	TextDecl	::=	'<?xml' VersionInfo? EncodingDecl S? '?>'
+[4.3.2 Well-Formed Parsed Entities]
+- well-formed documents: MUST match the production document
+- well-formed external general parsed entity: MUST match the production extParsedEnt. 
+- well-formed external parameter entities: external parameter entities are well-formed by definition.
+- well-formed internal general parsed entity: MUST match the production content.
+=>  logical and physical structures in an XML document are properly nested; no tag, element, comment, processing instruction or reference can begin in one entity and end in another
+[78]   	extParsedEnt	   ::=   	TextDecl? content 
+[4.3.3 Character Encoding in Entities] Every encoding is allowed
+Entities which are not UTF-8 or UTF-16 encoded MUST begin with a text declaration (4.3.1 The Text Declaration) containing an encoding declaration:
+[80]	EncodingDecl	::=	S 'encoding' Eq ('"' EncName '"' | "'" EncName "'" )				/* EncodingDeclaration is part of the XMLDecl*/
+[81]	EncName		::=	[A-Za-z] ([A-Za-z0-9._] | '-')*							/* Encoding name contains only Latin characters */
+[4.5 Construction of Entity Replacement Text]
+literal entity value:
+- For an internal entity, it is the quoted string actually present in the entity declaration (see production EntityValue)
+- For an external entity, it is the exact text contained in the entity
+replacement text:
+- For an internal entity, it is the content of the entity after replacing character- and parameter-entity references. General-entity references MUST be left as-is.
+- For an external entity, it is the literal entity value without surrounding whitespace. (No referencec replacement)
+[4.6 Predefined Entities] Predefined Entities: amp, lt, gt, apos, quot are predifined escape entities for xml (for &,<,>,',"). Character references MAY be used aswell.
+[4.7 Notation Declarations]
+Notations: identify by name the format of unparsed entities, the format of elements which bear a notation attribute, or the application to which a processing instruction is addressed
+=> Notations are used for allowing an XML processor or its client application to locate a helper application capable of processing data in the given notation
+Notation declarations: provide a name for the notation.
+[82]	NotationDecl	::=	'<!NOTATION' S Name S (ExternalID | PublicID) S? '>'				[VC: Unique Notation Name]
+[83]	PublicID	::=	'PUBLIC' S PubidLiteral 
+- [VC: Unique Notation Name] A given Name MUST NOT be declared in more than one notation declaration.
+[4.8 Document Entity] document entity: serves as the root of the entity tree and a starting-point for an XML processor.
+[5.1 Validating and Non-Validating Processors]
+Validating XML Processors: Check the whole document for well-formdness and validity
+=> XML processors MUST read and process the entire document (document entity and all external entities referenced in it e.g. DTD)
+Non-Validating Processors: Check only the document entity for well-formdness
+Well-formd: Jedes Dokument, welches den Spezifikationen der hier aufgeführten Produktionsregeln gerecht wird, ist well-formed.
+Valide: Jedes Dokument, welches well-formed ist und zusätzlich der DTD, die für das jeweilige Dokument spezifiziert wurde, entspricht, ist valide. Die DTD muss ebenfalls den hier aufgeführten Produktionsregeln entsprechen.
+[5.2 Using XML Processors]
+
+
+
+
+
+
+
+
+
+
+
+
+

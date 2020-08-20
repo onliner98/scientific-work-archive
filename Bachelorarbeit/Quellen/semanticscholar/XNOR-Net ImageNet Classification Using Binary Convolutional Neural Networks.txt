@@ -1,0 +1,1 @@
+binary approximations for cnn (for textclassification)

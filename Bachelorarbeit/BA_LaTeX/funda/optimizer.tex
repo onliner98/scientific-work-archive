@@ -1,0 +1,43 @@
+An optimizer is an algorithm solving an optimization problem. Optimizers used in the course of this paper are \ac{SGD} with momentum or Nesterov momentum and \ac{RMSProp}.
+%
+\ac{SGD} and \ac{RMSProp} are based on gradient descent. Gradient descent is an algorithm minimizing a loss function $\mathcal{L}(\theta)$ in regard to the parameters~$\theta$ of a neural network. The loss function is minimized by changing the parameters by the negative gradient of the loss function $\nabla_{\theta} \mathcal{L}(\theta)$ with regard to the parameters. Before changing the parameters, the gradient is scaled by the learning rate $\eta$. This is repeated until a local or the global minimum is reached. While descending the landscape, the learning rate can be imagined as the size of a step taken in that landscape. \autocite{Ruder.2016}
+%
+\ac{SGD} approximates the gradient $\nabla_{\theta} \mathcal{L}(\theta)$ for each sample or batches of samples. On that account, \ac{SGD} is much faster but causes the loss function to fluctuate. The fluctuation is decreased by increasing the batch size. The change of parameters is defined in Equation \eqref{eq:sgd}. \autocite{Ruder.2016}
+\begin{equation}
+	\label{eq:sgd}
+	\theta = \theta - \eta \nabla_{\theta} \mathcal{L}(\theta)
+\end{equation}
+%
+\ac{SGD} can be augmented with momentum or Nesterov momentum.
+%
+Momentum accelerates \ac{SGD} by adding a fraction $\gamma$ of the previous step's gradient $v_{t-1}$ to the current step's gradient. This way, the gradient is increased for dimensions whose previous gradients point into the same directions and reduced for dimensions whose previous gradients point into different directions. In consequence, a local or the global minimum is reached faster and fluctuation of the loss function is reduced.
+Momentum can be imagined as pushing down and gaining speed while descending the landscape. The problem is that when the landscape slopes up again the speed will result in an ascendance in the landscape. The change of parameters is defined in Equation \eqref{eq:momentum}. \autocite{Ruder.2016}
+\begin{equation}
+	\label{eq:momentum}
+	\begin{array}{lcl}
+		\theta & = & \theta - v_t\\
+		v_t & = & \gamma v_{t-1} + \eta \nabla_{\theta} \mathcal{L}(\theta)
+	\end{array}
+\end{equation}
+%
+Nesterov momentum accelerates \ac{SGD} while descending and decelerates \ac{SGD} before ascending. Nesterov momentum does so by adding a fraction $\gamma$ of the previous step's gradient to an approximation of the next step's gradient $\nabla_{\theta} \mathcal{L}(\theta - \gamma v_{t-1})$ instead of the currents step's gradient. Approximating the next step's gradient can be imagined as looking ahead. Therefore, Nesterov momentum can be imagined as pushing down and gaining speed while looking ahead to decelerate when the landscape is about to slope up. The change of parameters is defined in Equation \eqref{eq:nesterov}. \autocite{Ruder.2016}
+\begin{equation}
+	\label{eq:nesterov}
+	\begin{array}{lcl}
+		\theta & = & \theta - v_t\\
+		v_t & = & \gamma v_{t-1} + \eta \nabla_{\theta} \mathcal{L}(\theta - \gamma v_{t-1})
+	\end{array}
+\end{equation}
+%
+\ac{RMSProp} decreases fluctuation of the loss function by adapting the learning rate for each parameter $\theta_i$. The gradient of the loss function with regard to the parameter~$\theta_i$ at step~$t$ is called $g_{t,i}$. The learning rate is adapted by dividing it by a root mean square variation~$RMS(g_t)$ of $g_t$. The root mean square variation is defined in Equation~\eqref{eq:rms}. \autocite{Ruder.2016}
+\begin{equation}
+	\label{eq:rms}
+	RMS(g_t) = \sqrt{\gamma E[g^2]_{t-1} + (1-\gamma) g^2_t}
+\end{equation}
+Dividing the learning rate by the root mean square variation increases the learning rate for small gradients and decreases the learning rate for large gradients. Thus, fluctuation of the loss function is decreased. The change of parameters is defined in Equation \eqref{eq:rmsprop}. \autocite{Ruder.2016}
+\begin{equation}
+\label{eq:rmsprop}
+	\theta_{t+1} = \theta_t - \frac{\eta}{RMS(g_t) + \epsilon} g_t
+\end{equation}
+The noise parameter $\epsilon$ is close to $0$. Adding $\epsilon$ ensures that $\eta$ is never divided by zero. \autocite{Ruder.2016}
+Note that some papers refer to the fraction $\gamma$ as momentum. \autocites{Simonyan.2014}{He.2016}{Xie.2017}{Huang.2017}{Tan.2019}

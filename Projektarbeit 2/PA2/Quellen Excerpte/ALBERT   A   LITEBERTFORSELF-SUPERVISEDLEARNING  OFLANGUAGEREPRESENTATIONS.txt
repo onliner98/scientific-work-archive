@@ -1,0 +1,47 @@
+ALBERT=BERT mit weniger params => schneller und mehr trainierbar => GLUE No.1
+
+Related Work
+- Embedding Pretraining
+  - standard:
+    - Word2Vec (Mikolov et al. 2014)
+    - Doc2Ve (Le and Mikolov 2014)
+    - GloVe (Pennington et al. 2014)
+  - contextualized
+    - CoVe (McCann et al. 2017)
+    - Elmo (Peters et al. 2018)
+- Full Model Pretra ining
+  - GPT-1/2 (Radford et al. 2018)
+  - XLNet (Yyang et al. 2019)
+  - Bert (Devlin et al. 2019)
+The Elements of Albert
+- in BERT Embedding size E = Hidden layer size H
+  ALBERT has H>E 
+  => Albert Projects 1HotVectors from Vocab V into small Embedding Space E and then into Hiddenspace H O(VxE+ExH)
+     while Bert Projects directly into H O(VxH)
+  => Faktorisierung
+- in BERT each Layer has its own params
+  ALBERT shares all params across all Layers
+- ALBERT introduces a new unsupervised Training Objective SOP and ditches the NSP training Objective
+  SOP: predicts if 2 given sentences are in the correct order or switched
+Experimental Results
+- Everything as similar to bert as possible for comparison
+  - same Voc tokenizer as Bert  (Kudo & Richardson, 2018)
+  - same Voc size 30000
+  - max input 512 tokens
+  - 10% probability to generate shorter sequences
+  - generate MLM with n-gram masking (Joshi et al. 2019)
+  - LAMB Optimizer learning rate 0.00176 (You et al. 2019)
+- Overall Comparison between BERT and ALBERT: ALBERT is trained much faster
+- Factorized Embedding Parameterization: Embedding Size of 128 seems to be best for ALBERT
+- Cross Layer Parameter Sharing: s
+  - haring only attention params does almost not hurt performance, 
+  - performance is hurt less by sharing params, if the embedding size is less
+- Sentence Order Prediction: Pretraining with SOP improves performs on finetuned task  more than with NSP
+- Effect of Network Depth and Width: Width H=4096 Depth NumLayers=24 seems o be the best config
+- Do very wide ALBERT Models need to be deeper too?: With a Width of H=4096 numLayers of 12 and 24 make almost no difference => 12 Layers are enough
+- Additional Training Data and Dropout Effects: Droppout hurts performance, more data improves performance
+
+The final Model Albert-xxlarge: 12 Layer H=4096 E=128, Full Parameter Sharing, SOP and MLM, additional training Data, no dropout
+
+Conclusion
+Albert-xxlarge has less Params than Bert-large but is computationally more expensive it takes 1.2 of the training time of BERT large for the same amount of data

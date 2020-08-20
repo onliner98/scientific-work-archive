@@ -1,0 +1,1 @@
+Group Equivariant Capsule Networks for MNIST classification

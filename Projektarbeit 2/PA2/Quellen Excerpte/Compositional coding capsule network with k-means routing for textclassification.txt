@@ -1,0 +1,4 @@
+Introduction
+- [9] presented capsule. [10] first applied this to neural networks (History of CapsuleNetworks)
+Model Architecture:
+- es ist ein capsnet aber was genau compositional coding ist wird nicht erklärt => nur für die concept matrix sinnvoll

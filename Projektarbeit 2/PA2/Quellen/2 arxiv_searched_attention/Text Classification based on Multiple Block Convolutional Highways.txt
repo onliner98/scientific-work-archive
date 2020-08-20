@@ -1,0 +1,23 @@
+Introduction
+-Text Classification: CNNs are better or equal to LSTM
+  - Vanishing Gradient Problem in CNN [20,21]
+  - Solution: Highway CNNs
+- Word embeddings improve the classification accuracy
+  - e.G. Wor2Vec and Glove [24-26]
+  - need very larg datasets to be trained [27,28] => use pretrained ones
+  - are not best fit for the data of specific tasks [1,29-33]
+- This paper tests 
+  - multiple block convolutional networks 
+  - highway networks [22]
+  - dense nets [18]
+  - batch normalization [37]
+  - bottleneck layers [36,38]
+  - Improved Word Vectors to cope with above mentioned problems
+Related Work
+- Word Embeddings
+- CNNs
+- HIghway Networks
+- alle 3 jeweils mit Anwendungsbeispielen
+Proposed Architecture
+- Improved Word Vector: Concatination of word2vec/glove + lexicon2vec(sentiment representation) + pos2vec(position in sentence)
+- Model: siehe figure 2

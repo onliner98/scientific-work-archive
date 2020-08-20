@@ -1,0 +1,8 @@
+Text Classification:
+- discriminative RNN: RNN letzter Hiddenstate oder alle Hiddenstates werden durch Softmax/Sigmoid gejagt
+- generative RNN: RNN letzter Hiddenstate ist das Label
+Verglichen mit
+- CNN
+- CNN followed by RNN
+Generell:
+- discriminative performt besser als generative 

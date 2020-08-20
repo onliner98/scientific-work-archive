@@ -1,0 +1,15 @@
+Introduction
+- CNN for Region Embedding: Wörter als 1HotVectoren/ WordEmbedding darstellen und CNN über Matrix aus Wortvektoren laufen lassen
+  - Pooling für kleineres Regionembedding
+- LSTM for Region Embedding: 
+  - Wörter als 1HotVectoren/ WordEmbedding darstellen und LSTM über Sequenz von Wortvektoren laufen lassen
+    - Pooling über alle Hiddenstate als regionembedding
+    - Letzter Hiddenstate als regionembedding
+- Classifier on top of the region embedding (vmtl 1 Denslayer 1 Softmaxlayer)
+Supervised LSTM for text categorization
+- LSTM for Region embedding erweitert um: Bi Direction, Pooling, Removing in and output Gates (make no difference to have them due to pooling)
+  => oh-2LSTMp		oh: one hot 2:bidirectional p:pooling
+Semi-supervised LSTM
+- two view embedding: Train LSTM/CNN to predict some words (view2) which follow after some other words (view1) pretrained on unlabeld data
+Conclusion
+- Concatinating LSTM and CNN tv embedding as input for the oh-2LSTMp acchieves the best results

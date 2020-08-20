@@ -1,0 +1,5 @@
+Classification Methods: siehe Begriffstabelle
+Embedding: Sparse/Dense/Contextual (GloVe, Word2Vec, ELMo, BERT, SubWords, RNNs, Bag Of Words, Doc2Vec, Tree Struct)
+Hyperparams: Regularization, DropOut, Comparison(KL-Div, Cos-Distance, Lp-Distance), Akt. Fkt
+Classifier Comparison: t-Test, f-Test, Vertrauensintervalle, Wilcox Signed Rank Test, Mc Nemarstetst
+Transferlearning

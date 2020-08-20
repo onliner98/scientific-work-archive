@@ -1,0 +1,6 @@
+Compression Method of a CNN for Image Classification => worse results than uncompressed CNNs
+
+SOTA is
+- Alex-Net
+- ResNet
+- VGG

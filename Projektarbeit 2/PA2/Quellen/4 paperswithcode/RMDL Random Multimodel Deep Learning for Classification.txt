@@ -1,0 +1,11 @@
+Introduction:
+- typical structures: DNN, RNN, CNN
+Rel Work
+- this Model uses Glove
+- CNN for text classification [21]
+Method: Random Multimodal Deep Learning (RDL)
+- randomly create d DNNs r RNNs and c CNNs, each one is randomly created (reagarding hyper params)
+- train all n Models in parallel
+- final prediction is calculated using majority vote
+Experiment
+- vlg CNN RNN and RDL, RDL gewinnt je mehr Random Models es hat

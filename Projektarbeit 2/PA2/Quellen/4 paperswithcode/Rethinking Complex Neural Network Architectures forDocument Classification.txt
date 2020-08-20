@@ -1,0 +1,17 @@
+Introduction
+- This paper questions whether complex Models are needed to get sota results for document classification
+- these complex models are listet under experiment
+- simple BiLSTMs
+Regularizing RNNs
+- Dropout for RNN (Merity et al 2018)
+  - Weight-dropped LSTM (Wan et al 2013)
+  - Embedding  Dropout (Gal and Gharamani 2016)
+BiLSTM Model
+- biLSTM with maxpooling over time to get document vector d
+- d is fed into a sigoid (single label) or softmax (multi-label) layer
+Experminet
+- the BiLSTM is compared to the following complex models: (and wins)
+  - KimCNN: CNN+fully connected layer+dynamic adaptive max pooling (Kim 2014)
+  - SGM: Encoder encoded document decoder decoded last hidden state als sequenz von labenl (Yang et al 2018)
+  - HAN: Hierachical Attention Network (Yang et al 2016)
+  - XML-CNN (Liu et al 2017)

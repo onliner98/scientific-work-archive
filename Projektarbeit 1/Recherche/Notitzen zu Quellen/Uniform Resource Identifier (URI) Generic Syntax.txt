@@ -1,0 +1,239 @@
+ABNF is used to denote the URI if you do not undestand the denotation pleas read ABNF again
+
+[1.1. Overview of URIs] 
+- Uniform: portability abstraction
+- Ressource: Whathever might me idintified by the URI e.g. Image, Service, Number, Operator
+- Identifier: distinguishes resources to uniquely identify ressources, URI have a global scope, however the
+[1.1.1 Generic Syntax] URI begins with a scheme name. This way URI can be parsed in its major components with scheme independant syntax and semantic.
+While the scheme depandant parsing can be postponed until it is required on the individual components.
+A relative reference (Section 4.2) refers to a resource by describing the difference within a hierarchical name space between the reference context and the target URI.
+[1.1.3 URI, URL and URN] URI is URN and or URL. URN Name of the ressource, URL Location of the ressource
+[1.2.3.  Hierarchical Identifiers] : delimits scheme and rest of the URI
+[1.3 Syntax Notations]
+      ALPHA       = a-Z
+      DIGIT       = 0-9
+      HEXDIG      = 0-F
+[2. Characters] Sequenz of Characters (ASCII encoded Oktets) Characters out of the ASCII range or used as delimiter are percent-Encoded
+      pct-encoded = "%" HEXDIG HEXDIG
+[2.2. Reserved Characters]	
+      gen-delims  = ":" / "/" / "?" / "#" / "[" / "]" / "@" 				;Generic Delimiters for the URI itself
+      sub-delims  = "!" / "$" / "&" / "'" / "(" / ")" / "*" / "+" / "," / ";" / "="	;Delimiter for sub-commponents of the URI => scheme can define additional ones
+=> not equivalent to its  corresponding percent-encoded US-ASCII octet
+[2.3. Unresered Characters]
+      unreserved = ALPHA / DIGIT / "-" / "." / "_" / "~"				;=> equivalent to its  corresponding percent-encoded US-ASCII octet
+[3.  Syntax Components] URI structure
+      URI         = scheme ":" hier-part [ "?" query ] [ "#" fragment ]
+      hier-part   = "//" authority path-abempty
+                  / path-absolute
+                  / path-rootless
+                  / path-empty
+         foo://example.com:8042/over/there?name=ferret#nose
+         \_/   \______________/\_________/ \_________/ \__/
+          |           |            |            |        |
+       scheme     authority       path        query   fragment
+          |   _____________________|__
+         / \ /                        \
+         urn:example:animal:ferret:nose
+
+The scheme determines scheme specific identifiers [1.1.1 Generic Syntax]
+      scheme      = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
+
+The authority determines the scope where to identify the ressource
+      authority   = [ userinfo "@" ] host [ ":" port ]					;The URI Scheme can define a default host, which is used if the host field is empty e.g. File:///c:/foo.exe is equal to File://localhost/c:/foo.exe
+      userinfo    = *( unreserved / pct-encoded / sub-delims / ":" )			;usually username and scheme-specific information how to gain access to the ressource,  username:password is depricated (security risk)
+      host        = IP-literal / IPv4address / reg-name					;IPv4/6address are literals in IPv4/6format
+      IP-literal  = "[" ( IPv6address / IPvFuture  ) "]"
+      IPvFuture   = "v" 1*HEXDIG "." 1*( unreserved / sub-delims / ":" )			;Futur = Not yet defined IP literals => possible successor of IPv6
+      reg-name    = *( unreserved / pct-encoded / sub-delims )				;registered name = character sequenze intended for lookup with host- or service-name registry (e.G. DNS)
+      port        = *DIGIT
+
+The path(usually hierachical), along with the query(non-hierachical) serves to identify a resource within the scope of the URI's scheme and authority
+      path-abempty  = *( "/" segment )							; begins with "/" or is empty				
+      path-absolute = "/" [ segment-nz *( "/" segment ) ]				; begins with "/" but not "//"
+      path-noscheme = segment-nz-nc *( "/" segment )					; begins with a non-colon segment
+      path-rootless = segment-nz *( "/" segment )					; begins with a segment
+      path-empty    = 0<pchar>								; zerolength path
+      segment       = *pchar
+      segment-nz    = 1*pchar								; no zerolength
+      segment-nz-nc = 1*( unreserved / pct-encoded / sub-delims / "@" )			; no zerolength no colon ":"
+      pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
+      query       = *( pchar / "/" / "?" )
+
+The fragment allows indirect identification of a secondary resource by reference to a primary resource and additional identifying information (e.G. identifieing a subset of the primar ressource)
+The syntax/semantics of a fragement are defined by the ressource itself => type dependand => therefore the ressource needs to be retrieved if this is not possible the syntax is considered unconstrained
+Fragement identifiers do not imply a retrieval action,
+Frageements are not dereferenced in the scheme specific process but by the user-agent after the retrieval process
+      fragment    = *( pchar / "/" / "?" )
+[4. Usage] Applications do not allways use the full form of an URI to reference but abbreviate with an URI reference, therefore the hierachical syntax is made use of
+      URI-reference = URI / relative-ref
+      relative-ref  = relative-part [ "?" query ] [ "#" fragment ]
+      relative-part = "//" authority path-abempty;					; network reference
+                    / path-absolute							; begins with "/"
+                    / path-noscheme							; begins with not ":"
+                    / path-empty							; zerolength path
+
+The path segments "." and "..", are defined for relative reference within the path name hierarchy.
+They are used at the beginning of a relative-path reference (Section 4.2) to indicate relative position within the hierarchical tree of names.
+They are used infront of path segmetns that contain a colon character, so they are not mistaken for scheme names e.G.(this:that this=scheme => ./this:that 
+A relative reference that does not begin with a "/" is termed a relative-path-reference
+[4.3.  Absolute URI] URI without a fragment identifier. URI scheme specifications must define their own syntax so that all strings matching their scheme-specific syntax will also match the <absolute-URI> grammar.
+      absolute-URI  = scheme ":" hier-part [ "?" query ]
+[4.4 Same-Document Reference] URI reference refering to a URI, that is asid from its fragement identical to the base URI. Usually relative references that are path-empty or # fragment
+Dereferencing same document references for retrieval action should not result in a retrieval action for the already retrieved document.
+[4.5.  Suffix Reference] Suffix references consist of authority and path => ambigious => heuristicaly resolved to their URI via context => mainly for human usage
+[5.  Reference Resolution] resolving a URI reference to a URI using the context of the reference
+[5.1 Establishing a Base URI] base URI refers to the URI of the context the URI reference is embedded in.
+base URI established using one of four ways
+1) a base URI can be embedded in the representations content => how the base URI is embedded is specified by each media type
+2) if no base URI is embedded, the base URI of the representations encapsulating entity is used(=> iterate through next higher scopes until base URI is found)
+3) if no base URI is specified in the encapsulating entity or there is no encapsulatin entity, the URI used to retrieve the representation is used as base URI
+4) If none of the conditions described above apply, then the base URI is defined by the context of the application
+In consequence a base URL must be well defined if relative references are used
+
+
+
+Usefull references
+   [ASCII]    American National Standards Institute, "Coded Character
+              Set -- 7-bit American Standard Code for Information
+              Interchange", ANSI X3.4, 1986.
+
+   [RFC2234]  Crocker, D. and P. Overell, "Augmented BNF for Syntax
+              Specifications: ABNF", RFC 2234, November 1997.
+
+   [STD63]    Yergeau, F., "UTF-8, a transformation format of
+              ISO 10646", STD 63, RFC 3629, November 2003.
+
+   [UCS]      International Organization for Standardization,
+              "Information Technology - Universal Multiple-Octet Coded
+              Character Set (UCS)", ISO/IEC 10646:2003, December 2003.
+[5.2.2. Transform References] For each URI reference (R), the following pseudocode transform R into its target URI (T) using the base URI (BASE):
+
+      -- The URI reference is parsed into the five URI components
+      (R.scheme, R.authority, R.path, R.query, R.fragment) = parse(R);
+
+      -- A non-strict parser may ignore a scheme in the reference
+      -- if it is identical to the base URI's scheme.
+      if ((not strict) and (R.scheme == Base.scheme)) then
+         undefine(R.scheme);
+      endif;
+
+      if defined(R.scheme) then
+         T.scheme    = R.scheme;
+         T.authority = R.authority;
+         T.path      = remove_dot_segments(R.path);
+         T.query     = R.query;
+      else
+         if defined(R.authority) then
+            T.authority = R.authority;
+            T.path      = remove_dot_segments(R.path);
+            T.query     = R.query;
+         else
+            if (R.path == "") then
+               T.path = Base.path;
+               if defined(R.query) then
+                  T.query = R.query;
+               else
+                  T.query = Base.query;
+               endif;
+            else
+               if (R.path starts-with "/") then
+                  T.path = remove_dot_segments(R.path);
+               else
+                  T.path = merge(Base.path, R.path);
+                  T.path = remove_dot_segments(T.path);
+               endif;
+               T.query = R.query;
+            endif;
+            T.authority = Base.authority;
+         endif;
+         T.scheme = Base.scheme;
+      endif;
+
+      T.fragment = R.fragment;
+[5.2.3.  Merge Paths] merge(Base.path, R.path)
+       if BASE.path.isEmpty
+         return concetinate "/", R.path
+       else
+         -- the segment after the right-most "/" of BASE.path is excluded it can be an emptysegment aswell (e.g. myBasePath/)
+         return R.path appended after the right-most "/" of BASE.path 
+         -- e.G. BASE.path=myBasePath/ R.path=myRpath merge(BASE.path, R.path)=myBasePath/myRpath
+[5.2.4.  Remove Dot Segments] remove_dot_segments(path)
+A.  If the input buffer begins with a prefix of "../" or "./",
+           then remove that prefix from the input buffer; otherwise,
+
+       B.  if the input buffer begins with a prefix of "/./" or "/.",
+           where "." is a complete path segment, then replace that
+           prefix with "/" in the input buffer; otherwise,
+
+       C.  if the input buffer begins with a prefix of "/../" or "/..",
+           where ".." is a complete path segment, then replace that
+           prefix with "/" in the input buffer and remove the last
+           segment and its preceding "/" (if any) from the output
+           buffer; otherwise,
+
+       D.  if the input buffer consists only of "." or "..", then remove
+           that from the input buffer; otherwise,
+
+       E.  move the first path segment in the input buffer to the end of
+           the output buffer, including the initial "/" character (if
+           any) and any subsequent characters up to, but not including,
+           the next "/" character or the end of the input buffer.
+
+e.G.
+STEP   OUTPUT BUFFER         INPUT BUFFER
+
+       1 :                         /a/b/c/./../../g
+       2E:   /a                    /b/c/./../../g
+       2E:   /a/b                  /c/./../../g
+       2E:   /a/b/c                /./../../g
+       2B:   /a/b/c                /../../g
+       2C:   /a/b                  /../g
+       2C:   /a                    /g
+       2E:   /a/g
+
+[5.4.  Reference Resolution Examples]
+BASE URI = http://a/b/c/d;p?q
+      RELATIVE REFERENCE	TARGET URI
+      "g:h"			"g:h"
+      "g"			"http://a/b/c/g"
+      "./g"			"http://a/b/c/g"
+      "g/"			"http://a/b/c/g/"
+      "/g"			"http://a/g"
+      "//g"			"http://g"
+      "?y"			"http://a/b/c/d;p?y"
+      "g?y"			"http://a/b/c/g?y"
+      "#s"			"http://a/b/c/d;p?q#s"
+      "g#s"			"http://a/b/c/g#s"
+      "g?y#s"			"http://a/b/c/g?y#s"
+      ";x"			"http://a/b/c/;x"
+      "g;x"			"http://a/b/c/g;x"
+      "g;x?y#s"			"http://a/b/c/g;x?y#s"
+      ""			"http://a/b/c/d;p?q"
+      "."			"http://a/b/c/"
+      "./"			"http://a/b/c/"
+      ".."			"http://a/b/"
+      "../"			"http://a/b/"
+      "../g"			"http://a/b/g"
+      "../.."			"http://a/"
+      "../../"			"http://a/"
+      "../../g"			"http://a/g6."
+      "../../../../../../../g"	"http://a/g"  // Mehr ../ als segmente removen trotzdem nicht das letzte segment
+[6. Normalization and Comparison] Equivalent URIs are URIs identifieing the same ressource. Sometimes equivalent URIs do not look the same.
+In Order to reduce duplicates we need algorithms that Strictly avoid fals positives and reduce the number of false negatives.
+
+The deeper the level the more processing power is needed, the prior level needs to be included aswell
+String to String comparison
+  Syntax-Based Normalization 							// eXaMPle://a/./b/../b/%67 is equivalent to example://a/b/c
+    Case Normalization								// %encodings are case insensitive e.g. %aF is equivalent to %af
+      Percent-Encoding Normalization						// translation of the %encoded characters in the corresponding characters
+        Scheme-Based Normalization						// URI Syntax/Schemantics vary from Scheme to Scheme therefore Normalization based on the Scheme specific Rules may be applied just as Syntax Normalization
+          Protocol-Based Normalization						// Some Protocolls have common conventions on URI desin this can be considered aswell
+
+
+
+
+
+
+
+
+

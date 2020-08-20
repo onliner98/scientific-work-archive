@@ -1,0 +1,3 @@
+BiGRU with Attention to Encode Words into sentencevectors
+BiGRU with Attention to Encode Sentencevoctors into Document Vectors
+Softmax to classifie Document Vectors

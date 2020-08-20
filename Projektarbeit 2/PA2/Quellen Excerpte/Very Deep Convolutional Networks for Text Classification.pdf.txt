@@ -1,0 +1,10 @@
+Related Work
+- CNN for Text classification (Kim 2014; Kalchbrenner et al. 2014; Zhang et al. 2015 Yang et al., 2016)
+- CNN+LSTM (Xiao and Cho, 2016)
+Architektur tested for several text classification tasks
+- Input: s characters are embedded with vectors => Matrix
+- CNN mit Shortcuts (He et al 2016a), batchnorm, pooling and 2dense relu and 1 softmax/sigmoid layer on top
+Experimental Evaluation
+- Depth improves performance
+- max pooling outperforms better than other pooling types
+- going too deep degrades performance, but residual connections can help

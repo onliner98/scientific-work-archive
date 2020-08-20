@@ -1,0 +1,2 @@
+CNNs with recurrent convolutions (aka weight sharing between layers) für Object Recognition
+much smaller than ResNet, Inception and NASNet(= CNN mit anzahl Layern erlernt) but outperformed by them

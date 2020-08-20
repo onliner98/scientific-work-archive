@@ -1,0 +1,3 @@
+Dokument Image Classification
+
+Used Architecture: CNN 

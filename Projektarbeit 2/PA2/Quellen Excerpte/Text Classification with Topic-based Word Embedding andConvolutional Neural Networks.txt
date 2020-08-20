@@ -1,0 +1,4 @@
+Introduction
+- CNN for text classification [11, 12, 14, 31]
+
+Uses Multi Channel (different Sentencematrixes using different word embeddings as input) CNN for text classification

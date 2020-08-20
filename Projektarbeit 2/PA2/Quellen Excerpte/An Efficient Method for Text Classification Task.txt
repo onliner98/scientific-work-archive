@@ -1,0 +1,8 @@
+Text Vectorization
+- tokenize text
+- Remove stopwords
+- word2vec
+Classification Model
+- LSTM
+- LSTM with self Attention
+- CNN

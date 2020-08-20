@@ -1,0 +1,8 @@
+Tests for text classification:
+- DenseNet CNNs (word and character Level)
+- CNNs (word and character Level)
+- LSTM
+Conclusion
+- shallow(flach) CNNs on word level perform best
+- deep CNNs on character level perform better than shallow ones
+- it remains unclear whether deep or shallow models are better

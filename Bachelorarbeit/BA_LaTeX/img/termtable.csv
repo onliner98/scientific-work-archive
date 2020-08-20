@@ -1,0 +1,6 @@
+Term;General Term;Subsumable Term;Synonym;Related Term
+Image Classification; Computer Vision, Classification, Image Processing, Image Analysis; Multi-Class Classification, Single-Label Classification, Multi-Label Classification, Emotion Classification, Person-Re-Identification; Image Categorization, Image Label Prediction; Semantic Segmentation, Object Detection, Image Generation
+Neural Network; Computer Science, Data Sciene, Artificial Intelligence, Computational Graph, Machine Learning; MLP, FNN, RNN, CNN, CNN-LSTM, GRU, GAN, Tree RNN, Attention, Transformer, HighwayNets, ResNets, CRNN, RCNN, mLSTM, mRNN, DenseNets, CapsNets, Inception, DNN, ANN;;
+Tool;;;implement, apperatus, gimmick, instrument, gear, equipment, utensil, gadget;
+Dataset;;ImageNet, CIFAR, MNIST, SVHN, STL Clothing, CINIC, Flowers, iNaturalist, Stanford Cars, CUB;;
+SOTA;;;;Review, Survey, Benchmark

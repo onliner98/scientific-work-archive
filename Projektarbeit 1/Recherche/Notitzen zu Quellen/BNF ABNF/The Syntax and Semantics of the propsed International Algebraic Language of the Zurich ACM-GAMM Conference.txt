@@ -1,0 +1,43 @@
+[Syntax of IAL S. 16] To describe algorthmic languages a metalinguistic convention is needed
+- Sequences of characters enclosed in "<" ">" represent metalinguistic variables whose values are strings of symbols
+- ":=" und "or" are metalinguistic connectives(logische verknüpfung der zwischen aussagen der aussagenlogik zu dt. Junktor)
+- mark which is neiter connective nor variable denotes itself
+- Juxtaposition of marks and/ or variables in a formula signifies juxtaposition of the strings denoted.
+- Recursive definition is possible
+
+[Notitzen für mich]
+BNF ist eine metalinguistische Sprache zum darstellen kontext freier grammatiken, also eine Sprache zum Beschreiben von Regeln von Sprachen
+  Sie ermöglicht:
+  - überprüfen ob eine character sequenz valide ist
+  - erstellen von well-formed statements 
+    - well formed formular: finite sequenz aus symbolen eines alhabets einer sprache, welche nach grammatikalischen regeln dieser sprache formbar ist
+    - statement: kl. einheit einer Imperativen programmiersprache. Eine Anweisung
+  - zerlegen eines statements in die unterstatements bis in die einzelnen terminalsymbole
+
+Terminalsymbole: Zeichen die sich selbst darstellen, sie werden von der grammatik definiert aber nicht geändert und bilden somit den output einer sprache
+Non-Terminalsymbole: Syntaktische Variablen, sie sind definieren einen teil der grammatik und können von ihr geändert werden. Stehen immer in <>
+Produktion: Regel die angibt wie aus wörtern neue wörter produziert werden. Entspricht einer Zuweisung der BNF
+  Sie hat eine linke seite LHS bestehend aus einem non-terminal symbol und eine rechte seite aus ein oder mehr terminal und oder non-terminal symbolen
+
+Bsp.:
+<digit> :=  0|1|2|3|4|5|6|7|8|9
+<integer> := <digit>|<digit><integer>|-<integer>
+<letter> := a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z
+<word> := <letter>|<letter><word>
+<op> := +|-|*|/
+<term> := <integer>|<word>|<term><op><term>|(<term>)
+
+Ermöglicht das Darstellen von Gleichungen Bsp
+A = A*2+(3-C), da gilt:
+<term>   = <term>  <op> <term>
+<word>   = <word>    *  <term>   <op> <term>
+<letter> = <letter>  *  <integer> +   (<term>)
+A	 = A	     *  <digit>   +   (<term>    <op> <term>)
+A	 = A	     *  2	  +   (<integer>  -   <word>)
+A	 = A	     *  2	  +   (<digit>    -   <letter>)
+A	 = A	     *  2	  +   (3	  -   C)
+
+<x>=<y>  : Produktion
+0,1,2... : terminalsymbole
+<x>      : non-terminalsymbole
+

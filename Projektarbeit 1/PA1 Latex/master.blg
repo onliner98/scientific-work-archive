@@ -1,0 +1,17 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[1] Config.pm:305> INFO - Logfile is 'master.blg'
+[104] biber-MSWIN64:313> INFO - === 
+[181] Biber.pm:371> INFO - Reading 'master.bcf'
+[457] Biber.pm:857> INFO - Found 52 citekeys in bib section 0
+[496] Biber.pm:3976> INFO - Processing section 0
+[536] Biber.pm:4136> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[551] bibtex.pm:1500> INFO - LaTeX decoding ...
+[844] bibtex.pm:1316> INFO - Found BibTeX data source 'bibliography.bib'
+[1169] Utils.pm:193> WARN - Entry 'Bray.2008' (bibliography.bib): Invalid format '12.09.2018' of date field 'urldate' - ignoring
+[2016] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2016] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2016] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[2016] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[2225] bbl.pm:617> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[2419] bbl.pm:720> INFO - Output to master.bbl
+[2420] Biber.pm:110> INFO - WARNINGS: 1

@@ -1,0 +1,3 @@
+Classification Hautverletzung
+
+Used Model: pretraied ResNet-152

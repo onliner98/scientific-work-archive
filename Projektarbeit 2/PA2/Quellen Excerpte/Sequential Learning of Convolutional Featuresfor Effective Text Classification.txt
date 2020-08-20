@@ -1,0 +1,25 @@
+Introduction:
+- This Paper experimantally solves 2 Questions
+  - QUESTION1: Do CNNs preserve Sequential Information
+  - QUESTION2: Is the input feature selectedby max pooling the most important feature
+- And Proposes a model based on the answers
+Related Work
+- RCNN (Lai et a. 2015)
+- Attention
+  - For Document Classification (Yang et al.,2016)
+  - Global and Local Attention (Luong et al. 2015)
+  - Self attention (Lin et al. 2017)
+  - Attention for CNN (Santos et al. 2016)
+Understanding COvolution and Max pooling
+- ANSWER1: The bigger the window size of the convolution the less sequential info is preserved (except for 1x1 window, which has no context at all)
+- ANSWER2: No
+Model
+- Input: SentenceMatrix, where each row is a wordvector => Truncated/0-Padding to ensure Input length n
+- Network: consits of two subnetworks whos outputs ae conncatinated and fed into denslayer
+  - Convolution Recurrent subnetwork: 
+    - K Filters are applyed for each Word outputting a Feature Vector for each word
+    - Feature Vector are fed sequentially in LSTM
+    - Output: Last Output of the LSTM
+  - Recurrent Attentive subnetwork: LSTM with Attention
+Results and Discussion
+- SCARN outperforms CNN/RNN Models by  few percent on all tested datasets

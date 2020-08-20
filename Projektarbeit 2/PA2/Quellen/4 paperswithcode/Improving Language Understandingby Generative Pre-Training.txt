@@ -1,0 +1,8 @@
+Introduction
+- Pretrained Word Embeddings [10,39,42]
+- Pretraiing through:  language modeling [44], machine translation [38], discourse coherence [22]
+Framework
+- Uses Transformer[62] model described in [34]
+- Language Model objective for pretraining
+- Supervised Finetuning: Last Output of the transformer h is fed into linear classifier softmax(hW), which then is trained for the task
+- auxilarie LM objective helps training [50,43]

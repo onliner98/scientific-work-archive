@@ -1,0 +1,3 @@
+Novel Dataset for Species Classification from Images, several models were tested for this dataset
+
+Models used: IncResNetV2, InceptionV3 ResNet, MobileNetV1

@@ -1,0 +1,30 @@
+\begin{tikzpicture}[
+	cell/.style={
+		rectangle, 
+		rounded corners=2mm, 
+		draw,
+		very thick,
+		align=center,
+	},
+	ArrowC1/.style={% Arrows with rounded corners
+		rounded corners=.25cm,
+		thick,
+	},
+]
+	\coordinate (out) at (0,6);
+	\coordinate (inbranch) at (0,5.25);
+	\node [cell] (ln) at (0,4.5) {Layer};
+	\node [very thick, align = center](dots) at (0,3) {\vdots};
+	\node [cell] (l1) at (0,1.5) {Layer};
+	\coordinate (outbranch) at (0,0.75);
+	\coordinate (in) at (0,0);
+	
+	\draw [-latex,ArrowC1] (inbranch) -- (out);
+	\draw (ln) -- (inbranch);
+	\draw [-latex,ArrowC1] (dots) -- (ln);
+	\draw [-latex,ArrowC1] (l1) -- (dots);
+	\draw [-latex,ArrowC1] (outbranch) -- (l1);
+	\draw [thick] (in) -- (outbranch);
+	
+	\draw [-latex,ArrowC1,out=0,in=0,looseness=0.75] (outbranch) to node[sloped,below]{Shortcut Connection}  (inbranch);
+\end{tikzpicture}

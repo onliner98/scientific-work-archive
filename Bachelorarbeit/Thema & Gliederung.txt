@@ -1,0 +1,63 @@
+THEMA:
+- Busines Justification: Connected Worker => Augmented Reality
+  => dazu gehört auch Object detection => Object detection von Werkzeug/o.ä.
+  => POC dass dies für Connected worker mgl ist
+- Daten: Google Suche
+- Forschungsfrage: Mit welchem neuronalen Model lässt sich die Klassifizierung von Bildern von Werkzeugen 
+	am Performantesten (Accuracy/F1Score) umsetzen.
+
+GLIEDERUNG_NEW
+- Intro
+  - Motivation
+  - Problem Statement
+  - Scope
+  - Approach
+  - Structure
+- Fundamentals
+  - Image Classification (softmaxclassifier)
+  - Neuron
+  - Nerual Network
+  - Supervised Learning
+- Methodology
+  - Metric
+  - Dataset Construction
+  - Literatur Review
+  - Experiment
+- SOTA (Wie? Konzept anhand literaturrecherche, model anhand Leaderboards)
+  - Conv, pooling, flatten
+  - Residual
+  - Inception
+  - Dense Connection
+  - Sep Conv
+- Case Study (falls noch zeit)
+- Beantwortung der Forschungsfrage(Begründung)
+- Conclusion
+  - Summary
+  - Future Work
+
+
+
+
+
+GLIEDERUNG_OLD:
+- Motivation POC/Businesscase (nimm schon den Businesscase(Story/Bsp), generalisiere aber)
+- Forschungsfrage (Performatestes für Werkzeug klass)
+  - Metrik nehme die die öfter verwendet wird (z.b. bei den in betracht gezogenen papers wurde XYZ in 70% der Fällte benuzt  verwendet)
+- SOTA => literat Review
+- Kadidanteauswahl => Leaderboards
+- Eigene Erwartungen aus der Literatur formulieren (Wie performen Modelle wer gewinnt mit welchen punkten)
+- Mein Datenset wie zustandegekommen einfach Methode sagen nicht warum (auch aussehen der Daten)
+- Genaue experimentbeschreibung spezifiziere Hardware, Softwareframework(Version), Programmiersprache(Versionen), Betriebsystem
+- Wenn pre-training verwendet(dann so wie im fremdpaper beschrieben) dann experiment mit und ohne pretraining 
+=> ausschließen weil Zeit (=> Ausblick)
+- Hyperparams, machs so wie andere die glaubwürdig sind
+- Was kam dabei raus 
+  => verlauf der Lernkurve des NN ist auch von interesse nicht nur endgültiger score
+  => Classifier Comparision 
+    => nutze Vertrauensintervall(t-Test, f-Test, Vertrauensintervalle, Wilcox Signed Rank Test, Mc Nemarstetst)
+- Vergleich mit den Erwartungen => ggf. warum gibt es eine abweichung
+- Empfehlung(= Zusammenfassung in diesem Fall) für das POC
+- Diskussion was hätte ich besser machen können
+- Futurework
+
+Fragen auch während BA an: wwi17sec@southernwords.com

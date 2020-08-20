@@ -1,0 +1,3 @@
+CIFAR-10/100, SVHN
+
+Used Architecture: WRN, ResNet, ResNeXt, Inception V2

@@ -1,0 +1,76 @@
+\section{VGG-19}
+According to the original paper, VGG-19 achieved an accuracy of $76.3 \%$ for the ImageNet dataset. \autocite{Simonyan.2014} In the experiment conducted by this paper, VGG-19 achieved an accuracy of $72.40 \%$. 
+\par
+The original paper applied data augmentation in the form of sampling input crops from multi-scale training images, random horizontal flipping, and random color shifting. \autocite{Simonyan.2014} Data augmentation creates additional training data. Additional training data can improve performance. \autocite{ElAmir.2020} Data augmentation is excluded from the scope of this paper, see Section \ref{sec:scope}. Therefore, data augmentation was not used in the course of the experiment. 
+\par
+Furthermore, \cite{Simonyan.2014} used hardware providing enough GPU RAM to train VGG-19 using a batch size of $256$. The used batch size is eight times larger than the batch size of $32$ used in the course of the experiment. A larger batch size decreases fluctuation of the loss function supporting convergence to the optimum. \autocite{Ruder.2016}
+\par
+Furthermore, \cite{Simonyan.2014} used weight decay. Weight decay improves training by penalizing large weights. \autocite{ElAmir.2020} Weight decay is excluded from the scope of this paper, see Section \ref{sec:scope}. Thus, weight decay was not used in the course of the experiment. 
+\par
+Finally, the ImageNet dataset and the \ac{TIC Dataset} differ. The ImageNet dataset provides $1.28$ million training images. This is over $100$ times more than the \ac{TIC Dataset} with $12{,}240$ training images. \autocite{He.2016} More training data can improve performance. \autocite{ElAmir.2020} Images, classes, and number of classes differ for both tasks. The ImageNet dataset has $1{,}000$ classes while the \ac{TIC Dataset} has six classes. Hence, classification for both datasets might be differently complex.
+\par
+As a result, data augmentation, hardware providing more GPU RAM, weight decay, and different tasks might be the cause of the difference in accuracy. Note that classifying $1{,}000$ classes is probably more complex than classifying six classes. Accordingly, data augmentation, hardware providing more GPU RAM, weight decay, and more training data might compensate the more complex task.
+
+\section{ResNet-152}
+According to the original paper, ResNet-152 achieved an accuracy of $78.57 \%$ for the ImageNet dataset. \autocite{He.2016} In the experiment conducted by this paper, ResNet-152 achieved an accuracy of $92.89 \%$.
+\par
+The original paper applied input normalization and data augmentation. Input normalization was applied in the form of subtracting the per-pixel mean. Data augmentation was applied in the form of sampling input crops from multi-scale training images, random horizontal flipping, and random color shifting. \autocite{He.2016}
+Data augmentation creates additional training data. Additional training data and input normalization can improve performance. \autocite{ElAmir.2020} Input normalization and data augmentation are excluded from the scope of this paper, see Section \ref{sec:scope}. Therefore, input normalization and data augmentation were not used in the course of the experiment. 
+\par
+Furthermore, \cite{He.2016} used hardware providing enough GPU RAM to train ResNet-152 using a batch size of $256$. The used batch size is eight times larger than the batch size of $32$ used in the course of the experiment. A larger batch size decreases fluctuation of the loss function supporting convergence to the optimum. \autocite{Ruder.2016}
+\par
+Furthermore, \cite{He.2016} used weight decay. Weight decay improves training by penalizing large weights. \autocite{ElAmir.2020} Weight decay is excluded from the scope of this paper, see Section \ref{sec:scope}. Thus, weight decay was not used in the course of the experiment. 
+\par
+Finally, the ImageNet dataset and the \ac{TIC Dataset} differ. The ImageNet dataset provides $1.28$ million training images. This is over $100$ times more than the \ac{TIC Dataset} with $12{,}240$ training images. \autocite{He.2016} More training data can improve performance. \autocite{ElAmir.2020} Images, classes, and number of classes differ for both tasks. The ImageNet dataset has $1{,}000$ classes while the \ac{TIC Dataset} has six classes. Hence, classification for both datasets might be differently complex.
+\par
+The accuracy achieved in the original paper is lower despite the use of data augmentation, hardware providing more GPU RAM, weight decay, and more training data. As a result, the cause of the lower accuracy might be that classification for both datasets is differently complex.
+
+
+\section{ResNeXt-101}
+According to the original paper, ResNeXt-101 achieved an accuracy of $79.6 \%$ for the ImageNet dataset with $1{,}000$ classes and an accuracy of $59.9 \%$ for the ImageNet dataset with $5{,}000$ classes. \autocite{Xie.2017} In the experiment conducted by this paper, ResNeXt-101 achieved an accuracy of $94.66 \%$.
+\par
+The original paper applied data augmentation in the form of sampling input crops from multi-scale training images. \autocite{Xie.2017}
+Data augmentation creates additional training data. Additional training data can improve performance. \autocite{ElAmir.2020} Data augmentation is excluded from the scope of this paper, see Section \ref{sec:scope}. Therefore, data augmentation was not used in the course of the experiment. 
+\par
+Furthermore, \cite{Xie.2017} used hardware providing enough GPU RAM to train ResNeXt-101 using a batch size of $256$. The used batch size is $16$ times larger than the batch size of $16$ used in the course of the experiment. A larger batch size decreases fluctuation of the loss function supporting convergence to the optimum. \autocite{Ruder.2016}
+\par
+Furthermore, \cite{Xie.2017} used weight decay. Weight decay improves training by penalizing large weights. \autocite{ElAmir.2020} Weight decay is excluded from the scope of this paper, see Section \ref{sec:scope}. Thus, weight decay was not used in the course of the experiment. 
+\par
+Finally, the ImageNet dataset and the \ac{TIC Dataset} differ. The ImageNet dataset provides $1.28$ million training images for $1{,}000$ classes and $6.8$ million training images for $5{,}000$ classes. This is significantly more than the \ac{TIC Dataset} with $12{,}240$ training images. \autocite{He.2016} More training data can improve performance. \autocite{ElAmir.2020} Images, classes, and number of classes differ for the tasks. \cite{Xie.2017} used the ImageNet dataset with $1{,}000$ and $5{,}000$ classes. The more classes the lower was the accuracy. Hence, classification for the datasets might be differently complex.
+\par
+The accuracies achieved in the original paper are lower despite the use of input normalization, data augmentation, hardware providing more GPU RAM, weight decay, and more training data. As a result, the cause of the lower accuracies might be that classification for the datasets is differently complex.
+
+
+\section{DenseNet-264}
+According to the original paper, DenseNet-264 achieved an accuracy of $77.85 \%$ for the ImageNet dataset. \autocite{Huang.2017} In the experiment conducted by this paper, DenseNet-264 achieved an accuracy of $97.45 \%$.
+\par
+The original paper applied input normalization and data augmentation. Input normalization was applied in the form of subtracting the per-pixel mean. Data augmentation was applied in the form of sampling input crops from multi-scale training images, random horizontal flipping, and random color shifting. \autocite{Huang.2017}
+Data augmentation creates additional training data. Additional training data and input normalization can improve performance. \autocite{ElAmir.2020} Input normalization and data augmentation are excluded from the scope of this paper, see Section \ref{sec:scope}. Therefore, input normalization and data augmentation were not used in the course of the experiment. 
+\par
+Furthermore, \cite{Huang.2017} used hardware providing enough GPU RAM to train DenseNet-264 using a batch size of $256$. The used batch size is eight times larger than the batch size of $32$ used in the course of the experiment. A larger batch size decreases fluctuation of the loss function supporting convergence to the optimum. \autocite{Ruder.2016}
+\par
+Furthermore, \cite{Huang.2017} used weight decay. Weight decay improves training by penalizing large weights. \autocite{ElAmir.2020} Weight decay is excluded from the scope of this paper, see Section \ref{sec:scope}. Thus, weight decay was not used in the course of the experiment. 
+\par
+Finally, the ImageNet dataset and the \ac{TIC Dataset} differ. The ImageNet dataset provides $1.28$ million training images. This is over $100$ times more than the \ac{TIC Dataset} with $12{,}240$ training images. \autocite{Huang.2017} More training data can improve performance. \autocite{ElAmir.2020} Images, classes, and number of classes differ for both tasks. The ImageNet dataset has $1{,}000$ classes while the \ac{TIC Dataset} has six classes. Hence, classification for both datasets might be differently complex.
+\par
+The accuracy achieved in the original paper is lower despite the use of input normalization, data augmentation, hardware providing more GPU RAM, weight decay, and more training data. As a result, the cause of the lower accuracy might be that classification for both datasets is differently complex.
+
+
+\section{EfficientNet-B7}
+\label{sec:disceffnet}
+According to the original paper, EfficientNet-B7 achieved an accuracy of $84.4 \%$ on the ImageNet dataset. \autocite{Tan.2019} In the experiment conducted by this paper, EfficientNet-B7 did not learn to classify tool images. In the course of the experiment, EfficientNet-B7 was trained using a batch size of one and a drop out rate of over $50 \%$ for some layers. A batch size of one causes the loss function to fluctuate heavily. This impairs convergence to the optimum. Dropout is a regularization technique. The impaired convergence and high regularization might have prevented EfficientNet-B7 from learning properly.
+\par
+Furthermore, in the original paper, EfficientNet-B7 was trained for more training time, on more training data, and used data augmentation. \autocite{Tan.2019} Data augmentation creates additional training data. Additional training time and training data can improve performance. \autocite{ElAmir.2020} However, in the course of the experiment EfficientNet-B7 did not even start to learn to classify tool images. For this reason, this paper regards it unlikely that less training time and less training data is the reason why EfficientNet-B7 did not learn to classify tool images.
+
+
+% Inhalt:
+% EfficientNetB7 acchieved 17 \% acc => acc on imagenet was 99\%
+% EfficientNetB7 did not learn enough to recognise tool images
+% Could be due to: 
+% - Not enough training => originally trained on TPU => to few epochs
+% - Batchsize 1 => Heavy fluctuation on loss function optimization
+% - over reguralization (drop out)
+
+% Other NNs: Compare with erg in orginial papers
+% - No Data augmentation or auxiliaries
+% - complexity of the dataset

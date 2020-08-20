@@ -1,0 +1,3 @@
+Training Method for Few Shot Classification using several Network Instances
+
+Used Network architekture: ResNet

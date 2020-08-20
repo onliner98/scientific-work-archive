@@ -1,0 +1,3 @@
+Classification von wie Land benuzt wird aus der Vogelperspective
+
+Used Architecture: normal CNN, GoogLeNet

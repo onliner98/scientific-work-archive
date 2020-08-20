@@ -1,0 +1,4 @@
+ANN Configuration and Training
+- ANN: Artificaial Neural Network in diesem Falle ein CNN an (Kim 2014) angeleht
+- Textembeddingds wie word2vec sind für kurze texte gut
+- für lange texte sind randomly initialized and trained embeddings gut (Lenc and Kral 2016)

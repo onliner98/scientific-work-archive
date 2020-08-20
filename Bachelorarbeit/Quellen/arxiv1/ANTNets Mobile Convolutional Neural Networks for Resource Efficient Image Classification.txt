@@ -1,0 +1,3 @@
+Compressed CNN on CIFAR 100 and ImageNet
+
+Propesed Models: ANTNet compared to Mobile net => both are CNN

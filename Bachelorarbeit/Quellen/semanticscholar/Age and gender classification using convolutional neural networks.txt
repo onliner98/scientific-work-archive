@@ -1,0 +1,3 @@
+Image classification age(ranges) and gender
+
+Used Architecture: CNN

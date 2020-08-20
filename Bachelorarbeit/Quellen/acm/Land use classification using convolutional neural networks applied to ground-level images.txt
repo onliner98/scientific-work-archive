@@ -1,0 +1,3 @@
+Use of Land Classification
+
+Used Architecture: CNN

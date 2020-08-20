@@ -1,0 +1,7 @@
+Image Classification under Occlusion
+=> without occlusion cnns perform best
+=> with occlusion compositional modles perform
+=> combining both
+
+
+Used VGG Net [Karen Simonyan and Andrew Zisserman. Very deep convo-lutional networks for large-scale image recognition.arXivpreprint arXiv:1409.1556, 2014]

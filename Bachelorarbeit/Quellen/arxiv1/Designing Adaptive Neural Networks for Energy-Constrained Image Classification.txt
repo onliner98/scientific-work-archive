@@ -1,0 +1,4 @@
+Proposes Hyperparam Optimization Methodology for Hardware Constrains
+
+Task: Image Classification
+Used Architecture: CNN for Classification

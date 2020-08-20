@@ -1,0 +1,4 @@
+Random transformations(=scale, rotation, and translation) of featuremaps(=output eines ConvLayers)
+=> CNN model is more robust to transformed images
+
+Used Architecture CNN

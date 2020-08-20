@@ -1,0 +1,2 @@
+Classification on CIFAR-10, CIFAR-100, Fashion-MNIST
+Used Architectures: ResNet-differentsizes, WRN-28-10, ResNext-8-64

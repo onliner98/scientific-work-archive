@@ -1,0 +1,11 @@
+\chapter{Versionsverwaltung der Lokalisierung}
+\label{chp:version}
+Versionsverwaltung wird seit vielen Jahren aktiv in der Software Entwicklung angewendet. Die Aufgabe der Versionsverwaltung ist das zurück verfolgbare Dokumentieren der Änderungen einer Software, um verschiedene Änderungen zusammenzufügen oder zu einer vorherigen Revision der Software zurückzukehren.
+\autocite[Vgl.][S. 698ff]{Sommerville.2007}
+\autocite[Vgl.][S. 751ff]{Pressman.2005}
+
+Bei der Entwicklung von Movelets ist es möglich, dass verschiedene Entwickler und Übersetzer parallel beteiligt sind. Infolgedessen entstehen Änderungen des Quelltexts und des Inhalts der \ac{XLIFF} Dateien. Diese Änderungen müssen zusammengefügt werden. Möglicherweise werden auch Änderungen vorgenommen, welche sich als unpassend herausstellen. Daher müssen diese Änderungen zurückgesetzt werden, man spricht von der Rückkehr zu einer früheren Revision. 
+\par
+Des Weiteren ist es möglich, dass verschiedene Lokalisierungen eines Movelets gleichzeitig veröffentlicht werden müssen. Aus diesem Grund ist die parallele Entwicklung und Lokalisierung des Movelets notwendig. Folglich, müssen zum Zweck der parallelen Übersetzung die zu übersetzenden Strings aus dem Quelltext mehrfach extrahiert werden. Deshalb müssen bestehende \ac{XLIFF} Dateien erweitert werden. Um Redundanz zu vermeiden müssen nach Änderungen des Quelltexts ausschließlich neu hinzugefügte zu übersetzende Strings extrahiert werden und bereits extrahierte, nicht mehr verwendete entfernt werden.
+\par
+Im Kontext der Movelet Entwicklung wird \mbox{\textit{GIT}} zur Versionsverwaltung eingesetzt. Werden die \ac{XLIFF} Dateien mit ins \mbox{\textit{GIT Repository}} aufgenommen, so übernimmt \mbox{\textit{GIT}} die Aufgabe der Versionsverwaltung für das Lokalisierungstool. Mit einer Anfrage an \mbox{\textit{GIT}} kann das Lokalisierungstool die Information erhalten, welche zu übersetzenden Strings neu hinzugefügt, beziehungsweise entfernt wurden. In der Konsequenz muss das Lokalisierungstool keine eigene Versionsverwaltung implementieren.

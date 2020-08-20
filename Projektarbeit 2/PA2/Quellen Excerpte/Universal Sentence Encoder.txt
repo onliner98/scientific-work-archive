@@ -1,0 +1,9 @@
+Universeial Sentence Encoders:
+- Pretrained: Transformer USE_T/ DAN Use_D to encode sentences
+
+Introduction
+- Wordlevel Embeddings (Mikolov et al. 2013; Pennington et al. 2014)
+- Sentence level Embeddings (Conneau et al.)
+Encoders
+- Transformer => better results, more computation than the DAN
+- Deep Averaging Network(DAN) => wors results, less computation than the transformer

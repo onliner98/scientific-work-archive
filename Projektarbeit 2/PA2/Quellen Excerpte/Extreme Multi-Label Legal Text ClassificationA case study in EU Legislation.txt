@@ -1,0 +1,5 @@
+Experiment: testet Modelle for legal classification 
+- LWAN = Label Wise Attention (Mullenbach et al 2018)
+- BIGRU self Attention
+- BIGRU LWAN
+- CNN LWAN

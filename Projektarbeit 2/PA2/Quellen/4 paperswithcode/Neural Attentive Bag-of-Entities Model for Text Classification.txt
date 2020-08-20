@@ -1,0 +1,4 @@
+Introduction
+- Neural Networks outperform conventional models (e.g., naive Bayes) on textclassification (Kim, 2014; Iyyer et al. 2015; Tang et al. 2015; Dai and Le 2015; Jin et al. 2016; Joulin et al. 2017; Shen et al. 2018)
+Our Approach:
+- ist nicht wirklich ein NN => irrelevant

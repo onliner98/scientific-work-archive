@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+\matrix (mtr) [matrix of nodes,row sep=-\pgflinewidth, nodes={draw}]
+{
+	|[fill=orange!10]|0 & |[fill=orange!40]|1 & |[fill=orange!70]|0 & |[fill=orange!70]|1 & |[fill=orange!70]|0 & 0 & 0 & 0 & 0\\
+	|[fill=orange!10]|0 & |[fill=orange!40]|0 & |[fill=orange!70]|1 & |[fill=orange!70]|1 & |[fill=orange!70]|1 & 0 & 0 & 1 & 0\\
+	|[fill=orange!10]|1 & |[fill=orange!40]|0 & |[fill=orange!70]|0 & |[fill=orange!70]|1 & |[fill=orange!70]|1 & 1 & 0 & 1 & 0\\
+	0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0\\
+	0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 1\\
+	0 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 1\\
+	0 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 0\\
+};
+
+\node [below= of mtr-5-5.south] (lm) {$stride = 1$};
+
+\matrix (mt) [matrix of nodes,row sep=-\pgflinewidth, nodes={draw}, right = 4em of mtr]
+{
+	|[fill=orange!10]|0 & |[fill=orange!10]|1 & |[fill=orange!40]|0 & |[fill=orange!40]|1 & |[fill=orange!70]|0 & |[fill=orange!70]|0 & |[fill=orange!70]|0 & 0 & 0\\
+	|[fill=orange!10]|0 & |[fill=orange!10]|0 & |[fill=orange!40]|1 & |[fill=orange!40]|1 & |[fill=orange!70]|1 & |[fill=orange!70]|0 & |[fill=orange!70]|0 & 1 & 0\\
+	|[fill=orange!10]|1 & |[fill=orange!10]|0 & |[fill=orange!40]|0 & |[fill=orange!40]|1 & |[fill=orange!70]|1 & |[fill=orange!70]|1 & |[fill=orange!70]|0 & 1 & 0\\
+	0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0\\
+	0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 1\\
+	0 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 1\\
+	0 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 0\\
+};
+
+\node [below= of mt-5-5.south] (m) {$stride = 2$};
+
+\end{tikzpicture}

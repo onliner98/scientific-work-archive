@@ -1,0 +1,18 @@
+Introduction
+- MLTC with se2seq Inputseq: Text to classifie Outpuseq:seq of labels
+- semantic units costruct the semantic of the whole text
+- capture core semantic units to asign proper labels
+- capture core semantic units with CNNs
+Attention-based Seq2Seq for Multi-label Text Classification
+- Testing a Seq2Seq Bidirectional LSTM with/without Attention => Attentio does not seem to have an impact on performance
+Proposed Method
+- use 1D Convolution (Kalchbrenner et al. 2014)
+- use dialated convolution (Yu and Koltun 2015; Wang et al. 2018; Kalchbrenner et al. 2016)
+- dialated convolution widens the receptive field and shrinks the output without loosing info as with stride/pooling
+  => dialated convolution captures long term dipendencies
+- Multi Level dialated Convolution (MDC) is applayed in this case 3 Conv Layers
+- gridding effects (non 0 params sind immer a.d. selben grid stelle) can be avoided by increasing dialation for each level (Wang et al. 2018)
+- Model: MDC generiert semantic unit representation LSTM generiert text annotationen. 
+  The Decoder Attents(=attention) to both representations, so the output is generated
+Results
+- Proposed Method does out perform the seq2seq approach but not even by 1%

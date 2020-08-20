@@ -1,0 +1,7 @@
+Introduction:
+- Bsp. wo CNN in anderen Tasks genutzt wird:  [4, 5, 26, 7, 21, 12, 25, 22, 24, 13],
+- Bsp. für Wordembeddings via Language Model [3, 4, 20, 23, 6, 19]
+- Wordembeddings weglassen und it 1hot vecs arbeiten funktioniert auch gut[11]
+- two view (tv) embedding als task specific embedding soll das noch weiter improven
+
+Rest des papers erklärt das TV EMbedding und zeigt leichten performance bost for sentiment and topic classification using tv+cnn

@@ -1,0 +1,46 @@
+Zielstellung:
+- Businesscase: Email von Boas
+- Ziel: Implementierung eines neuronalen Netzes zur klassifizierung von Stellenbeschreibungen
+- Fragestellung: Welche genauigkeit kann bei diesem Businesscase erreicht werden mit einem State of the Art NN (Gäbe ja noch andere algos)
+- GGF.: abrunden mit was kostet klassifizierung per hand was kostet klassifizierung per NN(ungenauigkeit und menschliche nachkontrolle) => Ersparnis
+
+LaTeX Template:
+- DHBW_en
+
+Entwicklungsgliederung:
+- Klassischer Aufbau einer "Lösungs Entwicklung"
+  - Problem
+  - Grundlagen
+  - Anforderungen (auch tabellarischS)
+  - State of the Art/Stand des Wissens
+  - Alternative
+  - Evaluation
+- Conceptmatrix/Literaturtabelle(ggf. hinzufügen)
+  -  ist teil der State of the Art
+
+Guide für Literaturreview/State of the Art analyse
+- Webster and Watson 2002, Analyzing the past to prepare for future: Writing a literature 
+
+Zitation:
+- Wörtliche Zitate: Zitiere das Gespräch als Korrespondenz und Verweise auf diese (muss nicht als Protokoll angehängt werden/vorhanden sein)
+- Vorlesungsscripte, Videos gehen als Quelle im Notfall, Lehrbücher sind besser, Paper sind perfekt
+- Abbildungen: hinter der Bildunterschrift \cite{} oder bei eigener: Figure 1 My Caption (own figure)
+
+Trainingsdaten:
+- Stepstone API => Features als JSON, Label als Suchbegriff
+
+Übersicht über Thema:
+- Lehrbücher und Konzeptmatrix
+
+Kontakte Linguistik, Datascience/NLP
+- Uni Heidelberg(Moritz)
+- uni-mannheim.de/dws => Teaching => Lecturevideos/Coursen => Email an deren Sekretariat
+
+Sprache
+- egal (englisch empfohlen)
+- DeepL als Tool
+- Grammaly als Tool(noch nicht ausprobiert)
+
+Korrektur lesen
+- macht Boas
+- Urlaub Boas: 22.10 - 07.11 => Vorher zum Korrekturlesen geben => Feeddback

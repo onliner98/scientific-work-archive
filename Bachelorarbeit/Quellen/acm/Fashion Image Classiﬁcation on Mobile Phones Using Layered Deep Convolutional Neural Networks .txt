@@ -1,0 +1,3 @@
+Cloth Image Classification
+
+Used Architecture: CNN

@@ -1,0 +1,10 @@
+Weitere Infos:
+- http://neuralnetworksanddeeplearning.com/
+- https://course.fast.ai/terminal_tutorial.html
+- https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w					(Erklärungen zum Thema AI)
+- https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A/playlists				(Richtig gutes high level zeug und viel mist)
+- https://github.com/oxford-cs-deepnlp-2017/lectures (Lecture 3-4)				(RNN and Language)
+- https://www.youtube.com/watch?v=qBigTkBLU6g&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9		(statistik basics)
+
+Literatur
+  D. Jurafsky, J. H. Martin. Speech and Language Processing: An Introduction to Natural Language Processing, Speech Recognition, and Computational Linguistics (2nd ed.), Prentice-Hall, 2009.

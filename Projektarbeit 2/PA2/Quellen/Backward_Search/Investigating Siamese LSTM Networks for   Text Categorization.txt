@@ -1,0 +1,8 @@
+Text CLassification with
+- CNN
+- LSTM
+- Bi LSTM
+- Siames LSTM: 2 gleiche LSTMs bekommen 2 untersch. DOkumente als Input diese werden in eine Distanzfunktion gejagt => classifizierung einer klasse indem man unknown doc mit known doc vergleicht
+Word EMbeddings:
+- selbst trainierte word2vec (skipp gram)
+- pre trained GloVe

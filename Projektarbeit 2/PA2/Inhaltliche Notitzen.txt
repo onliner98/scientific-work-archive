@@ -1,0 +1,32 @@
+MOTIVATION
+- für NN: Alternativen aufzeigen, paper wo NN besser war, siehe Abstrakt, Intro und Rel Work https://arxiv.org/pdf/1701.03849.pdf
+- für RNN: Beispiele, dass es oft verwendet wurde, Intro https://arxiv.org/pdf/1905.11558.pdf
+HYPERPARAMETER
+- Du kannst nicht alle Hyperparms exploren
+- Be open about (time) constrains and why you choose which hyperparam
+FEATURES
+- Jobtitel sind kurz => einfacher das NN zu trainieren, aber auch weniger Infos
+- Jobdescription enthält z.t. unnötige Infos die nix aussagen
+=> Wenig daten vorhanden deshal probiere NN für nur titel und NN für beides
+  - Das kann man zeigen indem man größen on gängigen Datasets nennt und zum eigenen vergleicht
+AUSBLICK/AUSSCHLUSS/WEITERES
+- Hybride Approaches wie
+  - Trees: AttentionXML oder HAXMLNet (Extreme Multi Class Labeling) habe ich ausgeschlossen könnten aber bessere results acchieven
+    - Attentionxml: Extreme multi-label text classi?cation with multi-label attention based recurrent neural networks https://arxiv.org/pdf/1811.01727.pdf
+    -  Haxmlnet: Hierarchical attention network for extreme multi-label text classification
+  - Graphs: https://paperswithcode.com/paper/semi-supervised-classification-with-graph	|	https://paperswithcode.com/paper/semi-supervised-classification-with-graph
+- Ensembles wie ggf doch nicht ausschließen?
+  - CRNN 
+  - RCNN 
+  - HAN https://www.aclweb.org/anthology/N16-1174.pdf
+  - DAN (Deep Averaging networks)
+- NNs Performance can be killed by adverserial examples => Training against them is not included in my paper => i should mention this  e.g. https://paperswithcode.com/paper/adversarial-training-methods-for-semi
+- Paper hinter Paywall wurden auch nicht gelesen
+CONCEPTE NICHT IN CONCEPT MATRIX
+- sollten trotzdem erwähnt werden, dass sie nur wenige male vorkamen
+- deep averaging networks
+- deep believ networks
+MODELLE
+- LSTM/GRU: LastHiddenState, MaxPooling, Attention => Vector => DenseLayers => Softmax/Sigmoid
+- CNN: Word/CharacterLevel => MaxPooling => DenseLayers => Softmax/Sigmoid
+- Transformer: BERT/XLNET/GPT => Softmax/Sigmoid CLassifier on top

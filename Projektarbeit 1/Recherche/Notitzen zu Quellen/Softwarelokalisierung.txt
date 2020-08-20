@@ -1,0 +1,40 @@
+[S. 2-3] Definition G11N I18N L10N
+Globalization: 
+Alle Aktivitäten eines Unternehmens im Hinblick auf Vermarktung eines (Software-) Produkts außerhalb des nationalen, lokalen Marktes.
+Ziel der Globalisierung ist ein erfolgreiches Marketing in mehreren Unterschiedlichen regionalen Märkten,
+unter besonderer Berücksichtigung der dort geltenden technischen wirtschaftlichen und gesetzlichen Aspekte.
+Globalisierung ist immer im Kontext der betriebswirtschaftlichen und kaufmännischen Unternehmensführung zu sehen.
+Aufgabe des Marketing
+Internationalization:
+Entwicklung von (Software-) Produkten im Hinblick auf leichte Anpassung an andere Märkte, 
+d.h. an andere technische Konventionen, kulturelle Eigenheuten und Sprache. Ziel der Internationalisierung ist es, Produkte so zu entwickeln,
+dass Produktversionen für (neue) regionale Märkte schenll und möglichst mit geringen Aufwand erstellt werden können.
+Aufgabe des Developments
+Localization:
+der Prozess der Anpassung eines (Software-) Produkts an regionale Märkte. Ziel der (Software-)lokalisierung ist es,
+technisch, sprachlich und kulturell angemessene Programmversionen für die jeweiligen Märkte zu erstellen.
+Aufgabe von Übersetzern, technischen Autoren und Lokalisierern
+[S. 6 2.3 Software] In Place lokalisierungsapprocahes sind Hilfreich(auch für  Movilizer?)=>Auslbick
+[S. 7 Zeile 1-4] Softwareentwickler muss Lokalisierungswerkzeuge, Terminologie und Translation Memory bereitstellen
+[S. 21] Lokalisierung mit Vendoren(=LSP):
+- zentral: 1 Vendor lokalisiert für alle Niederlassungen des Herstellers => Zentrale Kommunikation über 1 Globalen Projektmanager und n Lokalisierungs Projektmanager
+- dezentral: Verschidene Niederlassungen des Herstellers lokalisieren mit verschiedenen regionalen Vendoren
+[S. 37 3.2 Übersetzung mit spez. Lokalisierungstools] WYSIWYG in place lokalisierung gibt Kontext
+=> ist dies mit Movilizer Client realisierbar
+=> auch referenzierte MD muss Übersetzt werden
+[S. 44] Kontext über was ein Element ist/macht ist für Übersetzung relevant(Bsp auf S. 44)
+=> bestimmte Infos kann man über type und element und parent element automatisch ehrausfinden
+[S. 93] Terminologie konsistenz ist für Nutzerfreundliche Bedienbarkeit notwendig
+[S. 95 Abb. 4] Inkosistenzen bei Orthographie sieht scheiße aus
+=>Konventionen notwendig
+[S. 102] Inkosistenzen bei Formulierungen sieht scheiße aus
+=>Konventionen notwendig
+[S. 123 Zahlen und Ziffer] Im tech. Kontext werden auch Zahlen 1-12 als Ziffern geschrieben (e.g. zwei 4-GB-Festplatten)
+[S. 129] TMs speichern i.d. Regel Sätze als Segment
+=> soll das Tool für Movilizer dies Automatisch machen => für Translation 1 Inhalt eines elements = 1 segment, für TM sinnvolle segmentierung Thema einer anderen Arbeit
+[S. 130] Nachteile v. TMs
+6.1.1 Gesammtkontext fehlt für das jeweilige Segment (falls keine zusätzliche Metadata angegeben sind)
+6.1.2 1 Satz kann in untersch. Kontexten untersch. Übersetzungen haben
+[S. 133] Formatierungsinfos werden mit gespeichert und sind geschützt damit in source und target a.d. selben stelle emphasized sind(mrk element canOverride attribute in XLIFF)
+=> gibt es für movilizer überhaupt intext formatierungen => relevant?
+[S. 140f] ISO 12620 Listet Metadatenkategorien zum beschreiben für Terme

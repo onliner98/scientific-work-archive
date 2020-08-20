@@ -1,0 +1,3 @@
+Cancer Tissue(Gewebe) Classification
+
+Used Architecture: CNN (sth between ResNet and VGG)

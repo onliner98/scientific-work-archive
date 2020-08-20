@@ -1,0 +1,23 @@
+ABNF ist eine metalinguistische sprache zum darstellen kontextfreier grammatiken sie basiert auf bnf und wird oft zum definieren der formalen syntax von internet technischen spezifikationen verwendent
+[2.1. Rule Naming S. 3] rulename is the name itself begins with alphabetic chars followed by alph, digits, hyphens(=/)
+angle brackets <> are not required
+[2.2 Rule Form S. 4] A rule is defined by the following sequenze: name = elemtnts crlf 
+- name ist the name of the rule
+- elements are one or more rules or terminals
+- crlf is the end of a line
+- "=" seperates name and definition of the rule
+[2.3 Terminal Values S. 4f] Characters denoted by (if required the encoding(mapping of nums to chars) is given):
+- %b101 for 101 in binary
+- %d122 for 122 in decimal
+- %xF1A for F1A in hexadecimal
+- %d1.3 for %d1 %d3
+- "ab"  for ab, Ab, aB, and AB
+- %d97.98 or %d97 %d98 for ab
+[3 Operators]
+- Juxtaposition works like in BNF
+- / works like or in BNF
+- - specifies ranges %x30-%x32 is equivalent to "0"/"1"/"2"
+- () group statements rule=("1" "2")/"3" is valid for 12, 3 while rule="1""2"/"3" is valid for 12 13
+- minRepetition*maxRepetition enables the repetition of a rule 1*3x%30 is valid for 0, 00, 000
+- [] optional sequence x%30[x%31] is valid for 0, 01
+- ; Ends a rule and therefore starts a comment to the end of the line

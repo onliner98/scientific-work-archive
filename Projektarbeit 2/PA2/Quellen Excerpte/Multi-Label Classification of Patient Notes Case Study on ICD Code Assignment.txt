@@ -1,0 +1,3 @@
+Text classification using:
+- CNN
+- Hierachical GRU (1 GRU encoded wordvectors zu sentencec Vector ein weiteres on top encoded sentence zu document vectors)

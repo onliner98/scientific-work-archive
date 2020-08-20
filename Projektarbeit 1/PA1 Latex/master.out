@@ -1,0 +1,55 @@
+\BOOKMARK [0][-]{chapter*.3}{Abbildungsverzeichnis}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{Quelltextverzeichnis}{}% 2
+\BOOKMARK [0][-]{chapter*.5}{Abk\374rzungsverzeichnis}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Allgemeine Themenrelevanz}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Ziel dieser Projektarbeit}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Begriffe}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Globalisierung}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Internationalisierung}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Lokalisierung}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Abgrenzung von \334bersetzung, Lokalisierung und Internationalisierung}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.5}{Translation Memory}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.6}{Computer Assisted Translation}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.7}{Natural Laguage Processing}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.8}{Auszeichnung}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.9}{Extensible Markup Language}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.10}{Movilizer}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.11}{Movelet}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.12}{Stammdaten}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.13}{Movilizer Extensible Markup Language}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.14}{Movilizer Expression Language}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.15}{Movilizer Gradle Plug-in}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.16}{Abfragesprache}{chapter.2}% 23
+\BOOKMARK [0][-]{chapter.3}{Verwandte Arbeit}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Trennung von Quelltext und Ressourcen}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{Funktionsweisen bestehender Lokalisierungstools}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.3}{Standards der Lokalisierung}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.1}{TMX}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.2}{XML:TM}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.3}{SRX}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.4}{GMX-V}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.5}{TBX}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.6}{XLIFF}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.7}{Trans-WS}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.8}{UTX}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.9}{OLIF}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.10}{ITS}{section.3.3}% 37
+\BOOKMARK [0][-]{chapter.4}{Anforderungen an das Lokalisierungstool}{}% 38
+\BOOKMARK [0][-]{chapter.5}{Extrahieren zu \374bersetzender Strings aus dem Quelltext}{}% 39
+\BOOKMARK [1][-]{section.5.1}{Auszeichnung zu \374bersetzender Strings}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.2}{Automatisches Erkennen zu \374bersetzender Strings}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.3}{Diskussion der L\366sungsans\344tze}{chapter.5}% 42
+\BOOKMARK [0][-]{chapter.6}{Schnittstelle des Lokalisierungstools zu anderer Software}{}% 43
+\BOOKMARK [0][-]{chapter.7}{Ersetzen zu \374bersetzender durch \374bersetzte Strings}{}% 44
+\BOOKMARK [1][-]{section.7.1}{Identifikation des zu ersetzenden Strings per Name}{chapter.7}% 45
+\BOOKMARK [1][-]{section.7.2}{Identifikation des zu ersetzenden Strings per Zeiger}{chapter.7}% 46
+\BOOKMARK [1][-]{section.7.3}{Behandlung fehlender \334bersetzungen}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.4}{Diskussion der L\366sungsans\344tze}{chapter.7}% 48
+\BOOKMARK [0][-]{chapter.8}{Ansatzzeitpunkt des Lokalisierungstools}{}% 49
+\BOOKMARK [0][-]{chapter.9}{Versionsverwaltung der Lokalisierung}{}% 50
+\BOOKMARK [0][-]{chapter.10}{Fazit}{}% 51
+\BOOKMARK [0][-]{chapter.11}{Diskussion}{}% 52
+\BOOKMARK [0][-]{chapter*.31}{Literaturverzeichnis}{}% 53
+\BOOKMARK [0][-]{appendix.A}{Anhang}{}% 54
+\BOOKMARK [1][-]{section.A.1}{Implementierung der Extraktion zu \374bersetzender Strings anhand einer Auszeichnung}{appendix.A}% 55

@@ -1,0 +1,1 @@
+An IRI is an URI, that may use any characters from the Universal Character Set (Unicode/ISO 10646)

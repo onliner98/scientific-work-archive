@@ -1,0 +1,14 @@
+- Ich möchte selten vorkommende architekturen ausschließen
+  - folgenden architekturen (architekutr) (quelle zur architetkur) wurden in einzelnen fällen verwendet (quelle mit verwendung) sind jedoch keine dominanten approaches => nicht in concept matrix gelistet
+  => nur erwähnen dass es sie gibt sie sind wenig verwendet "deshalb gehe ich nicht tiefer drauf ein" falls vorhanden ein grund angeben
+- Muss ich begriffe wie feature, sample, label erklären?
+  => nicht erklären
+- figuren/equation/andere ref: see figure/equation/section oder se Figure/Equation/Section
+  => Figure/Equation/Section
+- Es wird oft we and our verwendet darf ich das auch oder ist das schlechter stil?
+  => We und Our vermeiden
+- acronym verhalten so ok? => im inhaltsvz ganz als headline kurz
+  => so wie es ist ist es ok, aber grundsätzlich ist es leseflusstechnisch angenehmer nicht standard abkürzungen auszuschreiben
+
+- ich vermute, dass ich nicht schnell genug fertig bin mit implementieren, trainieren und experimenten => idee nur theoretische experimente proposen (architekturen, hyperparam search) und die implementierung außerhalb der pa2 machen
+  => implementiere nicht => anforderungen => lösungsnansätze im bezug auf state of the art und anforderungen diskutieren und lösung vorschlagen (wahrscheinlich pretrained model weil geringe datenmengen)

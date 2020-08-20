@@ -1,0 +1,1 @@
+Ensemble aus LSTM CNN und FOFE (Fixed Size Ordinally Forgetting)(Zhang et al., 2015) für Text CLassification

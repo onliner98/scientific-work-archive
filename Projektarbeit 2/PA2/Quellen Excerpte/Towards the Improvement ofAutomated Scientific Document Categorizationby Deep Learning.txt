@@ -1,0 +1,9 @@
+Generell geht es um Textklassifizierung
+
+Page 58 Basic Structure of the Classifier
+- word2vec embedding
+- CNN mit maxpooling over time geflattenet
+- dens layer
+- softmax for multiclass/label, sigmoid for single label output
+  -  softmax: wahrsch verteilung für label, nimm alle über threshhold t
+  - sigmoid: wahrsch pro label, nimm dass mit höchster wahrsch

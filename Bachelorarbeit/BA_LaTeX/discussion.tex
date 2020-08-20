@@ -1,0 +1,38 @@
+\chapter{Discussion}
+\label{chp:discussion}% Best NN: DenseNet => In General: several NNs
+Augmented reality solutions for field workers are an emerging market. \autocites{EY.2019a}{EY.2019b}{Detzel.2018}{Shook.2019}{Guy.2019} An augmented reality solution for field workers requires software perceiving the environment of field workers. A sub-task of that perception is to classify tools of different classes. This paper determined the best-performing neural network for tool image classification in the course of an experiment. The experiment trains and evaluates state-of-the-art neural networks for image classification on the \ac{TIC Dataset}. The state-of-the-art neural networks for image classification are determined in the course of a literature review conducted by this paper. The best-performing neural network found in the course of the experiment is DenseNet-264. However, DenseNet-264 is only the best-performing neural network for the \ac{TIC Dataset} and under the constraints of this paper. This paper found that, in general, several neural networks are suitable for tool image classification. This is in accordance with the state of the art of image classification, as image classification leaderboards show. Image classification leaderboards show that different neural networks perform rather similarly for different image classification tasks. \autocites{imagenet.2019}{cifar.2012}{mnist.2010}{svhn.2011}{stl.2011}{clothing.2016}{fashionMNIST.2017}{Darlow.2018}{flowers.2008}{food.2014}{vanHorn.2018}{stanfordcars.2013}{emnistletters.2017}{kuzushijiMNIST.2018}{cub.2011}{Sabour.2017}{isic1.2019}{isic2.2018}{isic3.2018} 
+This paper found ResNet-152, ResNeXt-101, and DenseNet-264 to be suitable for tool image classification. This was to be expected since, ResNet-152, ResNeXt-101, and DenseNet-264 are suitable for image classification in general. \autocites{Xie.2017}{He.2016}{Huang.2017}
+\par
+ResNet-152, ResNeXt-101, and DenseNet-264 performed rather similar. Despite differing in structure, each of these neural networks uses convolutional layers and connections skipping layers. \autocites{Xie.2017}{He.2016}{Huang.2017} This might be the cause of the similar performance.
+In comparison to these neural networks, VGG-19 performs less well. VGG-19 does not use connections skipping layers. \autocite{Simonyan.2014} These connections encourage information flow in neural networks. Based on this, these connections ease optimization. \autocites{He.2016}{Huang.2017} Not using these connections might be the cause of the lower performance of VGG-19.
+EfficientNet-B7 achieved an accuracy of $16.67 \%$. The \ac{TIC Dataset} is comprised of six balanced classes. In consequence, the probability of guessing a class correctly is $16.67 \%$. This means, EfficientNet-B7 did not learn to classify tool images, instead EfficientNet-B7 just guessed.
+\par
+The experiment was conducted with state-of-the-art neural networks for image classification. On that account, the results of the experiment for each neural network are individually discussed based on the results reported in the original paper proposing the neural network. The results of the experiment for each neural network are individually discussed in the following sections.
+
+% Diskuss Modelle Einzeln
+\input{discussion/results}
+
+\section{Placement in the State of the Art}
+\input{discussion/placement}
+
+\section{Reflection of Limitations}
+\label{sec:limitations}
+\input{discussion/reflection}
+
+\section{Future Work}
+\input{discussion/futurework}
+
+\section{Practical Implications}
+\label{sec:practical}
+\input{discussion/practical}
+% Structure
+% - Bewertung: Beantworte Forschungsfrage / restate Hypothesis(als aussage formulieren)
+%   - Erkläre Bewertung: z.B. Erwartungen erfüllt? => warum / warum nicht
+% - Einordnung: Compare Results and State of the Art Results
+%   - Originalität: Was macht meine Arbeit anders als Literatur?
+%   - Vgl.: Deckt sich / Wiederspruch von Results und SOTA
+%   - Relevanz: Wie wird bestehendes Wissen erweitert
+% - Reflektion: 
+%   - EINSCHRÄNKUNGEN (sehr wichtig) => dont apologize for them but name them precisely
+%   - Was war Eigenständig? / Was ginge besser?
+% - Future Work

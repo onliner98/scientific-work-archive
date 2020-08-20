@@ -1,0 +1,3 @@
+Sparse Convolution: convolution with a Kernal which is a sparse Matrix => less params
+
+Model: CNN with sparse Convolution based on Spatial Pyramd Pooling [10]

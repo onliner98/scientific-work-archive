@@ -1,0 +1,4 @@
+Text Classification und andere Tasks mit
+- LSTM
+- GRU
+- CNN

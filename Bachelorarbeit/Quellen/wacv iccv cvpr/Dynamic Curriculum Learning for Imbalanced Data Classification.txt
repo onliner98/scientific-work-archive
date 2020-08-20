@@ -1,0 +1,4 @@
+Multi Class Classification with imbalanced class counts
+=> proposes a technique to balance the learning
+
+Used Model: [46] DeepID2 = CNN of 4 Convolutional layers

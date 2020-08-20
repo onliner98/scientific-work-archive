@@ -1,0 +1,5 @@
+Classification on ImageNet
+Improved Learning by Additional Objective (Image Reconstruction)
+
+Used Architecture: CNN
+Compared to VGG

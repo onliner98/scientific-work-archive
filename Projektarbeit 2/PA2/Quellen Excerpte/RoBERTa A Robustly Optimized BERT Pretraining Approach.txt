@@ -1,0 +1,21 @@
+Introduction:
+- Roberta=Bert trained longer for longer sentences and only the masking objective
+Background:
+- Bert is a transformer
+- Masked Language Model (MLM): input sentence where some words are mask output: sentence
+- 2.4 listet alle hyperparams
+Experimental Setup
+- (Baevski et al. 2019) increasing data size can improve performance
+Training Procedure Analysis
+- keep the models fixed => same model as Bert_BASE Bert_Large
+- dynamic masking performs slitly better than static masking
+  - static: mask data in preprocessing step => same masked data each epoch
+  - dynamic: duplicate data 10 tines and mask in 10 different ways => 10 differently masked datas over the epochs
+- Next Sentence Prediction (NSP) which was trained in the original BERT Model is not Trained in RoBert
+- Training with larger Batches helps  (You et al 2019; Ott et al. 2018).
+- Text Encoding: original: CharacterLevelBytePairEncoding; roberta: ByteLevelBytePairEncoding (Radford et al. 2019)
+RoBerta
+- Dynamic Masking
+- No NSP
+- large mini batches
+- byte level BPE

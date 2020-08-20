@@ -1,0 +1,3 @@
+This paper proposed a convolutional prototype learning(CPL) framework for pattern recognition. Different fromthe softmax-based models, CPL directly learn multiple pro-totypes (in convolutional feature space) for each class andthen use prototype matching for decision making.
+
+Used Model: CNN 

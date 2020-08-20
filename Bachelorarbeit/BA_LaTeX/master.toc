@@ -1,0 +1,142 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{iv}{chapter*.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{v}{chapter*.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Algorithms}{vi}{chapter*.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{vii}{chapter*.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Problem Statement}{1}{section.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Scope}{2}{section.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Approach}{3}{section.1.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Structure}{4}{section.1.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Fundamentals}{5}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Rectified Linear Unit}{5}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Swish Activation Function}{5}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Categorical Cross Entropy Loss Function}{5}{section.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Array}{6}{section.2.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Array Visualization}{7}{subsection.2.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Array Slice}{7}{subsection.2.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Machine Learning}{8}{section.2.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Supervised Learning}{8}{subsection.2.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Classification}{8}{subsection.2.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Neural Network}{9}{section.2.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Training Neural Networks}{11}{section.2.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Optimizer}{11}{section.2.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Layers}{13}{section.2.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.1}Pooling}{13}{subsection.2.9.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Max Pooling}{13}{section*.16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Average Pooling}{14}{section*.18}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Global Average Pooling}{14}{section*.19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.2}Dense}{15}{subsection.2.9.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.3}Batch Normalization}{15}{subsection.2.9.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.4}Dropout}{16}{subsection.2.9.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Methodology}{17}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Metric}{17}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Dataset Construction}{18}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Literature Review}{19}{section.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Experiment}{20}{section.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Dataset}{21}{subsection.3.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Neural Network Selection}{22}{subsection.3.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Training}{23}{subsection.3.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.4}Evaluation}{25}{subsection.3.4.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}State of the Art of Image Classification}{26}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Convolutional Neural Network}{26}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Convolution}{28}{section*.24}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Stride}{29}{section*.26}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Padding}{29}{section*.28}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Residual Network}{30}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Inception Network}{32}{section.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Dense Convolutional Neural Network}{36}{section.4.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Capsule Network}{39}{section.4.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Depthwise Separable Convolutional Neural Network}{41}{section.4.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Results}{46}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Discussion}{48}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}VGG-19}{49}{section.6.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}ResNet-152}{50}{section.6.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}ResNeXt-101}{51}{section.6.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}DenseNet-264}{52}{section.6.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}EfficientNet-B7}{53}{section.6.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Placement in the State of the Art}{53}{section.6.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.7}Reflection of Limitations}{54}{section.6.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.8}Future Work}{55}{section.6.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.9}Practical Implications}{56}{section.6.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusion}{58}{chapter.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline References}{59}{chapter*.37}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix}{84}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Concept Matrix}{84}{section.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Benchmark Datasets}{92}{section.A.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Inclusion and Exclusion Criteria}{94}{section.A.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Literature Source List}{94}{section.A.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Term Table}{96}{section.A.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.6}Contents of the Digital Appendix}{97}{section.A.6}% 

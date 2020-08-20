@@ -1,0 +1,3 @@
+- Selbes CNN wie in Kim(2014)
+- BiLstm das letzten Hiddenstate des forward/backword LSTM concatiniert und als softmaxclassifier input verwendet
+- unsupervised pretraining with word2vec, glove, fasttext algorithm

@@ -1,0 +1,28 @@
+Questions that the project managers/devs need to ask for content:
+- How fluent is the target audience in the language?
+- Should translators be included as devs?
+- Do translators need content knowledge (technical terminology/concepts)?
+- Are Multilingual team members/instructors/documents required
+- Are translators required ruring meetings/trainings?
+- How much are time, personnel and cost needed for each translated version?
+- What conventions should be included in the documentation to express distance, date, temperature, time, speed, and other international differences?
+- In what languages are materials legally required to be? E.G.: In Canada materials must be French and English.
+- How accessible do your materials need to be for special-needs audiences? E.G.Will multilingual sign language professionals be  required in a  training class?
+Guidlines for writing clearly:
+- Do not leave out knowledge that seems trivial, that would cause confusion for audience that is not so technically competent
+- Use modifiers(1-n words that specifie another word) with an unambigious relation to which word they modifie.
+- Use Words with only one meaning
+- Use conjunctuis in a way they clearly indicate relationship (the same conjunction several times in a sentence may cause confusion)
+- Use articel(the a), pronouns(that which ...), cojunctions(and as ...)
+- Use short sentences
+- Explan or avoid symbols, abbreviations, and  non-standard industry acronyms.
+- Define jargon terms and aooed a glossary to your documentation
+Conventions to consider include: 
+- Distance: mile or kilometer, foot or meter, inch or centimeter 
+- Speed: miles per hour or kilometers per hour 
+- Weight: pound, kilogram, or stone 
+- Temperature: Celsius or Fahrenheit or Kelvin
+- Time: 24-hour notation or a.m./p.m. 
+- Date: day/month/year or month/day/year 
+Frames of reference:
+- What is the geographic, national,  racial, religious, cultural, or whatever perspective. E.g. Does "next summer" mean July or December? 

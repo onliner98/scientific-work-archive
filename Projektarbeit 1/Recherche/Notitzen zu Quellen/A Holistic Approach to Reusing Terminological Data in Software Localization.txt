@@ -1,0 +1,8 @@
+Software interface text: SIT
+
+Instead of embedding STIs in your sourcecode outsource them in a resourcefile and let other persons(not devs) take care of those 
+=> consistency, simple translation
+
+SITs often are terms => they should be outsourced in a Term Database (like a TM but give unambigious definition and context) instead of a Translation Memory System=>consistent term use
+
+Model for Termdatabase TDB: ISO 16642

@@ -1,0 +1,21 @@
+Related Work
+- Transfer Learning (Saenko et al. 2010; Collobertet al. 2011; Bowman et al. 2014; Socher et al. 2013; ...
+Machine Translation (MT) Model
+- Machine Translation von (Klein et al 2017) wird pretrained 
+- the encoder of the seq2seq model is used called MT-LSTM
+Context Vectors
+- w: sequenz von wörtern
+- CoVe(w) = MT-LSTM(GloVe(w))
+- Sequenz von Wörtern in CoVe = [GloVe(w); CoVe(w)]
+Classification with Cove
+- für 1 Sentence classification tasks x and y take the same input sequenze w*: Sequenz von Wörtern CoVe embedded
+- FFN mit Encoder:
+  - f: Feedforward Netz (Nair and Hinton 2010)
+  - x = biLSTM(f(w*))
+  - y = biLSTM(f(w*))
+  - x/y sind die sequenzen von hiddenstates, X,Y sind die Matritze der Hiddenstates stacked along the timeaxis
+- BiAttention: Affinity Matrix a: A=XY; Attention weights: A=softmax(A); Cx=AX; Cy=AY
+  - for x=y this is selfattention
+- Integrate Conditioning Information C into representation X|y=biLSTM([X;X-Cy;XCy]) Y|x=biLSTM([Y;Y-Cx;YCx])
+- pooling: with max, mean, min and self attention
+- Feed joined pooling representation into 3 layer maxout network (Goodfellow et al. 2013) to produce probability distribution over possible classes

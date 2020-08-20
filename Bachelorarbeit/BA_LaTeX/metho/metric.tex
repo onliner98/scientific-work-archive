@@ -1,0 +1,10 @@
+Performance of neural networks for image classification is measured on benchmark datasets. The benchmark datasets are listed in Section \ref{sec:benchmark}. For these datasets, performance is measured in classification accuracy or error.\autocites{imagenet.2019}{cifar.2012}{mnist.2010}{svhn.2011}{clothing.2016}{fashionMNIST.2017}{Darlow.2018}{food.2014}{vanHorn.2018}{stanfordcars.2013}{emnistletters.2017}{kuzushijiMNIST.2018}{cub.2011}{Sabour.2017}{isic1.2019}{isic2.2018}{isic3.2018}
+Classification accuracy and error are equivalent.\autocite{Bansal.2019b}
+Based on these datasets, this paper measures performance in classification accuracy. For reasons of simplification, classification accuracy is referred to as accuracy in the context of this paper. Accuracy is a metric to measure the classification performance of a classifier. Accuracy $acc$ is defined as the amount of correctly predicted labels $correct$ to the total amount of predictions $total$, see Equation \eqref{eq:acc}. \autocite{Bansal.2019b}
+\begin{equation}
+\label{eq:acc}
+acc = \frac{correct}{total}
+\end{equation}
+\par
+As a result, accuracy can be misleading for an imbalanced dataset. For example, given a dataset consisting of $99\%$ samples labeled $A$ and $1\%$ samples labeled $B$, a classifier purely predicting $A$ gets an accuracy of $99\%$. Consequently, this classifier achieves a high accuracy despite predicting all samples labeled $B$ wrong.
+The dataset constructed in the course of this paper is balanced. Hence, accuracy is suitable for this dataset.

@@ -1,0 +1,2 @@
+Classification of Retina Images for Diseas
+Used Architecture: AlexNet, ResNet, VGG

@@ -1,0 +1,4 @@
+Tissue (gewebe) image classification
+
+
+Used Architecture: Based on AlexNet/GoogLeNet

@@ -1,0 +1,4 @@
+Image Classification with fixed train test resolution
+
+
+Used Architectures: ResNet-50[13], PNASNet-5-Large[24], ResNeXt-101[25], SENet-145[3], InceptionResNet-V22[36]

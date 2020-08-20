@@ -1,0 +1,3 @@
+Meta-Learning via Evolution Algorith
+
+Used Architecture: CNN, compared to google, alex, vgg, res

@@ -1,0 +1,3 @@
+CIFAR-10/100, COCO, place365
+
+Used Archtiecture: ResNet, WRN, Shake-Shake, Shake-Even, SE-ResNet

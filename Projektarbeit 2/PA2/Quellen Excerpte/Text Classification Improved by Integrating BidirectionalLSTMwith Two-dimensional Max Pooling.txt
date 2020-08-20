@@ -1,0 +1,7 @@
+Model: BLSTM-2DCNN
+- BLSTM Layer: takes in xt and produces Vector ht
+  - Input: sequence of GloVe Vectors x1..xl
+- 2D CNN: takes in H and produces Matrix O
+  - Input: Matrix H of the sequence of hiddenstates ht
+- 2D Max Pooling: takes in O and produces Vector a Matrix which is rearrange to a vector
+- Outputlayer: Softmax(W h* + b)

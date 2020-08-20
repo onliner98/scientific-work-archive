@@ -1,0 +1,10 @@
+Introduction:
+- Hypotheisis: First unsupervised (no labels) Pre-Training on a large Corpus than finetuning (labeld) reduces the number of required labeld sampes significantly
+- Labels are expensive
+Methods:
+- Compare 2 strategies on the same dataset(the data set is fully labeld)
+  - Train GPT-2 on the Dataset fully labeled
+  - Pretrain GPT-2 on the majority of the Dataset without labels and Finetune on the small rest of the dataset fully labeled
+Results
+- Both Varians acchieve the same accuracy however the pretraining variant needs much less labeld samples
+- Bigger GPT-2 Models do not rly improve performance

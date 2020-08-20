@@ -1,0 +1,15 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'master.blg'
+[30] biber-MSWIN64:315> INFO - === 
+[65] Biber.pm:371> INFO - Reading 'master.bcf'
+[350] Biber.pm:889> INFO - Found 255 citekeys in bib section 0
+[364] Biber.pm:4093> INFO - Processing section 0
+[378] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[396] bibtex.pm:1523> INFO - LaTeX decoding ...
+[901] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliography.bib'
+[3441] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3441] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3441] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[3442] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[3738] bbl.pm:636> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[4082] bbl.pm:739> INFO - Output to master.bbl

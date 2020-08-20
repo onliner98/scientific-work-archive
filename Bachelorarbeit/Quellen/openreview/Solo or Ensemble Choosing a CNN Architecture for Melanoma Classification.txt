@@ -1,0 +1,3 @@
+Compared Different High Performing CNN Architectures => No statistically significant difference
+
+Used Architectures: DensNet[16], Dual Path Nets[4], Inception-v4/Inception-ResNet[28], ResNet[14], SENet[15], Xception[5]

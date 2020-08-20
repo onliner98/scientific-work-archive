@@ -1,0 +1,7 @@
+Architecture:
+- word level unsupervised embedding
+- Deep pyramid CNN(DPCNN): 
+  - CNN das mit Maxpooling 3x3 Stride=2 jeden layer um die hälfte downsamplet aber alle activation maps behält
+  - Short Cut Connections über 2 Layer
+  - Input is embedded via two viewer(tv) text region embedding
+

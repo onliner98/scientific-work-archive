@@ -1,0 +1,13 @@
+Tricks to improve performance of all models:
+
+TRICKS:
+- larg batch size
+- increas learning rate linear to batch size(bigger batch size bigger learning rate and vice versa)
+- learning rate warmup: at the first few epochs use a rather small learning rate to stabalize learning before using normal learning rate
+- initialise gamma=0 for all batch normalization layers at the end of residual blocks
+- if applying weight decay for regularization do not apply weight decay for bias
+- cosine learning rate decay
+- lable smoothing: use softmax as last layer for the class score
+- knowledge distilation: see chapter 5.3
+- mixup learning: see chapter 5.4
+Used Models: ResNeXt, ResNet, SEResNet, DensNet

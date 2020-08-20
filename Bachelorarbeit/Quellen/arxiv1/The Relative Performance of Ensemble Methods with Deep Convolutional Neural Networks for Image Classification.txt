@@ -1,0 +1,3 @@
+Meta-Learning Method on CIFAR-10
+
+Used Architectures: NiN, GoogLeNet, VGGNet, ResNet

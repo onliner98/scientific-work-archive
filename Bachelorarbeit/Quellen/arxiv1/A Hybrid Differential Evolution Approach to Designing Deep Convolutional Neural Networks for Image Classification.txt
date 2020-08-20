@@ -1,0 +1,3 @@
+CNNs are SOTA for Image Classification
+
+Hyperparamssearch via Differential Evolution (Init population of NNs, Mutate and Crossover, Evaluate and kill/let live) 

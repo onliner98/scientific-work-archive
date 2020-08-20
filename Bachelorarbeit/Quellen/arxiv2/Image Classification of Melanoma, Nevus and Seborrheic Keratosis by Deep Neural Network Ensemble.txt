@@ -1,0 +1,3 @@
+CNN for hautverletzungsklassifizierung
+
+Used Architecture: Based on ResNet-50

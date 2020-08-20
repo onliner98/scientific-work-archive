@@ -1,0 +1,1 @@
+CapProNet: Deep Feature Learning via OrthogonalProjections onto Capsule Subspaces for classification on CIFAR/SVHN

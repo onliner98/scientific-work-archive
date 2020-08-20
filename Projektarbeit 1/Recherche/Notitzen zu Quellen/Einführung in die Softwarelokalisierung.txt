@@ -1,0 +1,39 @@
+[S. 1 Einleitung]
+Internationalisierung und Lokalisierung zählen heute zu den Schlüsselbegriffen einer gloabalen Marktwirtschaft.
+Will siche ein Unternehmen erfolgreich auf dem Weltmarkt behaupten, 
+müssen  Produkte und Dientstleistungen schnell und einfach an die Anforderungend es Zielmarktes angepasst werden können.
+Die enorme technische Entwicklung im Bereich des Personalcomputers 
+und die starke Verbreitung des Rechnerkonzepts seit den 80er jahren des letzten Jahrhunderts
+haben ebenso wie die Orientierung der meisten in den USA beheimateten Softwareentwickler auf nicht-englischsprachige Märkte seit Anfangder 90er Jahre
+dazu geführt, dass Softwarepordukte heute weltweit vermarktet werden
+[S. 1 G11N] selbe definition wie im Buch: Softwarelokalisierung
+[S. 2 I18N] selbe definition wie im Buch: Softwarelokalisierung
+[S. 2 L10N] selbe definition wie im Buch: Softwarelokalisierung
+[S. 2 Zusammenspeil von I18N und L10N]
+I18N wird einmal gemacht und let den Grundstein für L10N
+L10N muss für jedes Local einzeln gemacht werden
+=> Je mehr Energie in I18N fließt desto weniger ist für L10N nötig => balance
+[S. 3 Abgrenzung von Lokalisierung und Übersetzung]
+Übersetzung ist Teil der Lokalisierung. Lokalisierun selbst umfasst viel mehr
+[S. 8  Terminologieverwaltungsproramm] Software zum Verwalten und Bereitstellen von Fachwörtern und fachsprachlichen Wendungen(=Termini) in mehreren Sprachen
+[S. 8 Translation-Memory-Programm] Datenbank zur Speicherung von Paaren übersetzter Textsegmente und deren aussganssprachelichen Text
+[S. 8] Term DB und TM können den Übersetzungsprozess durch automat. Vorschläge unterstützen Für Abgrenzugn welche Aspekte zu Lokalisie
+[S. 9-16 Wichtige Aspekte der Internationalisierung und Lokalisierung von Software] 
+Terminologie, Symbole, Design(Farben, Bilder), Zeichensätze, Schriften/Typographien, Sprache/Stil, Formate(Maßangaben, darstellung etc)
+[S. 19] Internationalisierung sollte Teil der Produktentwicklung sein.
+[S. 82] Aufgaben der Überprüfung zu lokalisierender texte du automatisiert werden könne:
+Rechtschreibfehler, 
+uneinheitliche Satzzeichen, 
+unterschiedliche Zahl von Leerzeichen, 
+fehlende/inkonsistente Übersetzung, 
+Zieltext ohne Original, 
+Zieltext zu lang
+[S. 104] Für eine sinnvolle Übersetzung müssen Kontextinformationen / Referenzmaterialien vorhanden sein.
+[S. 145] Bereits 1992 wurde das Lokalisierunskonzept: Trennung von Sourcecode und zu übersetzender Daten (Ressourcen) genutzt
+[S. 150] Windows verwendet %s (string) und %d (didgit) als Platzhalter oder %1 %2 ... zum angeben von Reihenfolgen
+[S. 156] .NET verwendet {Platzhalter}
+[S. 162] Meta-Lokalisierungsformat: Ressourceformate, die Daten untersch. Ressourceformate & zusätzl Infos enthalten
+Unterschieldiche Lokalisierungsformate wie PO XMLT:TM TMX sollten in ein einziges Umgewandelt werden um Aufwand der Portabilität zu minimieren
+=> XLIFF wurde entwickelt
+[S. 163] Bilinguales Dateiformat: enthält Quell- und Zieltext in untersch. Sprachen
+

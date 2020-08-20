@@ -1,0 +1,24 @@
+\chapter*{Abstract}
+\begingroup
+\begin{table}[h!]
+\setlength\tabcolsep{0pt}
+\begin{tabular}{p{3.7cm}p{11.7cm}}
+Title & \DerTitelDerArbeit \\
+Author: & \DerAutorDerArbeit \\
+Course of Study: & \DieKursbezeichnung \\
+Company: & \DerNameDerFirma\\
+\end{tabular}
+\end{table}
+\endgroup
+
+
+% Problemstellung
+The career guidance provider Aivy receives recruitment advertisements from several companies, so those of interest for Aivy's customers can be forwarded to them. In order to exclusively forward the recruitment advertisements of interest, they need to be classified first. Manual classification creates expensive and recurrent costs, while the implementation of a neural classification model substituting human labor is a one-time investment. On that account, a neural model holds the potential of significant cost reduction.
+% Forschungsziel
+This paper seeks to propose a neural model for the recruitment advertisement classification task.
+% Methode
+Therefore, state of the art models for neural text classification are discussed in regard to the requirements of the recruitment advertisement classification task. The state of the art on neural text classification is captured by the literature review conducted by this paper. The requirements are derived from the recruitment advertisement classification task.
+% Ergebnis
+In general, any state of the art model for text classification satisfies the requirements. Accordingly, no model can be excluded based on the requirements. However, XLNet is the on average best performing model on several text classification leaderboards.\footnote{\url{https://gluebenchmark.com/leaderboard/}}\footnote{\url{https://nlpprogress.com/english/text_classification.html}}\footnote{\url{https://paperswithcode.com/sota}}. Furthermore, XLNet is available under Apache License 2.0. This license allows for commercial use free of charge.
+% Resultierende Empfehlung
+For this reason, this paper proposes the pre-trained XLNet fine-tuned on the recruitment advertisement classification task for this task.

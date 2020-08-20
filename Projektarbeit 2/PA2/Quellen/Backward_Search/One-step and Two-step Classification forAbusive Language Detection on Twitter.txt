@@ -1,0 +1,4 @@
+For text classification
+- char cnn => max pooling => softmax
+- word cnn => max pooling => softmax
+- char cnn+word cnn => max pooling => outputs concatinated => softmax

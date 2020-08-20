@@ -1,0 +1,6 @@
+Introduction:
+- per label attention
+Method
+- CNN(Kim 2014)
+- jedes label bekommt einen eigenen vector der erlernt wird => dieser wird query für die attention => label wise attention
+- on top wird ein Linear Layer gesetzt mit sigmoid fkt um wahrsch pro label zu berechnen

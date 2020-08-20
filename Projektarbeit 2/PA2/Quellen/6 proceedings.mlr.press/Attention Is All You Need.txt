@@ -1,0 +1,11 @@
+The Annotated Transformer: https://nlp.seas.harvard.edu/2018/04/03/attention.html
+
+Attention(Q,K,V)=softmax(QK/sqrt(dk))*V
+Q, K, V sind Matritzen aller Queries and Keys 1/sqrt(dk) ist die normung durch die länge der Keyvektoren
+this is equivalent to dot product attention plus norming
+
+Multihead attention: Projekt Q,V,K with different linear transformations and then apply attention to them at the end concat all attentions
+MutliHead(Q,K,V)=Concat(head1,...headh)W
+headi=Attention(Q*Wiq, K*Wik, V*Wiv)
+
+For Rest of architecture see figure

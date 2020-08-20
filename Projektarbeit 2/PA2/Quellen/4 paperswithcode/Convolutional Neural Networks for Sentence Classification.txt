@@ -1,0 +1,8 @@
+Introduction
+- CNN Einführung: Convolutional  neural  networks  (CNN)  utilizelayers  with  convolving  filters  that  are  applied  tolocal  features  (LeCun  et  al.,  1998).    Originallyinvented for computer vision,  CNN models havesubsequently been shown to be effective for NLPand  have  achieved  excellent  results  in  semanticparsing (Yih et al.,  2014),  search query retrieval(Shen  et  al.,  2014),  sentence  modeling  (Kalch-brenner  et  al.,  2014),  and  other  traditional  NLPtasks (Collobert et al., 2011).
+Model
+- CNN rather equal to (Collobet et al 2011) Input is shaped as sentence matrix, 1D Conv, MaxPooling OverTIme and Dropout
+  - CNN-random: WordVectors randomly initialized
+  - CNN-static: Word Vectors=Word2Vec static
+  - CNN-non-satic: Word Vectors=Word2Vec non static
+  - CNN-multichannel: 2 Sets of Word Vectors as Input

@@ -1,0 +1,3 @@
+Legal Text Classification with
+- BERT
+- BiGRU with self Attention

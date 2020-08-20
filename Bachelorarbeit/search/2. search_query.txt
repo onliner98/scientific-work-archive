@@ -1,0 +1,19 @@
+[neural] <image> classification AND <Any Dataset>
+	<Any Dataset> => (ImageNet OR CIFAR OR MNIST OR SVHN OR STL
+Clothing OR CINIC OR Flowers OR iNaturalist OR
+Stanford Cars OR CUB)
+
+[neural] <image> classification (review OR Survey OR sota OR Benchmark)
+
+neural network AND (Image Classification [OR <Synonym>])
+	<Synonym> => ((single Label OR Multi Label Image) Classification) OR Image Categorization OR Image Label Prediction
+
+neural network AND Image AND (person re-identification OR emotion classification OR diseas classification)
+
+[optional]
+<image> => object OR image
+
+Keine object detection seidenn classification ist losgelöster teil
+
+
+neural AND (image OR object) (AND classification OR prediction)

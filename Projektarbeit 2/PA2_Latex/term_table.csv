@@ -1,0 +1,5 @@
+﻿Term,General Term,Subsumable Term,Synonym,Related Term
+Classification,,Multi-Class Classification: Single-Label Classification: Multi-Label Text Classification: Large Scale Multi-Label Text Classification: Extreme Multi-Label Text Classification,Categorization,Prediction
+Text,,Sentence: Paragraph: Document: Corpus: Report,,
+Natural Language Processing, Computer Science: Machine Learning: Data Science: Machine Perception, Sentiment Analysis: Machine Translation: Natural Language Generation: Question Answering: Named Entity Recognition: Dependency Parsing,,Text Mining: Computational Linguistics
+Neural Network, Computer Science: Data Science: Artificial Intelligence, MLP: FNN: RNN: CNN: SNN: PCNN: LSTM: GRU: GAN; Tree RNN: Attention: Transformer: Deep Learning: HighWayNets: ResNets: CRNN: RCNN: mLSTM: mRNN: Attention: DenseNets: CapsNets: Inception: DNN: ANN,Deep Neural Networks,Deep Learning: Neural

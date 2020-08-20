@@ -1,0 +1,28 @@
+\chapter{Anhang}
+
+\section{Implementierung der Extraktion zu übersetzender Strings anhand einer Auszeichnung}
+\label{sec:implementierung}
+Zu dem Zweck der Implementierung eines Lokalisierungstools, welches die ausgezeichneten Strings extrahiert, ist für \ac{ITS} ein Namespace-based Validation Dispatching Language 
+\autocite[Vgl.][]{ISO.2006}
+Dokument gegeben.
+\autocite[Vgl.][]{Filip.2013}
+Die Auszeichnung \textit{\_()} lässt sich durch die Produktion einer kontextfreien Grammatik wie in \ref{eq:grammar} dargestellt definieren. Die dargestellte Produktion ist teil einer kontextfreie Grammatik, welche auch eine reguläre Grammatik ist, sie wird in der Augmented Backus"~Nauer Form 
+\autocite[Vgl.][]{Crocker.2008} 
+dargestellt.
+\begin{align} \label{eq:grammar}
+	\begin{array}{lcl}
+		Q & = & \text{'''''} \text{ } | \text{ } \text{''''''} \\
+		WS & = & (\epsilon \text{ } | \text{ } WSP \text{ } | \text{ } CR \text{ } |\text{ } LF)^* \\ 
+		STRING & = & (VCHAR \text{ } | \text{ } DIGIT \text{ } |WS)^* \\
+		MARKUP0 & = & \text{''\_(''} \text{ } WS \text{ } STRING \text{ } WS \text{ } \text{'')''} \\ 
+		& & \text{; 0 steht für alle ohne ' ausgezeichneten Strings} \\
+		MARKUP1 & = & \text{''\_(''} \text{ } WS \text{ } Q \text{ } STRING \text{ } Q \text{ } WS \text{ } \text{'')''} \\
+		& & \text{; 1 steht für alle mit ' ausgezeichneten Strings} \\
+		MARKUP2 & = & \text{''\_(''} \text{ } WS \text{ } \text{''concat(''}  \text{ } WS  \text{ } (CALL \text{ } \\
+		& & \text{; 2 steht für alle concatinierten Strings} \\
+		& | & \text{ } Q \text{ } STRING \text{ } Q ) \text{ } (WS  \text{ } \text{'',''} \text{ } WS \text{ } (CALL \text{ } \\
+		& | & \text{ } Q \text{ } STRING \text{ } Q ) \text{ } )^+ \text{ } WS \text{ } \text{'')''} \text{ } WS  \text{ } \text{'')''} \\
+		CALL & = & CHAR \text{ } STRING^* \\
+		& & \text{ ; Aufruf von Variable oder Methode}
+	\end{array}
+\end{align}

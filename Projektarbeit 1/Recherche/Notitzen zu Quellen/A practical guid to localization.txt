@@ -1,0 +1,5 @@
+[S. 4] Translation is only one of the activities in localization 
+in addition to translation a localization project includes many other tasks such as project management, software engineering, testing and desktop publishing
+[S. 18] Software bezogene Aufgaben der Lokalisierungs: 
+- extrahieren der Textsegmente aus der Software
+- Übersetzen der Textsegmente bzw. Editoren dafür bieten

@@ -1,0 +1,10 @@
+Gefunden Unter: https://pythonprogramming.net/neural-networks-machine-learning-tutorial/
+  Bilddaten: http://image-net.org/
+  Unlabeled Text: https://dumps.wikimedia.org/backup-index.html
+  labeled text: https://commoncrawl.org/
+  sprache: https://tatoeba.org/
+  Google ist schlecht zum finden von datasets frag menschen: https://www.reddit.com/r/MachineLearning/
+Gefunden Unter: https://pythonprogramming.net/tensorflow-deep-neural-network-machine-learning-tutorial/
+  Bild von Zahlen(handgeschrieben): MNIST Dataset (für python vorbereitet)
+Gefunden Unter: http://www.sfs.uni-tuebingen.de/GermaNet/
+  WordNet für Deutsch

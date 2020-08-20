@@ -1,0 +1,20 @@
+Introduction
+- Language Model pre-training improves many NLP tasks (Dai and Le, 2015; Peters et al.,2018a; Radford et al., 2018; Howard and Ruder,2018)
+  - feature based: use pretrain embeddings as input
+  - fine-tuning: use pretrained model as your model
+- bi directional pretraining through masked language model mlm
+Related Work
+- Transfer learning beispiele (Conneau et al. 2017; McCann et al. 2017)
+BERT
+- multi-layer bidirectional Transformer encoder (Vaswani et al. 2017)
+- L: num Layers
+- H: hidden size
+- A: num self attention heads
+Input Output Representation
+- Sequence of tokens, with 1st token beeing [CLS]
+- tokens: WordPiece Embeddings (Wu et al. 2016)
+Pre-training BERT
+- Masked LM (MLM): Given an input where some words are masked out try to predict the masked words (Softmax classifier)e.g. IN: New _ is a city OUT: York
+- Next Sentence Prediction (NSP): Input 2 sentences output isNext or notNext only usefull for QA and NLI
+Fine-tuning BERT
+- C (final hidden vektor of the CLS token) is used as input for a new Dense+Softmax which is used as classifier for the task 

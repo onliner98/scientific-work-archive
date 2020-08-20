@@ -1,0 +1,2 @@
+Text classification with a uge amount of labels
+using Transfer/Multitask Learning for CNN/(bi)LSTM with different amounts of layers shared

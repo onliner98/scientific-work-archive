@@ -1,0 +1,4 @@
+Use a triplet loss to improve performance of
+- ResNet
+- Inception v4
+- DenseNet

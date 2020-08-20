@@ -1,0 +1,9 @@
+Hierachical: 
+- 1 Network takes in wordvectors and produces a sentence Vector
+- 1 Network on Top takes in the produced sentence Vektors and produces a document vector
+- softmax classifier is applied on document vector
+
+Text Classification using
+- HAN (Hierachical Attention Network)
+- CNN (mit 1 bis 2 self attention heads; 0 bis 1 target attention; 0 bis 1 max pooling)
+- Hierachical CNN (mit 1 bis 2 self attention heads; 0 bis 1 target attention; 0 bis 1 max pooling)

@@ -1,0 +1,1 @@
+CNN based on Kim followed by max pooling and 2 Dense layers last one with sigmoid for Multi Label Text Classification

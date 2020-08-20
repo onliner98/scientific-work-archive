@@ -1,0 +1,1053 @@
+This is LuaTeX, Version 1.10.0 (MiKTeX 2.9.7050 64-bit)  (format=lualatex 2019.10.7)  8 NOV 2019 12:35
+ restricted system commands enabled.
+**temp.tex
+(./temp.tex
+LaTeX2e <2018-12-01>
+Lua module: luaotfload-main 2019-05-18 2.97 luaotfload entry point
+Lua module: luaotfload-init 2019-05-18 2.97 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2019-05-18 2.65 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2019-05-18 2.65 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2019-05-18 2.97 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2019-05-18 2.97 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2019-05-18 2.97 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is C:/Users/H258119/AppData/Local/MiKTe
+X/2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2019-05-18.lua” from kpse
+-resolved path “C:/Users/H258119/AppData/Local/Programs/MiKTeX 2.9/tex/luatex/
+luaotfload/fontloader-2019-05-18.lua”.
+Lua-only attribute luaotfload@state = 2
+Lua-only attribute luaotfload@noligature = 3
+Lua-only attribute luaotfload@syllabe = 4
+luaotfload | init : Context OpenType loader version “3.108”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2019-05-18 2.97 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2019-05-18 2.97 luaotfload submodule / database
+Lua module: luaotfload-colors 2019-05-18 2.97 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 5
+Lua module: luaotfload-resolvers 2019-05-18 2.97 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is C:/Users/H258119/AppData/Local/MiKTe
+X/2.9/luatex-cache/generic/names.
+Lua module: luaotfload-features 2019-05-18 2.97 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2019-05-18 2.97 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2019-05-18 2.97 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.974 seconds
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 S
+   ummarizing, the scope of this paper comprises a proposed model for the ta...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+luaotfload | db : Font names database loaded from C:/Users/H258119/AppData/Local
+/MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.lua.gz
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.1 ...\url{https://gluebenchmark.com/leaderboard/}}
+                                                  \footnote{\url{https://nlp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.1 ...\url{https://gluebenchmark.com/leaderboard/}}
+                                                  \footnote{\url{https://nlp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \url 
+     {https://gluebenchmark.com/leaderboard/}
+l.1 ...\url{https://gluebenchmark.com/leaderboard/}}
+                                                  \footnote{\url{https://nlp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (82.01pt too wide) in paragraph at lines 1--1
+[][]\TU/lmr/m/n/10 https://gluebench-
+ []
+
+
+Overfull \hbox (77.55pt too wide) in paragraph at lines 1--1
+\TU/lmr/m/n/10 mark.com/leader-
+ []
+
+
+Overfull \hbox (30.31999pt too wide) in paragraph at lines 1--1
+\TU/lmr/m/n/10 board/| 
+ []
+
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.1 ...ogress.com/english/text_classification.html}}
+                                                  \footnote{\url{https://pap...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.1 ...ogress.com/english/text_classification.html}}
+                                                  \footnote{\url{https://pap...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \url 
+     {https://nlpprogress.com/english/text_classification.html}
+l.1 ...ogress.com/english/text_classification.html}}
+                                                  \footnote{\url{https://pap...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.1 ...ogress.com/english/text_classification.html}}
+                                                  \footnote{\url{https://pap...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...pprogress.com/english/text_classification.html}
+                                                  
+l.1 ...ogress.com/english/text_classification.html}}
+                                                  \footnote{\url{https://pap...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<recently read> }
+ 
+l.1 ...ogress.com/english/text_classification.html}}
+                                                  \footnote{\url{https://pap...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@footnotetext ...rut \strutbox }\color@endgroup }
+                                                  
+l.1 ...ogress.com/english/text_classification.html}}
+                                                  \footnote{\url{https://pap...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.1 ...otnote{\url{https://paperswithcode.com/sota}}
+                                                   Other tasks like image cl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.1 ...otnote{\url{https://paperswithcode.com/sota}}
+                                                   Other tasks like image cl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \url 
+     {https://paperswithcode.com/sota}
+l.1 ...otnote{\url{https://paperswithcode.com/sota}}
+                                                   Other tasks like image cl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (49.23pt too wide) in paragraph at lines 1--1
+[][]\TU/lmr/m/n/10 https://pa-
+ []
+
+
+Overfull \hbox (17.53pt too wide) in paragraph at lines 1--1
+\TU/lmr/m/n/10 per-
+ []
+
+
+Overfull \hbox (26.72pt too wide) in paragraph at lines 1--1
+\TU/lmr/m/n/10 swith-
+ []
+
+
+Overfull \hbox (63.1pt too wide) in paragraph at lines 1--1
+\TU/lmr/m/n/10 code.com/sota| 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.2 \par
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (980.32967pt too wide) in paragraph at lines 1--2
+[][]\TU/lmr/m/n/10 https://nlpprogress.com/english/text$[][]\OML/cmm/m/it/10 la
+ssification:html|[]Othertaskslikeimageclassificationorlanguagemodelingareexclud
+ed; sincetheclassificationofrecruitmentadvertisementsfallsintothecategoryoftext
+classification:$ 
+ []
+
+! Undefined control sequence.
+l.3 ...iscuss alternatives to the currently used \ac
+                                                  {AWS} infrastructure and e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (19.5pt too wide) in paragraph at lines 3--4
+[]\TU/lmr/m/n/10 This
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 pa-
+ []
+
+
+Overfull \hbox (14.2pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 per
+ []
+
+
+Overfull \hbox (11.39pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 fo-
+ []
+
+
+Overfull \hbox (22.32pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 cuses
+ []
+
+
+Overfull \hbox (10.56pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 on
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 the
+ []
+
+
+Overfull \hbox (21.38pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 tech-
+ []
+
+
+Overfull \hbox (11.67pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ni-
+ []
+
+
+Overfull \hbox (12.22pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 cal
+ []
+
+
+Overfull \hbox (12.27pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 as-
+ []
+
+
+Overfull \hbox (22.55pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 pects
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 of
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 the
+ []
+
+
+Overfull \hbox (19.49pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 clas-
+ []
+
+
+Overfull \hbox (10.05pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 si-
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ca-
+ []
+
+
+Overfull \hbox (17.23pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (29.17pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 model.
+ []
+
+
+Overfull \hbox (28.91pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 There-
+ []
+
+
+Overfull \hbox (19.2pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 fore,
+ []
+
+
+Overfull \hbox (16.17pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 this
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 pa-
+ []
+
+
+Overfull \hbox (14.2pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 per
+ []
+
+
+Overfull \hbox (19.22pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 does
+ []
+
+
+Overfull \hbox (14.45pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 not
+ []
+
+
+Overfull \hbox (15.61pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 dis-
+ []
+
+
+Overfull \hbox (17.88pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 cuss
+ []
+
+
+Overfull \hbox (11.11pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 al-
+ []
+
+
+Overfull \hbox (15.58pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ter-
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (20.05pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 tives
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 to
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 the
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 cur-
+ []
+
+
+Overfull \hbox (25.59pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 rently
+ []
+
+
+Overfull \hbox (19.5pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 used
+ []
+
+
+Overfull \hbox (22.23pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 AWS
+ []
+
+
+Overfull \hbox (11.67pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (19.25pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 fras-
+ []
+
+
+Overfull \hbox (21.14pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 truc-
+ []
+
+
+Overfull \hbox (17.81pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ture
+ []
+
+
+Overfull \hbox (16.12pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 and
+ []
+
+
+Overfull \hbox (17.21pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 eco-
+ []
+
+
+Overfull \hbox (26.11pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 nomic
+ []
+
+
+Overfull \hbox (10.83pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ef-
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (26.94pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ciency
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 of
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 the
+ []
+
+
+Overfull \hbox (26.39pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 model
+ []
+
+
+Overfull \hbox (8.34pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 in
+ []
+
+
+Overfull \hbox (21.1pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 com-
+ []
+
+
+Overfull \hbox (17.81pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 par-
+ []
+
+
+Overfull \hbox (6.11pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (14.5pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 son
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 to
+ []
+
+
+Overfull \hbox (22.81pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 other
+ []
+
+
+Overfull \hbox (19.49pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 clas-
+ []
+
+
+Overfull \hbox (10.05pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 si-
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ca-
+ []
+
+
+Overfull \hbox (17.23pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ap-
+ []
+
+
+Overfull \hbox (37.58pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 proaches
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 like
+ []
+
+
+Overfull \hbox (14.17pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 hu-
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 man
+ []
+
+
+Overfull \hbox (19.49pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 clas-
+ []
+
+
+Overfull \hbox (10.05pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 si-
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ca-
+ []
+
+
+Overfull \hbox (20.01pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 tion.
+ []
+
+
+Overfull \hbox (22.77pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 How-
+ []
+
+
+Overfull \hbox (20.58pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ever,
+ []
+
+
+Overfull \hbox (17.27pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 cost
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ad-
+ []
+
+
+Overfull \hbox (18.61pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 van-
+ []
+
+
+Overfull \hbox (22.27pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 tages
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 of
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 one
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 neu-
+ []
+
+
+Overfull \hbox (11.7pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ral
+ []
+
+
+Overfull \hbox (26.39pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 model
+ []
+
+
+Overfull \hbox (18.08pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 over
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 an-
+ []
+
+
+Overfull \hbox (22.81pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 other
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 neu-
+ []
+
+
+Overfull \hbox (11.7pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ral
+ []
+
+
+Overfull \hbox (26.39pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 model
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 like
+ []
+
+
+Overfull \hbox (24.48pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 train-
+ []
+
+
+Overfull \hbox (13.34pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (19.44pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 time
+ []
+
+
+Overfull \hbox (16.12pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 and
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 li-
+ []
+
+
+Overfull \hbox (22.82pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 cense
+ []
+
+
+Overfull \hbox (23.99pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 costs,
+ []
+
+
+Overfull \hbox (13.36pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 are
+ []
+
+
+Overfull \hbox (18.33pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (15.61pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 sid-
+ []
+
+
+Overfull \hbox (21.14pt too wide) in paragraph at lines 3--4
+\TU/lmr/m/n/10 ered. 
+ []
+
+
+Overfull \hbox (17.64pt too wide) in paragraph at lines 5--6
+[]\TU/lmr/m/n/10 Due
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 to
+ []
+
+
+Overfull \hbox (19.44pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 time
+ []
+
+
+Overfull \hbox (18.33pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (35.42pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 straints,
+ []
+
+
+Overfull \hbox (13.05pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (17.53pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 per-
+ []
+
+
+Overfull \hbox (6.11pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (25.88pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ments
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 to
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 op-
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (19.99pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 mize
+ []
+
+
+Overfull \hbox (16.12pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 and
+ []
+
+
+Overfull \hbox (16.16pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 test
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 the
+ []
+
+
+Overfull \hbox (17.81pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (24.78pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 posed
+ []
+
+
+Overfull \hbox (26.39pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 model
+ []
+
+
+Overfull \hbox (18.33pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 can-
+ []
+
+
+Overfull \hbox (14.45pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 not
+ []
+
+
+Overfull \hbox (10.28pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 be
+ []
+
+
+Overfull \hbox (17.81999pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 run.
+ []
+
+
+Overfull \hbox (13.34pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 On
+ []
+
+
+Overfull \hbox (18.34pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 that
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ac-
+ []
+
+
+Overfull \hbox (26.95pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 count,
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 the
+ []
+
+
+Overfull \hbox (14.44pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 im-
+ []
+
+
+Overfull \hbox (16.11pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ple-
+ []
+
+
+Overfull \hbox (21.66pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 men-
+ []
+
+
+Overfull \hbox (12.22pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ta-
+ []
+
+
+Overfull \hbox (17.23pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 of
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 the
+ []
+
+
+Overfull \hbox (17.81pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (24.78pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 posed
+ []
+
+
+Overfull \hbox (26.39pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 model
+ []
+
+
+Overfull \hbox (16.12pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 and
+ []
+
+
+Overfull \hbox (13.05pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (17.53pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 per-
+ []
+
+
+Overfull \hbox (6.11pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (25.88pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ments
+ []
+
+
+Overfull \hbox (13.36pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 are
+ []
+
+
+Overfull \hbox (13.05pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (28.34pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 cluded
+ []
+
+
+Overfull \hbox (8.34pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 in
+ []
+
+
+Overfull \hbox (16.17pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 this
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 pa-
+ []
+
+
+Overfull \hbox (16.98pt too wide) in paragraph at lines 5--6
+\TU/lmr/m/n/10 per. 
+ []
+
+)
+! Emergency stop.
+<*> temp.tex
+         
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 27 strings out of 494291
+ 100000,106986 words of node,token memory allocated 15309 words of node memory still in use:
+   182 hlist, 7 rule, 2 ins, 69 disc, 6 local_par, 1 dir, 8 math, 393 glue, 79 k
+ern, 165 penalty, 1243 glyph, 27 attribute, 44 glue_spec, 27 attribute_list, 2 t
+emp nodes
+   avail lists: 1:1,2:2,3:20,4:1,5:2,7:50,8:174
+ 4373 multiletter control sequences out of 65536+200000
+ 26 fonts using 1477047 bytes
+ 24i,8n,14p,818b,181s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

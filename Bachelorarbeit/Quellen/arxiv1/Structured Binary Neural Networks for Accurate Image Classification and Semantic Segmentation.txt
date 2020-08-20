@@ -1,0 +1,4 @@
+Decomposing Matrices and Activation Functions of a CNN into binary ones to approximate the original CNN
+=> smaller CNN approx of the orignal CNN
+
+Used Architecture: CNN

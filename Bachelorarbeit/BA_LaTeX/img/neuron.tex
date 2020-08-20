@@ -1,0 +1,27 @@
+\begin{tikzpicture}[
+cell/.style={
+	rectangle, 
+	rounded corners=2mm, 
+	draw,
+	very thick,
+	align=center,
+},
+ArrowC1/.style={% Arrows with rounded corners
+	rounded corners=.25cm,
+	thick,
+},
+]
+	\node (x0) at (0,3) {$x_0$};
+	\node (x1) at (0,2) {$x_1$};
+	\node (..) at (0,1) {$\vdots$};
+	\node (xn) at (0,0) {$x_n$};
+	\node[draw, circle, minimum size=1cm] (sum) at (2,1.5) {$\sum$};
+	\node[draw, circle, minimum size=1cm] (phi) at (4,1.5) {$\varphi$};
+	\node (y) at (6,1.5) {$y$};
+	\draw[-latex,ArrowC1] (x0) -- (sum) node[sloped,pos=.3,above] {$w_0$};
+	\draw[-latex,ArrowC1] (x1) -- (sum) node[sloped,pos=.3,above] {$w_1$};
+	\draw[-latex,ArrowC1] (xn) -- (sum) node[sloped,pos=.3,above] {$w_n$};
+	\draw[-latex,ArrowC1] (sum) -- (phi);
+	\draw[-latex,ArrowC1] (phi) -- (y);
+	\node[draw,	ellipse, minimum height=2cm,minimum width=3cm, label=Neuron] (neuron) at (3,1.5) {};
+	\end{tikzpicture}

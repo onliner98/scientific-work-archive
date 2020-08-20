@@ -1,0 +1,13 @@
+Use Tree Structure for Classification
+1st Network Groups InputData in Clusters = Root Node
+Each Cluster is Handeled by another Network = nth Node
+							     /-> ...
+	     /-> Cluster 1 -> 2nd node Network for Cluster 1 --> ...
+x->root Node --> Cluster 2 -> ...			     \-> ...
+	     \-> Cluster 3 -> ...
+
+This Paper uses:
+- NiN for Root Node
+- MLP for nth Node
+
+Compared Networks: NiN[15], DSN[14], CNN

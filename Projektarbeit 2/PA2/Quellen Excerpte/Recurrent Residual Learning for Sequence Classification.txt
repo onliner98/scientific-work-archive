@@ -1,0 +1,5 @@
+Text classification with:
+- LSTM
+- RRN(RNN with residual connections)
+- SC LSTM (LSTM with skipp connections)
+- HRL (LSTM and RRN Hiddenstates are added und gemittelt)

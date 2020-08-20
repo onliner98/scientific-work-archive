@@ -1,0 +1,5 @@
+Text Classification with different Models
+- CNN
+- LSTM
+- BiLSTM
+- Proposed Model: c-LSTM: CNN which has Sentencematrix as Input and Matrix as Output => each row/column is used as input Vector for an LSTM => last hiddenstate of the lstm is fed into softmax classifier

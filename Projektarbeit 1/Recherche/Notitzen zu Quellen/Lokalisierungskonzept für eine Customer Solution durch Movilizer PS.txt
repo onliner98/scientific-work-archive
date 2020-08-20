@@ -1,0 +1,9 @@
+UI Strings werden in Masterdatapools gespeicher, je Lokalisierung einen pool
+Es gibt ein Movelet innerhalb dieses Movelets wird abhängig von der Ausgewählten Sprache der pool ausgewählt
+Alle Strings im Movelet sind Placeholder oder Variablen, welche bei jedem Start des Movelets neu befüllt werden müssen
+=> Dateneffizient, Rechnungsleistungsintensiv, skaliert O(n)
+
+Meine Lösung:
+Pro Lokalisierung gibt es ein Movelet
+=> Es wird immer nur das Movelet runtergeladen/assigned was nötig ist z.b. sprach auswahl über menu movelet welches MAF mit assignment des richtigen lokalisierten movelets triggert
+=> Datenineffizienter aber fast keine Rechenleistung, skaliert O(1)

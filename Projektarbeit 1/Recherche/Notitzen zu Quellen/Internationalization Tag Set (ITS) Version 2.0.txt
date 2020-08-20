@@ -1,0 +1,306 @@
+[Abstract]
+ITS 2.0 focuses on HTML, XML-based formats in general, and can leverage processing based on the XML Localization Interchange File Format (XLIFF)
+[2.1 Data Categories] Data categories define the information ITS can convey
+- Translate: Expresses if content is intended for translation
+- Localization Note: Notes for localizers about content of an item
+- Terminology: Infos about a term e.g. link term database, definition
+- Directionality: specifies writing direction
+- Language Information: Language of a given content
+- Elements within text: How content is related to the textflow (e.g. is a paragraph)
+- Domain: Topic/Subject of content which is to be translated
+- Text Analysis: Lexical or cenceptual information about the context
+- Local Filter: Specifies that a content can only be seen by certain locals
+- Provenance: Specifies the authors of content
+- External Resource: references resources outside the document, that need to be considered for localisation (e.g. images, video)
+- Target Pointer: Associates source content (e.g. contetn to be translated) and target (e.g. translated form of the source content)
+- Id Value: Unique ID for a content
+- Preservev Space: Indicates how whitespace is handeled in content
+- Localization Quality Issue: describes nature and severity detected during language oriented QA
+- Localization Quality Rating: Measurnment of the localization quality
+- MT Confidence: confidence Machine Translation system has about the translation
+- Allowed Characters: allowed characters for a piece of content
+- Storage size: Max storage for a given piece of content
+[2.2 Selection] Select translateable Strings via general rules(XPath/query languages) or directly by attribute. Datacategories are associated with xml/html nodes(element/attribute). ITS 2.0 enables Defaults and inheritance
+[2.2.1 Local Approach] The its:translate attribute with value="no" marks the corresponding element and all its child elements as not considered for translation
+The span element, which serves as a carrier for the local ITS attributes
+<tag its:translate="no">
+  this will not be translated
+  <otherTag>
+    neither will this be translated
+  </otherTag>
+  nor that
+</tag>
+[2.2.2 Global Approach] The <its:rules> element contains one or more child elements e.g. <its:translateRule> 
+each child element has a selector attribute with XPath or absolute location paths as value.
+The selector attribute specifies nodes(xml tags) to wich the information given by the tag of the selector is applied
+The rules element should be placed where it does not impact the structure of the document, e.g., in a “head”
+<myTopic xmlns="http://mynsuri.example.com" id="topic01" xml:lang="en-us">
+  <prolog>
+    <title>Using ITS</title>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="2.0">
+      <its:translateRule selector="//n:term" translate="no" xmlns:n="http://mynsuri.example.com"/>
+    </its:rules>
+  </prolog>
+  <body>
+    <p>ITS defines <term>data category</term> as an abstract concept for a particular type of
+      information for internationalization and localization of XML schemas and documents.</p>
+  </body>
+</myTopic>
+[2.3 Overriding, Inheritance and Defaults]How this works is explained using an example
+- The ITS default is that all elements are translatable.
+- The translateRule element declared in the header overrides the default for the head element inside text and for all its children.
+- Because the title element is actually translatable, the global rule needs to be overridden by a local its:translate="yes".
+- In the body of the document the default applies, and its:translate="no" is used to set "faux pas" as non-translatable.
+<text xmlns:its="http://www.w3.org/2005/11/its">
+  <head>
+    <revision>Sep-10-2006 v5</revision>
+    <author>Ealasaidh McIan</author>
+    <title its:translate="yes">The Origins of Modern Novel</title>
+    <its:rules version="2.0">
+      <its:translateRule translate="no" selector="/text/head"/>
+    </its:rules>
+  </head>
+  <body>
+    <div xml:id="intro">
+      <head>Introduction</head>
+      <p>It would certainly be quite a <span its:translate="no">faux pas</span> to start a
+        dissertation on the origin of modern novel without mentioning the <tl>Epic of
+        Gilgamesh</tl>...</p>
+    </div>
+  </body>
+</text>
+[2.4 Adding Information or Pointing to Existing Information] Data categories can add information or point to information for the selected nodes. Pointing and adding is mutually exclusive
+[2.6 Traceability] Die 5.7 ITS Tools Annotation ermöglicht informationen darüber festzuhalten woher daten kommen(z.b. von welcher anwendung)
+[3 Notation and Terminology]
+The Namespace for ITS MUST be used it is:
+<root xmlns:its="http://www.w3.org/2005/11/its"...
+[4.1 Conformance Type 1: ITS Markup Declarations]
+1) At least one of the following MUST be in the schema:
+  A) rules element
+  B) one of the local ITS attributes
+  C) span element
+2) If the rules element is used, it MUST be part of the content model of at least one element declared in the schema. It SHOULD be in a content model for meta information, if this is available in that schema (e.g., the head element in [XHTML 1.0]).
+3) If the span element is used, it SHOULD be declared as an inline element.
+[4.2 Conformance Type 2: The Processing Expectations for ITS Markup]
+1) A processor MUST implement at least one data category. For each implemented data category, the following MUST be taken into account:
+  A) processing of at least one selection mechanism (global or local).
+  B) the default selections for the data category.
+  C) the precedence definitions for selections defined in Section 5.5: Precedence between Selections, for the type of selections it processes.
+2) If an application claims to process ITS markup for the global selection mechanism, it MUST process an XLink href attribute found on a rules element.
+3) If an application claims to process ITS markup implementing the conformance clauses 2-2 and 2-3, it MUST process that markup with XML documents.
+4) Non-ITS elements and attributes found in ITS elements MAY be ignored.
+5.1 Indicating the Version of ITS
+- The current its version is "2.0"
+- The version attribute MUST be in the rules element without a prefix.
+- The version attribute MUST be provided in an element where its markup is used or in one of its ancestors
+- Ther MUST NOT be different versions of ITS in the same document, external linked rules can have different versions
+[5.3 Query Language of Selectors]
+query language is set by queryLanguage attribute on rules element. If queryLanguge is not specified XPath 1.0 is used as a default query language.
+For Additional Info on XPATH see Notitze zu XPATH im selben ORdner wie dieses Dokument
+[5.4 Link to External Rules]
+- Associate external ITS Rules using XLink [XLink 1.1] href attribute in the rules element.
+- The referenced document MUST be a valid XML document, containing min. one rules element located anywhere (root or properly nested)
+<its:rules version="2.0" xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="EX-link-external-rules-1.xml">
+  <its:translateRule selector="//term" translate="yes"/>
+</its:rules>
+[5.7 ITS Tools Annotation] ITS provides mark up to associate data with information about the processor that generated them.
+[8 Description of Data Categories]
+[8.2 Translate] expresses information about whether the content of an element or attribute is intended for translation or not
+IMPLEMENTATION:
+GLOBAL: The translateRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required translate attribute with the value "yes" or "no".
+LOCAL: The element intended for translation contains
+    A translate attribute with the value "yes" or "no".
+[8.3 Localization Note] used to communicate:
+    An alert: contains information that the translator has to read before translating a piece of text.
+    A description: provides useful background information that the translator will refer to only if they wish.
+IMPLEMENTATION:
+GLOBAL: The locNoteRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required locNoteType attribute with the value "description" or "alert".
+    Exactly one of the following:
+        A locNote element that contains the note itself and allows for local ITS markup.
+        A locNotePointer attribute that contains a relative selector pointing to a node that holds the localization note.
+        A locNoteRef attribute that contains an IRI referring to the location of the localization note.
+        A locNoteRefPointer attribute that contains a relative selector pointing to a node that holds the IRI referring to the location of the localization note.
+LOCAL: The element intended for the locnote contains
+    Exactly one of the following:
+        A locNote attribute that contains the note itself.
+        A locNoteRef attribute that contains an IRI referring to the location of the localization note.
+    An optional locNoteType attribute with the value "description" or "alert". If the locNoteType attribute is not present, the type of localization note will be assumed to be "description".
+[8.4 Terminology] used to mark terms and optionally associate them with information, such as definitions. This helps to increase consistency across different parts of the documentation.
+IMPLEMENTATION:
+GLOBAL: The termRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required term attribute with the value "yes" or "no".
+    Zero or one of the following:
+        A termInfoPointer attribute that contains a relative selector pointing to a node that holds the terminology information.
+        A termInfoRef attribute that contains an IRI referring to the resource providing information about the term.
+        A termInfoRefPointer attribute that contains a relative selector pointing to a node that holds the IRI referring to the location of the terminology information.
+LOCAL: The element intended for the terminology contains
+    A term attribute with the value "yes" or "no".
+    An optional termInfoRef attribute that contains an IRI referring to the resource providing information about the term.
+    An optional termConfidence attribute with the double value in the interval [0;1]. termConfidence represents the confidence of the agents producing the annotation that the annotated unit is a term or not. 
+	termConfidence does not provide confidence information related to termInfoRef.
+[8.5 Directionality] allows the user to specify the base writing direction of blocks, embeddings, and overrides for the Unicode bidirectional algorithm. It has four values: 
+- "ltr" left to right, "rtl" right to left, 
+- "lro" left to right override, "rlo". right to left override
+IMPLEMENTATION
+GLOBAL: The dirRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required dir attribute with the value "ltr", "rtl", "lro" or "rlo".
+LOCAL: The element intended for the directionality contains
+    A dir attribute with the value "ltr", "rtl", "lro" or "rlo".
+[8.6 Language Information] 
+- The element langRule is used to express the language of a given piece of content. 
+- The langPointer attribute points to the markup that expresses the language of the text selected by the selector attribute. This markup MUST use values that conform to [Tags for Identifying Lanugages BCP47]. 
+- The recommended way to specify language identification is to use xml:lang instead of langRule
+The following langRule element expresses that the content of all p elements (including attribute values and textual content of child elements) are in the language 
+indicated by mylangattribute, which is attached to the p elements, and expresses language using values conformant to [BCP47]. 
+<its:rules version="2.0" xmlns:its="http://www.w3.org/2005/11/its">
+  <its:langRule selector="//p" langPointer="@mylangattribute"/>
+</its:rules>
+IMPLEMENTATION
+GLOBAL: The langRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required langPointer attribute that contains a relative selector pointing to a node that contains language information.
+[8.7 Elements Within Text] reveals if and how an element affects the way text content behaves from a linguistic viewpoint
+-  "yes": The element and its content are part of the flow of its parent element. 				E.G.:<strong>Appaloosa horses</strong> have spotted coats. 
+- "nested": The element is part of the flow of its parent element, its content is an independent flow.		E.G.: Palouse horses<fn>A Palouse horse is the same as an Appaloosa.</fn> have spotted coats.
+- "no": The element splits the text flow of its parent element and its content is an independent text flow.	E.G.: <li>Palouse horses: <p>They have spotted coats.</p> <p>They have been bred by the Nez Perce.</p> </li>
+IMPLEMENTATION
+GLOBAL: The withinTextRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required withinText attribute with the value "yes", "no" or "nested".
+LOCAL: The element intended for the elements within text contains
+    A withinText attribute with the values "yes", "no" or "nested".
+[8.8 Domain] The Domain data category is used to identify the topic or subject of content.
+GLOBAL: The domainRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required domainPointer attribute that contains a relative selector pointing to a node that contains the domain information.
+    An optional domainMapping attribute that contains a comma separated list of mappings between values in the content and consumer tool specific values.
+[8.9 Text Analysis] used to annotate content with lexical or conceptual information
+ GLOBAL: The textAnalysisRule element contains the following:
+    A required selector attribute that contains an absolute selector that selects the nodes to which this rule applies.
+    At least one of the following:
+        A taClassRefPointer attribute that contains a relative selector pointing to a node that holds an IRI, which implements the entity type / concept class information.
+        Exactly one of the following:
+            When using identification mode 1: A taSourcePointer attribute that contains a relative selector to a node that holds the identifier of the collection source; and a taIdentPointer attribute that contains a relative selector to a node that holds the identifier of the concept in the collection.
+            When using identification mode 2: A taIdentRefPointer attribute that contains a relative selector pointing to a node that holds an IRI that holds the identifier of the text analysis target.
+ LOCAL: The element intended for the text analysis contains
+    An optional taConfidence attribute that implements the text analysis confidence.
+    At least one of the following:
+        A taClassRef attribute that holds an IRI, which implements the Entity type / concept class information.
+        Exactly one of the following:
+            When using identification mode 1: A taSource attribute that holds the identifier of the collection source, and a taIdent attribute that holds the identifier of the concept in the collection.
+            When using identification mode 2: A taIdentRef attribute that holds the identifier of the text analysis target.
+[8.10 Locale Filter] specifies that a node is only applicable to certain locales e.g. Including a legal notice only in locales for certain regions.
+GLOBAL: The localeFilterRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required localeFilterList attribute with a comma-separated list of extended language ranges, or an empty string value.
+    An optional localeFilterType attribute with a value "include" or "exclude".
+LOCAL: The element intended for local filter contais
+    A localeFilterList attribute with a comma-separated list of extended language ranges, or an empty string value.
+    An optional localeFilterType attribute with a value "include" or "exclude".
+[8.11 Provenance] used to communicate the identity of agents that have been involved in the translation
+IMPLEMENTATION
+GLOBAL: The provRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A provenanceRecordsRefPointer attribute that contains a relative selector pointing to a node containing a list of provenance records. These are related to the content selected via the selector attribute.
+provenanceRecords element, which contains:
+    One or more elements provenanceRecord, each of which contains at least one of the following attributes:
+        A person or personRef attribute that implements the human provenance information.
+        An org or orgRef attribute that implements the organizational provenance information.
+        A tool or toolRef attribute that implements the tool-related provenance information.
+        A revPerson or revPersonRef attribute that implements the human revision provenance information.
+        A revOrg or revOrgRef attribute that implements the organizational revision provenance information.
+        A revTool or revToolRef attribute that implements the tool-related revision provenance information.
+        A provRef attribute that implements the reference to external provenance descriptions.
+LOCAL: The element intended for the provanence contains one of the attributes listed in provenanceRecords
+[8.12 External Resource] The External Resource data category indicates that a node represents or references potentially translatable data in a resource outside the document
+GLOBAL: The externalResourceRefRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required externalResourceRefPointer attribute that contains a relative selector pointing to a node that provides the IRI of the external resource.
+[8.13 Target Pointer] Some documents hold the same content in different languages. The Target Pointer data category is used to associate the node of a given source content (i.e., the content to be translated) and the node of its corresponding target content
+GLOBAL: The targetPointerRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required targetPointer attribute. It contains a relative selector that points to the node for the target content corresponding to the selected source node.
+[8.14 ID Value] The ID Value data category indicates a value that can be used as unique identifier for a given part of the content.
+IMPLEMENTATION
+xml:id SHOULD be used the following is only a fallback mechanism
+GLOBAL: The idValueRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required idValue attribute. It contains any XPath expression; the context for the evaluation of the XPath expression is the same as for relative selectors. The evaluation of the XPath expression constructs a string corresponding to the identifier of the node to which this rule applies. The identifier MUST be unique at least within the document. If the attribute xml:id is present or id in HTML for the selected node, the value of the xml:id attribute or id in HTML MUST take precedence over the idValue value.
+[8.15 Preserve Space] The Preserve Space data category indicates how whitespace is to be handled in content
+- default: spaces, tabs, and blank lines outside of elments or linebreaks in elements are usually not inteded as content, but only for readability therefore they are deleted
+- preserve: all spaces, tabs, and blank lines linebreaks are preserved
+IMPLEMENTATION:
+GLOBAL: The preserveSpaceRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required space attribute with the value "default" or "preserve".
+LOCAL: Use the xml:space attribute in the element intended for Preserv Space
+[8.16 Localization Quality Issue] The Localization Quality Issue data category is used to express information related to localization quality assessment tasks. It has 5 information types:
+- Type:			A classifier that groups similar issues into categories (e.g. differentiate spelling errors from grammar errors).
+- Comment:		A human-readable description of a specific instance of a quality issue.
+- Severity:		A classifier for the seriousness of an issue.
+- Profile Reference:	A reference to a description of the quality assessment model used for the issue.
+- Enabled:		A flag indicating whether the issue is enabled or not.
+IMPLEMENTATION
+Attributes
+    locQualityIssueType attribute that implements the type information.
+    locQualityIssueComment attribute that implements the comment information.
+    locQualityIssueSeverity attribute that implements the severity information.
+    locQualityIssueProfileRef attribute that implements the profile reference information.
+    locQualityIssueEnabled attribute that implements the enabled information.
+    locQualityIssuesRef attribute. Its value is an IRI pointing to the locQualityIssues element containing the list of issues related to this content.
+	the elemenet referenced by this contains one or more attributes
+    locQualityIssuesRefPointer attribute that contains a relative selector pointing to a node with the exact same semantics as locQualityIssuesRef.
+GLOBAL: The locQualityIssueRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    Atleast one of the Attributes
+LOCAL: The element intended for Localization Quality Issue contais one or more of the attributes
+[8.17 Localization Quality Rating] used to express the localization quality of a document
+IMPLEMENTATION
+LOCAL: The following local markup is available for the Localization Quality Rating data category:
+    Exactly one of the following:
+        A locQualityRatingScore attribute. Its value is element [0.0;100.0]. The higher values represent better quality.
+        A locQualityRatingVote attribute. Its value is a signed integer with higher values indicating a better vote.
+    If locQualityRatingScore is used:
+        an optional locQualityRatingScoreThreshold attribute indicating the lowest score that constitutes a passing score in the profile used. value element [0.0;100.0]
+    If locQualityRatingVote is used:
+        an optional locQualityRatingVoteThreshold attribute indicating the lowest value that constitutes a passing vote in the profile used. Its value is a signed integer.
+    An optional locQualityRatingProfileRef attribute. Its value is an IRI pointing to the reference document describing the quality assessment model used for the scoring.
+[8.18 MT Confidence] used to communicate the confidence score from a machine translation engine for the accuracy of a translation it has provided.
+GLOBAL: The mtConfidenceRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    A required mtConfidence attribute with a value that represents the translation confidence score is element [0.0;1.0].
+LOCAL: the following local markup is available for the MT Confidence data category:
+    A mtConfidence attribute with a value that represents the translation confidence score as a rational number in the interval 0 to 1 (inclusive).
+[8.19 Allowed Characters] used to specify the characters that are permitted in a given piece of content. The set of characters that are allowed is specified using a regular expression (charClass)
+IMPLEMENTATION
+GLOBAL: The allowedCharactersRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    Exactly one of the following:
+        An allowedCharacters attribute that contains the regular expression indicating the allowed characters.
+        An allowedCharactersPointer attribute that contains a relative selector pointing to a node with the exact same semantics as allowedCharacters.
+GLOBAL: The allowedCharactersRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    Exactly one of the following:
+        An allowedCharacters attribute that contains the regular expression indicating the allowed characters.
+        An allowedCharactersPointer attribute that contains a relative selector pointing to a node with the exact same semantics as allowedCharacters.
+[8.20 Storage Size] used to specify the maximum storage size of a given content.
+IMPLEMENTATION
+GLOBAL: The storageSizeRule element contains the following:
+    A required selector attribute. It contains an absolute selector that selects the nodes to which this rule applies.
+    Exactly one of the following:
+        A storageSize attribute. It contains the maximum number of bytes the text of the selected node is allowed in storage.
+        A storageSizePointer attribute that contains a relative selector pointing to a node with the exact same semantics as storageSize.
+    None or exactly one of the following:
+        A storageEncoding attribute. It contains the name of the character encoding used to calculate the number of bytes of the selected text. The name MUST be one of the names or aliases listed in the IANA Character Sets registry [IANA Character Sets]. The default value is the string "UTF-8".
+        A storageEncodingPointer attribute that contains a relative selector pointing to a node with the exact same semantics as storageEncoding.
+    An optional lineBreakType attribute. It indicates what type of line breaks the storage uses. The possible values are: "cr" for CARRIAGE RETURN (U+000D), "lf" for LINE FEED (U+000A), or "crlf" for CARRIAGE RETURN (U+000D) followed by LINE FEED (U+000A). The default value is "lf".
+LOCAL: the following local markup is available for the Storage Size data category:
+    A storageSize attribute. It contains the maximum number of bytes the text of the selected node is allowed in storage.
+    An optional storageEncoding attribute. It contains the name of the character encoding used to calculate the number of bytes of the selected text. The name MUST be one of the names or aliases listed in the IANA Character Sets registry [IANA Character Sets]. The default value is the string "UTF-8".
+    An optional lineBreakType attribute. It indicates what type of line breaks the storage uses. The possible values are: "cr" for CARRIAGE RETURN (U+000D), "lf" for LINE FEED (U+000A), or "crlf" for CARRIAGE RETURN (U+000D) followed by LINE FEED (U+000A). The default value is "lf".

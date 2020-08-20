@@ -1,0 +1,5 @@
+Network verkleinerung für mobile application
+CNN Block which is connected to itself => same block is iterated over its output several times
+= Parametersharing between different layers
+ACT Block decides how often to iterate
+= ACT Block decides number of layers

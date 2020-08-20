@@ -1,0 +1,33 @@
+[2. BACKGROUND S. 1] Globalization (g11n), Internationalization (i18n) and Localization(l10n), Definition and Source
+[3. INTERNATIONALIZATION S. 2] i18n Goal: Identify elements dependent of language or culture
+=> Localy Dependend Components are seperated in 2 Areas
+- Source Code: Part that never changes no matter the location, which is filled by ressource file
+- Ressource Files: Components that are local dependant
+[3. INTERNATIONALIZATION S. 2f] Components Affacted by localisation:
+- User Interface Inhalte (Sprache aber auch größe der UI Elemente abhängig vom Text)
+- Text/Lesereichtung
+- Date-/Time-/Numeric-/Monetary- Format
+- (Character/Binary Encoding & Zeichensätze ist bei Movilizer mit Unicode, im Unicode Transformation Format UTF-8, gelöst => irrelevant für PA) 
+[4.  LOCALIZATION S. 4] Enge Beziehung Language und Layout. Bsp.: Leserichtung beeinfluss Augenfluss => screenflow anpassen
+[4.  LOCALIZATION S. 4] main challenges of localization
+- translation of all UI text
+- Adjustment of graphic (Font, Text/flow in screen)
+- Local Formats(Date/time etc)
+[4.  LOCALIZATION S. 4] components requireing localization:
+- Menus; 
+- Messages; 
+- Dialog boxes; 
+- Prompts;  
+- Images;  
+- Sounds;  
+- Toolbars; 
+- Status bars
+// Für Movilizer sollte ich alle Answers durchgehen und schauen welche das brauchen bzw. dynamische lsg
+[4.  LOCALIZATION S. 4] Approaches for embedding localization:
+- compile time: Change sourcecode to adapt the application => n products for n region
+- link time: Use the sourcecode but change the links to  the ressourcefiles for different location => n product for n region
+- run time: Single internationalized product dynamically uses local ressource files dependand on the user => 1 product for n region
+[4.1.1 Translation S6]
+- UI must be adjusted to new language => Microsoft recommends that considered 30% more free space reserved for the expansion of sentence
+- Automatic Translation is usually not sufficient => humans needed => CAT => gettext(=translation framework)
+[5. PROPOSED FRAMEWORK S. 6] Model of Gross [21] Ressources einteilen in Local Data Data UI

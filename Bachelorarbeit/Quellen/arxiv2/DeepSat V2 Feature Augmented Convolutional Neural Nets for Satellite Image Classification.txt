@@ -1,0 +1,3 @@
+Satelite Image Classification
+
+Used Architecture: CNN + Handcrafted Features

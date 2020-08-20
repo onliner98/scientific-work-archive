@@ -1,0 +1,32 @@
+
+%\cube{x offset}{y offset}{width}{height}{depth}{color}{fillcolor}
+\begin{tikzpicture}[
+	cell/.style={
+		rectangle, 
+		rounded corners=2mm, 
+		draw,
+		very thick,
+		align=center,
+	},
+	ArrowC1/.style={% Arrows with rounded corners
+		rounded corners=.25cm,
+		thick,
+	},
+]
+
+\node[cell] (l1) at (0,0) {Layer 1};
+\node[cell] (l2) at (0,2) {Layer 2};
+\node (dots) at (0,4) {$\vdots$};
+\node[cell] (ln) at (0,6) {Layer n};
+
+\draw[-latex, ArrowC1] (l1) -- (l2);
+\draw[-latex, ArrowC1] (l2) -- (dots);
+\draw[-latex, ArrowC1] (dots) -- (ln);
+
+\draw[-latex, ArrowC1] (l1) to[out=0, in=0] (ln);
+\draw[-latex, ArrowC1] (l1) to[out=0, in=0] (dots);
+
+\draw[-latex, ArrowC1] (l2) to[out=-180, in=180] (ln);
+
+	
+\end{tikzpicture}

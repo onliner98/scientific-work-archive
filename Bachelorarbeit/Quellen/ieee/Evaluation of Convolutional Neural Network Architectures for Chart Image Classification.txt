@@ -1,0 +1,3 @@
+Classificaton of chart images (bar chart, matrix, pie chart...)
+
+Used Architecure: VGG, Inception, ResNet

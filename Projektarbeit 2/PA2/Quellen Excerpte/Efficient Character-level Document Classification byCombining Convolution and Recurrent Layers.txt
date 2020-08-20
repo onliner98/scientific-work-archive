@@ -1,0 +1,1 @@
+Vgl. Character Level(1HotEncoded) CNN und CNN-RNN for text classification

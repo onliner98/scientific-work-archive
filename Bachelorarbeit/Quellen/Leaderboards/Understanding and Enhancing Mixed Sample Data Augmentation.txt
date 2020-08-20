@@ -1,0 +1,4 @@
+Image CLassification on CIFAR-10/100, FashionMNIST
+
+
+Used Architecture: WRN, ResNet, Dens, Pyramid

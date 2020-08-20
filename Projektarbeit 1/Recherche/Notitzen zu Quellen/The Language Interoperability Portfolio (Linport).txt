@@ -1,0 +1,22 @@
+Warum man XILIFF nutzen sollte => Interchange teil der arbeit
+[page 24]
+XLIFF allows localizable material to be extracted and transmitted in a standardized manner. 
+When XLIFF is used consistently, it simplifies the process of obtaining localizable material and ensuring the material’s completeness, 
+but it does not ensure that files are sent and received properly, nor that instructions for the translation process are correctly transmitted. 
+
+Ausblick für meine Arbeit:
+[page 23]
+The lack of interoperability and standard metadata cost [Welocalize] approximately $3.5 million in 2010.
+The cost was derived mainly from non-billable administrative tasks associated with incompatible systems, missing and non-standard information,
+and additional engineering and project management time related to a lack of standard data-exchange. 
+Extrapolated across the industry, this figure shows that […] standardization could deliver immediate financial benefit [to the industry].
+(S. Yewell, unpublished presentation, Boston, March 1, 2011)
+
+[page 25]
+Around 50% of all Translation costs are over head (interchange of files and information are two of them)
+(R. Schäler, 2002; & S Yewell personal communication, March 1, 2011)
+
+[Insgesammt]
+Lineport ist ein Container, der ein ganzes Translationprojekt wrapped.
+D.h. der payload wie z.b. XLIFF, zu übersetzende grafiken, referenzmaterialien, translation memories etc werden mit metadata versehen z.b. Projekt=Translation von Unterrichtsmaterialien zielgruppe=Schüler
+=> der LSP hat alle benötigten Infos und muss nichts per email o.ä. erfragen und den payload aus unterschiedlichen git repositories laden

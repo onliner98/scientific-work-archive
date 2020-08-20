@@ -1,0 +1,3 @@
+Object Detection: With seperating the tasks detection and classification
+
+For classification a CNN is used

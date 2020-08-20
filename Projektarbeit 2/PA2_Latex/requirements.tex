@@ -1,0 +1,16 @@
+\chapter{Requirements}
+\label{ch:requirements}
+As described in Section \ref{sec:problem}, this paper proposes a model for the recruitment advertisement classification task. From this task requirements are derived. These requirements must be met by the proposed model. This chapter provides a tabular overview of these requirements, see Table \ref{tab:requirments}. This table divides the requirements in key-value pairs. Thus, requirements can be referenced in the discussion in Section \ref{sec:discussion} using the keys.
+\begin{xltabular}{\textwidth}{lX}
+	\toprule
+	\caption{Requirements} \label{tab:requirments}\\
+	\textbf{Key} & \textbf{Value}\\\midrule
+	\textbf{Task} & Neural text classification \\\midrule
+	\textbf{Input} & Recruitment advertisement comprised of job title and job description represented as plain text\\\midrule
+	\textbf{Output} & Vocation id and standardized job title as defined by \textit{Bundesagentur für Arbeit} \autocite{BundesagenturfurArbeit.2010}\\\midrule
+	\textbf{Training data} & Recruitment advertisements as provided by Aivy, see Section \ref{sec:problem}, comprised of job title, job description, vocation id, standardized job title and match rank\\\midrule
+	\textbf{Dataset size} & Uncertain\\\midrule
+	\textbf{Infrastructure} & \ac{AWS}\\\midrule
+	\textbf{Cost} & A model with similar performance but cost advantages over another models is preferred\\\bottomrule
+\end{xltabular}
+\textbf{Dataset size}, \textbf{Infrastructure} and \textbf{Cost} are derived from the task but are imprecise requirements. On that account, if possible, this paper specifies these requirements further or explains why the requirements cannot be specified further. Regarding \textbf{Dataset size}, the dataset is created through Stepstone's search algorithm, and human labeling is expensive. For this reason, the amount of usable training data is uncertain. Therefore, the amount of required training data should be as small as possible. Regarding \textbf{Infrastructure}, Aivy does not give concrete specifications which instance of \ac{AWS} they use. The smallest G4 instance and simultaneously the cheapest AWS GPU instance in Frankfurt is the g4dn.xlarge.\footnote{\url{https://aws.amazon.com/ec2/instance-types/?nc1=h_ls}}\footnote{\url{https://aws.amazon.com/ec2/instance-types/?nc1=h_ls}}\footnote{The g4dn.xlarge instance is \$0.658 per hour. Since real time classification is not required, the model can be run for a few hours each month to classify gathered recruitment advertisements. These costs are negligible.} The g4dn.xlarge has 16 GB GPU memory.\footnote{\url{https://aws.amazon.com/ec2/instance-types/?nc1=h_ls}} Consequently, 16 GB GPU memory can be assumed as infrastructural constraint. Regarding \textbf{Cost}, discussing the economic efficiency of the proposed model in comparison to alternative classification methods exceeds the scope of this paper. However, cost advantages of a neural model over another neural model are taken into account. That is why a model with similar performance but cost advantages over another models is preferred.

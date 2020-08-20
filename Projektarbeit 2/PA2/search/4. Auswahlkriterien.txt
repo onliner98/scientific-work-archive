@@ -1,0 +1,10 @@
+Auswahl:
+- Es muss um Labeling eines Textcorpuses anhand dessen Inhalt gehen
+- Es muss mit einem Neuronalen Netz beliebiger Art umgesetzt sein
+Ausschluss:
+- andere AI Task (Sentiment Analysis, Machine Translation, Natural Language Generation, Question Answering, Named Entity Recognition, Dependency Parsing, etc)
+- andere ML Methoden (PCA, Vectospace Models, SVM, TF-IDF, etc)
+- es sollte nicht zu alt sein => finde ich ein neures Dokument mit (fast) der selben zielstellung und besseren ergebnissen wird das alte verworfen
+Alternativ
+- verwandt wie z.b. über pretraining/sentiment analysis
+- oft zitiert bei neuen artikeln min 100 mal

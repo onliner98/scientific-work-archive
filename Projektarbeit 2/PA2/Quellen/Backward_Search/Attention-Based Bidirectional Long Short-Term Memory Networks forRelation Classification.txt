@@ -1,0 +1,5 @@
+Text Classification with different word vectors (Pennington et al 2014; Turian et al 2010)
+- CNN
+- RNN
+- BiLSTM
+- BiLSTM with Attention (gewinner (mit GloVe))

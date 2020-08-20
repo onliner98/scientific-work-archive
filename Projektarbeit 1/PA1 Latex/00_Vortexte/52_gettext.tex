@@ -1,0 +1,43 @@
+\section{Funktionsweisen bestehender Lokalisierungstools}
+Seit einigen Jahren existieren Lokalisierungstools, welche keine strikte Trennung von Quellcode und Ressourcen benötigen. Diese Lokalisierungstools verwenden stattdessen eine Auszeichnung, um zu übersetzende Strings im Quellcode zu markieren. Im Zuge der Lokalisierung wird den ausgezeichneten Strings eine Übersetzung zugewiesen. Diese Funktionsweise wird in diesem Abschnitt beispielhaft anhand von \mbox{\textit{GNU gettext}} dargestellt. \mbox{\textit{GNU gettext}} nutzt \mbox{\textit{\_()}} oder \mbox{\textit{gettext()}}, um zu übersetzende Strings im Quelltext auszuzeichnen, siehe \ref{lst:gettext}.
+%===============Extract===============
+Die Auszeichnung wird von einem Parser verwendet, welcher durch den Kommandozeilenbefehl \mbox{\textit{xgettext}} gestartet wird. Dieser Parser erzeugt ein \mbox{\textit{\ac{.po}}}, welches Schlüssel-Wert-Paare enthält. Dem Schlüssel \mbox{\textit{msgid}} ist der Wert des im Quelltext ausgezeichneten Strings zugewiesen. Dieser String kann der zu übersetzende Text der Ausgangssprache sein oder ein beliebiger Bezeichner, siehe \ref{lst:xgettext}.
+%===============Translate===============
+Ein Übersetzter fügt die jeweiligen Übersetzungen in das \mbox{\textit{\ac{.po}}} ein, dies geschieht mithilfe eines beliebigen Texteditors oder einer mit \mbox{\textit{\ac{.po}}} kompatiblen Software. Hierbei wird dem Schlüssel \mbox{\textit{msgstr}} der zugehörige Text der jeweiligen Zielsprache als Wert zugewiesen, siehe \ref{lst:translate}.
+%===============Inject===============
+Infolgedessen bilden die Schlüssel-Wert-Paare \mbox{\textit{msgid}} und \mbox{\textit{msgstr}} ein Paar aus Bezeichner im  Quelltext und Text in der Zielsprache. Um beim Kompilieren den Wert von \mbox{\textit{msgid}} mit dem Wert von \mbox{\textit{msgstr}} zu ersetzen, muss aus dem \mbox{\textit{\ac{.po}}} ein \mbox{\textit{\ac{.mo}}} erzeugt werden. Dies geschieht mit dem Kommandozeilenbefehl \mbox{\textit{msgfmt}}. In der Konsequenz kann aus dem \mbox{\textit{\ac{.mo}}} der jeweiligen Zielsprache und dem Quelltext eine übersetzte Version der Software erzeugt werden
+\autocite[Vgl.][]{Tykhomyrov.2002}
+\autocite[Vgl.][]{Mauro.1999}
+\autocite[Vgl.][]{GNU.}
+%===============Listings===============
+\begin{lstlisting}[caption={Ausgezeichneter Quelltext}, label={lst:gettext}]
+#include <stdio.h>
+int main() {
+printf(_("msg_Greet"));
+getchar();
+return 0;
+}
+\end{lstlisting}
+\begin{lstlisting}[caption={Erstelltes .po},label={lst:xgettext}]
+msgid "msg_Greet"
+msgstr ""
+\end{lstlisting}
+\begin{lstlisting}[caption={Übersetztes .po},label={lst:translate}]
+msgid "msg_Greeting"
+msgstr "Hallo Welt"
+\end{lstlisting}
+\par
+%===============Alternatives===============
+Eine Alternative zur Auszeichnung, ist das automatische Erkennen zu übersetzender Strings und dem anschließenden Übersetzen dieser. Die automatische Erkennung zu übersetzender Strings ist durch einen Parser anhand einer kontextfreien Grammatik möglich. 
+\autocite[Vgl.][S. 556]{Wang.2009}
+\autocite[Vgl.][S. 6]{Leiva.2015}
+Aus jeder kontextfreien Grammatik kann ein Parser generiert werden.
+\autocite[Vgl.][S. 240 - 246]{Unger.1968}
+Eine kontextfreie Grammatik ist ein 4"~Tupel:
+\begin{equation}
+G = (N, \Sigma, P, S)
+\end{equation}
+$N$ bildet das Vokabular aller Nichtterminalsymbole der Grammatik $G$. $\Sigma$ bildet das Vokabular aller Terminalsymbole der Grammatik $G$. $P$ ist eine endliche Menge von Produktionen der Form $A \rightarrow \omega$. Es gilt $A \in N$ und $\omega \in (N \cup \Sigma)^*$. $S \in N$ wird als Startsymbol bezeichnet und bildet den Anfang der Produktion.
+\autocite[Vgl.][S. 614]{Korenjak.1969}
+\par
+Zurzeit existiert jedoch kein Lokalisierungstool für \ac{MEL} oder \ac{MXML}.

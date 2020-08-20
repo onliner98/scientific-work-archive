@@ -1,0 +1,23 @@
+A neural network is a machine learning model and can be seen as a universal function approximator. A function approximator approximates a function. This function maps an input $X$ to an output $Y$.\autocites{Hornik.1989}{Ertel.2016}
+In consequence, a neural network itself can be seen as a function. 
+A neural network is structured in layers. \autocite{Ertel.2016}  A layer receives an input and returns an output. The first layer is called input layer, the last layer is called output layer, and the remaining layers are called hidden layers. \autocite{LeCun.2015b} A hidden layer is a layer which receives the output of its previous layer or previous layers as input. The input layer is the layer receiving the input of the neural network. The output layer is the layer returning the output of the neural network. This is illustrated in Figure~\ref{img:neuralnetwork}.
+This way, layers themselves can be seen as functions. Hence, a neural network can be described as a chain of layer functions. Given the layer~$F_l$ at position~$l$, the input~$X$, and the output~$Y$ of the neural network~$F$, then $Y$ is computed as defined by Equation~\eqref{eq:neuralnetwork}.
+\begin{equation}
+	\label{eq:neuralnetwork}
+	Y = F(X) = F_l(F_{l-1}\dots(F_1(X)\dots)) 
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\input{img/neuralnetwork}
+	\caption{Neural Network (own figure)} \label{img:neuralnetwork}
+\end{figure}
+A layer consists of neurons. Neurons are the basic processing units of neural networks. A neuron consists of $n$ weighted connections $w_i, i \in [1;n]$, a sum function $\sum$, and an activation function $\varphi$, see Figure \ref{img:neuron}. Each connection is connected to an input of the neuron. The sum function sums the weighted inputs. The activation function transforms the sum. The result of the activation function is the output $y$ of the neuron. \autocite{Ertel.2016} Given an input $x$, $y$ is computed as defined by Equation \eqref{eq:neurn}.
+\begin{equation}
+	\label{eq:neurn}
+	y = \varphi(\sum x \cdot w)
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\input{img/neuron}
+	\caption{Neuron (own figure)} \label{img:neuron}
+\end{figure}

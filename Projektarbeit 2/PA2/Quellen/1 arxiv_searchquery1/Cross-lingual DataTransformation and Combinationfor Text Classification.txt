@@ -1,0 +1,4 @@
+CNN/RNN verwendet zur Text classifizierung
+Trainingsdaten erweitert durch zusätzliche Trainingsdaten aus einer anderen Sprache durch
+1) Automatisch Übersetzung
+2) Alignen der Vektorspaces der Wordembeddings

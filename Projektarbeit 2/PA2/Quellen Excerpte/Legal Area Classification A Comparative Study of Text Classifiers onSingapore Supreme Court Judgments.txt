@@ -1,0 +1,8 @@
+Word Embedding Feature Models: 
+- CNN (Kim 2014) with glove (Penningtn et al)
+  - CNN does not need to be deep for text classification (Le et al 2018)
+- GLoVe+average pooling/max pooling followed by sigmoid MLP(single class) softmax MLP(multiclass) (Le et al. 2018 das mit dem sig/softmax habe ich in der Quelle bereits nachgelesen)
+- BERT-base taking the first 512 tokens of the text
+- ULMFit
+Conclusion
+- The less data the better pre trained approaches work compared to others, with more data all work better

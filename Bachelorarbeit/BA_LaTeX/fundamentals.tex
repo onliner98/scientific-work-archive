@@ -1,0 +1,50 @@
+\chapter{Fundamentals}
+\label{chp:funda}
+This chapter defines and illustrates terms required to understand this paper.
+
+\section{Rectified Linear Unit}
+The \ac{ReLU} is a commonly used activation function. Given an input $X$, \ac{ReLU} is defined by Equation \eqref{eq:relu}. \autocite{ElAmir.2020}
+\begin{equation}
+	\label{eq:relu}
+	relu(X) = max(0,X)
+\end{equation}
+
+\section{Swish Activation Function}
+The swish activation function $swish$ is defined by Equation \eqref{eq:swish}. \autocites{Ramachandran.2017}{Elfwing.2018}
+\begin{equation}
+\label{eq:swish}
+\begin{array}{lcl}
+	swish(x) & = & x \cdot sigmoid(x)\\
+	sigmoid(x) & = &  \frac{1}{ 1+e^{-x}}
+\end{array}
+\end{equation}
+
+\section{Categorical Cross Entropy Loss Function}
+Given the predicted output $\hat{y}$ and the desired output $y$, the categorical cross entropy loss function $\mathcal{L}$ is defined by Equation \eqref{eq:entropy}. \autocites{ElAmir.2020}
+\begin{equation}
+\label{eq:entropy}
+\mathcal{L}(y, \hat{y}) = \sum_{j}^{m} \sum_{y}^{n} (y_{ij} \cdot log(\hat{y}_{ji}))
+\end{equation}
+
+\section{Array}
+\input{funda/array}
+
+\section{Machine Learning}
+\label{sec:ml}
+\input{funda/machinelarning}
+
+\section{Neural Network}
+\label{sec:neuralnetwork}
+\input{funda/neuralnetwork}
+
+\section{Training Neural Networks}
+\label{sec:training}
+\input{funda/training}
+
+\section{Optimizer}
+\label{sec:optimizer}
+\input{funda/optimizer}
+
+\section{Layers}
+\label{sec:layers}
+\input{funda/layers}

@@ -1,0 +1,56 @@
+\chapter{Ersetzen zu übersetzender durch übersetzte Strings}
+Wie in Kapitel \ref{chp:anforderungen} erarbeitet müssen zur automatischen Verarbeitung von zu übersetzenden und übersetzten Strings die extrahierten Strings durch die Übersetzten ersetzt werden. Die Ersetzung erfolgt nicht im Quelltext selbst, sondern in einer Kopie dieses Quelltexts. In der Konsequenz kann dieser Quelltext für die Erzeugung vieler lokalisierter Quelltexte eines Movelets verwendet werden. Resultierend daraus fungiert der Quelltext als Vorlage und ist mit dem Movilizer Gradle Plug"~in kompatibel, da dieser ebenfalls mit einer Vorlage des Quelltexts arbeitet.
+\autocite[Vgl.][]{Mula.2018}
+Zum Zweck der Ersetzung der Strings ist eine Zuordnung nötig. Diese Zuordnung ordnet einem übersetzten String einen eindeutigen Bezeichner des zu ersetzenden String des Quelltexts zu. Der übersetzte String ist in der \ac{XLIFF} Datei gespeichert. Deshalb wird die \ac{XLIFF} Datei für die Zuordnung verwendet.
+Grundlegend existieren zwei Möglichkeiten ein Objekt und damit einen String zu identifizieren. Die erste Möglichkeit ist die Identifikation per Name, die zweite Möglichkeit ist die Identifikation per Zeiger.
+\autocite[Vgl.][S. 6]{BernersLee.2005}
+\section{Identifikation des zu ersetzenden Strings per Name}
+\label{sec:nameidentifier}
+%Kollisionvermeiden
+Der Name eines zu ersetzenden Strings muss eindeutig einem übersetzten String zugeordnet sein. Des Weiteren muss der Name dem zu ersetzenden String zugeordnet sein, der durch den Namen identifiziert wird. Ist der zu ersetzende String gleich seinem Namen, so erfolgt die Zuordnung von zu ersetzenden String zu Name implizit. Der zu ersetzende String ist infolge der Extraktion in einem \mbox{\textit{source}}-Element einer \ac{XLIFF}-Datei gespeichert. Der zugehörige übersetzte String befindet sich im zugehörigen \mbox{\textit{target}}-Element. In der Konsequenz erfolgt auch diese Zuordnung implizit. Um Kollisionen zu vermeiden müssen Namen eindeutig sein, das bedeutet jeder Name darf nur in einem \mbox{\textit{source}}-Element vorhanden sein. Jedem Namen ist also genau ein übersetzter String zugeordnet.
+\par
+%Redundanz vermeiden
+Werden mehrere Namen dem gleichen übersetzten String zugeordnet, entstehen keine Kollisionen sondern Redundanzen. Daher sollte für den gleiche übersetzten String der gleiche Name verwendet werden.
+\par 
+%Beispiel für Name
+Eine Möglichkeit für kurze, eindeutige Namen sind mit Affixen versehene generische Namen. In Beispiel \ref{lst:genName} wird der mit Affix versehene generische Bezeichner aus Beispiel \ref{lst:zuordnung} eindeutig einem übersetzten String zugeordnet.
+\begin{lstlisting}[caption={Generischer Name mit Affix},
+label={lst:genName}]
+<movelet moveletKey="MOV01" initialQuestionKey="#1">
+	<question key="#1" type="41">
+		<answer key="#1_1" nextQuestionKey="END" 
+			<text>_(msg_Greet)</text>
+		</answer>
+	</question>
+</movelet>
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Zuordnung von Name zu übersetzten String},
+label={lst:zuordnung}]
+<source>
+	msg_Greet
+</source>
+<target>
+	Hallo Welt
+</target>
+\end{lstlisting}
+%Fallback Mechanism
+Gegebenenfalls muss jedoch ein bereits erstelltes Movelet nachträglich lokalisiert werden. In diesem Falle sind die zu übersetzenden Strings des Movelets keine generischen Namen sondern Texte in einer Ausgangssprache. Dieses Texte können jedoch auch als Namen verwendet werden. Gleiche Text benötigen in bestimmten Kontexten unterschiedliche Übersetzungen. Folglich entstehen Kollisionen. Des Weiteren benötigen unterschiedliche Texte in bestimmten Kontexten die gleiche Übersetzung. Infolgedessen entstehen Redundanzen. Redundanzen und Kollisionen können vermieden werden, indem zunächst die Texte selbst ausgezeichnet werden. Diese Texte werden dann in den \ac{XLIFF} Dateien generischen Bezeichnern zugeordnet und durch diese ersetzt. In der Konsequenz entsteht eine Movelet Vorlage mit generischen Namen.
+\section{Identifikation des zu ersetzenden Strings per Zeiger}
+\label{sec:zeigeridentifier}
+Der Zeiger auf einen zu ersetzenden Strings muss eindeutig einem übersetzten String zugeordnet sein. Des Weiteren muss der Zeiger dem zu ersetzenden String zugeordnet sein, auf welchen der Zeiger zeigt. Der zu ersetzende String ist infolge der Extraktion in einem \mbox{\textit{source}}-Element einer \ac{XLIFF}-Datei gespeichert. Das \mbox{\textit{source}}-Element kommt in seinem Elternelement einmalig vor. Im Inhalt des Elternelements wird der Zeiger gespeichert, die Zuordnung erfolgt somit implizit. Der zugehörige übersetzte String befindet sich in dem \mbox{\textit{source}}-Element zugehörigen \mbox{\textit{target}}-Element. Folglich erfolgt auch diese Zuordnung implizit. 
+\par
+%Beispiel für Zeiger
+Es gibt verschiedene Arten von Zeigern. Ein Beispiel ist das geordnete Indexieren des Movelets und das Verwenden des Index als Zeiger. Ein weiteres Beispiel ist es den Pfad eines Objekts des Ableitungsbaums des Movelets als Zeiger zu verwenden. Die Entscheidung über die geeignetste Variante eines Zeigers ist für die Implementierung offengelassen.
+\section{Behandlung fehlender Übersetzungen}
+Die Zuordnung des Bezeichners erfolgt für beide Arten der Identifikation bei der Extraktion. Bei der Extraktion sind die übersetzten Strings noch nicht übersetzt und deshalb leer. Werden die leeren Strings von dem Lokalisierungstool verwendet erzeugt dies ein ungewolltes Ergebnis. Aus diesem Grund muss vor leeren Strings gewarnt werden. Die leeren Strings sollten in der Warnung aufgelistet werden.
+\par
+Zum Testen muss gegebenenfalls eine unfertige Version des Movelets erzeugt werden. Daher muss es dennoch möglich sein die Warnung zu ignorieren.
+\section{Diskussion der Lösungsansätze}
+In diesem Abschnitt sind die Vor- und Nachteile beider Lösungsansätze aufgeführt. Anhand dieser Diskussion wird der passende Lösungsansatz gewählt.
+\par
+Wie in Abschnitt \ref{sec:nameidentifier} vorgesehen werden für die gleichen übersetzten Strings der gleiche Name verwendet. Resultierend daraus steigt zwar der organisatorische Aufwand, jedoch werden Redundanzen vermieden. Der organisatorische Aufwand steigt, da sich die beteiligten Entwickler des Movelets auf die verwendeten Namen einigen müssen. Die Vermeidung von Redundanzen verringert den Übersetzungsaufwand, da der gleich zu übersetzende String nicht mehrfach übersetzt werden muss. Infolgedessen ist der Übersetzungsaufwand für die Identifikation per Name geringer.
+\par
+Zum Zweck der gleichzeitigen Veröffentlichung mehrere lokalisierter Versionen eines Movelets müssen Lokalisierung und Entwicklung parallel stattfinden. In der Konsequenz wird der Quelltext nach dem Erstellen der \ac{XLIFF} Dateien und damit nach dem Erstellen der Zeiger beziehungsweise Namen verändert. Daher ist es möglicherweise nötig, die Position eines zu übersetzenden Strings zu ändern. Folglich zeigt der zugehörige Zeiger nicht mehr auf den zu übersetzenden String und muss aktualisiert werden. Auch der Name kann geändert werden, jedoch wird in diesem Falle aufgrund der Extraktion ein neues Elemente in der \ac{XLIFF} Datei angelegt. Deshalb benötigt die Identifikation per Zeiger zusätzliche Logik, falls das Movelet verändert wird.
+\par
+Aufgrund der aufgeführten Argumente, wird für dieses Lokalisierungstool der Lösungsansatz der Identifikation per Name verwendet.

@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\node (x0) at (0,1.5) {$8$};
+	\node (x1) at (0,0) {$9$};
+	\node[draw, circle, minimum size=1cm] (n00) at (2,1.5) {$n_{00}$};
+	\node[draw, circle, minimum size=1cm] (n10) at (2,0) {$n_{10}$};
+	\node (y0) at (4,1.5) {$35$};
+	\node (y1) at (4,0) {$52$};
+	\draw[->, blue] (x0) -- (n00) node[sloped,pos=.50,above] {$1$};
+	\draw[->, orange] (x0) -- (n10) node[sloped,pos=.40,above] {$2$};
+	\draw[->, blue] (x1) -- (n00) node[sloped,pos=.40,above] {$3$};
+	\draw[->, orange] (x1) -- (n10) node[sloped,pos=.50,above] {$4$};
+	\draw[->] (n00) -- (y0);
+	\draw[->] (n10) -- (y1);
+	\node (equation) at (2,-2) {$
+		\vec{y_0} = \varphi_0(M_0 \cdot \vec{x_0}) =
+		\varphi_0 \left( 
+		\begin{pmatrix}
+			\textcolor{blue}{1} & \textcolor{blue}{3}\\
+			\textcolor{orange}{2} & \textcolor{orange}{4}
+		\end{pmatrix} \cdot
+		\begin{pmatrix}
+			8\\
+			9
+		\end{pmatrix} \right)
+		= \varphi_0\left(
+		\begin{pmatrix}
+			\textcolor{blue}{1} \cdot 8 + \textcolor{blue}{3} \cdot 9\\
+			\textcolor{orange}{2} \cdot 8 + \textcolor{orange}{4} \cdot 9
+		\end{pmatrix} \right)
+		= 
+		\begin{pmatrix}
+			35\\
+			52
+		\end{pmatrix}
+		$};
+\end{tikzpicture}

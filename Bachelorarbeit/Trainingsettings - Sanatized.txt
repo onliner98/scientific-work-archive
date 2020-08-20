@@ -1,0 +1,24 @@
+VGG (iamge net)
+- Batch: 256 => 32
+- Epoch: 74
+- Opt:	 SGD (lr=0.01, schedule=divided by 10 on error plateau, momentum=0.9)
+
+ResNet152 (image net)
+- Batch: 256 => 32
+- Epoch: 120 = 600000 iterations / (1.28Mio iamges / 256batch)
+- Opt:	 SGD (lr=0.1, schedule=divided by 10 on error plateau, momentum=0.9)
+
+ResNeXt101 (image net)
+- Batch: 256 (32 per GPU => 8 GPUs) => 16
+- Epoch: 120
+- Opt:	 SGD (lr=0.1, schedule=divided by 10 at epoch 30,60,90, momentum=0.9)
+
+DenseNet (image net)
+- Batch: 256 => 32
+- Epoch: 90
+- Opt:	 SGD (lr=0.1, schedule=divided by 10 at epoch 30,60, Nesterov momentum=0.9)
+
+EfficientNet:
+- Batch: - => 1
+- Epoch: 90
+- Opt:	 RMSProp (lr=0.256, schedule=decay by 0.97 per 2.4 epochs, momentum=0.9)

@@ -1,0 +1,2 @@
+Medical Diagnosis from Admission Notes
+Model: word2vec trained with own corpus + cnn + maxpooling + fullyconnected+softmax

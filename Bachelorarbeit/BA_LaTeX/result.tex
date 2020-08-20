@@ -1,0 +1,31 @@
+\chapter{Results}
+\label{chp:result}
+% past tense
+% present data in figures/tables, summarize/explain in text => every result needs a method
+This paper seeks to determine the best-performing neural network for tool image classification. The best-performing neural network was determined in the course of an experiment. The experiment is described in Section \ref{sec:experiment}. The experiment was conducted with selected neural networks. The performances of the selected neural networks were measured in accuracy. The accuracy for each neural network is reported in Table \ref{tab:acc}. 
+Among these neural networks, DenseNet-264 performs best for the \ac{TIC Dataset}. On that account, DenseNet-264 is determined as the best-performing neural network for tool image classification. ResNet-152, ResNeXt-101, and DenseNet-264 perform rather similar. As a result, in general, several neural networks are suitable for tool image classification.
+\par
+As stated in Section \ref{sec:experiment}, the neural network from the epoch with the highest validation performance is evaluated. On that account, those epochs are reported for reasons of transparency as well. The number of epochs is reported in Table \ref{tab:epochs}. 
+\par
+As stated in Section \ref{sec:experiment}, EfficientNet-B7 was trained for the remaining time after the other neural networks were trained. EfficientNet-B7 was trained for $100$ hours in total. $100$ hours were sufficient to train EfficientNet-B7 for $20$ epochs. $20$ epochs were not sufficient to train EfficientNet-B7 until convergence.
+\begin{xltabular}{\textwidth}{Xc}\toprule
+	\caption{Experiment Results} \label{tab:acc}\\
+	\textbf{Neural Network} & \textbf{Accuracy in $\%$} \\\midrule \endhead
+	VGG-19 & $72.40$ \\\midrule
+	ResNet-152 & $92.89$ \\\midrule
+	ResNeXt-101 & $94.66$ \\\midrule
+	\textbf{DenseNet-264} & $\mathbf{97.45}$ \\\midrule
+	EfficientNet-B7 & $16.67$
+	\\\bottomrule
+\end{xltabular}
+
+\begin{xltabular}{\textwidth}{Xc}\toprule
+	\caption{Number of Epochs} \label{tab:epochs}\\
+	\textbf{Neural Network} & \textbf{Number of Epochs} \\\midrule \endhead
+	VGG-19 & $56$ \\\midrule
+	ResNet-152 & $90$ \\\midrule
+	ResNext-101 & $43$ \\\midrule
+	DenseNet-264 & $81$ \\\midrule
+	EfficientNet-B7 & $20$
+	\\\bottomrule
+\end{xltabular}

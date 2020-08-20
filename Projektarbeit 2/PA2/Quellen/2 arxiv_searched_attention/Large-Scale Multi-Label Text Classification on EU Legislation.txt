@@ -1,0 +1,8 @@
+Introduction
+- Multi Class Classification of legislation text comparing several classifiers
+Methods
+- CNN-LWAN: CNN mit Label Wise Attention
+- BIGRU-LWAN: Bi Directional GRUs mit Label Wise Attention
+- Bert with transferlearning: Pre Trained Bert than task specific layer is added on top and bert is finetuned for that task
+Experiments
+- Ergebnis Tabelle: Bert performt am besten

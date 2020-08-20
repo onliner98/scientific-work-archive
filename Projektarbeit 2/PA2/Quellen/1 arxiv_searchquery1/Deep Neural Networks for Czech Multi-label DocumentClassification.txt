@@ -1,0 +1,18 @@
+Abstracts: 
+- NNs perform better on document classification than statistical methods, CNNs performed best
+Intro:
+- NNs work better than feature engineering approachesin several NLP fields (mit Beleg)
+NN Doc classification
+- Feedforward Deep Neural Network with Bag Of Words (Dictionary Vector where 1 means word is in document 0 word is not)
+- Dictonary takes only the N frequent words
+- Convolutional Neural Network with fixed size sequence of Wordvectors (unknowns and padding each have an own vektor) => padding and truncating of documents
+- Achieved better results with 1D Kernels than with 2D
+- 37 Classes
+Experiment
+- 37 classes around 11.000 documents
+- few tests for hyperparams => Results with best hyperparams are Taken see conclusion
+Conclusion:
+- F1 Score 
+  - CNN: 84.7 
+  - FNN:83.9
+- Man könnte pretrrained Vectorembedding nutzen anstatt es zu lernen (Glove, Word2Vec)

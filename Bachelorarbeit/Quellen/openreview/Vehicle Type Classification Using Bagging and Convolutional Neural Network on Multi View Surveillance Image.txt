@@ -1,0 +1,1 @@
+CNN, MaxPool, FullyConnectedLayer for Vehicle Type Classification

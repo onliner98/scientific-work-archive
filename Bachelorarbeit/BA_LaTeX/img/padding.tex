@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+\matrix (mtr) [matrix of nodes,row sep=-\pgflinewidth, nodes={draw}]
+{
+	0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0\\
+	0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0\\
+	1 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 0\\
+	0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0\\
+	0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 1\\
+	0 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 1\\
+	0 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 0\\
+};
+
+\node [below= of mtr-6-5.south] (lm) {$X$};
+
+\matrix (mt) [matrix of nodes,row sep=-\pgflinewidth, nodes={draw}, right = 4em of mtr]
+{
+	|[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0\\
+	|[fill=blue!30]|0 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & |[fill=blue!30]|0\\
+	|[fill=blue!30]|0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & |[fill=blue!30]|0\\
+	|[fill=blue!30]|0 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & |[fill=blue!30]|0\\	
+	|[fill=blue!30]|0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & |[fill=blue!30]|0\\
+	|[fill=blue!30]|0 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 1 & |[fill=blue!30]|0\\
+	|[fill=blue!30]|0 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & |[fill=blue!30]|0\\
+	|[fill=blue!30]|0 & 0 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & |[fill=blue!30]|0\\
+	|[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0 & |[fill=blue!30]|0\\
+};
+
+\node [below= of mt-7-6.south] (m) {$X$ with $padding$ of $1$};
+
+\end{tikzpicture}

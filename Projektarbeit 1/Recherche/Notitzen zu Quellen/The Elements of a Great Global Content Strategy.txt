@@ -1,0 +1,16 @@
+[Before Minute 53]
+This Presentation is about how to design content, this is not part of my PA1
+[Minute 53]
+Componentize the Content so you only have to localise the Deltas for each localisation and not the whole product over and over again for each locals
+[Minute 54]
+Translation Workflow all steps
+[Minute 55]
+Non Automisable steps
+- Identify itme to be tranlsated
+- Approve by Projectmanager
+- select translator
+- translation
+- Proofreading
+- Update item with translation
+[Minute 58]
+Look what Technologie/Processes are used in your company => if they are not compatible do not try to do quickfixes instead redesign and replace("Get out of repair mode")

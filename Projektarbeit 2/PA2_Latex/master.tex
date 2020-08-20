@@ -1,0 +1,88 @@
+%
+%   Prof. Dr. Julian Reichwald
+%   auf Basis einer Vorlage von Prof. Dr. Jörg Baumgart
+%   DHBW Mannheim
+%
+
+
+\documentclass[
+	12pt,
+	BCOR=5mm,
+	DIV=12,
+	headinclude=on,
+	footinclude=off,
+	parskip=half,
+	bibliography=totoc,
+	listof=entryprefix,
+	toc=listof,
+	pointlessnumbers,
+	plainfootsepline]{scrreprt}
+
+%	Konfigurationsdatei einziehen
+\input{config}
+
+\begin{document}
+
+\TitelDerArbeit{Neural Classification of Recruitment Advertisements}
+% Neural Architectures for Recruitment Advertisements Classification
+% Recruitment Advertisement Clssification based on neural models
+\AutorDerArbeit{Fabian Wolf}
+\Firma{Movilizer GmbH}
+\Kurs{WWI17SEC}
+
+\input{titlepage}
+
+\pagenumbering{roman}
+\normalfont
+
+%--------------------------------
+% PRE TEXTS
+%--------------------------------
+%	Kurzfassung
+\input{abstract}
+
+%	Inhaltsverzeichnis
+\tableofcontents
+
+%	Abbildungsverzeichnis
+\listoffigures
+
+%	Tabellenverzeichnis
+\listoftables
+
+% 	Abkürzungsverzeichnis (siehe Datei acronyms.tex!)
+\input{acronyms}
+\ohead{Acronyms} % Neue Header-Definition
+
+
+%--------------------------------
+% MAIN TEXTS
+%--------------------------------
+\clearpage
+\ihead{\chaptername~\thechapter}
+\ohead{\headmark}
+\pagenumbering{arabic}
+\input{introduction}
+\input{fundamentals}
+\input{sota}
+\input{requirements}
+\input{proposed_model}
+\input{conclusion}
+%--------------------------------
+% POST TEXTS
+%--------------------------------
+%	Literaturverzeichnis
+\printbibliography[title=References]
+\cleardoublepage
+
+\appendix
+\ihead{\appendixname~\thechapter} % Neue Header-Definition
+
+% appendix.tex einziehen
+\input{appendix}
+
+% Ehrenwörtliche Erklärung ewerkl.tex einziehen
+\input{ewerkl.tex}
+
+
+\end{document}

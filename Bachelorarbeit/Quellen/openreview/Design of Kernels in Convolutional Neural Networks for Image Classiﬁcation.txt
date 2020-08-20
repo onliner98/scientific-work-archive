@@ -1,0 +1,1 @@
+Filters/Kernels of Different shapes (non-rectangle) for CNN for Image Classification

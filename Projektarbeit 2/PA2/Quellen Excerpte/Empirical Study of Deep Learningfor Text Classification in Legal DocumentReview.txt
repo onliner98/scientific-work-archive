@@ -1,0 +1,1 @@
+Vergleicht SVM vs CNN zum classifizieren von legal texts => CNN performt besser aber erst ab großer Datenmenge

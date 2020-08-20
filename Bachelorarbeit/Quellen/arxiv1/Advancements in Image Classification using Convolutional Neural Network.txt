@@ -1,0 +1,10 @@
+Overview over all infulential CNNs
+- LeNet5 [8]
+- AlexNet [12]
+- ZFNet [14]
+- VGGNet [15]
+- GoogLeNet [16]
+- ResNet [17]
+- DenseNet [18]
+- CapsNet [19]
+- SENet [20]

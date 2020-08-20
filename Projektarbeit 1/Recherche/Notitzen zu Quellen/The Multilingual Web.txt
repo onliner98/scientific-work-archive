@@ -1,0 +1,43 @@
+[4. Interoperatability Landscape for the Multilingual Web p252] Kompatibility between changing web content, localization workflows and language technologies a challenge. 
+Lack of Kompatibility causes up to 20% of localization costs[1]
+
+Landscape: Figure 1
+*Content Management: This Function is aided/fulfilled by the Content Management System and consists of
+- Content Generation
+- Content Consumption
+*Localization Management: Translating and adepting content to languages and cultural norms, aided by 
+- TMS(Translation Management Systems) 
+- MT(Machine Translation) 
+- TM(Translation Memory) e.g. linguee
+- CAT(Computer Aided Translation) computer makes recommendation, human approves / translates
+*Natural Language Processing: Automated Translation using data drivevn techniques as SMT(Statistical Machine Translation)
+*Aggregation and Cutation(=Bewahren): collection, classification, indexing and searching of web content in large volumes => search engines and collection of language corpora(data)
+
+Kompatibility Problems requiring a solution:  
+*Content and Localization Management Systems form the backbone.
+Kompatibility between CMS, LMS and human translators is ensured by Standards
+- XLIFF XML Localization Interchage File Format[2] 
+- TMX Translation Memory Exchange[3]
+- TBX Term Base Exchange[4]
+- SRX Segmentation Rules Exchange[5]
+- ITS Internationalization Tag Set [6]
+- lemon Lexicon Model for Ontologies model[8]: for modeling lexicon and machine-readable dictionaries 
+*NLP is integrated ad hoc => kompatibility is given, but common operationalisation of quality, reliability etc is not given
+*Aggregation and Curation functions, data and metadata, are heavily media format and application dependand, a standardised approach would result in easier exchange between formats and applications
+*Human Content Interaction: There is no portability concept for User interaction preference, quality feedback and business intellegence
+
+[5. Web Metadata for Language Related Technologie in the Web] Some of the mentioned kompatibility problems can be addressed using metadata.
+Metadata for the following usecases is specified:
+- Interaction between Language Technologies and Content Management Systems. E.g. Which text should be translated which should not?
+- Reliable transmission of metadata from content creation to lokalisation
+- Maintaining metadata regarding internationalization and translation quality for NLP training
+
+[5.1 Multilingual Web-LT Working Group]
+
+
+
+Domain: Menge von Eigenschaften und Regeln des Ausgangssystems e.g. der scope i.d. sich eine variable befindet ist ihre domain
+Ontologie: 
+- klassische Ontologie: Lehre des Seienden und der Wirklichkeit (Fragen: Existenz,Sein; Zusammenhang komplexer Entitäten; Unterschied von Ding,Konstrukt,Prozess,Zustand,Ereignis; Fortdauer oder Veränderung über die Zeit hinweg; u.ä.)
+- Ontologien (informatik): sprachlich/formale Darstellung einer Menge von Begrifflichkeiten und deren Beziehungen in einem bestimmten Gegenstandsbereich. Sie werden genutzt um Wissen zwischen Anwendungsprogrammen/Diensten auszutauschen => Wissenrepräsentation
+Dualismus: geht davon aus dass alles was ist in Entität(Wesen/Essenz: Was ist es "Urbild der ding im geist" das individuum ist eine konkrete ausprägung seines wesens) und Substanz(Woraus etwas besteht, das seiende) zerfällt

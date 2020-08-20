@@ -1,0 +1,28 @@
+LITERATURREVIEW
+- Suchvorgehen nach Webster and Watson => Sind die bisherigen Begriffsliste, Searchquery, Quellen, Auswahlkriterien ok, dann Excerpt dann Conceptmatrix?:
+  - JA
+- Erstmal auf die Grundkonzepte konzentrieren (Transformer RNN CNN etc), wenn dann noch zeit ist (wahrscheinlich nicht) geht immernoch extras wie leap lstm verbesserung oder sowas
+  => Vorherschenden Konzepte aus Konzeptmatrix nehmen => auswahl der zu testenden über leaderboard => performanz vergleichen?
+    - JA
+- Wie granular dokumentiere ich? z.b. Einen einzigen search query zu definieren scheint mir sinnbefreit weil je nach datenbank angepasst werden muss bis sinnvolle anzahl ergebnisse
+  - SO WIE ZURZEIt PASST
+- Begriffstabelle und Search Queries, quellen und wie ich auf diese gekommen bin dokumentiere ich aber macht es wirklich sinn dies in die Arbeit mit aufzunehmen und wenn ja wie?
+  - WIR HABEN DAS UND DAS PROBLEM HABEN DAZU X PAPER ANALYSIER T DAS SIND DIE DOMINANTESTE NN ARCHITEKTUREN IEHE ANHANG
+- Das Paper dass du mir empfohlen hast hat ein literatur review beschrieben, du erwartest aber kein Lieratur review oder?
+  - IST KEIN LIT REVIEW
+
+IMPLEMENTIERUNG
+- Welche Label möchtet ihr haben => ich verwende ja Suchbegriffe(= Label) für die Features => Feature Mengen müssen paarweise disjunkt sein
+  - KL DB 2010 => Klassen von Berufen
+- Was ist mit den ganzen Hacky sachen soll ich die excluden?
+  => Stop Words, Feature Engineering improved performance aber es ist nicht wirklich nachgewiesen dass das die besten Wege sind
+  außerdem sollte ein gutes Model ja von den Daten lernen und nicht von den Gedaken die ein Mensch sich macht
+ => Diese von vorne rein erwähnen aber excluden?
+  - VERWEISE DASS MIT SOWAS VERBESSERT WERDEN KANN ABER HIER RAUSGELASSEN WIRD
+
+INHALT
+- Sind Grundlagen alles was ich nicht konnte also auch die Lin Algebra Sachen?
+  - NUR WENN ICH NICHT GENUG SEITEN HABE (GROB SO DASS ES JMD VERSTEHT DER NICHT FIRM IM THEMA IST ALSO NICHT ZU KOMPLEX)
+- Gibt es irgendwelche running restrictions für das NN? Z.B. GPT-2 mit 1.5 Billion Params passt nicht in den Ram meiner Maschiene => ich denke es ist sinnvoll die Modelle auf eine größe zu beschränken dass ihr ohne nen großen server benutzen könnt = Anforderung
+  - JA SCHREIB DAS ALS ANFORDERUNG DASSS ES AUF NORMALEN DESKTOP PC LAUFEN KANN
+

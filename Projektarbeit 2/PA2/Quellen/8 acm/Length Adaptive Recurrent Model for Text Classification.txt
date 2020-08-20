@@ -1,0 +1,1 @@
+Text classification via LSTM with an Dense Network on top which tells the lstm to read on/stop

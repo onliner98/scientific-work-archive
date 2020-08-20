@@ -1,0 +1,3 @@
+CIFAR-10/100, SVHN, EMNIST, ImageNet
+
+Used Architectures: ResNet, ResNext, WRN, DenseNet, SeNet

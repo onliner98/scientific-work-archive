@@ -1,0 +1,3 @@
+Hierachical RNN on Top of a CNN see Figure 3
+Feautre Augmentation: Input is RGB Image together with Depth Coded Image
+6% accuracy boost campared to normal CNN

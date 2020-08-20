@@ -1,0 +1,2 @@
+[3.1 Graph Data Model] Subject -Prädikat-> Object (triple)
+[3.2 URI-based Vocabulary and Node Identification] Subject/Object=blankNode,Literal,URI Prädikat=URI

@@ -1,0 +1,3 @@
+Scene Classification compared pretraining and training from scratch, pre training performs better
+
+Used Architectures: AlexNet, VGG, GoogLeNet

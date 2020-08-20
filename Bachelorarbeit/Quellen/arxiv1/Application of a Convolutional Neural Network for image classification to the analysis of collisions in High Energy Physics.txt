@@ -1,0 +1,3 @@
+image classification of collisions in High Energy Physics
+
+Used Architecture: CNN

@@ -1,0 +1,4 @@
+Vergleicht Model für Text classification
+- Proposed Model: (generative labeling) Seq2Seq Model: Encoder: BiLSTM with self Attention => output wird der start state für den Decoder: LSTM generating Labels taking own prediction as next input
+- CNN
+- CNN-RNN: Seq2Seq Model: Encoder CNN with maxpooling and fully connected => output wird der start state für den Decoder: LSTM generating Labels taking own prediction as next input

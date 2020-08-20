@@ -1,0 +1,8 @@
+\begin{xltabular}{\textwidth}{Xcccccc}\toprule
+	\caption{Concept Matrix} \label{tab:concept_matrix}\\
+	\textbf{Author} & \textbf{Conv.} & \textbf{Res.} & \textbf{Inc.} & \textbf{Caps.} & \textbf{Dense}  & \textbf{Sep. Conv.} \\\midrule \endhead
+	\csvreader[late after line=\\\midrule,late after last line=\\\bottomrule, /csv/separator=comma]
+	{img/conceptmatrix.csv}
+	{}
+	{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi & \csvcolvii}
+\end{xltabular}

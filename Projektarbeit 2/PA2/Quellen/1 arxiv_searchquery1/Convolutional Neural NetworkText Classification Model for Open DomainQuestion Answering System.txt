@@ -1,0 +1,9 @@
+Hier wird ein sentence classification model beschrieben
+
+Introduction
+- Most used Feature is Bag of Words
+- Feature selection: stop words improve performance [12]
+Model
+- Ähnliches Model wie A Sensitivity Analysis of (and Practitioners’ Guide to)Convolutional Neural Networks for Sentence Classification [17]
+Integration with QAS
+- Classification der Questions in Domains => domain spez QAS beantwortet dann die frage

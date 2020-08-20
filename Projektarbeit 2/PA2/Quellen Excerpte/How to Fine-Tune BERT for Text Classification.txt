@@ -1,0 +1,44 @@
+This paper proposes a generalframework for BERT pre Training
+
+Related Work
+- Pre-Training: Word, Sentence Paragraph Embeddings, BERT, GPT, etc. are already Pretraining
+BERT for Text Classification
+- BERT
+  - Input: Sequence 512 Tokens first token is allways [CLS]
+  - Output: Hiddenstate h of the [CLS] token as representation of the whole sequence
+- Text Classification: Softmax Classifier is added on top to predict the lable softmax(W,h)
+Methodology
+- Fine Tuning strategies: 
+  - Preprocessing of long texts to match the 512 token max length
+  - Try different Layers of BERT for the classification task, lower layers might output sth better suited for your task
+  - Prevent Overfitting by giving lower learning rates to lower layers
+- Further Pre-training: After pretraining on a general domain larg corpus like wikipedia you can:
+  - pre train on your finetune training data of the target task
+  - pre train on training data of your domain
+  - pre train on training data of your domain and other domains
+  - dont do further pretraining
+- Fine Tuning:
+  - Only for the desired task
+  - for multiple tasks (all task have the same bert but a different classifier layer (however all classifiers are softmax)) 
+    => this can improve performance  (Liu et al. 2019)
+Experiment
+- Data preprocessing: WordPiece embeddings (Develin et al. 2018; Wu et al. 2016), Sentence segmentatin (spacy.io)
+- Hyperparams: 
+  - BERT-base model (Devlin et al. 2018) hidden size 768, 12 Transformer blocks, 12 self attention heads
+  - batch size 24, dropout 0.1, Adamoptimizer betha1=0.0 betha2=0.999
+- Dealing with long texts
+  - Truncation: Most Information is usually at the beginning and end => head only, tail only, head128tokens tail382tokens
+  - Hierachical: Divide input text into k = L/510 feactions => feed each into BERT => max/meanpool/selfattention to merg them
+- Features from Different layers
+  - try finetuning with each layers output and choose the one with the smalles error rate
+- Catasthrophic forgetting
+  - finetuning needs to be done with small learning rate e.g. 2e-5 to prevent catastrophic forgetting
+- Layer-wise Decreasing Layer Rate: decreas learningrate per layer with a factor of 0.95 to improve learning performance
+- Further pretraining
+  - in task pretraining only helps sometimes
+  - in domain pretraining always helps^
+  - cross domain pretraining makes no difference
+- Multi task Fine-Tuning: only improves performance than by less than 1% if at all
+
+
+Table 8: ULMFit is competitve to BERTbase/BERTlarge

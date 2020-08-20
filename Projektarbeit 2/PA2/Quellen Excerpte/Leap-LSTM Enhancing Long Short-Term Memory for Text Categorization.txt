@@ -1,0 +1,11 @@
+Abstract
+- Leap LSTM: Überspringe Wörter die unnötig sind
+- Text Categorisation Tasks: sentiment analysis, news categorization, ontology classification, topic classification
+Introduction
+- NLP verwendet RNNs oft sentiment analysis[Liuet  al.,2017], text categorization[Yogatamaet al., 2017], documensummarization[Seeet al., 2017], machine translation[Bah-danauet al., 2014], dialogue system[Serbanet al., 2015] and machine comprehension[Seoet al., 2016].
+Related Work
+- Aufzählung von RNNs, die auch wärter skippen oder anders versuchen schneller zu sein
+Methodology
+- 2 Layer FeedForwardNetz Bekommt festes Wortfenster als Input & decided skip oder keep, LSTM ließt keeps ein, letzter Hiddenstate wird durch Softmax für die categorisierung gejagt
+Experiment Results
+- Tabelle 2: Leap LSTM hat fast gleiche performanz zu LSTM ist aber etwas schneller

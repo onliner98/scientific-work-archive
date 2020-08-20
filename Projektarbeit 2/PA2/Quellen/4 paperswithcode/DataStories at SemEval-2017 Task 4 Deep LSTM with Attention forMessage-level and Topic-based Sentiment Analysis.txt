@@ -1,0 +1,3 @@
+They use a 2 Layer Bi LSTM with attention and softmaxclassifier for sentiment analysis
+
+Sent analysis is not directly my topic therefore this paper can only be used for the concept matrix for BILSTM+ATTENTION

@@ -1,0 +1,6 @@
+Influential Paper
+
+CNN Top Performance on ImageNet 2012
+1000 classes 
+top 1 37% error (richtiges ist top 1 pick des netzes)
+top 5 17% error (richtges ist unter top 5 picks des netzes)

@@ -1,0 +1,2 @@
+Medical image classification usually has limited data and class-imbalance
+=> increased generalization ability of CapsNets vs. ConvNets when dealing with the limited amount of data and class-imbalance

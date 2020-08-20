@@ -1,0 +1,2 @@
+Language Service Providers LSPs: Provide the services to globalize, internationalize, localize, translate, and interpret all types of content
+for the audiences of Organizations ranging from microbusinesses to multinational corporations to national governments

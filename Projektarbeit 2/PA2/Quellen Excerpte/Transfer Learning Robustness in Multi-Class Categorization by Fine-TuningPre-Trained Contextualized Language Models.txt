@@ -1,0 +1,13 @@
+Untersucht performanz von Multi Class classification (1 Label) mit steigender anzahl klassen
+ 
+Introduction
+- only few studies examine the robustness of multi-class models as the number of classes incerases
+Background and related Work
+- RoBerta: upgraded BERT Model (Liu et al. 2019)
+- Transformer-XL: Transformer Language Model wie Bert aber ohne Input sze restriction
+- Classifie by just adding a softmaxlayer to pretrained model
+Experminetal Methods
+- Table 2: hyperparams
+Results
+- Mit steigender Classenanzahl sinkt die performanz (zumindest in diesem experiment linear (kein nachweis))
+- Performance: XLNet Large > BERT Base > XLNet Base

@@ -1,0 +1,73 @@
+\chapter{Introduction}
+
+\section{Motivation}
+\label{sec:motivation}
+% AR
+\blockquote[\cite{Detzel.2018}]{It might take two hours for an experienced field technician to fix a broken MRI. But a pair of smart glasses that displays step-by-step instructions in the tech’s field of vision could help shave as much as 50\% from the time it takes to diagnose the problems and make needed repairs.} According to Boston Consulting Group, Accenture, Mc Kinsey, and others, augmented reality solutions for field workers are an emerging market. \autocites{EY.2019a}{EY.2019b}{Detzel.2018}{Shook.2019}{Guy.2019} The augmented reality market is estimated to reach 83.5 billion USD by 2021. \autocite{Statista.2019} Movilizer GmbH approaches this trend with its connected solutions. \autocites{Honeywell.2018a}{Honeywell.2018b}
+An augmented reality solution for field workers requires software perceiving the environment of field workers. A sub-task of that perception is to distinguish tools of different classes. For example, a software displaying step-by-step instructions in the field of vision of a field worker needs to distinguish a screwdriver from a wrench when telling the field worker to tighten the screw with the wrench lying on the ground next to him instead of the screwdriver in his hand.
+% Neural Networks
+Distinguishing between tools of different classes is called tool image classification. Image classification in general is mostly solved by neural networks. \autocites{ElAmir.2020}{LeCun.2015}{Singh.2020}{Michelucci.2019}{Gad.2018}{Kapur.2017} 
+% Research Questions
+This paper determines the best-performing neural network for tool image classification. Furthermore, this paper introduces a novel tool image classification dataset called \ac{TIC Dataset}.
+
+
+
+\section{Problem Statement}
+\label{sec:problem}
+Tool image classification is the problem of assigning the correct class to an image of a tool, see Section \ref{sec:ml}. An image of a tool is a close-up image of exactly one tool from an arbitrary angle with an arbitrary background. To classify an image, a neural network receives an image and returns the class probabilities. The class with the highest probability is the prediction of the neural network for that image.
+A $w$-by-$h$-pixel image is formatted as three-dimensional array. The array contains one subarray for each pixel. The $X$ and $Y$ coordinates of a pixel in an image correspond to the indices of the subarray containing the $d$ color values of that pixel. Consequently, the three-dimensional array is of shape $w \times h \times d$. \autocites{LeCun.2015b}{LeCun.1998} For example, a three-color, $224$-by-$224$-pixel image is formatted as an array of shape $224 \times 224 \times 3$. The class probabilities are formatted as a one-dimensional array. Each index of that array corresponds to one class. The element at a given index is the class probability of the corresponding class. \autocite{ElAmir.2020} For example, a class array for the classes screwdriver and wrench is of shape $2$. Index~$0$ corresponds to screwdriver and index $1$ corresponds to wrench.
+\par
+To classify correctly, neural networks need to be trained first. \autocite{ElAmir.2020} This paper trains and evaluates neural networks on the \ac{TIC Dataset}.  The \ac{TIC Dataset} is constructed by this paper and comprises $20{,}400$ tool images of six classes. The classes are listed below.
+\begin{itemize}
+	\item drill
+	\item hammer
+	\item pliers
+	\item saw
+	\item screwdriver
+	\item wrench
+\end{itemize}
+Each class comprises $3{,}400$ tool images. A tool image is a close-up image of exactly one tool. 
+For a class, tool images display different tools of the same class from arbitrary angles and with arbitrary backgrounds. 
+
+
+
+\section{Scope}
+\label{sec:scope}
+Summarizing, the scope of this paper is to determine the best-performing neural network for tool image classification. On that account, this paper focuses on neural networks for image classification. 
+Time and resources of this paper are limited. For this reason, the neural networks are trained exclusively supervised without auxiliaries.
+% Exclusion
+On that account, the following approaches and techniques are excluded. Metalearning is excluded. Non-neural networks are excluded. Other computer vision tasks are excluded. Unsupervised learning and semi-supervised learning are excluded. Auxiliaries used to improve the learning of neural networks are excluded. 
+% Metalearning
+Metalearning is the process of learning to learn, for example, learning hyperparameters of a neural network such as the architecture of the network using an evolutionary algorithm. \autocite{Schaul.2010}
+% Non-Neural Networks
+This paper regards several approaches as non-neural networks. These approaches are neural networks augmented with other machine learning algorithms, other machine learning algorithms in general or other image classification methods.
+% Other Computer vision tasks
+Computer vision tasks other than image classification are excluded because they are less related to the problem investigated in this paper than image classification.
+% Un/Semisupervised
+Semi-supervised or unsupervised learning is learning without knowing all or any desired output. \autocite{ElAmir.2020}
+% Auxiliaries
+This paper regards transfer learning, adversarial training, data augmentation, input normalization, weight decay, and multi-task learning as learning auxiliaries. 
+Transfer learning aims to help learning a specific task by learning another task. For example, learning classification of geometric shapes in images might help learning tool image classification. 
+\autocite{Pan.2010}
+Adversarial training is training neural networks on adversarial examples. Adversarial examples are imperceptibly, non-randomly perturbed images. The perturbation arbitrarily changes the prediction of the neural network. \autocite{Szegedy.2014}
+Data augmentation is the creation of additional training data from existing training data, for example, creating additional training images by rotating them by a random amount. 
+\autocite{ElAmir.2020}
+Input normalization improves training by re-scaling all input data into the same scale. 
+\autocite{ElAmir.2020}
+Weight decay improves training by penalizing large weights. 
+\autocite{ElAmir.2020}
+Mulit-task learning allows neural networks to learn multiple objectives. Hence, one loss function per objective is optimized during training.\autocite{Caruana.1997} For example, \cite{Sabour.2017} made their neural network learn image classification and reconstruction of the original input.
+
+\section{Approach}
+This paper seeks to determine the best-performing neural network for tool image classification. The best-performing neural network for tool image classification is determined in the course of an experiment. The experiment trains and evaluates state-of-the-art neural networks for image classification on the \ac{TIC Dataset}. The evaluation is based on a metric. The metric is determined based on the metrics used by image classification leaderboards. The state-of-the-art neural networks are determined in the course of a literature review conducted by this paper. The \ac{TIC Dataset} is constructed in the course of this paper.
+
+\section{Structure}
+The following chapters of this paper are structured as follows. 
+\begin{itemize}
+	\item Chapter \ref{chp:funda} defines and illustrates terms required to understand this paper.
+	\item Chapter \ref{chp:metho} defines the methodology followed to determine the best-performing neural network for tool image classification.
+	\item Chapter \ref{chp:sota} reports the results of the literature review on the state of the art of image classification conducted by this paper.
+	\item Chapter \ref{chp:result} reports the results of the experiment conducted by this paper.
+	\item Chapter \ref{chp:discussion} discusses the results of the experiment conducted by this paper. Furthermore, the work of this paper is placed in the state of the art of image classification, and the limitations of this work are reflected. Finally, future work and practical implications are proposed.
+	\item Chapter \ref{chp:conclusion} summarizes the contributions of this paper.
+\end{itemize}

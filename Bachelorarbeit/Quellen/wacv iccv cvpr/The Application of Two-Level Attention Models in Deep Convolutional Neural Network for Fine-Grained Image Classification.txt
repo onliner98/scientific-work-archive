@@ -1,0 +1,3 @@
+Fine Grained Image Classification (z.b. classifizierung versch Tier unterarten die sich nur an kleinen Details unterscheiden)
+Use Whole Image and Image Parts for classification, use attention to decide which image parts are important
+Architecture: Based on AlexNet[12]

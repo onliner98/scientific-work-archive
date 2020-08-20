@@ -1,0 +1,7 @@
+Im Paper wird TextFooler vorgestellt der Adverserial Examples generiert => eher irrelevant für micht
+=> Quellen anschauen
+3.2 Attacking Target Models
+- Dies sind state of the art models für Text Classification/Entailment
+- Bert (Devlin et al., 2018)
+- word level CNN (Kim 2014)
+- word level LSTM

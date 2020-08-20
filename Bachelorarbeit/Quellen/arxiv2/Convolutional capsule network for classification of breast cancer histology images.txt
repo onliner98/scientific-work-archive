@@ -1,0 +1,3 @@
+classification of breast cancer histological(=Gewebelehre) images
+
+Used Architecture: convolutional capsule network 

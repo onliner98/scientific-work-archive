@@ -1,0 +1,3 @@
+Text classification with:
+- CNN
+- CNN which is recursivly applied (ist was anderes als RNN dann CNN oder CNN dann RNN)

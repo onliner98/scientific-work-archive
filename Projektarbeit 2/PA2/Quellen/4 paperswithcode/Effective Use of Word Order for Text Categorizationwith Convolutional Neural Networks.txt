@@ -1,0 +1,2 @@
+CNN for text classification
+hat eigene Variante den Input darzustellen => nur für Concept Matrix nutzen

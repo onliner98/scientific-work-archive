@@ -1,0 +1,1 @@
+Pyramidenförmiges CNN for image classification

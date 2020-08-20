@@ -1,0 +1,6 @@
+Intro
+- They Combine CNN (LeCun et al. 1998) GRU (Choe et al. 2014) and Attention
+- They call it ensambe of CNN GRU and Attention (ECGA)
+- Test it on different classification problems the biggest one has 44 classes
+
+Result Table over 70% F1 Score

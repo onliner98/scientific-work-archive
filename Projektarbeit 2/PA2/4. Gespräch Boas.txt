@@ -1,0 +1,36 @@
+- link zur stepstone api => quelle im intro
+  => nicht den link selbst sondern fußnote: Cooperationsprogramm verlinken da der link nicht öffentlich ist (Der link ist nicht öffentlich wir verweisen an dieser stelle auf das cooperationsprogramm dann link)
+- Habe jetzt im intro unter vorgehen angegeben wie ich die literaturrecherche durchgeführt habe und im appendix sachen angehägt, so ok oder ist das zu viel/wenig
+  => passt
+- reicht eine gebundene version
+  => reicht
+- ich habe die kurzfassung des "Forschungsfrage" als aussage als 1. Satz im Scope ist das so ok oder muss das in problem statement und noch mehr hervorgehoben werden
+  => passt
+- ich habe von Transformers CNNs und RNNs im Plura geredet da es mehrere models gibt semantisch scheint mir das richtig was ist syntaktisch richtig (da eigennamen)
+  => passt
+- Bibligraphy: URL line breaking does not really work => Bad Typesetting so lassen oder urls raus?
+  => ist ok so
+- ist die wortwahl business scenario für die beschreibung von Aivy und business process für den classification task und die gesammte pipline von reception classification storage access richtig?
+  => passt
+- List of listings(code) rausschmeisen da ich nur ein listing habe
+  => rauslassen
+
+Korrektur Philipp
+- Alles was nur als Link in der Quelle angegeben ist (AWS, Leaderboards etc) ist nicht im Quellenverzeichnis ist das so ok?
+  => passt so, da keine wiss quelle sondern nur ein verweis
+- Ist Sektion 1.5 überflüssig da es nur die sachen im approach zusammenfasst. Deshabl fehlt in 1.5 auch die Ableidung der einzelnen Kapitel aus dem Ziel
+  => passt so bei chapter 5 kannst du ggf discussin angeben
+- Sektion 2.2 Phillips anmerkung: was machen Aktivierungsfunktion, Summe und Input => man könnte ein Beispiel für einen Input geben oder den Ursprung aus dem natürlichen neuron beschreiben
+  - Bsp.: Uni hat 2 Test der eine wird 40% der andere 60% gewertet (weights) man braucht mindestens 100 Punkte zum bestehen (Output größer 99)
+  - Bsp.: Inputvektor = Postsynapt. Membran Potentiale; Weights = Leightfähigkeit  der Axone; Sum => räuml/zeitl Summation der PSPs; Bias = Threshhold für Aktionspotentiale; Output = Intensität der APs;
+  => verweise zu den grundlagenpaper sind ausreichend
+- Aussage der Sektion 3.4 ist: diese Modelle werden nicht betrachtet, da sie selten verwendet werden und schwächere performanz haben => auf 2 Sätze kürzen? => kein eigenes Kapitel
+  - so lassen
+- Mir wurde vorgeschlagen unter jede gleichung bedeutung der variablen zu schreiben,  das ist nicht ülich, soll ich?
+  - so lassen
+
+Korrektur Juliane
+- Processing Period Datumsformat: 05.08.2019 oder 05 August 2019
+  - ist egal
+- Juliane meint an MLP, ich meine a MLP/wikipedia auch
+  - ist egal

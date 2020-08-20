@@ -1,0 +1,112 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{iv}{chapter*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Quelltextverzeichnis}{v}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{vi}{chapter*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Allgemeine Themenrelevanz}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Ziel dieser Projektarbeit}{1}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Begriffe}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Globalisierung}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Internationalisierung}{3}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Lokalisierung}{3}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Abgrenzung von \IeC {\"U}bersetzung, Lokalisierung und Internationalisierung}{4}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Translation Memory}{4}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Computer Assisted Translation}{4}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Natural Laguage Processing}{5}{section.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Auszeichnung}{5}{section.2.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Extensible Markup Language}{5}{section.2.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.10}Movilizer}{5}{section.2.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.11}Movelet}{6}{section.2.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.12}Stammdaten}{6}{section.2.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.13}Movilizer Extensible Markup Language}{6}{section.2.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.14}Movilizer Expression Language}{6}{section.2.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.15}Movilizer Gradle Plug"~in}{7}{section.2.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.16}Abfragesprache}{7}{section.2.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Verwandte Arbeit}{8}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Trennung von Quelltext und Ressourcen}{8}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Funktionsweisen bestehender Lokalisierungstools}{8}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Standards der Lokalisierung}{10}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}TMX}{10}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}XML:TM}{10}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}SRX}{11}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}GMX-V}{11}{subsection.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}TBX}{11}{subsection.3.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.6}XLIFF}{12}{subsection.3.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.7}Trans-WS}{12}{subsection.3.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.8}UTX}{12}{subsection.3.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.9}OLIF}{12}{subsection.3.3.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.10}ITS}{13}{subsection.3.3.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Anforderungen an das Lokalisierungstool}{14}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Extrahieren zu \IeC {\"u}bersetzender Strings aus dem Quelltext}{16}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Auszeichnung zu \IeC {\"u}bersetzender Strings}{16}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Automatisches Erkennen zu \IeC {\"u}bersetzender Strings}{18}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Diskussion der L\IeC {\"o}sungsans\IeC {\"a}tze}{20}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Schnittstelle des Lokalisierungstools zu anderer Software}{21}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Ersetzen zu \IeC {\"u}bersetzender durch \IeC {\"u}bersetzte Strings}{23}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Identifikation des zu ersetzenden Strings per Name}{23}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Identifikation des zu ersetzenden Strings per Zeiger}{24}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Behandlung fehlender \IeC {\"U}bersetzungen}{25}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Diskussion der L\IeC {\"o}sungsans\IeC {\"a}tze}{25}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Ansatzzeitpunkt des Lokalisierungstools}{27}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Versionsverwaltung der Lokalisierung}{28}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Fazit}{29}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Diskussion}{31}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{33}{chapter*.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Anhang}{38}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Implementierung der Extraktion zu \IeC {\"u}bersetzender Strings anhand einer Auszeichnung}{38}{section.A.1}

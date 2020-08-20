@@ -1,0 +1,8 @@
+\begin{xltabular}{\textwidth}{XXXXX}\toprule
+	\caption{Term Table} \label{tab:term_table}\\
+	\textbf{Term} & \textbf{General Term} & \textbf{Subsumable Term} & \textbf{Synonym} & \textbf{Related Term} \\\midrule \endhead
+	\csvreader[late after line=\\\midrule,late after last line=\\\bottomrule]
+	{term_table.csv}
+	{}
+	{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
+\end{xltabular}

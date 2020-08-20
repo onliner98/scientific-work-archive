@@ -1,0 +1,35 @@
+Quellen wurden in DBIS gefunden, in der NLP/NLU Vorlesung empfohlen oder sind Datenbanken in welchen ich (z.b. i.d. Vorlesung) empfohlene Paper gefunden habe
+JOURNALS/CONFERENCE PROCEEDINGS
+- mitpressjournals.org						(DONE, wenig gefunden)
+  - https://www.mitpressjournals.org/loi/coli			(DONE, wenig gefunden)
+  - https://www.mitpressjournals.org/loi/tacl			(DONE, wenig gefunden)
+- jmlr.org							(DONE, nichts gefunden)
+- proceedings.mlr.press (NIPS, ICML,ICLR und weitere)		(DONE, wenig gefunden)
+VOLLTEXT DATENBANKEN
+- arxive.org	|	arxiv-sanity.com			(DONE, viel gefunden)
+- paperswithcode.com/sota					(DONE, viel gefunden)
+- acm.org
+- ieeexplore.ieee.org
+- intechopen.com
+- juser.fz-juelich.de
+- leibnizopen.de
+- research-collection.ethz.ch
+- degruyter.com
+BIBLIOGRAPHIEN
+- citeseerx.ist.psu.edu/index;jsessionid=EA1450DD624D4EEFC5C7CE87891F0A46
+- dblp.dagstuhl.de/
+- liinwww.ira.uka.de/bibliography/index.html
+- gso.gbv.de
+MISC
+- aan.how (ALL ABOUT NLP)
+- scholar.google.com (SUCHMASCHIENE)
+- foldoc.org (DICTIONARY)
+- openai.com / github.com/openai				(DONE, vieles gefunden was ich bereits gefunden hatte)
+NLP LEADERBOARDS
+- ruder.io/ => nlpprogress.com/ (ÜBERSICHT)			(DONE, viel gefunden)	
+- www.aicrowd.com/challenges					(DONE, viel mit games/simulationen)
+- rajpurkar.github.io/SQuAD-explorer				(Done, nur question answering)
+- www.msmarco.org/leaders.aspx					(DONE, nur question answering and passage retrieval)
+- leaderboard.allenai.org					(DONE, nur adverserial, question answering und reasoning)
+- ai.google.com/research/NaturalQuestions/leaderboard		(Done, nur question answering)
+- gluebenchmark.com/leaderboard					(DONE, viel gefunden)

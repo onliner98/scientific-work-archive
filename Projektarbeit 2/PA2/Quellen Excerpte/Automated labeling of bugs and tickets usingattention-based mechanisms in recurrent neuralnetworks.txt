@@ -1,0 +1,20 @@
+Introduction
+- Bigger CLassification Tasks Yelp, IMDB Amazon ... have low accuracies areound 60%
+Existing Methods
+- Naive Bayes
+- TF-IDF + SVM
+- Wordembedding + RNN
+- DeepTriage: biLSTM+Attention followed by 2 fully connected layers
+Proposed Approach
+- preprocessing: everything to lowercase, remove stopwords, filter garbage with a regex
+- hierachical attention:
+  - Inpute: BiLSTM+Attention to Encode each Sentence in a document out of words(embedded)
+  - On Top: BiLSTM+Attention to Encode the document from all encoded sentences
+- Network architecture
+  - Deep Attention Block: GRU-64 >> Dropout >> GRU-32 >> Dropout >> Dense >> Attention
+  - Hierachical structure: 
+    - WordEmbeddings >> DeepAttentionBlock (this produces a sentence embedding)
+    - SentenceEmbeddings >> DeepAttentionBlock (this produces a document embedding)
+    - documentEmbedding >> Softmax
+Comparative Benchmark
+- Table 3: With 16 classes F1 Score of 56% is acchieved, rather equal to DeepTriage

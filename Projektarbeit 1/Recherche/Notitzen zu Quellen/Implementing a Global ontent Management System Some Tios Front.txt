@@ -1,0 +1,4 @@
+Here are some tips we would like to pass along to see if we can help those who are in the process of implementing a GCMS:
+- Make sure that you are aware of all processes regarding localization.
+- Make sure you are aware of all file types and specific file requirements(encoding, software versions, file types)
+- decide who in your team will be an administrator of the tool.

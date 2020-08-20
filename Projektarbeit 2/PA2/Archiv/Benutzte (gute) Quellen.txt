@@ -1,0 +1,12 @@
+Sentdex Machine Learning		pythonprogramming.net
+MIT	Machine Learning		https://www.youtube.com/watch?v=TjZBTDzGeGg&list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
+MIT	Matrix in Machine Learning	https://www.youtube.com/watch?v=Cx5Z-OslNWE&list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k
+StanfordNLP				https://www.youtube.com/watch?v=8rXD5-xhemo&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z
+StanfrodNLU				https://www.youtube.com/watch?v=tZ_Jrc_nRJY&list=PLoROMvodv4rObpMCir6rNNUlFAn56Js20
+	LSTM GRU			https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+	LSTM				http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
+
+
+Empfohlen
+- http://colah.github.io/

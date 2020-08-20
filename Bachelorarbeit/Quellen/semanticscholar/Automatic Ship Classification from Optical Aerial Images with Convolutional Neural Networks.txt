@@ -1,0 +1,3 @@
+Ship Classification from Optical AerialImages with Convolutional Neural Networks and compared them to kNearestNeighbour
+
+Used Architectures: VGG, Inception, ResNet, Xception

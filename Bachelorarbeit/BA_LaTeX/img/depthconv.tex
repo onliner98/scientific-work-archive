@@ -1,0 +1,40 @@
+%\cube{x offset}{y offset}{width}{height}{depth}{color}{fillcolor}
+
+\begin{tikzpicture}[
+cell/.style={
+	rectangle, 
+	rounded corners=2mm, 
+	draw,
+	very thick,
+	align=center,
+},
+ArrowC1/.style={% Arrows with rounded corners
+	rounded corners=.25cm,
+	thick,
+},
+]
+\cube{0}{0}{3}{3}{0.5}{black}{green!30!black!30}
+\cube{-0.25}{-0.25}{3}{3}{0.5}{black}{orange!30}
+\cube{-0.5}{-0.5}{3}{3}{0.5}{black}{blue!30}
+
+\cube{-5.25}{-0.75}{1.5}{1.5}{0.5}{black}{green!30!black!30}
+\cube{-5.5}{-1}{1.5}{1.5}{0.5}{black}{orange!30}
+\cube{-5.75}{-1.25}{1.5}{1.5}{0.5}{black}{blue!30}
+
+
+\cube{-9}{0}{3}{3}{0.5}{black}{gray!30}
+\cube{-9.25}{-0.25}{3}{3}{0.5}{black}{gray!30}
+\cube{-9.5}{-0.5}{3}{3}{0.5}{black}{gray!30}
+
+\coordinate (c4) at (-3,-1.5,0.5);
+\coordinate (c3) at (-5.25,-1.5,0.5);
+\coordinate (c2) at (-6.75,-1.5,0.5);
+\coordinate (c1) at (-9,-1.5,0.5);
+
+\node (out) at (-1.5,-4,1) {Output};
+\node[align=center] (conv) at (-6,-4,1) {Depthwise\\Convolution};
+\node (in) at (-10.5,-4,1) {Input};
+
+\draw[-latex, ArrowC1] (c1) -- (c2);
+\draw[-latex, ArrowC1] (c3) -- (c4);
+\end{tikzpicture}

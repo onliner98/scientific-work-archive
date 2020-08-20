@@ -1,0 +1,27 @@
+[1. INTRODUCTION S. 1]  Internationalization: decoupling translatable text out of the application source code, by wrapping each message or “resource string” with a translation-capable function. [Hsieh et al. 2008; Sun 2001; Yeo 2001]:
+[1.1. Motivation: Lowering i18n/L10n Costs S. 2] Internationalization is done while developing the software[Hoganetal.2004;Luongetal.1995] Need for Localization can appear:
+- after application is published [Wang et al. 2009] 
+- in the market [Carde˜nosa et al. 2006; Troyer and Casteleyn 2004]
+big companies invest $2M and 12–18 months of engineering in internationalization and delivery of the first foreign language [SurveyMonkey 2013].
+Localizing for one additional language costs ca $100K, Microsoft estimates $300+K [Collins2002]
+Ahead Of Time Internationalization:
+(1) Create Message Catalog (z.b. PO Format) from UI resource strings
+(2) Translate resource strings
+(3) Text insertion of the translated ressource string in UI(at run time compile time link time)
+(4) Quality Control: Validate translation in UI and adapt message catalog. 
+[2.1 Approaches to Automatic UI Internationalization S. 5] Wang et al 2010 TranStrL identifies need-to-translate strings vai context free grammar and lexical parser
+[2.2. Engineering Translatable Interfaces S. 6]sentences in French and German are on average 30% longer than English texts [Esselink 2000].
+[3.1. Identification of Localizable Elements S. 8] Identify localizable elements by traversing dom and checking each element 
+=> Mögliche Traversierungsverfahren: recursiv DOM tree traversal, plain XPath selection or TreeWalker iterator
+[3.2 Indexing UI Elements S. 8] Unique Index of Element nötig. 
+Lokalisiert wird nicht per page (whgonlne.de/kontakte=einzelne seite) sonder per domain (whgonline.de alle seiten zusammen) 
+=> verschiedene pages haben vlt den selben xpath(eindeutiger pfad um element auf einer seite zu identifizieren nach w3)
+=> unique indexing = hash(sourcce text der seite + xpath des zu idizierenden elements)
+[3.3 String Tokenization] Für Strings die fast gleich sind und wenige/einen sich ändernden part habe, also die von regex gefunden werden können (z.b item 1 item 2 item 3),
+können format-string-macros für deren übersetzung verwenden Bsp.(aus item 1, item 2 wird item %d), es muss lediglich item und %d übersetzt werden und %d dann wieder ersetz werden
+Bsp 2 aus Meine email ist Hallo@Welt.de und Meine email ist Deine@Mudda.de wird  Meine email ist %s nun muss lediglich Meine email ist übersetzt werden %s wird einfach wieder mit der email ersetzt
+Für mehr Infos https://en.wikipedia.org/wiki/Printf_format_string
+[3.4. Checking Text Directionality S. 9] Different Languages require different Text alignment => use unicode regex to identify textalignment (z.B. asiatische Zeichen => right to left alignment)
+[3.5. Loading and Propagating Translation S. 9] Texte/Worte/Phrasen sind ggf mehrfach verwendet => TM aus sourc-target-localisation-pairs (ursprünglich sprache - übersetzte sprache) => internes "dictionary"
+Problem: Was ist wenn gleiches Wort in Originalsprache i.d. übersetzung auf Unterschiedliche gemapped werden soll oder umgekehrt (1->n oder n->1) => contextabhängig (z.b. jmd. umfahre => drive over s.b. or drive around s.b.)
+[3.6. The Evolving DOM Problem] Sourcecode wird geupdated => localised item wird relocated => sollte dennoch localised bleiben => wenn man über xpath geht muss diesere updated werden => der alte xpath wird nicht mehr referenziert => ändern zum neuen mit der geringsten distanz(Levinsthein) zum alten

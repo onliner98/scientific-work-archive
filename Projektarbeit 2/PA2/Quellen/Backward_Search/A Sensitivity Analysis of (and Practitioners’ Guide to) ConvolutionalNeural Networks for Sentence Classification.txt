@@ -1,0 +1,24 @@
+Introduction
+- CNNs have performed well on sentence classification (Kim,2014; Kalchbrenner et al., 2014; Johnsonand Zhang,  2014)
+CNN Architecture
+- Input: Sentencematrix A sxd: each row is a wordembeddingvector e.g. GloVe/Word2Vec s:sentence length d:wordvector dim
+- Use Kernels/Filters w hxd: width=d damit ein FIlter immer ganze wörter sieht => only vary the filter height h(=region size)
+- Feature Maps (output of cnn layer) cs:
+  - c=f(o+b) => Aktivation function f and bias on the convolutions deliver all feature maps
+  - o=w*A[i:i+h-1] => Convolution Kernel über Teil der Matrix A
+- 1 max pooling: (Boureau et al.2010b) takes all feature maps into one vector
+- this vector is used as input for a softmax classifier
+- applie dropout (Hinton et al 2012)
+Conclusion
+- the same model trained the same acchieves different accuracys => variance due to SGD and initialisation
+- WordEmbeddings can improve performance especially if you have few data but dont have to
+- filter region size/number of feature maps can hava a large effect on performance
+- 1-max pooling has the best results compared to other pooling strategies
+- regularization has few effect
+Practitioners Advise
+- basic model: input: word2vec; filter region sizes: 3,4,5; feature Maps: 100; act.fkt.:ReLu; pooling:1-max; dropout:0.5;l2 norm constraints 3;
+- line search the filter region sizes (1 to 10 or more for longer texts)
+- alter num feature maps for each filter region size from 100 to 600
+  - if the optimum is near 600 search even higher num featuremaps
+  - use low dropout rate 0-0.5 at the start and crank it up the more featuremaps you use
+- ReLu and Tanh are the best act. fkt. overall

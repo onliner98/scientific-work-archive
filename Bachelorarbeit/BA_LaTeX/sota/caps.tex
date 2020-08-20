@@ -1,0 +1,50 @@
+Capsule networks are neural networks utilizing capsules. A capsule is a group of neurons. A capsule detects the properties of a specific object, e.g., rectangle. These properties are called instantiation parameters, e.g., position. If capsules are stacked, a higher-level capsule detects objects composed of objects detected by lower-level capsules in a specific relation. Capsules detecting an object are called active. For a given input, a capsule is active if the corresponding object is present. Hence, the activated capsules of a network form a tree carved out of the network. The mechanism deciding which capsule is activated is called routing mechanism.
+Capsules and routing mechanism can be implemented in various ways. If an object represented by a capsule is present, the capsule is called active. \autocite{Sabour.2017}
+\par
+The best-performing capsule network found in the course of the literature review is \cite{Sabour.2017}'s CapsNet. \autocite{Sabour.2017}
+\par
+%capsule implementation
+\cite{Sabour.2017} implement capsules by representing the instantiation parameters of an object as a vector. The existence of an object is represented by a probability. The probability is represented by the length of the output vector of the capsule. Therefore, the length must be in the range of $[0;1]$. \autocite{Sabour.2017}
+%
+Capsules in the first layer of capsules are called primary capsules. Primary capsules are implemented as a convolutional layer using the $squash$ activation function defined by Equation \eqref{eq:squash}. \autocite{Sabour.2017}
+\begin{equation}
+	\label{eq:squash}
+	squash(x) = \frac{||x||^2}{1+||x||^2} \frac{x}{||x||}
+\end{equation}
+Given the log probability $b_{ij}$ of capsule $i$ in layer $l$ coupling with capsule $j$ in layer $l+1$ and the input $u_i$ of capsule $j$, the output vector $v_j$ of a capsule $j$ is computed as described by Equation \eqref{eq:capsule}. The coupling coefficient $c_{ij}$ determines whether or not capsules~$i$ and $j$ are coupled. For example, $c_{ij}=0$ means $i$ and $j$ are not coupled. Coupling is implemented by weighting the inputs by the coupling coefficients, see $s_j$ in Equation \eqref{eq:capsule}. The $squash$ activation function scales the magnitude of a vector in the range~of~$[0;1]$ while leaving its orientation unchanged. \autocite{Sabour.2017}
+\begin{equation}
+	\label{eq:capsule}
+	\begin{array}{lcl}
+		v_j & = & squash(s_j)\\
+		s_j & = & \sum_{i} c_{ij} \hat{u}_{ji}\\
+		\hat{u}_{ji} & = & W_{ij} u_i\\
+		c_{ij} & = & softmax(b_{ij})
+	\end{array}
+\end{equation}
+\par
+%routing implementation
+\cite{Sabour.2017} implement a routing mechanism called dynamic routing mechanism. Active capsules of a layer predict the output (instantiation parameters) of a capsule in the next layer. When multiple predictions agree, the capsule becomes active.
+This mechanism is implemented as follows: Initially, the output of all capsules is routed to all capsules in the succeeding layer. The prediction is computed by multiplying the output of a capsule by a weight matrix. The level of agreement is measured by the scalar product of prediction and actual output. A huge scalar product increases the coupling of the corresponding capsules while decreasing the other couplings. This is repeated $r$ times. Dynamic routing between capsules is formalized in Algorithm \ref{alg:routing}. \autocite{Sabour.2017}
+\begin{algorithm}[H]
+	\caption{Dynamic Routing Between Capsules}
+	\label{alg:routing}
+	\begin{algorithmic}[1]
+		\Procedure{Routing}{$\hat{u}_{ji}, r, l$}%tectsc?
+			\State for all capsules $i$ in layer $l$ and capsules $j$ in layer $l+1$: $b_{ij} \gets 0$
+			\For{$r$ iterations}
+				\State for all capsules $i$ in layer $l$: $c_i \gets softmax(b_i)$
+				\State for all capsules $j$ in layer $l+1$: $s_j \gets \sum_{i} c_{ij} \hat{u}_{ji}$
+				\State for all capsules $j$ in layer $l+1$: $v_j \gets squash(s_j)$
+				\State for all capsules $i$ in layer $l$ and  capsules $j$ in layer $l+1$: $b_{ij} \gets b_{ij} + \hat{u}_{ji} v_j$
+			\EndFor
+			\State \textbf{return} $v_j$
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+\par
+%capsnet
+The input of CapsNet is a $28$-by-$28$-pixel, grayscale image. The output of CapsNet comprises the probabilities of the $c$ target classes. 
+CapsNet is comprised of a convolutional layer followed by $2$ capsule layers.\footnote{Note that for training CapsNet uses an auxiliary neural network on top. Such auxiliary training techniques are excluded from the scope of this paper, see Section \ref{sec:scope}. Thus, they are not discussed further.}
+%
+The convolutional layer has $256$~kernels of size~$9$, a stride of~$1$, and the \ac{ReLU} activation function.
+The primary capsules have $32$~kernels of size~$9$ and a stride~of~$2$. Each primary capsule is composed of $8$~kernels. The final capsule layer is comprised of $c$~capsules. Each capsule is composed of $16$~neurons.  Routing is only applied between the capsule layers. \autocite{Sabour.2017}

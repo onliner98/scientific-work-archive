@@ -1,0 +1,4 @@
+Text classification using:
+- CNN
+- RNN
+- proposed Model: CNN over sentence matrix RNN over column/row of cnn output (instead of pooling)

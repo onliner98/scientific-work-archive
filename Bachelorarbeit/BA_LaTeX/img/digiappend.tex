@@ -1,0 +1,44 @@
+% Alternativ in paragraphen oder Listen Strukturieren
+\begin{xltabular}{\textwidth}{llX}\toprule
+	\caption{Digital Appendix} \label{tab:digiappend}\\
+	\textbf{Name} & \textbf{Path} & \textbf{Description} \\\midrule \endhead
+	%
+	\ac{TIC Dataset} & \url{D/dataset} & This folder contains the images of the \ac{TIC Dataset} and its license. The images~are structured in six folders. Each folder contains the images of one class. The folder is named after the class.\\\midrule
+	%
+	Dataset Splitter & \url{D/split_dataset.py} & This file contains python code splitting the dataset into a training, validation, and test dataset.\\\midrule
+	%
+	Dataset Pre-Loader & \url{D/preload_dataset.py} & This file contains python code loading and storing the training, validation, and test dataset as arrays. For each of those splits, the images are loaded, resized to $224$ by $224$ pixels, and formatted as arrays. The resulting image arrays are stored in array X. For each image array, a class array is created. The class array is stored in array Y. Image array and corresponding class array share the same index. In consequence, six arrays are created, two for each split. These arrays are X Train, Y Train, X Val, Y Val, X Test, and Y Test.\\\midrule
+	%
+	X Train & \url{D/x_train.npy} & This file contains an array of resized image arrays of the training dataset. The images are resized to $224$ by $224$ pixels.\\\midrule
+	%
+	Y Train & \url{D/y_train.npy} & This file contains an array of class arrays of the training dataset.\\\midrule
+	%
+	X Val & \url{D/x_val.npy} & This file contains an array of resized image arrays of the validation dataset. The images are resized to $224$ by $224$ pixels.\\\midrule
+	%
+	Y Val & \url{D/y_val.npy} & This file contains an array of class arrays of the validation dataset.\\\midrule
+	%
+	X Test & \url{D/x_test.npy} & This file contains an array of resized image arrays of the test dataset. The images are resized to $224$ by $224$ pixels.\\\midrule
+	%
+	Y Test & \url{D/y_test.npy} & This file contains an array of class arrays of the test dataset.\\\midrule
+	%
+	VGG-19 Code & \url{D/vgg.py} & This file contains python code implementing VGG-19.\\\midrule
+	%
+	ResNet-152 Code & \url{D/resnet.py} & This file contains python code implementing ResNet-152.\\\midrule
+	%
+	ResNeXt-101 Code & \url{D/resnext.py} & This file contains python code implementing ResNeXt-101.\\\midrule
+	%
+	DenseNet-264 Code & \url{D/densenet.py} & This file contains python code implementing Dense\-Net-264.\\\midrule
+	%
+	EfficientNet-B7 Code & \url{D/efficientnet.py} & This file contains python code implementing Efficient\-Net-B7.\\\midrule
+	%
+	Train VGG-19 & \url{D/train_vgg.py} & This file contains python code training and evaluating VGG-19.\\\midrule
+	%
+	Train ResNet-152 & \url{D/train_resnet.py} & This file contains python code training and evaluating ResNet-152.\\\midrule
+	%
+	Train ResNeXt-101 & \url{D/train_resnext.py} & This file contains python code training and evaluating ResNeXt-101.\\\midrule
+	%
+	Train DenseNet-264 & \url{D/train_densenet.py} & This file contains python code training and evaluating DenseNet-264.\\\midrule
+	%
+	Train EfficientNet-B7 & \url{D/train_efficientnet.py} & This file contains python code training and evaluating EfficientNet-B7.
+	\\\bottomrule
+\end{xltabular}

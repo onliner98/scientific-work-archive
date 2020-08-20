@@ -1,0 +1,2 @@
+Object Detection => Dazu gehört auch die Klassifizierung
+Architektur: R-CNN R bedeutet Regional Proposal (Non CNN schlägt bounding box vor, CNN korrigiert/verwirft Bounding Box)

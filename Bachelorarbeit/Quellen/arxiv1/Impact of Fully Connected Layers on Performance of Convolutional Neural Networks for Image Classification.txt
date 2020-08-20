@@ -1,0 +1,7 @@
+Untersucht Tiefe und Breite von CNNs und Tiefe und Breite von FullyConnectedLayers on Top of CNN
+Results:
+- Deeper CNNs perform better than shallow models overdeeper datasets and vice versa
+- Shallow CNNs need wider/more FC Layers, while deeper CNNs need smaller/less FC layers
+- more FC Layers for deeper Datasets(finegrained classes) wider FC Layers for wider Datasets(man broad classes)
+
+Used Architecture: CNN

@@ -1,0 +1,3 @@
+Image Classification robustness examination
+
+Used Architectures: AlexNet [1], VGG [18], Inception-v1 [19], Inception-v2 [25], Inception-v3 [26], Inception-v4 [27], Inception-ResNet-v2 [27], ResNet [30], DenseNet [21], MobileNet [22], NASNet [23]

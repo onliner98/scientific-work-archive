@@ -1,0 +1,4 @@
+ImageNet, CIFAR-10, SVHN
+
+Used Architectures: ResNet, WRN, ShakeShake[https://arxiv.org/pdf/1708.04552.pdf=>https://arxiv.org/abs/1705.07485]
+

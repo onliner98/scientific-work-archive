@@ -1,0 +1,1 @@
+Esemeble of CNNS => different CNNs vote per majority vote for the correct class

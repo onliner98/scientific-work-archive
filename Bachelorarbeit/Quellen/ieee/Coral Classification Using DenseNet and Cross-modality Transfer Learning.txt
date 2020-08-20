@@ -1,0 +1,3 @@
+Coral Image Classification & pre-training with Generative Adveserial Networks(GAN)
+
+Used Architecture: DenseNet

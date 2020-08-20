@@ -1,0 +1,23 @@
+%\cube{x offset}{y offset}{width}{height}{depth}{color}{fillcolor}
+
+\begin{tikzpicture}[
+cell/.style={
+	rectangle, 
+	rounded corners=2mm, 
+	draw,
+	very thick,
+	align=center,
+},
+ArrowC1/.style={% Arrows with rounded corners
+	rounded corners=.25cm,
+	thick,
+},
+]
+\cube{0}{0}{1}{4}{4}{black}{gray}
+\node[cell] (layer) at (4,-2,-2) {Convolutional Layer};
+\cube{9}{0}{1}{4}{4}{black}{gray}
+
+\draw[-latex,ArrowC1] (0,-2,-2) -- (layer);
+\draw[-latex,ArrowC1] (layer) -- (8,-2,-2);
+
+\end{tikzpicture}

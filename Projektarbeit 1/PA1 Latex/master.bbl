@@ -1,0 +1,2237 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Asnes.2010}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=eb43f849fecd8e5f931f9b8f904ebffc}{%
+           family={Asnes},
+           familyi={A\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {GALA}%
+      }
+      \strng{namehash}{eb43f849fecd8e5f931f9b8f904ebffc}
+      \strng{fullhash}{eb43f849fecd8e5f931f9b8f904ebffc}
+      \strng{bibnamehash}{eb43f849fecd8e5f931f9b8f904ebffc}
+      \strng{authorbibnamehash}{eb43f849fecd8e5f931f9b8f904ebffc}
+      \strng{authornamehash}{eb43f849fecd8e5f931f9b8f904ebffc}
+      \strng{authorfullhash}{eb43f849fecd8e5f931f9b8f904ebffc}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internationalization Basics for Non-Engineers}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://www.gala-global.org/ondemand/internationalization-basics-non-engineers
+      \endverb
+      \verb{url}
+      \verb https://www.gala-global.org/ondemand/internationalization-basics-non-engineers
+      \endverb
+    \endentry
+    \entry{Barrachina.2009}{article}{}
+      \name{author}{11}{}{%
+        {{uniquename=0,uniquepart=base,hash=79ad6e2b373faef286c3e37aefa38fb9}{%
+           family={Barrachina},
+           familyi={B\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=81074143ce91649a632bbe4478e3a136}{%
+           family={Bender},
+           familyi={B\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=31d6ff484b01fbebe1dbbd3b9999fc98}{%
+           family={Casacuberta},
+           familyi={C\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c19c93afbb66fc53b58e56ff8a574580}{%
+           family={Civera},
+           familyi={C\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cababe188636c02afe26710740c20343}{%
+           family={Cubel},
+           familyi={C\bibinitperiod},
+           given={Elsa},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b6167b9e463131431c48b836f04daa29}{%
+           family={Khadivi},
+           familyi={K\bibinitperiod},
+           given={Shahram},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5d5e27d60790587a0125cef7593f920c}{%
+           family={Lagarda},
+           familyi={L\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cf68a4c2b64db77cc898cdc9fbdeb0c4}{%
+           family={Ney},
+           familyi={N\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ac662f94890522717a146348b1305dbf}{%
+           family={Tom{á}s},
+           familyi={T\bibinitperiod},
+           given={Jes{ú}s},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c300fc143e52bc64946e1ac739f3d802}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a4d9d70e0e9677f8ccd8ddcc6353dcf7}{%
+           family={Vilar},
+           familyi={V\bibinitperiod},
+           given={Juan-Miguel},
+           giveni={J\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{621bcfa773b56020b38805b7a23e7244}
+      \strng{fullhash}{2a0e0ce673675e557778c87c9417fe5e}
+      \strng{bibnamehash}{621bcfa773b56020b38805b7a23e7244}
+      \strng{authorbibnamehash}{621bcfa773b56020b38805b7a23e7244}
+      \strng{authornamehash}{621bcfa773b56020b38805b7a23e7244}
+      \strng{authorfullhash}{2a0e0ce673675e557778c87c9417fe5e}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0891-2017}
+      \field{journaltitle}{Computational Linguistics}
+      \field{number}{1}
+      \field{title}{Statistical Approaches to Computer-Assisted Translation}
+      \field{volume}{35}
+      \field{year}{2009}
+      \field{pages}{3\bibrangedash 28}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1162/coli.2008.07-055-R2-06-29
+      \endverb
+    \endentry
+    \entry{BernersLee.2005}{misc}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=b22a2ed3c5ac70bd939697905eb8a100}{%
+           family={Berners-Lee},
+           familyi={B\bibinithyphendelim L\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=db238d6aa1916b7ebc54a548e5f7386e}{%
+           family={Fielding},
+           familyi={F\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=b4bceb50f476c5438096ae0c9005d054}{%
+           family={Masinter},
+           familyi={M\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8156eae38e17275f0d4e90ae1051c2ab}{%
+           family={IETF},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{310acffdc5a4898f712e4c4b375a5733}
+      \strng{fullhash}{310acffdc5a4898f712e4c4b375a5733}
+      \strng{bibnamehash}{310acffdc5a4898f712e4c4b375a5733}
+      \strng{authorbibnamehash}{310acffdc5a4898f712e4c4b375a5733}
+      \strng{authornamehash}{310acffdc5a4898f712e4c4b375a5733}
+      \strng{authorfullhash}{310acffdc5a4898f712e4c4b375a5733}
+      \strng{editorbibnamehash}{8156eae38e17275f0d4e90ae1051c2ab}
+      \strng{editornamehash}{8156eae38e17275f0d4e90ae1051c2ab}
+      \strng{editorfullhash}{8156eae38e17275f0d4e90ae1051c2ab}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Uniform Resource Identifier (URI) Generic Syntax}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://www.ietf.org/rfc/rfc3986.txt
+      \endverb
+      \verb{url}
+      \verb https://www.ietf.org/rfc/rfc3986.txt
+      \endverb
+    \endentry
+    \entry{Bray.2008}{misc}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=3e2f0f38495aebf8b91a698c2ccbfae3}{%
+           family={Bray},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9214441ae3faa5e08a8e45546e290045}{%
+           family={Paoli},
+           familyi={P\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2786d79d086b6b914f480030f68f8f44}{%
+           family={Sperberg-McQueen},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=54417844275122bb3acca0fe09b15690}{%
+           family={Maler},
+           familyi={M\bibinitperiod},
+           given={Eve},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=774086107d0f78c3633d78f96a63f7ca}{%
+           family={Yergeau},
+           familyi={Y\bibinitperiod},
+           given={Fran{ç}ois},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=446a1ae6601a5c59360c7d591c3992da}{%
+           family={W3C},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{3cdf7d889c90b0580e6b19b33ce9f83c}
+      \strng{fullhash}{5f390fd80afbbc24d67b80a95f023945}
+      \strng{bibnamehash}{3cdf7d889c90b0580e6b19b33ce9f83c}
+      \strng{authorbibnamehash}{3cdf7d889c90b0580e6b19b33ce9f83c}
+      \strng{authornamehash}{3cdf7d889c90b0580e6b19b33ce9f83c}
+      \strng{authorfullhash}{5f390fd80afbbc24d67b80a95f023945}
+      \strng{editorbibnamehash}{446a1ae6601a5c59360c7d591c3992da}
+      \strng{editornamehash}{446a1ae6601a5c59360c7d591c3992da}
+      \strng{editorfullhash}{446a1ae6601a5c59360c7d591c3992da}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Extensible Markup Language (XML) 1.0 (Fifth Edition)}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/xml/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/xml/
+      \endverb
+      \warn{\item Entry 'Bray.2008' (bibliography.bib): Invalid format '12.09.2018' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Crocker.2008}{misc}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=002ae2c14832261e08416ab7ef97d008}{%
+           family={Crocker},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=feb349f7cd7cca0fa92480ceca7ddcb2}{%
+           family={Overell},
+           familyi={O\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8156eae38e17275f0d4e90ae1051c2ab}{%
+           family={IETF},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{aac9a438bd9b00730654223de5903a21}
+      \strng{fullhash}{aac9a438bd9b00730654223de5903a21}
+      \strng{bibnamehash}{aac9a438bd9b00730654223de5903a21}
+      \strng{authorbibnamehash}{aac9a438bd9b00730654223de5903a21}
+      \strng{authornamehash}{aac9a438bd9b00730654223de5903a21}
+      \strng{authorfullhash}{aac9a438bd9b00730654223de5903a21}
+      \strng{editorbibnamehash}{8156eae38e17275f0d4e90ae1051c2ab}
+      \strng{editornamehash}{8156eae38e17275f0d4e90ae1051c2ab}
+      \strng{editorfullhash}{8156eae38e17275f0d4e90ae1051c2ab}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Augmented BNF for Syntax Specifications: ABNF}
+      \field{year}{2008}
+    \endentry
+    \entry{Mula.2018}{misc}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=5f7f1edd435cbf7fd8274ab26b0777d0}{%
+           family={De\bibnamedelima Mula},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Jes{ú}s},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=26e6f4e3e1f559c8f307a54515460fd7}{%
+           family={{Paul Janzen}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mannheim}%
+      }
+      \strng{namehash}{0085aca64a9896c290c3187edc8050af}
+      \strng{fullhash}{0085aca64a9896c290c3187edc8050af}
+      \strng{bibnamehash}{0085aca64a9896c290c3187edc8050af}
+      \strng{authorbibnamehash}{0085aca64a9896c290c3187edc8050af}
+      \strng{authornamehash}{0085aca64a9896c290c3187edc8050af}
+      \strng{authorfullhash}{0085aca64a9896c290c3187edc8050af}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Movilizer Gradle~Plugin: For~Movelet Development}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://honeywellprod.sharepoint.com/teams/MovilizerTraining/Movilizer%20Knowledge%20Transfer/Sessions/2018-08%20Movilizer%20Gradle%20PlugIn/2018-08-24%20Gradle%20Plugin.mp4?csf=1&e=unAxzt
+      \endverb
+      \verb{url}
+      \verb https://honeywellprod.sharepoint.com/teams/MovilizerTraining/Movilizer%20Knowledge%20Transfer/Sessions/2018-08%20Movilizer%20Gradle%20PlugIn/2018-08-24%20Gradle%20Plugin.mp4?csf=1&e=unAxzt
+      \endverb
+    \endentry
+    \entry{Ellison.1994}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7f19d75a5e5f6f2301d20c096254191f}{%
+           family={Ellison},
+           familyi={E\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7f19d75a5e5f6f2301d20c096254191f}
+      \strng{fullhash}{7f19d75a5e5f6f2301d20c096254191f}
+      \strng{bibnamehash}{7f19d75a5e5f6f2301d20c096254191f}
+      \strng{authorbibnamehash}{7f19d75a5e5f6f2301d20c096254191f}
+      \strng{authornamehash}{7f19d75a5e5f6f2301d20c096254191f}
+      \strng{authorfullhash}{7f19d75a5e5f6f2301d20c096254191f}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to SGML Concepts}
+      \field{year}{1994}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/369727
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/369727
+      \endverb
+    \endentry
+    \entry{Filip.2013}{misc}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,uniquepart=base,hash=b91f1148769d914d6cdd3bf8380b0dde}{%
+           family={Filip},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2d69fd26a41a3d0b056c41ae9f974867}{%
+           family={McCance},
+           familyi={M\bibinitperiod},
+           given={Shaun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=859ce436bda0121d99ebe9756c7055d9}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e5a54cdb578faadce95c02e5f6e58c29}{%
+           family={Lieske},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=40f5e8531cd430eecbabbec284f612d0}{%
+           family={Lommel},
+           familyi={L\bibinitperiod},
+           given={Arle},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6de77a95b11a783b3e09b5bff6506ac5}{%
+           family={Kosek},
+           familyi={K\bibinitperiod},
+           given={Jirka},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=583f7ea5601800b4deb6cd6462c70670}{%
+           family={Sasaki},
+           familyi={S\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f1e26326349d2ff67b63707d33335e0e}{%
+           family={Savourel},
+           familyi={S\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=446a1ae6601a5c59360c7d591c3992da}{%
+           family={W3C},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce31121fc9ea6ef5bb065bbb009563f3}
+      \strng{fullhash}{ce8937673d07287ba9523c95af9387be}
+      \strng{bibnamehash}{ce31121fc9ea6ef5bb065bbb009563f3}
+      \strng{authorbibnamehash}{ce31121fc9ea6ef5bb065bbb009563f3}
+      \strng{authornamehash}{ce31121fc9ea6ef5bb065bbb009563f3}
+      \strng{authorfullhash}{ce8937673d07287ba9523c95af9387be}
+      \strng{editorbibnamehash}{446a1ae6601a5c59360c7d591c3992da}
+      \strng{editornamehash}{446a1ae6601a5c59360c7d591c3992da}
+      \strng{editorfullhash}{446a1ae6601a5c59360c7d591c3992da}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internationalization Tag Set (ITS) Version 2.0}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/its20/#overview
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/its20/#overview
+      \endverb
+    \endentry
+    \entry{GALA.2008}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=867e8957fae1cb59f0808dbcc3aada27}{%
+           family={GALA},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{fullhash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{bibnamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editorbibnamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editornamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editorfullhash}{867e8957fae1cb59f0808dbcc3aada27}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Systems to manage terminology, knowledge , and content - TermBase eXchange (TBX)}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://www.gala-global.org/sites/default/files/uploads/pdfs/tbx_oscar_0.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.gala-global.org/sites/default/files/uploads/pdfs/tbx_oscar_0.pdf
+      \endverb
+    \endentry
+    \entry{GNU.}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b7e89d55aa08a289aa48277386e6ff1d}{%
+           family={GNU},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7e89d55aa08a289aa48277386e6ff1d}
+      \strng{fullhash}{b7e89d55aa08a289aa48277386e6ff1d}
+      \strng{bibnamehash}{b7e89d55aa08a289aa48277386e6ff1d}
+      \strng{editorbibnamehash}{b7e89d55aa08a289aa48277386e6ff1d}
+      \strng{editornamehash}{b7e89d55aa08a289aa48277386e6ff1d}
+      \strng{editorfullhash}{b7e89d55aa08a289aa48277386e6ff1d}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{GNU gettext utilities}
+      \verb{urlraw}
+      \verb https://www.gnu.org/software/gettext/manual/gettext.html#Aspects
+      \endverb
+      \verb{url}
+      \verb https://www.gnu.org/software/gettext/manual/gettext.html#Aspects
+      \endverb
+    \endentry
+    \entry{HassellCorbiell.2001}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9a0010f1c77c3a282ab3ea1855187df4}{%
+           family={Hassell-Corbiell},
+           familyi={H\bibinithyphendelim C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Piscataway, NJ}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9a0010f1c77c3a282ab3ea1855187df4}
+      \strng{fullhash}{9a0010f1c77c3a282ab3ea1855187df4}
+      \strng{bibnamehash}{9a0010f1c77c3a282ab3ea1855187df4}
+      \strng{authorbibnamehash}{9a0010f1c77c3a282ab3ea1855187df4}
+      \strng{authornamehash}{9a0010f1c77c3a282ab3ea1855187df4}
+      \strng{authorfullhash}{9a0010f1c77c3a282ab3ea1855187df4}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IPCC 2001}
+      \field{isbn}{0-7803-7209-3}
+      \field{title}{Developing Globally Correct Content for International Audiences}
+      \field{year}{2001}
+      \field{pages}{421\bibrangedash 424}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/IPCC.2001.971590
+      \endverb
+    \endentry
+    \entry{Hoda.2015}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b4f0fa55f07ee2bc7213b5fd2f62b29d}{%
+           family={Hoda},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi N.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{4}{%
+        {Bharati Vidyapeeth's Institute of Computers Applications and Management}%
+        {Institute of Electrical and Electronics Engineers}%
+        {International Conference on Computing for Sustainable Global Development}%
+        {INDIACom}%
+      }
+      \list{location}{1}{%
+        {Piscataway, NJ}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b4f0fa55f07ee2bc7213b5fd2f62b29d}
+      \strng{fullhash}{b4f0fa55f07ee2bc7213b5fd2f62b29d}
+      \strng{bibnamehash}{b4f0fa55f07ee2bc7213b5fd2f62b29d}
+      \strng{authorbibnamehash}{b4f0fa55f07ee2bc7213b5fd2f62b29d}
+      \strng{authornamehash}{b4f0fa55f07ee2bc7213b5fd2f62b29d}
+      \strng{authorfullhash}{b4f0fa55f07ee2bc7213b5fd2f62b29d}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-9-3805-4416-8}
+      \field{title}{2nd International Conference on Computing for Sustainable Global Development (INDIACom), 2015: New Delhi, India, 11 - 13 March 2015}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/servlet/opac?punumber=7088896
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/servlet/opac?punumber=7088896
+      \endverb
+    \endentry
+    \entry{ISO.2006}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5b512ee8a59deb284ad0a6a035ba10b1}{%
+           family={ISO},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{fullhash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{bibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{editorbibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{editornamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{editorfullhash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 19757-4:2006: Information Technology - Document Schema Definition Languages (DSDL) - Part 4 Namespace-based Validation Dispatching Language (NVDL}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://www.iso.org/standard/38615.html
+      \endverb
+      \verb{url}
+      \verb https://www.iso.org/standard/38615.html
+      \endverb
+    \endentry
+    \entry{Korenjak.1969}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2275aa1497ffd598476a89d1dc902457}{%
+           family={Korenjak},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2275aa1497ffd598476a89d1dc902457}
+      \strng{fullhash}{2275aa1497ffd598476a89d1dc902457}
+      \strng{bibnamehash}{2275aa1497ffd598476a89d1dc902457}
+      \strng{authorbibnamehash}{2275aa1497ffd598476a89d1dc902457}
+      \strng{authornamehash}{2275aa1497ffd598476a89d1dc902457}
+      \strng{authorfullhash}{2275aa1497ffd598476a89d1dc902457}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00010782}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{11}
+      \field{title}{A Practical Method for Constructing LR (K) Processors}
+      \field{volume}{12}
+      \field{year}{1969}
+      \field{pages}{613\bibrangedash 623}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1145/363269.363281
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org.ezproxy-dhma-2.redi-bw.de/10.1145/363269.363281
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org.ezproxy-dhma-2.redi-bw.de/10.1145/363269.363281
+      \endverb
+      \keyw{ALGOL;context-free language;deterministic language;language processor;LR(k) grammar;parser;syntactic analysis;syntax-directed compiler}
+    \endentry
+    \entry{Leiva.2015}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4d9d4b41f9149f42db4094cc761af822}{%
+           family={Leiva},
+           familyi={L\bibinitperiod},
+           given={Luis\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=931b66c24c9e828a8d05ebbf13944b3e}{%
+           family={Alabau},
+           familyi={A\bibinitperiod},
+           given={Vicent},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48e2d0e979b81b6090f0f593847aa700}
+      \strng{fullhash}{48e2d0e979b81b6090f0f593847aa700}
+      \strng{bibnamehash}{48e2d0e979b81b6090f0f593847aa700}
+      \strng{authorbibnamehash}{48e2d0e979b81b6090f0f593847aa700}
+      \strng{authornamehash}{48e2d0e979b81b6090f0f593847aa700}
+      \strng{authorfullhash}{48e2d0e979b81b6090f0f593847aa700}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{10730516}
+      \field{journaltitle}{ACM Transactions on Computer-Human Interaction}
+      \field{number}{3}
+      \field{title}{Automatic Internationalization for Just In Time Localization of Web-Based User Interfaces}
+      \field{volume}{22}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 32}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1145/2701422
+      \endverb
+    \endentry
+    \entry{Mauro.1999}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=97caa850c55c8a36a78bc698ff0fbed7}{%
+           family={Mauro},
+           familyi={M\bibinitperiod},
+           given={Pancrazio},
+           giveni={P\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{97caa850c55c8a36a78bc698ff0fbed7}
+      \strng{fullhash}{97caa850c55c8a36a78bc698ff0fbed7}
+      \strng{bibnamehash}{97caa850c55c8a36a78bc698ff0fbed7}
+      \strng{authorbibnamehash}{97caa850c55c8a36a78bc698ff0fbed7}
+      \strng{authornamehash}{97caa850c55c8a36a78bc698ff0fbed7}
+      \strng{authorfullhash}{97caa850c55c8a36a78bc698ff0fbed7}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1075-3583}
+      \field{journaltitle}{Linux J}
+      \field{number}{59es}
+      \field{title}{Internationalizing Messages in Linux Programs}
+      \field{volume}{1999}
+      \field{year}{1999}
+      \verb{urlraw}
+      \verb http://dl.acm.org/citation.cfm?id=327697.327701
+      \endverb
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?id=327697.327701
+      \endverb
+    \endentry
+    \entry{McCormick.2002}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4df8aad2d4181a179c2bd8215c96f88e}{%
+           family={{McCormick, M., Susan}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4df8aad2d4181a179c2bd8215c96f88e}
+      \strng{fullhash}{4df8aad2d4181a179c2bd8215c96f88e}
+      \strng{bibnamehash}{4df8aad2d4181a179c2bd8215c96f88e}
+      \strng{authorbibnamehash}{4df8aad2d4181a179c2bd8215c96f88e}
+      \strng{authornamehash}{4df8aad2d4181a179c2bd8215c96f88e}
+      \strng{authorfullhash}{4df8aad2d4181a179c2bd8215c96f88e}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Translating and the Computer 22: Proceedings of the Twenty-second international conference...16-17 November 2000. (London: Aslib, 2000)]}
+      \field{title}{Exchanging Lexical and Terminological Data with OLIF2}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb http://www.mt-archive.info/00/Aslib-2000-McCormick.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.mt-archive.info/00/Aslib-2000-McCormick.pdf
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2015b}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to MEL execution}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC21DRAFT/Introduction++to+MEL+execution
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC21DRAFT/Introduction++to+MEL+execution
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2015}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Movilizer XML reference}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC24/Movilizer+XML+reference
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC24/Movilizer+XML+reference
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2016c}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Epsilon screen}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC21/Epsilon+screen
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC21/Epsilon+screen
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2016b}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {https://devtools.movilizer.com/confluence/display/DOC24/masterdata+element}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{masterdata element}
+      \field{year}{2016}
+    \endentry
+    \entry{Nitschkowski.2016}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{text element}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC23/text+element
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC23/text+element
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018f}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{concat methode}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/concat+method
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/concat+method
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018d}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to master data}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Introduction+to+master+data
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Introduction+to+master+data
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018c}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to the Movilizer}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Introduction+to+the+Movilizer
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Introduction+to+the+Movilizer
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018e}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to the Movilizer Expression Language}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Introduction+to+the+Movilizer+Expression+Language
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Introduction+to+the+Movilizer+Expression+Language
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018h}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MEL methods}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/MEL+methods
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/MEL+methods
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018b}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Message screen}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Message+screen
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/Message+screen
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{setAnswerValueByClientKey method}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/setAnswerValueByClientKey+method
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/setAnswerValueByClientKey+method
+      \endverb
+    \endentry
+    \entry{Nitschkowski.2018g}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1760e1e856f3f43d6c4b8f3d18aaa7c4}{%
+           family={Nitschkowski},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8f1754028ac309c1b4eaaf318af20e1d}{%
+           family={Movilizer},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{fullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{bibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorbibnamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authornamehash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{authorfullhash}{1760e1e856f3f43d6c4b8f3d18aaa7c4}
+      \strng{editorbibnamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editornamehash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \strng{editorfullhash}{8f1754028ac309c1b4eaaf318af20e1d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{String MEL values}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/String+MEL+values
+      \endverb
+      \verb{url}
+      \verb https://devtools.movilizer.com/confluence/display/DOC26/String+MEL+values
+      \endverb
+    \endentry
+    \entry{OBrien.2010}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=440e69e8051e20604ceb602d151f1b38}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Sharon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=444c79546c4590a7ab50f9fdf104fe8a}{%
+           family={O'Hagan},
+           familyi={O\bibinitperiod},
+           given={Minako},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0d867d03d028253d1dfe85a03ef128f0}{%
+           family={Flanagan},
+           familyi={F\bibinitperiod},
+           given={Marian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d0eb03562acd95df201257fb74e335f6}{%
+           family={Neerincx},
+           familyi={N\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3bb633287cecf681d819816ca270daf8}{%
+           family={Brinkman},
+           familyi={B\bibinitperiod},
+           given={Willem-Paul},
+           giveni={W\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, New York, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM Press}%
+      }
+      \strng{namehash}{38d5ff9c0994b7c4cc0cdcad34dd0cfb}
+      \strng{fullhash}{38d5ff9c0994b7c4cc0cdcad34dd0cfb}
+      \strng{bibnamehash}{38d5ff9c0994b7c4cc0cdcad34dd0cfb}
+      \strng{authorbibnamehash}{38d5ff9c0994b7c4cc0cdcad34dd0cfb}
+      \strng{authornamehash}{38d5ff9c0994b7c4cc0cdcad34dd0cfb}
+      \strng{authorfullhash}{38d5ff9c0994b7c4cc0cdcad34dd0cfb}
+      \strng{editorbibnamehash}{3b9834871dc9d0782fd4f3247e4f408f}
+      \strng{editornamehash}{3b9834871dc9d0782fd4f3247e4f408f}
+      \strng{editorfullhash}{3b9834871dc9d0782fd4f3247e4f408f}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 28th Annual European Conference on Cognitive Ergonomics - ECCE '10}
+      \field{isbn}{9781605589466}
+      \field{title}{Keeping an eye on the UI design of Translation Memory}
+      \field{year}{2010}
+      \field{pages}{187}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1145/1962300.1962338
+      \endverb
+    \endentry
+    \entry{Pooley.2008}{misc}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=a656fa5d857fe7b30ed7406f9e3430db}{%
+           family={Pooley},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b66ead8c85a4b72922f3cf5e17620905}{%
+           family={{Raya M. Rodolfo}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=867e8957fae1cb59f0808dbcc3aada27}{%
+           family={GALA},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae679690562536c844498892a677e4fe}
+      \strng{fullhash}{ae679690562536c844498892a677e4fe}
+      \strng{bibnamehash}{ae679690562536c844498892a677e4fe}
+      \strng{authorbibnamehash}{ae679690562536c844498892a677e4fe}
+      \strng{authornamehash}{ae679690562536c844498892a677e4fe}
+      \strng{authorfullhash}{ae679690562536c844498892a677e4fe}
+      \strng{editorbibnamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editornamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editorfullhash}{867e8957fae1cb59f0808dbcc3aada27}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SRX 2.0 Specification}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://www.gala-global.org/srx-20-april-7-2008
+      \endverb
+      \verb{url}
+      \verb https://www.gala-global.org/srx-20-april-7-2008
+      \endverb
+    \endentry
+    \entry{Presser.1972}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=2d321c97aa0ca87f73c378cfd261bf39}{%
+           family={Presser},
+           familyi={P\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a63a85d323de826e073d5b7ee301e30a}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f588faf07e8917ff603ba5fc34e58a8}
+      \strng{fullhash}{1f588faf07e8917ff603ba5fc34e58a8}
+      \strng{bibnamehash}{1f588faf07e8917ff603ba5fc34e58a8}
+      \strng{authorbibnamehash}{1f588faf07e8917ff603ba5fc34e58a8}
+      \strng{authornamehash}{1f588faf07e8917ff603ba5fc34e58a8}
+      \strng{authorfullhash}{1f588faf07e8917ff603ba5fc34e58a8}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{03600300}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{number}{3}
+      \field{title}{Linkers and Loaders}
+      \field{volume}{4}
+      \field{year}{1972}
+      \field{pages}{149\bibrangedash 167}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1145/356603.356605
+      \endverb
+    \endentry
+    \entry{Pressman.2005}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5622f69c9372e97f01330dfc7cd394fe}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, Mass}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{fullhash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{bibnamehash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{authorbibnamehash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{authornamehash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{authorfullhash}{5622f69c9372e97f01330dfc7cd394fe}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6th ed.}
+      \field{isbn}{0-07-285318-2}
+      \field{title}{Software engineering: A practitioner's approach}
+      \field{year}{2005}
+    \endentry
+    \entry{Reineke.2005}{book}{}
+      \name{editor}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=a2983775ad241ed4d5064bf1735969fc}{%
+           family={Reineke},
+           familyi={R\bibinitperiod},
+           given={Detlef},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=da2bdb5dd1bb18fa4decfeb0bd96b5ba}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Klaus-Dirk},
+           giveni={K\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {T{ü}bingen}%
+      }
+      \list{publisher}{1}{%
+        {gnv Narr}%
+      }
+      \strng{namehash}{788047c0c4910644424104706aa2ea67}
+      \strng{fullhash}{788047c0c4910644424104706aa2ea67}
+      \strng{bibnamehash}{788047c0c4910644424104706aa2ea67}
+      \strng{editorbibnamehash}{788047c0c4910644424104706aa2ea67}
+      \strng{editornamehash}{788047c0c4910644424104706aa2ea67}
+      \strng{editorfullhash}{788047c0c4910644424104706aa2ea67}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3823361562}
+      \field{title}{Einf{ü}hrung in die Softwarelokalisierung}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb http://www.iim.fh-koeln.de/lion2005
+      \endverb
+      \verb{url}
+      \verb http://www.iim.fh-koeln.de/lion2005
+      \endverb
+    \endentry
+    \entry{Reiner.1991}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=039d21630ec03a0371e66e6ad99d7941}{%
+           family={Reiner},
+           familyi={R\bibinitperiod},
+           given={Ulrike},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5d7906dfd9b9e0a75428b4eb361050a5}{%
+           family={{Deutsche Gesellschaft f{ü}r Dokumentation}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Frankfurt am Main}%
+      }
+      \strng{namehash}{039d21630ec03a0371e66e6ad99d7941}
+      \strng{fullhash}{039d21630ec03a0371e66e6ad99d7941}
+      \strng{bibnamehash}{039d21630ec03a0371e66e6ad99d7941}
+      \strng{authorbibnamehash}{039d21630ec03a0371e66e6ad99d7941}
+      \strng{authornamehash}{039d21630ec03a0371e66e6ad99d7941}
+      \strng{authorfullhash}{039d21630ec03a0371e66e6ad99d7941}
+      \strng{editorbibnamehash}{5d7906dfd9b9e0a75428b4eb361050a5}
+      \strng{editornamehash}{5d7906dfd9b9e0a75428b4eb361050a5}
+      \strng{editorfullhash}{5d7906dfd9b9e0a75428b4eb361050a5}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Informationswissenschaft der DGD}
+      \field{title}{Anfragesprachen f{ü}r Informationssysteme}
+      \field{year}{1991}
+    \endentry
+    \entry{Reynolds.2006}{misc}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=d8736e31f6b4745f4b4f04c4916beef2}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dfdeb4307d441305a5d58bacb10c1344}{%
+           family={Looby},
+           familyi={L\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c0955b5cece8f325041e1b1ee409d1df}{%
+           family={Flinter},
+           familyi={F\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8621030713bb46c3baa0d365a6358569}{%
+           family={Zydro{ń}},
+           familyi={Z\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d7517a73d73454f296e2083d37483c6d}{%
+           family={Bargary},
+           familyi={B\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5ecdb067fbd803aa99396580ad2432b8}{%
+           family={Martikainen},
+           familyi={M\bibinitperiod},
+           given={Magnus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=6ec60ab9ce327f5a12fbab109e691c73}{%
+           family={OASIS},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f2e3abc20df48ead418b9eeddae3a4f}
+      \strng{fullhash}{a7793931a2ee9a0864d27feaf496c197}
+      \strng{bibnamehash}{8f2e3abc20df48ead418b9eeddae3a4f}
+      \strng{authorbibnamehash}{8f2e3abc20df48ead418b9eeddae3a4f}
+      \strng{authornamehash}{8f2e3abc20df48ead418b9eeddae3a4f}
+      \strng{authorfullhash}{a7793931a2ee9a0864d27feaf496c197}
+      \strng{editorbibnamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{editornamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{editorfullhash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Translation Web Services Specification 1.0}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://www.oasis-open.org/committees/download.php/19160/trans-ws-spec-1.0.2.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.oasis-open.org/committees/download.php/19160/trans-ws-spec-1.0.2.pdf
+      \endverb
+    \endentry
+    \entry{Savourel.2005}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f1e26326349d2ff67b63707d33335e0e}{%
+           family={Savourel},
+           familyi={S\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=867e8957fae1cb59f0808dbcc3aada27}{%
+           family={GALA},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e26326349d2ff67b63707d33335e0e}
+      \strng{fullhash}{f1e26326349d2ff67b63707d33335e0e}
+      \strng{bibnamehash}{f1e26326349d2ff67b63707d33335e0e}
+      \strng{authorbibnamehash}{f1e26326349d2ff67b63707d33335e0e}
+      \strng{authornamehash}{f1e26326349d2ff67b63707d33335e0e}
+      \strng{authorfullhash}{f1e26326349d2ff67b63707d33335e0e}
+      \strng{editorbibnamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editornamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editorfullhash}{867e8957fae1cb59f0808dbcc3aada27}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TMX 1.4b}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://www.gala-global.org/tmx-14b
+      \endverb
+      \verb{url}
+      \verb https://www.gala-global.org/tmx-14b
+      \endverb
+    \endentry
+    \entry{Schmitz.2000}{book}{}
+      \name{editor}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=da2bdb5dd1bb18fa4decfeb0bd96b5ba}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Klaus-Dirk},
+           giveni={K\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e991b0a752854e1a0588bf2ae120f537}{%
+           family={Wahle},
+           familyi={W\bibinitperiod},
+           given={Kirsten},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {T{ü}bingen}%
+      }
+      \list{publisher}{1}{%
+        {Stauffenburg-Verl.}%
+      }
+      \strng{namehash}{b15dbd7573b6d05fcd3833a18d33febf}
+      \strng{fullhash}{b15dbd7573b6d05fcd3833a18d33febf}
+      \strng{bibnamehash}{b15dbd7573b6d05fcd3833a18d33febf}
+      \strng{editorbibnamehash}{b15dbd7573b6d05fcd3833a18d33febf}
+      \strng{editornamehash}{b15dbd7573b6d05fcd3833a18d33febf}
+      \strng{editorfullhash}{b15dbd7573b6d05fcd3833a18d33febf}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3860570714}
+      \field{series}{Stauffenburg-Handb{ü}cher}
+      \field{title}{Softwarelokalisierung}
+      \field{year}{2000}
+      \keyw{Softwareengineering;Softwarelokalisation}
+    \endentry
+    \entry{Schnabel.2014}{misc}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=45afdbc11a39e6ec29f3c21bb6ad1d92}{%
+           family={Schnabel},
+           familyi={S\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f986013762b1e1523dbd4771cbf1eb5b}{%
+           family={Comerford},
+           familyi={C\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b91f1148769d914d6cdd3bf8380b0dde}{%
+           family={Filip},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b66ead8c85a4b72922f3cf5e17620905}{%
+           family={{Raya M. Rodolfo}},
+           familyi={R\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=f1e26326349d2ff67b63707d33335e0e}{%
+           family={Savourel},
+           familyi={S\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=6ec60ab9ce327f5a12fbab109e691c73}{%
+           family={OASIS},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{a597d437f46147ea8ae1e4594396fc63}
+      \strng{fullhash}{4a397bf6f72c05cef47d7a6240298b38}
+      \strng{bibnamehash}{a597d437f46147ea8ae1e4594396fc63}
+      \strng{authorbibnamehash}{a597d437f46147ea8ae1e4594396fc63}
+      \strng{authornamehash}{a597d437f46147ea8ae1e4594396fc63}
+      \strng{authorfullhash}{4a397bf6f72c05cef47d7a6240298b38}
+      \strng{editorbibnamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{editornamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{editorfullhash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{XLIFF Version 2.0}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://docs.oasis-open.org/xliff/xliff-core/v2.0/xliff-core-v2.0.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oasis-open.org/xliff/xliff-core/v2.0/xliff-core-v2.0.html
+      \endverb
+    \endentry
+    \entry{Sintoris.2017}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=c000c648e2db0f6bf5927cd879aa7331}{%
+           family={Sintoris},
+           familyi={S\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9ade9344e7c2d9df2efe899ffeb87c5b}{%
+           family={Vergidis},
+           familyi={V\bibinitperiod},
+           given={Kostas},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{15213b174890d2aa04d89b6ebaef6958}
+      \strng{fullhash}{15213b174890d2aa04d89b6ebaef6958}
+      \strng{bibnamehash}{15213b174890d2aa04d89b6ebaef6958}
+      \strng{authorbibnamehash}{15213b174890d2aa04d89b6ebaef6958}
+      \strng{authornamehash}{15213b174890d2aa04d89b6ebaef6958}
+      \strng{authorfullhash}{15213b174890d2aa04d89b6ebaef6958}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE 19th Conference on Business Informatics (CBI)}
+      \field{isbn}{978-1-5386-3035-8}
+      \field{title}{Extracting Business Process Models Using Natural Language Processing (NLP) Techniques}
+      \field{year}{2017}
+      \field{pages}{135\bibrangedash 139}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/CBI.2017.41
+      \endverb
+    \endentry
+    \entry{Sommerville.2007}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=70341b3bfcce7026902f4eb1e4111b58}{%
+           family={Sommerville},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Harlow}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{fullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{bibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorbibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authornamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorfullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8. ed.}
+      \field{isbn}{0321313798}
+      \field{series}{International computer science series}
+      \field{title}{Software engineering}
+      \field{year}{2007}
+    \endentry
+    \entry{Suresh.2018}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=71e7d68dd185208c9c23e5e91536c862}{%
+           family={Suresh},
+           familyi={S\bibinitperiod},
+           given={Aparna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1a7d249c61ab90c55bfdfe0e3c6a6de3}{%
+           family={George},
+           familyi={G\bibinitperiod},
+           given={A.K},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b210150087ad062dce201ccaec70bcaa}
+      \strng{fullhash}{b210150087ad062dce201ccaec70bcaa}
+      \strng{bibnamehash}{b210150087ad062dce201ccaec70bcaa}
+      \strng{authorbibnamehash}{b210150087ad062dce201ccaec70bcaa}
+      \strng{authornamehash}{b210150087ad062dce201ccaec70bcaa}
+      \strng{authorfullhash}{b210150087ad062dce201ccaec70bcaa}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 Second International Conference on Inventive Communication and Computational Technologies (ICICCT)}
+      \field{isbn}{978-1-5386-1974-2}
+      \field{title}{Performance Analysis of Various Combination Sorting Algotirthms for Large Dataset to fit to a Multi-Core Architecture}
+      \field{year}{2018}
+      \field{pages}{51\bibrangedash 56}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICICCT.2018.8472956
+      \endverb
+    \endentry
+    \entry{Tykhomyrov.2002}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=bc275e7000742b822d4ca770e56c497d}{%
+           family={Tykhomyrov},
+           familyi={T\bibinitperiod},
+           given={Olexiy\bibnamedelima Ye},
+           giveni={O\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bc275e7000742b822d4ca770e56c497d}
+      \strng{fullhash}{bc275e7000742b822d4ca770e56c497d}
+      \strng{bibnamehash}{bc275e7000742b822d4ca770e56c497d}
+      \strng{authorbibnamehash}{bc275e7000742b822d4ca770e56c497d}
+      \strng{authornamehash}{bc275e7000742b822d4ca770e56c497d}
+      \strng{authorfullhash}{bc275e7000742b822d4ca770e56c497d}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1075-3583}
+      \field{journaltitle}{Linux J}
+      \field{number}{103}
+      \field{title}{Introduction to Internationalization Programming}
+      \field{volume}{2002}
+      \field{year}{2002}
+      \field{pages}{3\bibrangedash}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb http://dl.acm.org.ezproxy-dhma-1.redi-bw.de/citation.cfm?id=583910.583913
+      \endverb
+      \verb{url}
+      \verb http://dl.acm.org.ezproxy-dhma-1.redi-bw.de/citation.cfm?id=583910.583913
+      \endverb
+    \endentry
+    \entry{Unger.1968}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a536a329795f99bf48b9008667695a85}{%
+           family={Unger},
+           familyi={U\bibinitperiod},
+           given={Stephen\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a536a329795f99bf48b9008667695a85}
+      \strng{fullhash}{a536a329795f99bf48b9008667695a85}
+      \strng{bibnamehash}{a536a329795f99bf48b9008667695a85}
+      \strng{authorbibnamehash}{a536a329795f99bf48b9008667695a85}
+      \strng{authornamehash}{a536a329795f99bf48b9008667695a85}
+      \strng{authorfullhash}{a536a329795f99bf48b9008667695a85}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00010782}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{4}
+      \field{title}{A Global Parser for Context-free Phrase Structure Grammars}
+      \field{volume}{11}
+      \field{year}{1968}
+      \field{pages}{240\bibrangedash 247}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/362991.363001
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org.ezproxy-dhma-2.redi-bw.de/10.1145/362991.363001
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org.ezproxy-dhma-2.redi-bw.de/10.1145/362991.363001
+      \endverb
+      \keyw{context-free grammars;parser;syntactic analysis;syntax-directed compiler;translators}
+    \endentry
+    \entry{Wagner.2017}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4169d47493a4e9029ffa6bec9874b113}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Sascha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=867e8957fae1cb59f0808dbcc3aada27}{%
+           family={GALA},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4169d47493a4e9029ffa6bec9874b113}
+      \strng{fullhash}{4169d47493a4e9029ffa6bec9874b113}
+      \strng{bibnamehash}{4169d47493a4e9029ffa6bec9874b113}
+      \strng{authorbibnamehash}{4169d47493a4e9029ffa6bec9874b113}
+      \strng{authornamehash}{4169d47493a4e9029ffa6bec9874b113}
+      \strng{authorfullhash}{4169d47493a4e9029ffa6bec9874b113}
+      \strng{editorbibnamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editornamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editorfullhash}{867e8957fae1cb59f0808dbcc3aada27}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Think Global -- Act Local: Make use of i18n and l10n}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.gala-global.org/blog/think-global-%E2%80%93-act-local-make-use-i18n-and-l10n
+      \endverb
+      \verb{url}
+      \verb https://www.gala-global.org/blog/think-global-%E2%80%93-act-local-make-use-i18n-and-l10n
+      \endverb
+    \endentry
+    \entry{Wang.2009}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=87100ee4184731e1623cf116d25726eb}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaoyin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=da9f7c9885c62f90094bae30cd44886c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a5af3fd070e8863cff031708de1a7916}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=956f039d247f4ec81d9bf499487c5015}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d87d836a72e85c57ba889ed64cfa4c34}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jiasu},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{0dac20a254ae74809800b3ff3ff0b95f}
+      \strng{fullhash}{046a9e84a341788356878378d986c060}
+      \strng{bibnamehash}{0dac20a254ae74809800b3ff3ff0b95f}
+      \strng{authorbibnamehash}{0dac20a254ae74809800b3ff3ff0b95f}
+      \strng{authornamehash}{0dac20a254ae74809800b3ff3ff0b95f}
+      \strng{authorfullhash}{046a9e84a341788356878378d986c060}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 31st International Conference on Software Engineering}
+      \field{isbn}{978-1-4244-3453-4}
+      \field{series}{ICSE '09}
+      \field{title}{TranStrL: An Automatic Need-to-translate String Locator for Software Internationalization}
+      \field{year}{2009}
+      \field{pages}{555\bibrangedash 558}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICSE.2009.5070554
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/ICSE.2009.5070554, [Titel anhand dieser DOI in Citavi-Projekt übernehmen]
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/ICSE.2009.5070554,%20[Titel%20anhand%20dieser%20DOI%20in%20Citavi-Projekt%20%C3%BCbernehmen]
+      \endverb
+    \endentry
+    \entry{Willenborg.2001}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e0f7d806a894afc742a94c26802c41c3}{%
+           family={Willenborg},
+           familyi={W\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e0f7d806a894afc742a94c26802c41c3}
+      \strng{fullhash}{e0f7d806a894afc742a94c26802c41c3}
+      \strng{bibnamehash}{e0f7d806a894afc742a94c26802c41c3}
+      \strng{authorbibnamehash}{e0f7d806a894afc742a94c26802c41c3}
+      \strng{authornamehash}{e0f7d806a894afc742a94c26802c41c3}
+      \strng{authorfullhash}{e0f7d806a894afc742a94c26802c41c3}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Anfragesprachen f{ü}r Internet-Informationssysteme}
+      \field{type}{Dissertation}
+      \field{year}{2001}
+      \verb{urlraw}
+      \verb http://www.josef-willenborg.de/publications/dissertation.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.josef-willenborg.de/publications/dissertation.pdf
+      \endverb
+    \endentry
+    \entry{AAMT.2018}{misc}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,uniquepart=base,hash=318a6d037523191417d09a00e5beb9cd}{%
+           family={Yuji},
+           familyi={Y\bibinitperiod},
+           given={Yamamoto},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f151cf34bd254f08d2665e9923618d07}{%
+           family={Toshiki},
+           familyi={T\bibinitperiod},
+           given={Murata},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=22adf59e00415c73f09da3f02c566b41}{%
+           family={{Bond Francis}},
+           familyi={B\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=48a4fe7e18cd1faf4ea7c9f926249364}{%
+           family={Seiji},
+           familyi={S\bibinitperiod},
+           given={Okura},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a2a2b10402ed3a0a04c93938396532ea}{%
+           family={{Kato, Michael, Konin}},
+           familyi={K\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=a709ce53b0a804fe2e7e42e408c64c3e}{%
+           family={Kei},
+           familyi={K\bibinitperiod},
+           given={Akimoto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c1f53fc83c208949cbbe8c85dd8c3e27}{%
+           family={Hiroyuki},
+           familyi={H\bibinitperiod},
+           given={Takashashi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b20d4d3e119370339d73a533db359434}{%
+           family={{Hiroshi Kameya}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=960190893d09f89ec7ed380dd6ab1c1d}{%
+           family={AAMT},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{62bd6c16e70a0e06d778805562923ce2}
+      \strng{fullhash}{61b51b342ff2ca1aa7fc2c16265f2262}
+      \strng{bibnamehash}{62bd6c16e70a0e06d778805562923ce2}
+      \strng{authorbibnamehash}{62bd6c16e70a0e06d778805562923ce2}
+      \strng{authornamehash}{62bd6c16e70a0e06d778805562923ce2}
+      \strng{authorfullhash}{61b51b342ff2ca1aa7fc2c16265f2262}
+      \strng{editorbibnamehash}{960190893d09f89ec7ed380dd6ab1c1d}
+      \strng{editornamehash}{960190893d09f89ec7ed380dd6ab1c1d}
+      \strng{editorfullhash}{960190893d09f89ec7ed380dd6ab1c1d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{UTX 1.20 Specification}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb http://www.aamt.info/english/utx/utx1.20-specification-e.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.aamt.info/english/utx/utx1.20-specification-e.pdf
+      \endverb
+    \endentry
+    \entry{Zydron.2007b}{misc}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=8621030713bb46c3baa0d365a6358569}{%
+           family={Zydro{ń}},
+           familyi={Z\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b66ead8c85a4b72922f3cf5e17620905}{%
+           family={{Raya M. Rodolfo}},
+           familyi={R\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=ec617edbad5ec6b57f4cf75f163b60f9}{%
+           family={Bogacki},
+           familyi={B\bibinitperiod},
+           given={Bartosz},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=867e8957fae1cb59f0808dbcc3aada27}{%
+           family={GALA},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{2483678578055125b8bd3a65c85ce361}
+      \strng{fullhash}{2483678578055125b8bd3a65c85ce361}
+      \strng{bibnamehash}{2483678578055125b8bd3a65c85ce361}
+      \strng{authorbibnamehash}{2483678578055125b8bd3a65c85ce361}
+      \strng{authornamehash}{2483678578055125b8bd3a65c85ce361}
+      \strng{authorfullhash}{2483678578055125b8bd3a65c85ce361}
+      \strng{editorbibnamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editornamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editorfullhash}{867e8957fae1cb59f0808dbcc3aada27}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{XML:TM 1.0}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://www.gala-global.org/xmltm-10
+      \endverb
+      \verb{url}
+      \verb https://www.gala-global.org/xmltm-10
+      \endverb
+    \endentry
+    \entry{Zydron.2009}{misc}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=8621030713bb46c3baa0d365a6358569}{%
+           family={Zydro{ń}},
+           familyi={Z\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=81dd9794f5b8a04ff59012560e5adab3}{%
+           family={{Saldana Derek}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=6ec60ab9ce327f5a12fbab109e691c73}{%
+           family={OASIS},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e353a27d8cf354af4f7243d1163c1dc7}
+      \strng{fullhash}{e353a27d8cf354af4f7243d1163c1dc7}
+      \strng{bibnamehash}{e353a27d8cf354af4f7243d1163c1dc7}
+      \strng{authorbibnamehash}{e353a27d8cf354af4f7243d1163c1dc7}
+      \strng{authornamehash}{e353a27d8cf354af4f7243d1163c1dc7}
+      \strng{authorfullhash}{e353a27d8cf354af4f7243d1163c1dc7}
+      \strng{editorbibnamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{editornamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{editorfullhash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reference Model for Open Architecture for XML Authoring and Localization 1.0}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://www.oasis-open.org/committees/download.php/35736/OASIS%20Open%20Architecture%20for%20XML%20Authoring%20and%20Localization%20Reference%20Model%20(OAXAL).pdf
+      \endverb
+      \verb{url}
+      \verb https://www.oasis-open.org/committees/download.php/35736/OASIS%20Open%20Architecture%20for%20XML%20Authoring%20and%20Localization%20Reference%20Model%20(OAXAL).pdf
+      \endverb
+    \endentry
+    \entry{Zydron.2007}{misc}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=8621030713bb46c3baa0d365a6358569}{%
+           family={Zydro{ń}},
+           familyi={Z\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0907ad0d3729c2b8f5aef4b43552f27c}{%
+           family={Walters},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b66ead8c85a4b72922f3cf5e17620905}{%
+           family={{Raya M. Rodolfo}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=867e8957fae1cb59f0808dbcc3aada27}{%
+           family={GALA},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2e153a371ba32dcc7395fde8fbd568e}
+      \strng{fullhash}{d2e153a371ba32dcc7395fde8fbd568e}
+      \strng{bibnamehash}{d2e153a371ba32dcc7395fde8fbd568e}
+      \strng{authorbibnamehash}{d2e153a371ba32dcc7395fde8fbd568e}
+      \strng{authornamehash}{d2e153a371ba32dcc7395fde8fbd568e}
+      \strng{authorfullhash}{d2e153a371ba32dcc7395fde8fbd568e}
+      \strng{editorbibnamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editornamehash}{867e8957fae1cb59f0808dbcc3aada27}
+      \strng{editorfullhash}{867e8957fae1cb59f0808dbcc3aada27}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GMX-V 1.0: Global Information Management Metrics Volume (GMX-V) 1.0 Specification}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://www.gala-global.org/gmx-v-10
+      \endverb
+      \verb{url}
+      \verb https://www.gala-global.org/gmx-v-10
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

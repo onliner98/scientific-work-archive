@@ -1,0 +1,42 @@
+\chapter{Introduction}
+\section{Motivation}
+Neural text classification is a popular field in \ac{NLP} with various real world applications. Within that field a vast amount of classifier models has been introduced.\autocites{Yang.2016}{Cho.2014}{Lee.2016}{Hochreiter.1997}{Kant.2018}{Zhou.2016}{Wang.2016}{Liang.2019}{Kim.2014}{Gao.2018}{Zhang.2015}{Johnson.2017}{Hoa.2017}{Yang.2018}{Rezaeinia.2018}{Zhao.2018}{Lai.2015}{Zheng.2019}{Johnson.2016}{Vaswani.2017}{Wang.2018b}{Iyyer.2015} Accordingly, finding and understanding the state of the art models is key in applying them to real world applications. This paper reports the results of a literature review on the state of the art on neural text classification models, finds \ac{CNN}s, \ac{RNN}s and Transformers to be the most used models and conveys a deeper, mathematical understanding of these models.
+\par
+Furthermore, this paper proposes a model for a real world business process. This business process is the task of German recruitment advertisement classification and is described as part of a business scenario by the start-up Aivy.\footnote{The original text of the document of Aivy is attached in Section \ref{sec:aivy}} Aivy provides career guidance for their customers. That is why companies send recruitment advertisements to Aivy, so those of interest for Aivy's customers can be forwarded to them. In order to exclusively forward the recruitment advertisements of interest, they need to be classified first. Manual classification creates expensive and recurrent costs, while the implementation of a neural model substituting human labor is a one-time investment.\footnote{Infrastructure costs are neglected due to their insignificance compared to the costs of human labor, for example, see \url{https://aws.amazon.com/de/ec2/pricing/on-demand/}} On that account, a neural model holds the potential of significant cost reduction. In the course of the literature review, no paper was found on the classification of German recruitment advertisements. Consequently, this paper proposes a model for a novel classification task.
+
+\section{Problem Statement}
+\label{sec:problem}
+The recruitment advertisement classification task assigns classes to recruitment advertisements. According to Aivy's business scenario, these recruitment advertisements consist of a job title and a job description. However, according to Aivy's business scenario, annotation and structure of the data cannot be assumed. Furthermore, structured data can be stripped of its annotations by a parser. Thus, a recruitment advertisement is uniformly represented as plain text. 
+\par
+The classes are standardized by the German Federal Employment Agency \textit{Bundesagentur für Arbeit}. A class consists of a four digit decimal code, called \textit{Tätigkeitsschlüssel}, which loosely translates to vocation id. This key is structured as a tree. Meaning, each higher digit aggregates the job categories of the next lower digit into a higher level job class. For example, the vocation id $1219$ is the key for manager in the horticulture sector, and the vocation id $121$ is the key for the class aggregating jobs of the horticulture sector, like manager in the horticulture sector, tree caregiver, agriculture engineer, gardener, etc..\autocite{BundesagenturfurArbeit.2010} 
+\par
+In order to train the model proposed by this paper, Aivy provides a dataset based on data from the Stepstone \ac{API}\footnote{Access to the Stepstone \ac{API} is part of Stepstone's cooperation partner program, under \url{https://www.stepstone.de/stellenanzeige-online-aufgeben/}. Accordingly, the Stepstone \ac{API} is not publicly accessible. Therefore, the URL of the \ac{API} cannot be provided.}. The dataset is created through Stepstone's search algorithm. For each vocation id the corresponding job title is queried from the Stepstone \ac{API}. All recruitment advertisements returned by that query are labeled with that job title and its corresponding vocation id. Stepstone's search algorithm probably is not perfect, and human labeling is expensive. That is why the relevance ranking of the search algorithm is returned as a kind of confidence metric as well. The returned data is annotated and structured as XML, an example is shown in Listing \ref{lst:xml}. The XML is structured via elements. The important elements are explained in the following.
+\begin{itemize}
+	\item $<title>$ element contains the job title
+	\item $<description>$ element contains the job description
+	\item $<standardJobtitle>$ element contains the job title corresponding to the vocation id
+	\item $<vocationId>$ element contains the vocation id
+	\item $<matchRank>$ element contains the relevance ranking
+\end{itemize}
+\par
+In order to run the model Aivy provides the \ac{AWS} infrastructure.
+
+\section{Scope}
+Summarizing, the scope of this paper comprises a proposed model for the task of recruitment advertisement classification and the providing of insight on the state of the art on neural text classification models. This paper exclusively focuses on neural models and text classification. Non neural methods are excluded, as neural models are dominating the top of text classification leaderboards.\footnote{\url{https://gluebenchmark.com/leaderboard/}}\footnote{\url{https://nlpprogress.com/english/text_classification.html}}\footnote{\url{https://paperswithcode.com/sota}} Other tasks like image classification or language modeling are excluded, since the classification of recruitment advertisements falls into the category of text classification.
+\par
+This paper focuses on the technical aspects of state of the art models for neural text classification. Therefore, this paper does not discuss infrastructure alternatives, implementation frameworks, surrounding processes and economic efficiency. Surrounding processes refers to all processes around the process of recruitment advertisement classification itself, for example accessing and storing classified recruitment advertisements. In this context, economic efficiency refers to the comparison of the proposed model and alternative classification methods. However, cost advantages of a neural model over another neural model like training time and license costs, are taken into account.
+\par
+Due to time constraints, experiments to optimize and test the proposed model cannot be run. On that account, the implementation of the proposed model and experiments are excluded from this paper.
+
+\section{Approach}
+In order to capture the state of the art on neural text classification models, this paper conducts a literature review. For the proposed model, the state of the art models resulting  from the literature review are analyzed in regard to the requirements of the described business process. Especially performance on text categorization tasks and the amount of required training data is taken into account. The requirements are listed in Chapter \ref{ch:requirements}.
+\newpage
+\section{Structure}
+The rest of this paper is structured as follows. 
+\begin{itemize}
+	\item Chapter \ref{ch:fundamentals} defines and illustrates terms required to understand this paper.
+	\item Chapter \ref{ch:sota} lists the state of the art on neural text classification models and describes the most used models.
+	\item Chapter \ref{ch:requirements} lists the requirements of the task described in Section \ref{sec:problem}.
+	\item Chapter \ref{ch:model} discusses the state of the art models in regard to the task described in Section \ref{sec:problem} and proposes a model for the task.
+	\item Chapter \ref{ch:conclusion} summarizes and evaluates the contributions of this paper. Furthermore, it proposes future work.
+\end{itemize} 

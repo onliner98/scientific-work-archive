@@ -1,0 +1,10 @@
+[Budget and Resources]
+"most successful avenue for securing localization support"[...][is] using Translation Management System (TMS) [...] [to] increased efficiency
+
+FÜR MEINEN AUSBLICK:
+Erweiterung des Datenformats um es für Data driven decision makeing anzupassen might be considered aswell z.b. für extent of localiazation (eol: wie tiefgründig soll die lokalisierung sein)
+[Summary]
+"The localization industry is no exception when it comes to the reliance on data for decision making. 
+Increasingly, localization managers are required to substantiate requests for budget and resources with 
+real data and must demonstrate ROI of localization using metrics. Bringing all data points together is a 
+key step, and having data in a digestible format is critical for the analysis phase."

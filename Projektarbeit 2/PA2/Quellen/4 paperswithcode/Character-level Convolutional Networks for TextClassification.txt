@@ -1,0 +1,12 @@
+Introduction
+- ConvNets require large Datasets to work
+Character-level Convolutional Networks
+- 1 hot encoded characters(alphabet) x Anzahl Characters ergeben die InputMatrix
+- 6 ConvLayers, temporal max Pooling, 3 DensLayers on Top => see Table 2 and Figure 1
+Alphabeth
+- take lower case and uppercase letter ito account or not
+Thessaurus
+- improve performance by replaycing unkommon words with common ones using a thesaurus
+Dataset sizes
+- kleinstes 120.000
+- größtes 3.6 Mio

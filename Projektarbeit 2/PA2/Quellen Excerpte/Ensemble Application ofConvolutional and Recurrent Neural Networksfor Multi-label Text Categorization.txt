@@ -1,0 +1,2 @@
+1 Model for text classification
+CNN-RNN Seq2Seq Model: Encoder CNN with maxpooling and fully connected => output wird der start state für den Decoder: LSTM generating Labels taking own prediction as next input

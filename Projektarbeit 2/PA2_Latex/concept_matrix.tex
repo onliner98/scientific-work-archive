@@ -1,0 +1,8 @@
+\begin{xltabular}{\textwidth}{Xcccc}\toprule
+	\caption{Concept Matrix} \label{tab:concept_matrix}\\
+	\textbf{Author} & \textbf{CNN} & \textbf{RNN} & \textbf{Transformer} & \textbf{Misc.} \\\midrule \endhead
+	\csvreader[late after line=\\\midrule,late after last line=\\\bottomrule]
+	{concept_matrix_misc.csv}
+	{}
+	{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
+\end{xltabular}

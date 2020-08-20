@@ -1,0 +1,23 @@
+[p. 6] 
+reference model is an abstract framework
+[p. 11]
+Steps of localisation => Mein Framework macht das selbe in kürzer => erweiterung meines frameworks?
+1. Identification of the text to be localized  
+2. Segmentation of the text into sentences if required  
+3. Matching of the sentences with previous translated versions of the document if possible  
+4. Translation of the text  
+5. QA/Post-editing of the translated text  
+6. Merging/recreation of the original document in the target language  
+[p. 12]
+The separation of form and content provides an elegant and convenient way of identifying text and markup.
+[p. 16]
+Figure of traditional Localization Process => Mein Framework automatisiert anfang bis extracted text und translated text bis vor QA
+[p. 31]
+Level 1 -  Complete conformance: Requires complete implementation of all of the standards and processing models that MUST be implemented exactly as defined
+in the OAXAL reference model.  
+Level 2 -  Standard conformance: Requires implementation of all standards relevant to a particular process and allows for the omission of any standards
+not relevant to that process.  
+Level 3 -  Basic conformance: Requires implementation of the standards and processing models that MUST implement a minimum of W3C ITS and XLIFF 
+and least one of the following: xml:tm, GMX/V, TMX, SRX, Unicode TR29.
+=> Mein Tool kann in einem OAXAL conformant eingesetzt werden da es den extract und den merge step des OAXAL Localization Workflows übernimmt [Figure p. 17]
+der TM Process schritt nutzt zwar xml:tm aber xml:tm zusammen mit SRX/TR Unicode 29 kann auch auf XLIFF angewandt werden

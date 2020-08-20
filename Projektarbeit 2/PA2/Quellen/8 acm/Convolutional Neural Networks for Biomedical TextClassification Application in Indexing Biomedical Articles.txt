@@ -1,0 +1,2 @@
+CNN with max pooling over time for classification of biomedical texts 
+- word2vec pretrained embeddings work better than random embeddings

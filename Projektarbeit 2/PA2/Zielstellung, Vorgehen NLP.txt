@@ -1,0 +1,13 @@
+Zielstellung:
+- Businesscase: Email von Boas
+=> Ziel: Implementierung eines neuronalen Netzes zur klassifizierung von Stellenbeschreibungen
+=> Fragestellung: Welche genauigkeit kann bei diesem Businesscase erreicht werden mit einem State of the Art NN (Gäbe ja noch andere algos)
+=> GGF.: abrunden mit was kostet per hand was kostet NN => Ersparnis
+
+Vorgehe:
+- State of the Art Methoden auflisten und anhand der Anforderungen des Ziels evaluieren
+- Passenste Methode Auswählen und in Python Tensorflow implementieren
+
+Schwerpunkt:
+- Operationalisierung der Messdaten
+- Modellierung des neuronalen Netzes

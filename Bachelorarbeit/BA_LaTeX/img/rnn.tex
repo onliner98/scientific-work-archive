@@ -1,0 +1,21 @@
+\begin{tikzpicture}[-latex,auto,node distance=2cm,thick]
+	
+	\node [draw, circle, minimum size=0.9cm,blue] (A) at (0,0) {$x_0$};
+	\node [draw, circle, minimum size=0.9cm,orange] (B) [right of=A] {};
+	\node [draw, circle, minimum size=0.9cm,black!30!green] (C) [right of=B] {$h_0$};
+	
+	\node [draw, circle, minimum size=0.9cm,blue] (D) [below of=A] {$x_1$};
+	\node [draw, circle, minimum size=0.9cm,orange] (E) [right of=D] {};
+	\node [draw, circle, minimum size=0.9cm,black!30!green] (F) [right of=E] {$h_1$};
+	
+	\node [draw, circle, minimum size=0.9cm,blue] (G) [below of=D] {$x_2$};
+	\node [draw, circle, minimum size=0.9cm,orange] (H) [right of=G] {};
+	\node [draw, circle, minimum size=0.9cm,black!30!green] (I) [right of=H] {$h_2$};
+	
+	\path (A) edge (B) (B)	edge (C) (B) edge [loop above] (B)
+		(D) edge (E) (E)	edge (F) (E) edge [loop above] (E)
+		(G) edge (H) (H)	edge (I) (H) edge [loop above] (H)
+		(B) edge [bend left] (E) (E)	edge [bend left] (H)
+		(H) edge [bend left] (E) (E)	edge [bend left] (B)
+		(A) edge (E) (A) edge (H) (D) edge (B) (D) edge (H) (G) edge (B) (G) edge (E);
+\end{tikzpicture}

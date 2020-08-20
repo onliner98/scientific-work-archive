@@ -1,0 +1,35 @@
+Erklärung des Papers https://www.youtube.com/watch?v=H5vpBCLo74U
+- Nachfolger von BERT
+- Expensive to train you might not be able 
+
+Introduction
+- pretraining is very successfull for nlp [19,24,25,10]
+Proposed Method
+- Autoregressive: Predicte immer das nächste Wort eines Wortsequence => CONTEXT DEPENDENCY: nur left/right context
+- Autoencoding: Predicte Wörter die aus einer Wortsequenz rausgestrichen wurden => left and right context
+  - BERT Predictet die Wörter ohne Reihenfolge AE z.B. p(New|is a city)+p(York| is a city) => INDEPENDENCE ASSUMPTION: kein sequenze context
+  - XLNet Predictet Wörter mit Reihenfolge AR z.B. p(New|is a city)+p(York|New, is a city) => sequenze context
+    - Damit XLNet trotzdem left and right context hat permutiert es die masked words
+      d.h. Die sequenz des Inputs bleibt erhalten, aber es werden immer andere wörter maskiert
+      e.g. Originaler Satz: New York is a city Permutation1: New York is _ _ Permutation2: New _ is _ city
+      => CONTEXT DEPENDENCY wird durch permutation aufelöst und INDEPENDENCE ASSUMPTION wird durch AR gelöst
+- Objective Permutation Language Modeling: Es werden als Input immer nur die Wörter gegeben die in der Permutationsreihenfolge vor dem zu predictenden wort sind
+  im Beispiel soll x3 predictet werden ist die factorization order 3-2-4-1 dann Muss man das 3. Wort predicten ohne das 1. und 2. und 4. zu kennen
+  ist die reihenfolge 2-4-3-1 dann muss man das 3. Wort predicten und kennt das 2. und 4.
+  ist die reihenfolge 1-4-2-3 dann muss man das 3. Wort predicten und kennt das 1., 2. und 4.
+  Die Objective ist max E_z~Z_T d.h. es werden random permutationen aus Z_T genommen
+- Architectur:
+  - Problem: New York is _ _: "a" "city" soll predictet werden 
+    - "a" darf nur "new york is" als context haben
+    - "city" soll "new york is a" als context haben
+    => wird jetzt "New York is" oder "New York is a" als Input verwendet
+  - Lösung: Transformer aber mit zusätzlichem Hiddensate g
+  - Hiddensate h kann auf alle Hiddenstates der previous steps und des eigenen steps schauen
+  - Hiddenstate g kann nur auf Hiddenstates h des previous steps schauen
+  => g is not self aware while h is. => g is used to predict, while h is used to carry information of the context
+  => g-state für "a" kennt nur "New York is", g-state für "city" kennt "New York is a"
+Incorporating Ideas from Transformer-XL [9]
+- Ermöglicht any length inputs. The transformer has a fixed size input length k.
+  Given a sequenz of l>k inputs
+  The first k Inputs are inputted. Info from that Input is stored in Memory
+  Then Memory and next k inputs are read

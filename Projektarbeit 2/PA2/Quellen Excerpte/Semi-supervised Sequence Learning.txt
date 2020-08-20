@@ -1,0 +1,1 @@
+Transferlearning, auch wenn es hier nicht so genannt wird pretrain alg Language Model und dann mit nem Classifier versehen für die Text classification

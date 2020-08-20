@@ -1,0 +1,3 @@
+review für ComputerVision unter anderem auch Image Classification
+
+Used Architecture for Image Classification: AlexNet, VGGNet, ResNet, GoogLeNet(=Inception Modules), DenseNet

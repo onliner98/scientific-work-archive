@@ -1,0 +1,3 @@
+In diesem Paper wird Elmo beschrieben
+Elmo ist ein context abhängiges word embedding
+Architectur: BI LSTM mit Residual Connections for unsupervsed Language Modeling

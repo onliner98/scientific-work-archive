@@ -1,0 +1,5 @@
+CNNs perform best in Image Classification but are computationally expensive
+Uses Virtual Pooling to boost performance of CNN
+=> Slite performance drop
+
+Tested on VGG16 [28], ResNet-50 [14], All-CNN [29]

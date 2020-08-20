@@ -1,0 +1,88 @@
+\chapter{Extrahieren zu übersetzender Strings aus dem Quelltext}
+\label{chp:extract}
+Wie in Kapitel \ref{chp:anforderungen} erarbeitet, müssen zur automatischen Verarbeitung von zu übersetzenden und übersetzten Strings, die zu übersetzenden Strings aus dem Quelltext extrahiert werden. Diese Extraktion wird durch einen Parser vorgenommen. Der Quelltext eines Movelets ist String-basiert.
+\autocite[Vgl.][]{Nitschkowski.2018c}
+Infolgedessen  müssen zu übersetzende Strings vom restlichen Quelltext unterschieden werden, um diese zu extrahieren. Zum Unterscheiden von Strings gibt es verschiedene Möglichkeiten. Diese sind in diesem Kapitel aufgeführt.
+\section{Auszeichnung zu übersetzender Strings}
+Eine Möglichkeit zu übersetzende Strings vom restlichen Quelltext zu unterscheiden ist das Auszeichnen dieser mit einer eindeutigen Auszeichnung. \ac{MXML}-Quelltext basiert auf \ac{XML}.
+\autocite[Vgl.][]{Nitschkowski.2018c}
+Das \textit{\ac{W3C}} hat zum Auszeichnen von \ac{XML} bezüglich Lokalisierung den \ac{ITS} Standard entwickelt. Aus diesem Grund empfiehlt es sich diesen Standard zum Auszeichnen von zu übersetzenden Strings im Kontext von \ac{MXML} zu verwenden. \ac{ITS} bietet zwei grundlegende Ansätze des Auszeichnens: einen Globalen und einen Lokalen. Der globale Ansatz zeichnet Strings nicht direkt aus. Stattdessen wird zu diesem Zweck die Abfragesprache \ac{XPATH} verwendet. Ein \mbox{\textit{rules}} Element wird mithilfe eines Parameters ausgezeichnet und erhält eine Abfrage als weiteren Parameter. Alle \ac{XML}-Elemente, welche Teil des Ergebnisses dieser Abfrage sind, gelten als im gleichen Maße ausgezeichnet, wie das \mbox{\textit{rules}} Element selbst. Der lokale Ansatz zeichnet einzelne \ac{XML}-Elemente und deren Inhalt direkt mithilfe eines Parameters aus.
+\autocite[Vgl.][]{Filip.2013}
+\footnote{Notizen zur Implementierung der Extraktion zu übersetzender Strings anhand einer Auszeichnung, sowie einer kontextfreien Grammatik finden sich im Anhang in Sektion \ref{sec:implementierung}}
+\par
+Die Struktur von \ac{MEL} und Movilizer Gradle Plug"~in Ressource Dateien basiert nicht auf \ac{XML}.
+\autocite[Vgl.][]{Nitschkowski.2018e} \autocite[Vgl.][]{Mula.2018}
+Deshalb ist \ac{ITS} zu deren Auszeichnung nicht ausreichend. Ein globaler Ansatz mithilfe einer Abfragesprache wie von \ac{ITS} vorgesehen ist ohne die zusätzliche Entwicklung einer Abfragesprache für \ac{MEL} und Movilizer Gradle Plug"~in Ressource Dateien nicht möglich. Ein lokaler Ansatz durch die direkte Auszeichnung von zu übersetzenden Strings hingegen ist möglich. Diese Auszeichnung muss eindeutig sein, da es zu ungewollten Extraktionen kommt, falls diese Auszeichnung auch in einem anderen Kontext von Movelets verwendet wird. Beispielsweise im Kontext von \ac{MEL} werden Methodenparameter durch die geöffnete(U+0028): $($ und geschlossene Rundklammer(U+0029): $)$ ausgezeichnet.
+\autocite[Vgl.][]{Nitschkowski.2018h}
+Wird diese Auszeichnung für zu übersetzende Strings verwendet, gelten auch alle Methodenparameter als ausgezeichnet. Eine im Gesamtkontext von Movelets eindeutige Auszeichnung ist die \mbox{\textit{'GNU gettext'}}-artige Auszeichnung. Diese beginnt mit einem Unterstrich(U+005F): $\_$ gefolgt von einer offene Rundklammer und endet mit einer geschlossene Rundklammer $\_()$. \mbox{\textit{GNU gettext}} selbst kann für Movelets nicht eingesetzte werden.
+\autocite[Vgl.][]{GNU.}
+Die Auszeichnung jedoch ist aufgrund von Kürze und Eindeutigkeit vorteilhaft. Wie bereits erwähnt, übernimmt diese Auszeichnung dieselbe Aufgabe wie der lokale Ansatz von \ac{ITS}. Demzufolge kann auch zu übersetzender \ac{MXML}-Inhalt mit dieser Auszeichnung ausgezeichnet werden.
+\par
+Besonders zu beachten ist, dass sich das Extraktionsverhalten innerhalb des Kontextes von \ac{MEL}-Parametern und von \ac{MXML}-Attributen im Vergleich zu den anderen Kontexten unterscheidet. Diese beiden Kontexte sind durch den umgebenden \ac{MXML}-Kontext bestimmbar, da \ac{MEL}-Quelltext ausschließlich in bestimmten \ac{MXML}-Elementen vorkommen kann und \ac{MXML}-Attributen anhand der \ac{MXML}-Definition bestimmbar sind.
+\autocite[Vgl.][]{Nitschkowski.2015b}
+In diesen beiden Kontexten sind alle Stringliterale mit Anführungszeichen ausgezeichnet.
+\autocite[Vgl.][]{Bray.2008}
+\autocite[Vgl.][]{Nitschkowski.2018g}
+In der Konsequenz müssen während der Extraktion das erste und letzte Anführungszeichen eines ausgezeichneten Strings entfernt werden. Des Weiteren ist der \ac{MEL}-Kontext der einzige, in welchem zusammengefügte Strings möglich sind. Diese sind durch die \mbox{\textit{concat}} Methode, in der die Eingabeparameter von Rundklammern umgeben sind, ausgezeichnet: \mbox{$concat()$}. Die Eingabeparameter sind durch Komma(U+002C): $,$ von einander abgetrennt.
+\autocite[Vgl.][]{Nitschkowski.2018f}
+Daher muss während der Extraktion die Methode, sowie die Kommata und das erste und letzte Anführungszeichen nach einem Komma entfernt werden. Die Variablen müssen als Platzhalter maskiert werden. Variablen sind alle Strings, welche nach einer geöffneten Rundklammer oder einem Komma nicht mit einem schließenden Anführungszeichen beginnen. Das Beispiel \ref{lst:extract} zeigt, das Ergebnis einer Extraktion eines in \ref{lst:auszeichnung} ausgezeichneten zusammengesetzten Strings.
+\begin{lstlisting}[caption={Ausgezeichneter zusammengesetzter String}, label={lst:auszeichnung}]
+	varName = call()($global:UDFgetUserName)();
+	_(concat("msg_Greet", varName));
+\end{lstlisting}
+\begin{lstlisting}[caption={Extrahierter zusammengesetzter String},
+	label={lst:extract}]
+	msg_Greet %varName
+\end{lstlisting}
+\section{Automatisches Erkennen zu übersetzender Strings}
+Eine Alternative zum Auszeichnen zu übersetzender Strings ist die syntaktische und semantische Analyse des Quelltexts. Anhand dieser können Benutzeroberflächenstrings automatisiert aus dem Quelltext extrahiert werden.
+\autocite[Vgl.][S. 556]{Wang.2009}
+\autocite[Vgl.][S. 6]{Leiva.2015}
+Benutzeroberflächenstrings sind wie in Kapitel \ref{chp:anforderungen} festgestellt Inhalte von \ac{MXML}-Elementen, Werte von \ac{MXML}-Attributen, \ac{MEL}-Stringliterale und Werte in Movilizer Gradle Plug"~in Ressource Dateien.
+Die Entscheidung, welche dieser Strings Benutzeroberflächenstrings sind, ist komplex.
+\par
+Die Entscheidung über Inhalte von \ac{MXML}-Elementen und Werte von \ac{MXML}-Attributen erfolgt anhand des umgebenden \ac{MXML}-Kontextes. Der \ac{MXML}-Kontext wird außerhalb von Stammdaten am stärksten durch das \mbox{\textit{<question>}}-Element bestimmt. Das \mbox{\textit{<question>}}-Element kennzeichnet den Beginn eines Subprozesses innerhalb des Movelets. Der Subprozess wird durch das \mbox{\textit{type}}-Attribut des \mbox{\textit{<question>}}-Elements festgelegt. Im Beispiel \ref{lst:message} besitzt das \mbox{\textit{type}}-Attribut des \mbox{\textit{<question>}}-Elements den Wert $0$.
+Im Beispiel \ref{lst:epsilon} hingegen besitzt das \mbox{\textit{type}}-Attribut des \mbox{\textit{<question>}}-Elements den Wert $41$. In der Konsequenz ist der Text \mbox{\textit{Hallo Welt}} im Beispiel \ref{lst:message} ein Benutzeroberflächenstring, während er im Beispiel \ref{lst:epsilon} keiner ist.
+\autocite[Vgl.][]{Nitschkowski.2016c}
+\autocite[Vgl.][]{Nitschkowski.2018b}
+
+\begin{lstlisting}[caption={Message Screen},
+label={lst:message}]
+<movelet moveletKey="MOV01 initialQuestionKey="#1">
+	<question key="#1" type="0">
+		<answer key="#1_1" nextQuestionKey="END" 
+			<text>Hallo Welt</text>
+		</answer>
+	</question>
+</movelet>
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Epsilon Screen},
+label={lst:epsilon}]
+<movelet moveletKey="MOV01" initialQuestionKey="#1">
+	<question key="#1" type="41">
+		<answer key="#1_1" nextQuestionKey="END" 
+			<text>Hallo Welt</text>
+		</answer>
+	</question>
+</movelet>
+\end{lstlisting}
+
+Die Entscheidung über \ac{MEL}-Stringliterale ist indirekt möglich. Inhalte von \ac{MXML}-Elementen und Werte von \ac{MXML}-Attributen werden durch \ac{MEL}-Methoden abhängig von Methodenparameter verändert. Methodenparameter sind Ausdrücke. Zu diesen Ausdrücke zählen unter anderem \ac{MEL}-Stringliterale und \ac{MEL}-Variablen. \ac{MEL}-Variablen, denen ein Ausdruck mit dem Wert des \ac{MEL}-Stringliterals zugewiesen wird, liefern den selben Wert zurück. Folglich lassen sich alle Ausdrücke, welche den Wert des \ac{MEL}-Stringliterals zurückliefern, anhand der Zuweisungen bestimmen. Anhand der Ausdrücke lassen sich alle \ac{MEL}-Methoden bestimmen, welche diese Ausdrücke als Methodenparameter besitzen. Anhand der \ac{MEL}-Methoden lassen sich die von ihnen manipulierten Inhalte von \ac{MXML}-Elementen und Werte von \ac{MXML}-Attributen bestimmen. Anhand dieser kann die Entscheidung wie bereits erarbeitet getroffen werden. Resultierend daraus wird entschieden, ob das jeweilige \ac{MEL}-Stringliterale ein Benutzeroberflächenstring ist.
+\par
+Die Entscheidung über Inhalte von Stammdaten und andere externe Ressource Dateien erfolgt anhand der aufgerufenen \ac{MEL}-Methoden, welche diese Inhalte auslesen. Anhand der \ac{MEL}-Methoden wird bestimmt, welche Inhalte abgefragt werden. Hierfür müssen alle externen Ressource Dateien für die Abfrage zugänglich sein. Methoden sind Ausdrücke. Für Ausdrücke kann die Entscheidung wie bereits erarbeitet getroffen werden. Demzufolge wird entschieden, ob die jeweiligen Inhalte Benutzeroberflächenstrings sind.
+\par
+Die Entscheidung über Werte in Movilizer Gradle Plug"~in Ressource Dateien erfolgt nach dem Einfügen dieser in den Quelltext. Nach dem Einfügen sind alle Werte teil des Quelltexts. Für diesen kann die Entscheidung wie bereits erarbeitet getroffen werden. Infolgedessen wird entschieden, ob die jeweiligen Werte Benutzeroberflächenstrings sind.
+\par
+\section{Diskussion der Lösungsansätze}
+In diesem Abschnitt sind die Vor- und Nachteile beider Lösungsansätze aufgeführt. Anhand dieser Diskussion wird der passende Lösungsansatz ausgewählt.
+\par
+Die Auszeichnung zu übersetzender Strings erfolgt manuell, während die syntaktische und semantische Analyse automatisch erfolgt. Deshalb ist die manuell Auszeichnung aufwendiger.
+\par
+Die Implementierung eines Lokalisierungstools, welches die Auszeichnung verwendet, muss zum Erkennen der Auszeichnung lediglich zwischen \ac{MEL}-Kontext und anderem Kontext unterscheiden. Bei der syntaktischen und semantischen Analyse hingegen müssen weit mehr Kontexte beachtet und zurückverfolgt werden. Daher ist die Implementierung der syntaktischen und semantischen Analyse weit komplexer und aufwendiger.
+\par
+Movilizer wird stetig um neue Funktionalität erweitert. Die Auszeichnung ist String-basiert und damit vollkommen unabhängig von neuer Funktionalität einsetzbar. Die einzige Einschränkung ist, dass neue Funktionalität die gewählte Auszeichnung nicht in anderem Kontext verwenden darf. Die semantische und syntaktische Analyse hingegen basiert auf der Deutung der einzelnen Funktionalitäten. Folglich muss die semantische und syntaktische Analyse um jede neue Funktionalität erweitert werden. In der Konsequenz benötigt die Auszeichnung weit weniger Wartung und ist weniger aufwendig.
+\par
+Anhand der syntaktischen und semantischen Analyse werden Benutzeroberflächenstrings extrahiert. Diese sind großteils jedoch nicht zwangsweise zu übersetzen. Beispielsweise werden \textit{Globale Trade Item Numbers} auf der Benutzeroberfläche einer \textit{Track and Trace} Software angezeigt. Diese sind jedoch nicht zu übersetzen. Die Unterscheidung, ob eine Benutzeroberflächenstring zu übersetzen ist, kann in den beschriebenen Lösungsansätzen komfortabel durch die Auszeichnung ermöglicht werden.
+\par
+Aufgrund der aufgeführten Argumente, wird für dieses Lokalisierungstool der Lösungsansatz der Auszeichnung verwendet.
