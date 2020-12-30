@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Newton1687}
+I.~Newton, Philosophiae naturalis principia mathematica, J. Societatis Regiae
+  ac Typis J. Streater, 1687.
+
+\bibitem{Mombaur2009}
+K.~Mombaur, Using optimization to create self-stable human-like running,
+  Robotica 27 (2009) 321--330.
+\newblock \href {http://dx.doi.org/10.1017/S0263574708004724}
+  {\path{doi:10.1017/S0263574708004724}}.
+
+\end{thebibliography}

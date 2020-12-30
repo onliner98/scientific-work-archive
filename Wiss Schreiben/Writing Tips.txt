@@ -1,0 +1,24 @@
+Generelle Writing Tipps
+- Use visual, concrete language.
+- Minimize concepts about concepts,
+- Let verbs be verbs. “Appear,” not “make an appearance.”
+- Minimize acronyms & technical terms
+- Give examples aus dem operativen Alltag
+- Omit needless words.
+- Avoid clichés
+- Old information at the beginning of the sentence, new information at the end.
+- Complex phrases at the end of the sentence
+- Each sentence must relate to its precessor. If not use linking words (despite, that is why, for example)
+- constructive tone: Wie kann bestehende research vervollstädigt werden, statt warum ist sie schlecht
+
+Terminologie
+  - Consistent Wording (Terminologischekonsistenz) Ein Begriff für ein Ding
+  - Clear and simple
+  - Alle in Zitierterliteratur verwendeten Begriffe kann ich verwenden
+  - Fachausdrücke nur im Bezug auf das Themengebiet der Forschung
+
+Formulierung
+  - Anglizismen/Modewörter/Umgangssprache vermeiden
+  - Simple Formulierungen
+  - Ich vermeiden
+  - Neutrale Sprache (Wertende Begriffe, wie leider, glücklicherweise etc. niemals verwenden)

@@ -1,0 +1,109 @@
+Überkategorie von Literatur Reviews:
+- Mature Topic: Bekanntes  Topic mit viel Literatur 
+  => Ziel/Wert:
+  - Neuorganisation der Informationum andere Blickwinkel / neues Verständnis zu schaffen
+  - Überblick schaffen um Neueinsteigern den Einstieg zu erleichtern
+  - Altes zusammenfassen um "hot" emerging topics aufzuzeigen
+- Emerging Topic: Neues Themo ohne wenig Literatur => Ziel: theorie/Konzeptuelles Model entwickeln
+
+Kategorien von Literatur Reviews:
+- Descriptive: Describe findungs, methods and interpretation of the reviewd studies
+- Integrativ: find common ideas/concepts of the reviewed studies
+- Narrativ: Zusammenfassung des neusten Stands über ein Thema
+- Systemic: systemischer und reporduzierbarer(nachvollziehbarer) review im eine antwort auf eine bestimmte Forschungsfrage zu finden0
+Language: English
+
+Bitte um literatur empfehlungen, lese nach folgenden Kriterien
+- wie erweitert diese literatur mein wissen des topics
+- wie motiviert diese literatur mein topic
+
+Themenrelevanz
+- Wie betrifft das Thema die wissenschaft, wirtschaft und gesellschaft
+  - wirtschaft: Zielindustrie(B2B, B2C, Branch, hierachieebene) => Betroffener Prozess => Erwartete/Gewünschte Auswirkungen (Monetär oder als Gut) => Ist ein Framework/Empirische Daten nötig um das Ziel(Auswirkungen) zu erreichen
+  - gesellschaft: Welche wirtschaftlichen/gesellschaftlichen/technologischen entwicklungen machen haben Auswirkungen auf das Thema/umgekhert => weshalb ist es genau jetzt relevant
+    - PESTEL Framework: Political, Economic, Social, Technical, Ecological, Legal Impacts in Microenvironment, Market and Macroenvironment of the topic
+  - wissenschaft: Existiert ein realer Anwendungsfall, Ist es ein neues Theoretisches Modell um Daten zu erklären, bestehen in der literatur entgegensprechende aussagen, verbindung von nebeneinanderstehenden themen, themen von well respected scientists übernehmen
+
+Systematische Literatursuche
+- replicable: Dokumentiere databases used, search queries, keyword list, exclusions kriterien
+- CITAVI
+
+Vorgehen:
+- Keywordliste erstellen
+- metaanalysen und literatur reviews suchen
+- Rückwärtssuche: Nutze Quellen bereits gelesener und relevanter artikel um neue zu finden
+- Vorwärtssuche:  Nutze Web of Science, Google scholar etc um neue Artikel zu finden die ggf. bereits gelesene relevante referenziere
+- Auswahl: lies in folgender Reihenfolge, gehe zum nächsten schritt falls passens: titel => keywords => abstract => inhaltsverzeichnis, text
+- Fertig: Wenn neue artikel hauptsächlich auf Artikel verweisen die du bereits kennst (benchmark 300-500 artikel ansehen 30-100 auswählen)
+
+Datenbanken:
+- DBIS
+- EBESCOhost
+- Primo
+- Google Scholar
+
+Strukturierung der Quellen:
+- Guiding Theory: theoretical perspective based on an existing model => arrange literature within that perspective
+- Competing models: Identify competing models => map literature to the models they support => conclude which model is mostly supported
+- Point of view (weak): Your POV as thesis statemant => arrange literature in a way of how they support/dont support ur statements
+Visualisierung der Aufstellung der Literatur: Mindmap, tree, diagramm, table
+Conceptual Model:
+- Variance theorie: Beschreiben wie die änderung unabhängiger Variablen, von diesen abhängige Variablen beeinflusst
+- Proces theorie: Beschreibt Dynamische Abläufe mit zuständen und ereignissen
+
+Conceptmatrix und Literatur Tabelle in den Anhang(Empfohlen) => haben wir nicht behandelt, frag Betreuer ob er sowas will
+
+Schreiben der Seminararbeit:
+- Motivation: 
+  - Inhalt: Motivation(Warum ist das wichtig?), ist es Guding Theory/Competing Model/Point of View, was sind die key variables, was ist der beitrag meines papers
+  - Techniken: Story Telling, Quotation/Anecdote, Provocative Question, cite previous research on why this is needed (Nur eine Technik verwenden, sonst wirkt das überzogen)
+- Eingrenzung: 
+  - Gilt die these nur auf bestimmter ebene? 
+  - Gilt die these nur in einem bestimmten Zeitraum/Kontext (z.b. Zeitraum: 2.Weltkrieg, Kontext: Verkaufsgespräche)
+  - (Umfang) Welche Literatur wird in welchem Bereich reviewed?
+  - Welche Annahmen werden genommen, z.b. wen betrifft das paper
+  - Wie wurde literatur gefunden
+    - Welche Datenbanken und Keywords/queries wurden genutzt
+    - Nach welchen Kriterien wurde literatur ausgewählt oder nicht ausgewählt (keywords und kriterien in den anhang)
+    - wie wurde neue und alte veröffentlichungen gekennzeichnet/behandelt
+- Literatur review
+  - Zerlege die Literatur in Basic Topcis: history/origin, main concept, key relationships internal and externat to the concept, research method, anwendung des themas
+  - Kritik: stärken und hauptbeiträge deficiete, ungenauigkeiten, annahmen 
+- Begründung der These: (wenn mögliche alle 3 verwenden)
+  - Theoretische erklräung: "Logikkette um warum zu erklären" 
+  - Empirische ergebnisse
+  - Beispiele zur veranschaulichung
+- Schlüsse: Bilde einen rahmen mit Abstract/Einleitung (wird theorie verifiziert/falzifiziert)
+
+wissenschaftliches schreiben:
+- consistent wording
+- clear and simple
+- constructive tone: Wie kann bestehende research vervollstädigt werden statt warum ist sie schlecht
+- topice sentence: 
+  - 1. Satz eines Paragraphen
+  - fasst diesen zusammen
+- thesis in der einleitung klar stellen
+- roter faden:
+  - methodology: Verschiedene Analysemethoden auf daten anwenden und schauen welche das beste ergebnis liefert
+  - thoery: Verschiedene Theorien über das selbe thema anschauen und schauen welche am besten passt
+  - praxis: Verscheidene Annahmen über Verhalten von Objecten(kunden) bei Aktionen eines Subjects(Unternehmen) anschaun und schauen welche zutreffen
+- avoid questions
+- Überleitungen für jede sektion
+- Erkläre anhand von Beispielen aus dem operativen Alltag (von menschen oder organisationen)
+- lasse laien und erfahrene dein thema proof readen
+
+Vorgeschlagener Zeitplan
+1.-2. Woche: Überblick über das Thema schaffen, Motivation des Themas, Literatursuche
+3.-4. Woche: Literatur review und strukturierung von literatur/paper
+5.-6. Woche: Schreiben des Papers
+7.-8. Woche: Review des Papers
+
+Get Help:
+- Scheduel appointments ahead of time
+- Fasse deine Fragen und Material für diese appointments zusammen
+- 1./2. Woche: Termin um abzuklären
+  - ob deine Literatursuche sinnvoll ist. 
+  - ob deine Motivation überzeugend ist
+- 3./4. Woche: Termin um abzuklären ob die strukturierung deines papers und literatur sinnvoll ist
+
+Weitere Quelle Website uni mannheim fak psych Guidelines for the preperation of bachelor and master theisis

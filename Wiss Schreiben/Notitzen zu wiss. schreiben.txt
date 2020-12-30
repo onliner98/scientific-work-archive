@@ -1,0 +1,103 @@
+GENERELL Wissenschaft:
+- Nachvollziehbar
+- Formal korrekt
+- Grundlagen/Stand des Wissens sind gut ausgearbeitet (Standing on the shoulder of Giants)
+
+Literatursuche: https://www.ulb.uni-muenster.de/ulb-tutor/lotse/
+- Suche (Vorgehen und im Folgenden aufgelistetes dokumentieren)
+  - Begriffstabelle
+  - Searchquery basteln aus Begriffstabelle
+  - Auswahlkriterien
+  - Datenbankliste
+- Vorwärtssuche: Welche paper haben von mir zitierte Paper zitiert
+- Rückwärtssuche: Welche paper wurden von dem mir zitierten Paper zitiert
+
+Begriffstabelle: Listet Begriffe meiner Forschungsfrage
+BEGRIFF:
+OBERBEGRIFFE:
+UNTERBEGRIFFE:
+SYNONYME:
+VERWANDTE BEGRIFFE:
+
+Programme
+	- CITAVI: Quellenverwaltung
+	- Trello o.ä. Projektmanagementtool: Rechercheergebnis/Notitzenverwaltung
+	- LaTeX: Schreiben der Arbeit
+	- thesaurus.com synonym-finder.com
+
+Klassischer Aufbau einer "Lösungs Entwicklung"
+- Problem
+- Grundlagen
+- Anforderungen (auch tabellarischS)
+- State of the Art/Stand des Wissens
+- Alternative
+- Evaluation
+
+Expose schreiben: Abstract ohne - Ergebnisse & Schlussfolgerungen
+
+Abstract schreiben:
+- Motivation
+- Forschungsfrage/Scope
+- Stand des Wissens
+- Ergebnisse & Schlussfolgerungen
+- Methodologie
+
+Motivation
+- Es muss keine wirtschaftliche Motivation sein. Eine rein wissenschaftliche Fragestellung reicht schon.
+  - Bsp.: Wie erreiche ich möglichst hohen F1 Score bei der Emotionsklassifizierung von Gesichtbildern? Ist ein Frage die keiner weiteren Motivation Bedarf
+- Wie betrifft das Thema die wissenschaft, wirtschaft und gesellschaft
+  - wirtschaft: Zielindustrie(B2B, B2C, Branch, hierachieebene) => Betroffener Prozess => Erwartete/Gewünschte Auswirkungen (Monetär oder als Gut) => Ist ein Framework/Empirische Daten nötig um das Ziel(Auswirkungen) zu erreichen
+  - gesellschaft: Welche wirtschaftlichen/gesellschaftlichen/technologischen entwicklungen machen haben Auswirkungen auf das Thema/umgekhert => weshalb ist es genau jetzt relevant
+    - PESTEL Framework: Political, Economic, Social, Technical, Ecological, Legal Impacts in Microenvironment, Market and Macroenvironment of the topic
+  - wissenschaft: Existiert ein realer Anwendungsfall, Ist es ein neues Theoretisches Modell um Daten zu erklären, bestehen in der literatur entgegensprechende aussagen, verbindung von nebeneinanderstehenden themen, themen von well respected scientists übernehmen
+
+Grundlagen:
+- Alles was erklärt wird kommt nicht in das Kapitel Einleitung sondern in das Kapitel Grundlagen
+- Wenn ich etwas im späteren Verlauf der Arbeit erkläre ist es Grundlage und muss dorthin ausgelagert werden
+
+Anforderungen und Evaluation:
+- Sollte die Arbeit die Entwicklung einer Lösung sein, welche Anforderungen erfüllen muss
+- Anforderungen Tabellarisch listen und in Evaluation immer Bezug nehmen
+
+Fußnoten:
+	- Nach Satzzeichen: Bezieht sich auf kompletten Satz/Sätze oder mehrere
+	- Vor Satzzeichen: Bezieht sich auf vorheriges Wort
+
+ZEITEN:
+	- zu verwendende Zeiten: https://www.scribbr.de/akademisches-schreiben/zeitformen-in-wissenschaftlichen-arbeiten/
+	- Präsens: https://easy-deutsch.de/zeitformen/praesens/
+	- Perfekt: https://easy-deutsch.de/zeitformen/perfekt/
+
+Abschnitte Paragraphen und Sätze
+	- 1 Aspekt pro Abschnitt
+	- logisch zwischen Abschnitten überleiten (Niemals nur aufzählen von Aspekten, Relationen sind wichtig)
+	- Länge Abschnitt: min 0.5 Seiten max 3 Seiten
+	
+	- Zusammenhängende Gedanken in einen Paragraphen
+	- logisch zwischen Paragraphen überleiten
+	
+	- Kurze Sätze => 1 Satz 1 Gedanke => Keine Schatelsätze
+	- Nur Ausführeungen im Bezug auf Forschungsfrage Zusatzinfo als Fußnote/Anhang oder weglassen
+
+Zitation
+	- Direkte Zitate möglichst sparsam verwenden
+	- Zitationsstil automatisch setzen über Programm (Word/Latex)
+
+Eigennamen konsitent Kennzeichnen Im Folgenden die Möglichkeiten:
+	- Italics
+	- Anführungszeichen (Einfach/Doppelt/Französisch)
+	- Kapitälchen
+
+Vorgeschlagener Zeitplan
+1.-2. Woche: Überblick über das Thema schaffen, Motivation des Themas, Literatursuche
+3.-4. Woche: Literatur review und strukturierung von literatur/paper
+5.-6. Woche: Schreiben des Papers
+7.-8. Woche: Review des Papers
+
+Get Help:
+- Scheduel appointments ahead of time
+- Fasse deine Fragen und Material für diese appointments zusammen
+- 1./2. Woche: Termin um abzuklären
+  - ob deine Literatursuche sinnvoll ist. 
+  - ob deine Motivation überzeugend ist
+- 3./4. Woche: Termin um abzuklären ob die strukturierung deines papers und literatur sinnvoll ist

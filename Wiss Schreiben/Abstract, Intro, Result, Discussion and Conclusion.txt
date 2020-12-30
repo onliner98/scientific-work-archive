@@ -1,0 +1,76 @@
+Schreibe INTRO und ABSTRACT zum Schluss
+
+INTRO:
+- Structure:
+  - Motivation: 
+    - Background => knowledge gap => relevance of gap
+    - General Concepts e.g. what is image classification
+    - Welcher Erkenntnissgewinn und für Wen (Academia, Industry...)
+  - Problem Statement
+  - Scope: Eingrenzungen welche und warum
+  - Approach
+  - Structure (of thesis)
+- Beantworte: Kontext => Problem => Relevanz => Audience => Methodik => Mehrwert
+- Beginne mit catchy phrase: Quote/Question/STATEMENT
+- INTRO und CONCLUSION bilden einen Rahmen
+
+ABSTRACT:
+- Structure:
+  - Problemstellung 
+    - Einführung
+    - Motivation/Relevanz
+  - Forschungsziel
+  - Methode
+  - Ergebniss
+  - Resultierende Empfehlung / Interpretation
+- nur konkretes
+- 1-2 Sätze je Punkt
+
+
+
+
+
+
+
+
+
+
+
+Result vs Discussion vs Conclusion:
+- Results: keine Interpretation nur Daten
+- Discussion: Interpretation der Daten
+- Conclusion: Zusammenfassung
+
+RESULTS:
+- Structure: research question, data
+- present data in figures/tables, summarize/explain in text
+- every result needs a method
+- bei mehreren Forschungsfrage: Eine Section pro Frage geordnet nach Wichtigkeit
+- past tense
+
+DISCUSSION:
+- Structure:
+  - Einleitung: Warum, was, wie gemacht
+  - Bewertung: Beantworte Forschungsfrage / restate Hypothesis(als aussage formulieren)
+    - Erkläre Bewertung: z.B. Erwartungen erfüllt? => warum / warum nicht
+  - Einordnung: Compare Results and State of the Art Results
+    - Originalität: Was macht meine Arbeit anders als Literatur?
+    - Vgl.: Deckt sich / Wiederspruch von Results und SOTA
+    - Relevanz: Warum ist das spannend? Wie wird bestehendes Wissen erweitert?
+  - Reflektion: 
+    - EINSCHRÄNKUNGEN (sehr wichtig) => dont apologize for them but name them precisely
+    - Was war Eigenständig? / Was ginge besser?
+  - Future Work
+
+CONCLUSION:
+- summarize in regard to intro (Context, Problem, Relevance)
+  - Restate Hypothesis
+  - Summarize Main Results
+  - Einordnung in Context: 
+    - Why do the main results matter? => CONTRIBUTION(to industry/research)
+      - Returning to your problem statement to explain how your research helps solve the problem.
+      - Referring back to the literature review and showing how you have addressed a gap in knowledge.
+      - Discussing how your findings confirm or challenge an existing theory or assumption.
+    - Handlungsempfehlung
+  - Closure sentence: broarder question, warning, or call to action.
+- DONT SUMMARIZE WHAT YOU HAVE DONE!!! DAS IST AUFGABE DES ABSTARCTS

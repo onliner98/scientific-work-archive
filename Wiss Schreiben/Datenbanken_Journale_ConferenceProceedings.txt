@@ -1,0 +1,47 @@
+OVERVIEWS
+- DBIS ub.uni-heidelberg.de => Datenbanken
+- doaj.org
+- EZB www.ub.uni-heidelberg.de/helios/epubl/ej/Welcome.html
+- UB Katalog katalog.ub.uni-heidelberg.de
+JOURNALS/CONFERENCE PROCEEDINGS
+- proceedings.mlr.press									(DONE, 0)
+- papers.nips.cc/									(DONE, 8)
+- openaccess.thecvf.com/menu.py (wacv, cvpr, iccv)					(DONE, 22)
+- https://digital-library.theiet.org/content/journals/iet-ipr				(Paywall)
+- https://digital-library.theiet.org/content/journals/iet-cvi				(Paywall)
+- https://www.springer.com/journal/11263						(Paywall)
+- link.springer.com/conference/eccv							(Paywall)
+- icmv.org/pro.html									(Paywall)
+VOLLTEXT DATENBANKEN
+- arxiv.org	|	arxiv-sanity.com						(DONE, 42)
+- openreview.net									(DONE, 19, viel bereits gefunden)
+- dl.acm.org										(DONE, 14)
+- ieeexplore.ieee.org									(DONE, 8, paar bereits gefunden)
+- semanticscholar.org (klingt vielversprechend)						(DONE, 19, viel bereits gefunden)
+- mitpressjournals.org									(DONE, 1)
+- link.springer.com/
+- elsevier.com	| sciencedirect.com
+- digital-library.theiet.org
+- intechopen.com
+- juser.fz-juelich.de
+- leibnizopen.de
+- research-collection.ethz.ch
+- degruyter.com
+- jstor.org
+LEADERBOARDS
+- paperswithcode.com/sota								(DONE)
+- image-net										(DONE)
+- github.com/kobiso/Computer-Vision-Leaderboard						(DONE, selbe wie finegrained classification leaderboards auf paperswitcode)
+- challenge2019.isic-archive.com/leaderboard.html					(DONE)
+BIBLIOGRAPHIEN
+- citeseerx.ist.psu.edu/index;jsessionid=EA1450DD624D4EEFC5C7CE87891F0A46
+- liinwww.ira.uka.de/bibliography/index.html
+- gso.gbv.de
+- dblp.org
+MISC
+- scholar.google.com (SUCHMASCHIENE)
+- foldoc.org (DICTIONARY)
+- web of science
+- scopus
+- kaggle.com
+- openai.com / github.com/openai
