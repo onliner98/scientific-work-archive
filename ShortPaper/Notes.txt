@@ -1,0 +1,31 @@
+Shortpaper über Bachelorarbeit
+- 2 Seiten
+- max. 1 Abbildung (optional)
+- englisch
+- latex template
+- Zielgruppe: allgemein gebildeter Informatiker
+- Autorenliste (Betreuer, Autor)
+
+Peer Review
+- IEEE Guidelines so weit wie mgl beachten
+  - Novelty: Unterscheidet es sich von bisherigen Publicationen?
+  - Validity: "scientifically sound" Methodik und Ausführung gut und dokumentiert?
+  - Daten: vollständig angegeben, korrekt analysiert und interpretiert?
+  - clarity: logisch, konsistent, klar Formuliert?
+  - compliance: ethisch inordnung?
+  - Advancement: Ist es nicht nur neu sondern bringt es das Feld ausreichend weit voran?
+- Zusätzlich
+  - Schreibe Kurze Inhaltsübersicht und Würdigung dessen, was aus Reviewersicht die zentrale Leistung des Autors war
+  - Sind formale Vorgaben erfüllt
+  - Ist Darstellung klar und Zielgruppe Angemessen
+  - Sprachliche Probleme, könnte etwas besser formuliert sein
+  - Eignet sich das Paper für Poster- oder mündliche Präsentation
+
+Struktur:
+    Abstract
+    Intro
+    Related Work
+    Method
+    Evaluation
+    Discussion
+    Conclusion

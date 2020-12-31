@@ -3149,8 +3149,8 @@ between column types.}%
 \if@twoside
  \if@technote
    \def\ps@headings{%
-	\def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
-	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg}
+	\def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
+	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Scientific Work WS 2020/21, University Heidelberg}
        \if@draftclsmode
             \if@draftclsmodefoot
                \def\@oddfoot{\scriptsize\@date\hfil DRAFT}
@@ -3159,17 +3159,17 @@ between column types.}%
                \def\@oddfoot{}\def\@evenfoot{}%
             \fi
        \else
-	\def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
-	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg}
+	\def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
+	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Scientific Work WS 2020/21, University Heidelberg}
      \fi}
  \else % not a technote
    \def\ps@headings{%
        \if@confmode
-	\def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
-	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg}
+	\def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
+	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Scientific Work WS 2020/21, University Heidelberg}
        \else
-	\def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
-	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg}
+	\def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
+	\def\@evenhead{\thepage \hfil \hbox{}\scriptsize\leftmark \itshape Scientific Work WS 2020/21, University Heidelberg}
        \fi
        \if@draftclsmode
             \def\@oddhead{\hbox{}\scriptsize\rightmark \hfil \thepage}
@@ -3187,10 +3187,10 @@ between column types.}%
 \else % single side
 \def\ps@headings{%
     \if@confmode
-	\def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
+	\def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
      \def\@evenhead{}
     \else
-	\def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
+	\def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg  \hbox{}\scriptsize\leftmark \hfil \thepage}
      \def\@evenhead{}
     \fi
     \if@draftclsmode
@@ -3212,10 +3212,10 @@ between column types.}%
 % title page style
 \def\ps@titlepagestyle{\def\@oddfoot{}\def\@evenfoot{}%
 \if@confmode
-   \def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg  \hbox{}\scriptsize\leftmark \hfil}%
+   \def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg  \hbox{}\scriptsize\leftmark \hfil}%
    \def\@evenhead{}%
 \else
-   \def\@oddhead{\itshape Wissenschaftliches Arbeiten WS 2018/19, Universit\"at Heidelberg \hbox{}\scriptsize\leftmark \hfil \thepage}%
+   \def\@oddhead{\itshape Scientific Work WS 2020/21, University Heidelberg \hbox{}\scriptsize\leftmark \hfil \thepage}%
    \def\@evenhead{\scriptsize\thepage \hfil \leftmark\hbox{}}%
 \fi
 \if@draftclsmode
