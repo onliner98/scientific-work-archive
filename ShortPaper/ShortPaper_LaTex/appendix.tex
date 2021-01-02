@@ -1,0 +1,48 @@
+\begin{table}[h]
+	\caption{Hyperparameter} \label{tab:hyp}
+	\begin{tabularx}{0.48\textwidth}{lX}
+		\toprule
+		\textbf{VGG}&\\\midrule
+		Epochs: & $74$\\
+		Optimizer: & Mini-batch Gradient Descent (SGD)\\
+		ILR: & $0.01$\\
+		LRS: & divide learning rate by $10$ on accuracy plateaus.\\
+		Momentum: & $0.9$\\
+		Batch Size: & $32$\\\midrule
+		\textbf{ResNet-152}&\\\midrule
+		Epochs: & $120$\\
+		Optimizer: & SGD\\
+		Initial Learning Rate: & $0.1$\\
+		Learning Rate Schedule: & divide learning rate by $10$ on accuracy plateaus.\\
+		Momentum: & $0.9$\\ 
+		Batch Size: & $32$\\\midrule
+		\textbf{ResNeXt-101}&\\\midrule
+		Epochs: & $120$\\
+		Optimizer: & SGD\\
+		ILR: & $0.1$\\
+		LRS: & divide learning rate by $10$ at epoch $30$, $60$, and $90$.\\
+		Momentum: & $0.9$\\ 
+		Batch Size: & $16$\\\midrule
+		\textbf{ResNeXt-101}&\\\midrule
+		Optimizer: & SGD\\
+		ILR: & $0.1$\\
+		LRS: & divide learning rate by $10$ at epoch $30$, $60$, and $90$.\\
+		Momentum: & $0.9$\\ 
+		Batch Size: & $16$\\\midrule
+		\textbf{DenseNet-264}&\\\midrule
+		Epochs: & $90$\\
+		Optimizer: & SGD\\
+		Initial Learning Rate: & $0.1$\\
+		Learning Rate Schedule: & divide learning rate by $10$ at epoch $30$ and $60$.\\
+		Nesterov Momentum: & $0.9$\\
+		Batch Size: & $32$\\\midrule
+		\textbf{EfficientNet-B7}&\\\midrule
+		Epochs: & not specified\\
+		Optimizer: & Root Mean Square Propagation\\
+		Initial Learning Rate: & $0.256$\\
+		Learning Rate Schedule: & decay learning rate by $0.97$ each $2.4$ epochs.\\
+		Momentum: & $0.9$\\
+		Batch Size: & $1$\\
+		\bottomrule
+	\end{tabularx}
+\end{table}
