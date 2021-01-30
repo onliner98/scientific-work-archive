@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.31)  25 JAN 2021 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.31)  30 JAN 2021 22:17
 entering extended mode
 **./wissarbIEEE-template.tex
 (wissarbIEEE-template.tex
@@ -379,147 +379,43 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 27.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 27.
+(Font)              <11> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 27.
+(Font)              <7.69997> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 27.
+(Font)              <5.5> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 27.
+(Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 27.
+(Font)              <6> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
+(Font)              <5> on input line 26.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-7.
+6.
 
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 43.
+(Font)              <7> on input line 42.
  [1{C:/Users/admin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
-] (wissarbIEEE-template.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
-\OT1/pcr/m/n/8 ey-[]com / en _ au / topics / campaigns / future-[]of-[]work /
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / minerals . org . au / sites / 
-default /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
-\OT1/pcr/m/n/8 files / 190214 % 20The % 20Future % 20of % 20Work % 20the %
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
-\OT1/pcr/m/n/8 20Changing % 20Skills % 20Landscape % 20for % 20Miners .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / www . bcg . com / de-[]de / pu
-blications /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--31
-\OT1/pcr/m/n/8 accenture-[]strategy-[]harnessing-[]revolution-[]pov .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--37
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / www . mckinsey . com / [] /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--37
-\OT1/pcr/m/n/8 media / McKinsey / Business % 20Functions /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--37
-\OT1/pcr/m/n/8 Operations / Our % 20Insights / The % 20coming %
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--37
-\OT1/pcr/m/n/8 20evolution % 20of % 20field % 20operations /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--63
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 http : / / ufldl . stanford . edu / housen
-umbers /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--122
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 http : / / papers . nips . cc / paper /
- []
-
-
-Overfull \hbox (15.60999pt too wide) in paragraph at lines 115--122
-\OT1/pcr/m/n/8 9035-[]fixing-[]the-[]train-[]test-[]resolution-[]discrepancy .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / aws . amazon . com / marketpla
-ce / pp /
- []
-
-
-Overfull \hbox (21.40999pt too wide) in paragraph at lines 124--128
-\OT1/pcr/m/n/8 Amazon-[]Web-[]Services-[]AWS-[]Deep-[]Learning-[]AMI-[]Ubuntu-[
-]1 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--134
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / aws . amazon . com / de / ec2 
-/
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 188--193
-[]\OT1/ptm/m/n/8 H. Xiao, K. Ra-sul, R. Voll-graf, []Fashion-mnist: a novel im-
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--245
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 http : / / papers . nips . cc / paper /
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 273--280
-\OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / www . cse . ust . hk / []qyang
- / Docs / 2009 /
- []
-
-) [4
-
-] (wissarbIEEE-template.aux)
+] (wissarbIEEE-template.bbl) [2]
+(wissarbIEEE-template.aux)
 Package rerunfilecheck Info: File `wissarbIEEE-template.out' has not changed.
-(rerunfilecheck)             Checksum: 62C2EA4B347840229C61EEF7156DBC06;509.
+(rerunfilecheck)             Checksum: 228071211C3F03E95E7518BA443BAE03;444.
  ) 
 Here is how much of TeX's memory you used:
- 6172 strings out of 479697
- 96699 string characters out of 2877008
- 435143 words of memory out of 3000000
- 23095 multiletter control sequences out of 15000+200000
- 442617 words of font info for 98 fonts, out of 3000000 for 9000
+ 6108 strings out of 479697
+ 96077 string characters out of 2877008
+ 409194 words of memory out of 3000000
+ 23064 multiletter control sequences out of 15000+200000
+ 442318 words of font info for 97 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,11n,72p,2139b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,11n,72p,1496b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
@@ -527,14 +423,13 @@ nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/
-ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts
-/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on wissarbIEEE-template.pdf (4 pages, 193140 bytes).
+/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.p
+fb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files
+/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on wissarbIEEE-template.pdf (2 pages, 142668 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

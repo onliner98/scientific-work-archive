@@ -5,287 +5,75 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
-\bibitem{EY.2019a}
-{Ernst \& Young},
-  \href{https://assets.ey.com/content/dam/ey-sites/ey-com/en_au/topics/campaigns/future-of-work/stop-talking-about-future-of-work.pdf}{Stop
-  talking about the future of work} (2019).
-\newline\urlprefix\url{https://assets.ey.com/content/dam/ey-sites/ey-com/en_au/topics/campaigns/future-of-work/stop-talking-about-future-of-work.pdf}
-
-\bibitem{EY.2019b}
-{Ernst \& Young},
-  \href{https://minerals.org.au/sites/default/files/190214%20The%20Future%20of%20Work%20the%20Changing%20Skills%20Landscape%20for%20Miners.pdf}{The
-  future of work: the changing skills landscape for miners} (2019).
-\newline\urlprefix\url{https://minerals.org.au/sites/default/files/190214%20The%20Future%20of%20Work%20the%20Changing%20Skills%20Landscape%20for%20Miners.pdf}
-
-\bibitem{Detzel.2018}
-C.~Detzel, A.~Kumar, S.~Iyer, V.~Taneja,
-  \href{https://www.bcg.com/de-de/publications/2018/rolling-out-augmented-reality-field.aspx}{Rolling
-  out augmented reality in the field} (2018).
-\newline\urlprefix\url{https://www.bcg.com/de-de/publications/2018/rolling-out-augmented-reality-field.aspx}
-
-\bibitem{Shook.2019}
-E.~Shook, M.~Knickrehm,
-  \href{https://www.accenture.com/_acnmedia/pdf-40/accenture-strategy-harnessing-revolution-pov.pdf}{Harnessing
-  revolution creating the future workforce} (2017).
-\newline\urlprefix\url{https://www.accenture.com/_acnmedia/pdf-40/accenture-strategy-harnessing-revolution-pov.pdf}
-
 \bibitem{Guy.2019}
-B.~Guy, M.~Brett, P.~Mitesh, R.~Vaibhaw,
-  \href{https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Operations/Our%20Insights/The%20coming%20evolution%20of%20field%20operations/The-coming-evolution-of-field-operations.ashx}{The
-  coming evolution of field operations} (2019).
-\newline\urlprefix\url{https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Operations/Our%20Insights/The%20coming%20evolution%20of%20field%20operations/The-coming-evolution-of-field-operations.ashx}
+McKinsey, The coming evolution of field operations (2019).
 
 \bibitem{Foret.2020}
 P.~Foret, A.~Kleiner, H.~Mobahi, B.~Neyshabur, Sharpness-aware minimization for
   efficiently improving generalization (2020).
-\newblock \href {http://arxiv.org/abs/2010.01412} {\path{arXiv:2010.01412}}.
 
 \bibitem{Kabir.2020}
 H.~M.~D. Kabir, M.~Abdar, S.~M.~J. Jalali, A.~Khosravi, A.~F. Atiya,
   S.~Nahavandi, D.~Srinivasan, Spinalnet: Deep neural network with gradual
   input (2020).
-\newblock \href {http://arxiv.org/abs/2007.03347} {\path{arXiv:2007.03347}}.
-
-\bibitem{cifar.2012}
-A.~Krizhevsky, Learning multiple layers of features from tiny images,
-  University of Toronto.
-
-\bibitem{mnist.2010}
-Y.~LeCun, C.~Cortes, C.~Burges, Mnist handwritten digit database, ATT Labs
-  [Online]. Available: http://yann.lecun.com/exdb/mnist 2.
-
-\bibitem{svhn.2011}
-Y.~Netzer, T.~Wang, A.~Coates, A.~Bissacco, B.~Wu, A.~Y. Ng,
-  \href{http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf}{Reading
-  digits in natural images with unsupervised feature learning}, in: NIPS
-  Workshop on Deep Learning and Unsupervised Feature Learning 2011, 2011.
-\newline\urlprefix\url{http://ufldl.stanford.edu/housenumbers/nips2011_housenumbers.pdf}
-
-\bibitem{stl.2011}
-A.~Coates, A.~Ng, H.~Lee, An analysis of single-layer networks in unsupervised
-  feature learning, in: Proceedings of the fourteenth international conference
-  on artificial intelligence and statistics, 2011, pp. 215--223.
 
 \bibitem{imagenet.2019}
 J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, L.~Fei-Fei, {ImageNet: A
-  Large-Scale Hierarchical Image Database}, in: CVPR09, 2009.
+  Large-Scale Hierarchical Image Database}, in: CVPR, 2009, pp. 248--255.
 
 \bibitem{LeCun.2015b}
-Y.~LeCun, Y.~Bengio, G.~Hinton,
-  \href{https://www.nature.com/articles/nature14539}{Deep learning}, Nature
-  521~(7553) (2015) 436--444.
-\newblock \href {http://dx.doi.org/10.1038/nature14539}
-  {\path{doi:10.1038/nature14539}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nature14539}
+Y.~LeCun, Y.~Bengio, G.~Hinton, Deep learning, Nature.
 
 \bibitem{He.2016}
 K.~He, X.~Zhang, S.~Ren, J.~Sun, Deep residual learning for image recognition,
-  in: IEEE (Ed.), 29th IEEE Conference on Computer Vision and Pattern
-  Recognition, IEEE, Piscataway, NJ, 2016, pp. 770--778.
-\newblock \href {http://dx.doi.org/10.1109/CVPR.2016.90}
-  {\path{doi:10.1109/CVPR.2016.90}}.
+  in: CVPR, 2016, pp. 770--778.
 
 \bibitem{Szegedy.2015}
 C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan,
-  V.~Vanhoucke, A.~Rabinovich, Going deeper with convolutions, in: IEEE (Ed.),
-  2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), IEEE,
-  2015, pp. 1--9.
-\newblock \href {http://dx.doi.org/10.1109/CVPR.2015.7298594}
-  {\path{doi:10.1109/CVPR.2015.7298594}}.
+  V.~Vanhoucke, A.~Rabinovich, Going deeper with convolutions, in: CVPR, 2015,
+  pp. 1--9.
 
 \bibitem{Huang.2017}
 G.~Huang, Z.~Liu, L.~{van der Maaten}, K.~Q. Weinberger, Densely connected
-  convolutional networks, in: IEEE (Ed.), 2017 IEEE Conference on Computer
-  Vision and Pattern Recognition (CVPR), IEEE, 2017, pp. 2261--2269.
-\newblock \href {http://dx.doi.org/10.1109/CVPR.2017.243}
-  {\path{doi:10.1109/CVPR.2017.243}}.
+  convolutional networks, in: CVPR, 2017, pp. 2261--2269.
 
 \bibitem{Webster.2002}
-J.~Webster, R.~T. Watson, \href{http://www.jstor.org/stable/4132319}{Analyzing
-  the past to prepare for the future: Writing a literature review}, MIS
-  Quarterly 26~(2) (2002) xiii--xxiii.
-\newline\urlprefix\url{http://www.jstor.org/stable/4132319}
+J.~Webster, R.~T. Watson, Analyzing the past to prepare for the future: Writing
+  a literature review, MIS Quarterly.
 
 \bibitem{Kolesnikov.2019}
 A.~I. Kolesnikov, L.~Beyer, X.~Zhai, J.~Puigcerver, J.~Yung, S.~Gelly,
   N.~Houlsby, Large scale learning of general visual representations for
-  transfer, ArXiv abs/1912.11370.
+  transfer (2019).
 
 \bibitem{Touvron.2019}
-H.~Touvron, A.~Vedaldi, M.~Douze, H.~Jegou,
-  \href{http://papers.nips.cc/paper/9035-fixing-the-train-test-resolution-discrepancy.pdf}{Fixing
-  the train-test resolution discrepancy}, in: {H. Wallach}, {H. Larochelle},
-  {A. Beygelzimer}, {F. d$\backslash$textquotesingle Alch{\'e}-Buc}, {E. Fox},
-  {R. Garnett} (Eds.), Advances in Neural Information Processing Systems 32,
-  {Curran Associates, Inc}, 2019, pp. 8252--8262.
-\newline\urlprefix\url{http://papers.nips.cc/paper/9035-fixing-the-train-test-resolution-discrepancy.pdf}
-
-\bibitem{AWS.2020a}
-{Amazon Web Services, Inc.},
-  \href{https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5}{Aws
-  deep learning ami (ubuntu 18.04)} (2020).
-\newline\urlprefix\url{https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5}
-
-\bibitem{AWS.2020b}
-{Amazon Web Services, Inc.},
-  \href{https://aws.amazon.com/de/ec2/instance-types/g4/}{Amazon ec2 g4
-  instances} (2020).
-\newline\urlprefix\url{https://aws.amazon.com/de/ec2/instance-types/g4/}
-
-\bibitem{Python3}
-G.~Van~Rossum, F.~L. Drake, Python 3 Reference Manual, CreateSpace, Scotts
-  Valley, CA, 2009.
-
-\bibitem{Keras}
-F.~Chollet, et~al., \href{https://github.com/fchollet/keras}{Keras} (2015).
-\newline\urlprefix\url{https://github.com/fchollet/keras}
-
-\bibitem{Tensorflow.2015}
-M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S. Corrado,
-  A.~Davis, J.~Dean, M.~Devin, S.~Ghemawat, I.~Goodfellow, A.~Harp, G.~Irving,
-  M.~Isard, Y.~Jia, R.~Jozefowicz, L.~Kaiser, M.~Kudlur, J.~Levenberg,
-  D.~Man\'{e}, R.~Monga, S.~Moore, D.~Murray, C.~Olah, M.~Schuster, J.~Shlens,
-  B.~Steiner, I.~Sutskever, K.~Talwar, P.~Tucker, V.~Vanhoucke, V.~Vasudevan,
-  F.~Vi\'{e}gas, O.~Vinyals, P.~Warden, M.~Wattenberg, M.~Wicke, Y.~Yu,
-  X.~Zheng, \href{https://www.tensorflow.org/}{{TensorFlow}: Large-scale
-  machine learning on heterogeneous systems}, software available from
-  tensorflow.org (2015).
-\newline\urlprefix\url{https://www.tensorflow.org/}
-
-\bibitem{CUDA}
-NVIDEA, \href{https://developer.nvidia.com/cuda-toolkit}{Cuda technology}
-  (2007).
-\newline\urlprefix\url{https://developer.nvidia.com/cuda-toolkit}
-
-\bibitem{cuDNN}
-S.~Chetlur, C.~Woolley, P.~Vandermersch, J.~Cohen, J.~Tran, B.~Catanzaro,
-  E.~Shelhamer, cudnn: Efficient primitives for deep learning, ArXiv
-  abs/1410.0759.
+H.~Touvron, A.~Vedaldi, M.~Douze, H.~Jegou, Fixing the train-test resolution
+  discrepancy, in: NIPS, {Curran Associates, Inc}, 2019, pp. 8252--8262.
 
 \bibitem{Simonyan.2014}
-K.~Simonyan, A.~Zisserman, \href{https://arxiv.org/abs/1409.1556}{Very deep
-  convolutional networks for large-scale image recognition}, CoRR
-  abs/1409.1556.
-\newline\urlprefix\url{https://arxiv.org/abs/1409.1556}
+K.~Simonyan, A.~Zisserman, Very deep convolutional networks for large-scale
+  image recognition, CoRR.
 
 \bibitem{Xie.2017}
 S.~Xie, R.~Girshick, P.~Dollar, Z.~Tu, K.~He, Aggregated residual
-  transformations for deep neural networks, in: The IEEE Conference on Computer
-  Vision and Pattern Recognition (CVPR), 2017.
+  transformations for deep neural networks, in: CVPR, 2017, pp. 5987--5995.
 
 \bibitem{Tan.2019}
-M.~Tan, Q.~{Le V}, \href{https://arxiv.org/pdf/1905.11946v3.pdf}{Efficientnet:
-  Rethinking model scaling for convolutional neural networks}, in: ICML (Ed.),
-  2019 International Conference on Machine Learning (ICML), 2019.
-\newline\urlprefix\url{https://arxiv.org/pdf/1905.11946v3.pdf}
-
-\bibitem{clothing.2016}
-Z.~Liu, P.~Luo, S.~Qiu, X.~Wang, X.~Tang, Deepfashion: Powering robust clothes
-  recognition and retrieval with rich annotations, in: Proceedings of IEEE
-  Conference on Computer Vision and Pattern Recognition (CVPR), 2016.
-
-\bibitem{fashionMNIST.2017}
-H.~Xiao, K.~Rasul, R.~Vollgraf,
-  \href{http://arxiv.org/abs/1708.07747}{Fashion-mnist: a novel image dataset
-  for benchmarking machine learning algorithms}, CoRR abs/1708.07747.
-\newblock \href {http://arxiv.org/abs/1708.07747} {\path{arXiv:1708.07747}}.
-\newline\urlprefix\url{http://arxiv.org/abs/1708.07747}
-
-\bibitem{Darlow.2018}
-L.~N. Darlow, E.~Crowley, A.~Antoniou, A.~J. Storkey, Cinic-10 is not imagenet
-  or cifar-10, ArXiv abs/1810.03505.
-
-\bibitem{flowers.2008}
-M.-E. Nilsback, A.~Zisserman, Automated flower classification over a large
-  number of classes, in: Proceedings of the Indian Conference on Computer
-  Vision, Graphics and Image Processing, 2008.
-
-\bibitem{food.2014}
-L.~Bossard, M.~Guillaumin, L.~Van~Gool, Food-101 -- mining discriminative
-  components with random forests, in: European Conference on Computer Vision,
-  2014.
-
-\bibitem{vanHorn.2018}
-G.~{van Horn}, O.~{Mac Aodha}, Y.~Song, Y.~Cui, C.~Sun, A.~Shepard, H.~Adam,
-  P.~Perona, S.~Belongie, The inaturalist species classification and detection
-  dataset, in: IEEE (Ed.), The IEEE Conference on Computer Vision and Pattern
-  Recognition (CVPR), 2018.
-
-\bibitem{stanfordcars.2013}
-J.~Krause, M.~Stark, J.~Deng, L.~Fei-Fei, 3d object representations for
-  fine-grained categorization, in: 4th International IEEE Workshop on 3D
-  Representation and Recognition (3dRR-13), Sydney, Australia, 2013.
-
-\bibitem{emnistletters.2017}
-G.~Cohen, S.~Afshar, J.~Tapson, A.~V. Schaik, Emnist: Extending mnist to
-  handwritten letters, 2017 International Joint Conference on Neural Networks
-  (IJCNN)\href {http://dx.doi.org/10.1109/ijcnn.2017.7966217}
-  {\path{doi:10.1109/ijcnn.2017.7966217}}.
-
-\bibitem{kuzushijiMNIST.2018}
-T.~Clanuwat, M.~Bober{-}Irizar, A.~Kitamoto, A.~Lamb, K.~Yamamoto, D.~Ha,
-  \href{http://arxiv.org/abs/1812.01718}{Deep learning for classical japanese
-  literature}, CoRR abs/1812.01718.
-\newblock \href {http://arxiv.org/abs/1812.01718} {\path{arXiv:1812.01718}}.
-\newline\urlprefix\url{http://arxiv.org/abs/1812.01718}
-
-\bibitem{cub.2011}
-C.~Wah, S.~Branson, P.~Welinder, P.~Perona, S.~Belongie, {The Caltech-UCSD
-  Birds-200-2011 Dataset}, Tech. Rep. CNS-TR-2011-001, California Institute of
-  Technology (2011).
-
-\bibitem{Sabour.2017}
-S.~Sabour, N.~Frosst, G.~E. Hinton,
-  \href{http://papers.nips.cc/paper/6975-dynamic-routing-between-capsules.pdf}{Dynamic
-  routing between capsules}, in: {I. Guyon}, {U. V. Luxburg}, {S. Bengio}, {H.
-  Wallach}, {R. Fergus}, {S. Vishwanathan}, {R. Garnett} (Eds.), Advances in
-  Neural Information Processing Systems 30, {Curran Associates, Inc}, 2017, pp.
-  3856--3866.
-\newline\urlprefix\url{http://papers.nips.cc/paper/6975-dynamic-routing-between-capsules.pdf}
-
-\bibitem{isic1.2019}
-M.~Combalia, N.~C.~F. Codella, V.~Rotemberg, B.~Helba, V.~Vilaplana, O.~Reiter,
-  C.~Carrera, A.~Barreiro, A.~C. Halpern, S.~Puig, J.~Malvehy, Bcn20000:
-  Dermoscopic lesions in the wild (2019).
-\newblock \href {http://arxiv.org/abs/1908.02288} {\path{arXiv:1908.02288}}.
-
-\bibitem{isic2.2018}
-N.~C.~F. {Codella}, D.~{Gutman}, M.~E. {Celebi}, B.~{Helba}, M.~A. {Marchetti},
-  S.~W. {Dusza}, A.~{Kalloo}, K.~{Liopyris}, N.~{Mishra}, H.~{Kittler},
-  A.~{Halpern}, Skin lesion analysis toward melanoma detection: A challenge at
-  the 2017 international symposium on biomedical imaging (isbi), hosted by the
-  international skin imaging collaboration (isic), in: 2018 IEEE 15th
-  International Symposium on Biomedical Imaging (ISBI 2018), 2018, pp.
-  168--172.
-
-\bibitem{isic3.2018}
-P.~Tschandl, C.~Rosendahl, H.~Kittler, The ham10000 dataset, a large collection
-  of multi-source dermatoscopic images of common pigmented skin lesions,
-  Scientific data 5 (2018) 180161.
-\newblock \href {http://dx.doi.org/10.1038/sdata.2018.161}
-  {\path{doi:10.1038/sdata.2018.161}}.
+M.~Tan, Q.~{Le V}, Efficientnet: Rethinking model scaling for convolutional
+  neural networks, in: ICML, 2019, pp. 6105--6114.
 
 \bibitem{Ruder.2016}
-S.~Ruder, An overview of gradient descent optimization algorithms, arXiv
-  preprint arXiv:1609.04747.
+S.~Ruder, An overview of gradient descent optimization algorithms (2016).
 
 \bibitem{Pan.2010}
-S.~J. Pan, Q.~Yang,
-  \href{https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf}{A
-  survey on transfer learning}, IEEE Transactions on Knowledge and Data
-  Engineering 22~(10) (2010) 1345--1359.
-\newblock \href {http://dx.doi.org/10.1109/TKDE.2009.191}
-  {\path{doi:10.1109/TKDE.2009.191}}.
-\newline\urlprefix\url{https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf}
+S.~J. Pan, Q.~Yang, A survey on transfer learning, TKDE.
 
 \bibitem{Szegedy.2014}
 C.~Szegedy, W.~Zaremba, I.~Sutskever, J.~Bruna, D.~Erhan, I.~J. Goodfellow,
-  R.~Fergus, Intriguing properties of neural networks, CoRR abs/1312.6199.
+  R.~Fergus, Intriguing properties of neural networks, CoRR.
 
 \bibitem{ElAmir.2020}
-H.~El-Amir, M.~Hamdy, \href{https://doi.org/10.1007/978-1-4842-5349-6}{Deep
-  Learning Pipeline: Building a Deep Learning Model with TensorFlow}, 1st
-  Edition, 2020.
-\newline\urlprefix\url{https://doi.org/10.1007/978-1-4842-5349-6}
+H.~El-Amir, M.~Hamdy, Deep Learning Pipeline: Building a Deep Learning Model
+  with TensorFlow, 2020.
 
 \end{thebibliography}

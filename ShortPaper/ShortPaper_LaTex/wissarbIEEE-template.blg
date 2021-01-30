@@ -5,55 +5,46 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 The style file: orbref-num.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
-Warning--empty pages in svhn.2011
-Warning--empty pages in imagenet.2019
-Warning--empty pages in Xie.2017
-Warning--empty pages in Tan.2019
-Warning--empty pages in clothing.2016
-Warning--empty pages in flowers.2008
-Warning--empty pages in food.2014
-Warning--empty pages in vanHorn.2018
-Warning--empty pages in stanfordcars.2013
 Warning--empty publisher in ElAmir.2020
-You've used 47 entries,
+You've used 18 entries,
             2937 wiz_defined-function locations,
-            954 strings with 15950 characters,
-and the built_in function-call counts, 15004 in all, are:
-= -- 1221
-> -- 779
-< -- 10
-+ -- 288
-- -- 241
-* -- 1055
-:= -- 2136
-add.period$ -- 58
-call.type$ -- 47
-change.case$ -- 48
-chr.to.int$ -- 6
-cite$ -- 57
-duplicate$ -- 503
-empty$ -- 1674
-format.name$ -- 283
-if$ -- 3866
+            763 strings with 7803 characters,
+and the built_in function-call counts, 5718 in all, are:
+= -- 486
+> -- 234
+< -- 7
++ -- 90
+- -- 72
+* -- 286
+:= -- 749
+add.period$ -- 18
+call.type$ -- 18
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 216
+empty$ -- 657
+format.name$ -- 88
+if$ -- 1522
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 35
-newline$ -- 181
-num.names$ -- 61
-pop$ -- 428
+int.to.str$ -- 18
+missing$ -- 14
+newline$ -- 62
+num.names$ -- 18
+pop$ -- 166
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 937
+skip$ -- 439
 stack$ -- 0
-substring$ -- 342
-swap$ -- 132
-text.length$ -- 8
+substring$ -- 236
+swap$ -- 72
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 10
-while$ -- 82
-width$ -- 49
-write$ -- 419
-(There were 10 warnings)
+warning$ -- 1
+while$ -- 38
+width$ -- 20
+write$ -- 147
+(There was 1 warning)
