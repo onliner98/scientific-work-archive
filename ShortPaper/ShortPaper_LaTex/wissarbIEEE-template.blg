@@ -15,36 +15,36 @@ Warning--empty pages in food.2014
 Warning--empty pages in vanHorn.2018
 Warning--empty pages in stanfordcars.2013
 Warning--empty publisher in ElAmir.2020
-You've used 46 entries,
+You've used 47 entries,
             2937 wiz_defined-function locations,
-            949 strings with 15828 characters,
-and the built_in function-call counts, 14847 in all, are:
-= -- 1208
-> -- 775
+            954 strings with 15950 characters,
+and the built_in function-call counts, 15004 in all, are:
+= -- 1221
+> -- 779
 < -- 10
-+ -- 286
-- -- 240
-* -- 1053
-:= -- 2113
-add.period$ -- 57
-call.type$ -- 46
-change.case$ -- 47
++ -- 288
+- -- 241
+* -- 1055
+:= -- 2136
+add.period$ -- 58
+call.type$ -- 47
+change.case$ -- 48
 chr.to.int$ -- 6
-cite$ -- 56
-duplicate$ -- 498
-empty$ -- 1654
-format.name$ -- 282
-if$ -- 3822
+cite$ -- 57
+duplicate$ -- 503
+empty$ -- 1674
+format.name$ -- 283
+if$ -- 3866
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 34
-newline$ -- 178
-num.names$ -- 60
-pop$ -- 422
+int.to.str$ -- 47
+missing$ -- 35
+newline$ -- 181
+num.names$ -- 61
+pop$ -- 428
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 920
+skip$ -- 937
 stack$ -- 0
 substring$ -- 342
 swap$ -- 132
@@ -53,7 +53,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 81
-width$ -- 48
-write$ -- 412
+while$ -- 82
+width$ -- 49
+write$ -- 419
 (There were 10 warnings)

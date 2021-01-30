@@ -265,6 +265,10 @@ P.~Tschandl, C.~Rosendahl, H.~Kittler, The ham10000 dataset, a large collection
 \newblock \href {http://dx.doi.org/10.1038/sdata.2018.161}
   {\path{doi:10.1038/sdata.2018.161}}.
 
+\bibitem{Ruder.2016}
+S.~Ruder, An overview of gradient descent optimization algorithms, arXiv
+  preprint arXiv:1609.04747.
+
 \bibitem{Pan.2010}
 S.~J. Pan, Q.~Yang,
   \href{https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf}{A

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.31)  2 JAN 2021 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.31)  25 JAN 2021 16:49
 entering extended mode
 **./wissarbIEEE-template.tex
 (wissarbIEEE-template.tex
@@ -291,11 +291,6 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count269
 \@thisrulewidth=\dimen174
 )
-("C:\Program Files\MiKTeX\tex/latex/cite\cite.sty"
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-)
 ("C:\Program Files\MiKTeX\tex/latex/xltabular\xltabular.sty"
 Package: xltabular 2020/11/04 v0.2e `xltabular' package (hv,RN)
 
@@ -403,23 +398,17 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (11.93951pt too wide) in paragraph at lines 27--27
-[][][]$[]$\OT1/ptm/m/n/8 Business Su-per-vi-sor \OT1/pcr/m/n/9 oliver.erlenkaem
-per@honeywell.com| 
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 43.
-[1{C:/Users/admin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+ [1{C:/Users/admin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
-]
-(wissarbIEEE-template.bbl [2]
+] (wissarbIEEE-template.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 \OT1/pcr/m/n/8 ey-[]com / en _ au / topics / campaigns / future-[]of-[]work /
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
 \OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / minerals . org . au / sites / 
 default /
@@ -506,13 +495,13 @@ Underfull \hbox (badness 2941) in paragraph at lines 188--193
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 238--245
 \OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 http : / / papers . nips . cc / paper /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--276
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 273--280
 \OT1/ptm/m/n/8 URL []$\OT1/pcr/m/n/8 https : / / www . cse . ust . hk / []qyang
  / Docs / 2009 /
  []
@@ -524,13 +513,13 @@ Package rerunfilecheck Info: File `wissarbIEEE-template.out' has not changed.
 (rerunfilecheck)             Checksum: 62C2EA4B347840229C61EEF7156DBC06;509.
  ) 
 Here is how much of TeX's memory you used:
- 6255 strings out of 479697
- 97799 string characters out of 2877008
- 435438 words of memory out of 3000000
- 23176 multiletter control sequences out of 15000+200000
+ 6172 strings out of 479697
+ 96699 string characters out of 2877008
+ 435143 words of memory out of 3000000
+ 23095 multiletter control sequences out of 15000+200000
  442617 words of font info for 98 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,11n,72p,2140b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,11n,72p,2139b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
@@ -543,9 +532,9 @@ ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on wissarbIEEE-template.pdf (4 pages, 192355 bytes).
+Output written on wissarbIEEE-template.pdf (4 pages, 193140 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
