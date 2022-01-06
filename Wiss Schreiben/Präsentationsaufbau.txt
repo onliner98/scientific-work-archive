@@ -11,7 +11,7 @@ PRÄSENTATIONSAUFBAU:
 - Fazit
 
 GENERELLES
-- Details im Appendix
+- Falls Details dann im Appendix
 - Tell a Story => Ende muss Problem der Anfangsstory lösenn
 - Zuhörende mit einbinden
 - zeige Kompetenz nicht den tatsächliche Inhalt (Auch krit. Reflektion)

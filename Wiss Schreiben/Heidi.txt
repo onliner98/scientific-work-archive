@@ -1,0 +1,6 @@
+Schlagwörter: Kategorie der Literatur "Subject"
+Stichwörter: Wörter die i.d. Literatur (Titel, Autor, Textkörper etc.) vorkommen
+Heidi:
+- Schlagwörter: Werden pro Artikel aufgelistet => Stichwortsuche => finde relevante Schlagwörter => Grenze mit diesen Ein
+- Notation: Fachnotation eingeben (dann werden nur Lehrbücher gelistet) => erweiterte suche => notationen => index
+- RVK: Klassifikationsshema Ähnlich wie Notation blos für Schlagwörter
